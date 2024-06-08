@@ -11,7 +11,7 @@ ALTF42 Trainer - Enhance your gameplay with features like flying, stopping movem
 - **Middle Mouse** - Teleport to crosshair position (buggy)
 
 ## Video Demonstration
-[![Watch the video](http://img.youtube.com/vi/94EaOJi6dV4/0.jpg)](http://www.youtube.com/watch?v=94EaOJi6dV4)
+[![Watch the video](http://img.youtube.com/vi/xbAHQ62SalQ/0.jpg)](http://www.youtube.com/watch?v=xbAHQ62SalQ)
 
 ## How to Use
 1. Place [`xinput1_3.dll`](https://github.com/jessy-lua/ALTF42_Trainer/releases/latest/download/xinput1_3.dll) into `steamapps\common\ALTF42\ALTF42\Binaries\Win64\`.
