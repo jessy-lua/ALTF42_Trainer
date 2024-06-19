@@ -24,7 +24,7 @@ public:
 	class USignificanceOptimizationParametersDataAsset* Source;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USignificanceOptimizationParametersDataAsset* Target;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E6[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2435[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SignificanceOptimizerComponent_CopySignificanceOptimizationParametersDataAsset) == 0x000008, "Wrong alignment on SignificanceOptimizerComponent_CopySignificanceOptimizationParametersDataAsset");
 static_assert(sizeof(SignificanceOptimizerComponent_CopySignificanceOptimizationParametersDataAsset) == 0x000018, "Wrong size on SignificanceOptimizerComponent_CopySignificanceOptimizationParametersDataAsset");
@@ -39,7 +39,7 @@ struct SignificanceOptimizerComponent_GetActorSignificanceLevel final
 public:
 	class AActor*                                 Actor;                                             // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESignificanceLevel                            ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2436[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SignificanceOptimizerComponent_GetActorSignificanceLevel) == 0x000008, "Wrong alignment on SignificanceOptimizerComponent_GetActorSignificanceLevel");
 static_assert(sizeof(SignificanceOptimizerComponent_GetActorSignificanceLevel) == 0x000010, "Wrong size on SignificanceOptimizerComponent_GetActorSignificanceLevel");

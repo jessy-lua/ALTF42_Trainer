@@ -149,6 +149,28 @@ void UWBP_DecisionButtonBase_C::OnPlayHighlightSound()
 }
 
 
+// Function WBP_DecisionButtonBase.WBP_DecisionButtonBase_C.OnSetHighlightEffect
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EWidgetStyleState                       Param_HighlightState                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bPlaySound                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_DecisionButtonBase_C::OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_DecisionButtonBase_C", "OnSetHighlightEffect");
+
+	Params::WBP_DecisionButtonBase_C_OnSetHighlightEffect Parms{};
+
+	Parms.Param_HighlightState = Param_HighlightState;
+	Parms.bPlaySound = bPlaySound;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_DecisionButtonBase.WBP_DecisionButtonBase_C.OnPressedBack
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -184,28 +206,6 @@ void UWBP_DecisionButtonBase_C::OnPressedSelect(const struct FKeyEvent& KeyEvent
 	Params::WBP_DecisionButtonBase_C_OnPressedSelect Parms{};
 
 	Parms.KeyEvent = std::move(KeyEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_DecisionButtonBase.WBP_DecisionButtonBase_C.OnSetHighlightEffect
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EWidgetStyleState                       Param_HighlightState                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bPlaySound                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_DecisionButtonBase_C::OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_DecisionButtonBase_C", "OnSetHighlightEffect");
-
-	Params::WBP_DecisionButtonBase_C_OnSetHighlightEffect Parms{};
-
-	Parms.Param_HighlightState = Param_HighlightState;
-	Parms.bPlaySound = bPlaySound;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

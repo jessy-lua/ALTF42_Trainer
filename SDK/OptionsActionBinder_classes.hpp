@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "Slate_structs.hpp"
+#include "Engine_structs.hpp"
 #include "InteractableUserWidget_classes.hpp"
+#include "Slate_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "EnhancedInput_structs.hpp"
 
@@ -35,17 +35,17 @@ public:
 	class FName                                   InputName;                                         // 0x07A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FInputActionKeyMapping                 CurrentActionMapping;                              // 0x07B0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          IsAxisMapping;                                     // 0x07D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_338C[0x7];                                     // 0x07D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32B0[0x7];                                     // 0x07D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputAxisKeyMapping                   CurrentAxisMapping;                                // 0x07E0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                        AxisScale;                                         // 0x0808(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FInputChord                            SelectedKey;                                       // 0x0810(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FInputChord                            LastSelectedKey;                                   // 0x0830(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          bAllowKeyChangeInput;                              // 0x0850(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_338D[0x7];                                     // 0x0851(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32B1[0x7];                                     // 0x0851(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnKeyChanged;                                      // 0x0858(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnKeyInit;                                         // 0x0868(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          IsGamepadBinding;                                  // 0x0878(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_338E[0x7];                                     // 0x0879(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32B2[0x7];                                     // 0x0879(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDecisionDialogWidgetBP_C*              DecisionDialogWidget;                              // 0x0880(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FInputActionKeyMapping                 OldActionMapping;                                  // 0x0888(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
 	struct FInputAxisKeyMapping                   OldAxisMapping;                                    // 0x08B0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -55,7 +55,7 @@ public:
 	struct FLinearColor                           OptionsActionBinderIconColor;                      // 0x0908(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsInEditMode;                                     // 0x0918(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsModifierKeyPressed;                             // 0x0919(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_338F[0x6];                                     // 0x091A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32B3[0x6];                                     // 0x091A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   ModifierKey;                                       // 0x0920(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	class UInputMappingContext*                   ControllerMapping;                                 // 0x0938(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 

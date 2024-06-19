@@ -22,7 +22,7 @@ namespace SDK
 class ADON_Fake_Bp_C final : public ACharacter
 {
 public:
-	uint8                                         Pad_32CA[0x8];                                     // 0x0678(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3378[0x8];                                     // 0x0678(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0680(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 
 public:

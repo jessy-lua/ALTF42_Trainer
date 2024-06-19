@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "AI_StepTalk_WhoOrWhere_structs.hpp"
-#include "Mantle_Asset_structs.hpp"
-#include "ALS_Base_CharacterBP_classes.hpp"
-#include "Engine_structs.hpp"
 #include "MantleType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "AI_NPC_Act_Data_structs.hpp"
+#include "Mantle_Asset_structs.hpp"
 #include "ALTF42_ItemList_OnlyBoxData_structs.hpp"
+#include "AI_StepTalk_WhoOrWhere_structs.hpp"
+#include "ALS_Base_CharacterBP_classes.hpp"
 #include "ALS_OverlayState_structs.hpp"
 
 
@@ -28,7 +28,7 @@ namespace SDK
 class AAI_MH_Nicholas_C final : public AALS_Base_CharacterBP_C
 {
 public:
-	uint8                                         Pad_3B42[0x6];                                     // 0x0B42(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A3E[0x6];                                     // 0x0B42(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame_AI_MH_Nicholas_C;                   // 0x0B48(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UGroomComponent*                        Hair;                                              // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SM_FarmerGoates;                                   // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -66,7 +66,7 @@ public:
 	class UALTF42_GameInstance_C*                 ALTF42_GI;                                         // 0x0DA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          ImPlayer;                                          // 0x0DB0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	EAI_StepTalk_WhoOrWhere                       Who_NPC;                                           // 0x0DB1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B43[0x6];                                     // 0x0DB2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A3F[0x6];                                     // 0x0DB2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   NPC_NAme;                                          // 0x0DB8(0x0018)(Edit, BlueprintVisible)
 	class UObject*                                NPC_Image;                                         // 0x0DD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	bool                                          Hit_;                                              // 0x0DD8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -74,19 +74,19 @@ public:
 	bool                                          NPC_StartAction_;                                  // 0x0DDA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          NPC_ActionMode;                                    // 0x0DDB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          NPC_Talking_;                                      // 0x0DDC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B44[0x3];                                     // 0x0DDD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A40[0x3];                                     // 0x0DDD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequenceBase*                      NPC_Action_Anim;                                   // 0x0DE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	EAI_NPC_Act_Data                              NPC_Act;                                           // 0x0DE8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B45[0x7];                                     // 0x0DE9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A41[0x7];                                     // 0x0DE9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ANPC_MoveTarget_BP_C*                   Npc_MoveTarget;                                    // 0x0DF0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           NPC_Hit_Anim;                                      // 0x0DF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Hit_Talk;                                          // 0x0E00(0x0018)(Edit, BlueprintVisible)
 	class UAnimMontage*                           Meet_HI_Anim;                                      // 0x0E18(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         MeetHI_PlayRate;                                   // 0x0E20(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B46[0x4];                                     // 0x0E24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A42[0x4];                                     // 0x0E24(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           GiveItem_AnimMontage;                              // 0x0E28(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	float                                         GiveItem_Play_Rate;                                // 0x0E30(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B47[0x4];                                     // 0x0E34(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A43[0x4];                                     // 0x0E34(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<EAI_NPC_Act_Data>                      NPC_Act_List;                                      // 0x0E38(0x0010)(Edit, BlueprintVisible)
 	TArray<class UAnimSequenceBase*>              NPC_Act_AnimList;                                  // 0x0E48(0x0010)(Edit, BlueprintVisible)
 	TArray<class ANPC_MoveTarget_BP_C*>           Npc_MoveTarget_List;                               // 0x0E58(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
@@ -94,11 +94,11 @@ public:
 	class FText                                   Talk_Text;                                         // 0x0E78(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	int32                                         Act_Integer;                                       // 0x0E90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Random_Roam_;                                      // 0x0E94(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B48[0x3];                                     // 0x0E95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A44[0x3];                                     // 0x0E95(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Act_Random_Caculation;                             // 0x0E98(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Item_Plus_Value;                                   // 0x0E9C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EALTF42_ItemList_OnlyBoxData                  NPC_Give_Item;                                     // 0x0EA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B49[0x7];                                     // 0x0EA1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A45[0x7];                                     // 0x0EA1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Action_Start_Time;                                 // 0x0EA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class ANPC_Flag_BP_C*                         Flag_01;                                           // 0x0EB0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ANPC_Flag_BP_C*                         Flag_02;                                           // 0x0EB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

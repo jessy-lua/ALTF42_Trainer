@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GlobalInteractableUserWidget_classes.hpp"
 #include "Engine_structs.hpp"
+#include "GlobalInteractableUserWidget_classes.hpp"
 
 
 namespace SDK

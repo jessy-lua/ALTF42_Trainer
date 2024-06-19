@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "AI_StepTalk_WhoOrWhere_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "AI_StepTalk_WhoOrWhere_structs.hpp"
 
 
 namespace SDK
@@ -38,7 +38,7 @@ public:
 	bool                                          TextJumpPossible;                                  // 0x02EB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         TalkInteger;                                       // 0x02EC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         MaxTalk;                                           // 0x02F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_34EF[0x4];                                     // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3614[0x4];                                     // 0x02F4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Talk_Npc_Name;                                     // 0x02F8(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UObject*                                Talk_NPC_Image;                                    // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class FText                                   Talk_Speak_Text_;                                  // 0x0318(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)

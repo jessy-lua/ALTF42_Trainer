@@ -10,14 +10,14 @@
 
 #include "Basic.hpp"
 
-#include "EDeviceInputSwitchBehavior_structs.hpp"
-#include "ETransitionAnimation_structs.hpp"
 #include "FFontStyle_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "CoreUObject_structs.hpp"
+#include "EDeviceInputSwitchBehavior_structs.hpp"
 #include "EColorPalette_structs.hpp"
 #include "EPauseBehavior_structs.hpp"
+#include "ETransitionAnimation_structs.hpp"
 #include "EFontPalette_structs.hpp"
 
 
@@ -52,7 +52,7 @@ public:
 	TSoftObjectPtr<class UWorld>                  CreateNewGameLevel;                                // 0x0310(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash)
 	bool                                          bIntroLogosSkippable;                              // 0x0338(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIntroEnabled;                                     // 0x0339(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FDB[0x6];                                     // 0x033A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EAD[0x6];                                     // 0x033A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftClassPtr<class UClass>                   MenuContainerClass;                                // 0x0340(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftClassPtr<class UClass>                   IngameMenuClass;                                   // 0x0368(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	TSoftClassPtr<class UClass>                   InventoryMenuClass;                                // 0x0390(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
@@ -66,7 +66,7 @@ public:
 	bool                                          bShowMouseCursor;                                  // 0x04A9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMouseLockMode                                MouseLockMode;                                     // 0x04AA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EDeviceInputSwitchBehavior                    InputDeviceSwitchBehavior;                         // 0x04AB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FDC[0x4];                                     // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EAE[0x4];                                     // 0x04AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector2D                              MouseCursorDefaultPosition;                        // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TMap<EColorPalette, struct FLinearColor>      ColorPalette;                                      // 0x04C0(0x0050)(Edit, BlueprintVisible)
 	TSoftObjectPtr<class UWorld>                  LocalMultiplayerLevel;                             // 0x0510(0x0028)(Edit, BlueprintVisible, UObjectWrapper, HasGetValueTypeHash)
@@ -74,7 +74,7 @@ public:
 	bool                                          bUseSplitscreenIngame;                             // 0x0539(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bFullscreenSplitscreenIngameMenu;                  // 0x053A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EPauseBehavior                                LocalMultiplayerPauseBehavior;                     // 0x053B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FDD[0x4];                                     // 0x053C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EAF[0x4];                                     // 0x053C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInputMappingContext*                   InputMappingContextMenu;                           // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UPDA_InputActionData_C*                 KeyboardAndMouseActionData;                        // 0x0548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TMap<class FString, class UPDA_InputActionData_C*> GamepadActionDataList;                             // 0x0550(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -85,7 +85,7 @@ public:
 	TMap<class FName, class UPDA_LevelMetaData_C*> LevelMetaData;                                     // 0x0638(0x0050)(Edit, BlueprintVisible)
 	TMap<EFontPalette, struct FFFontStyle>        FontPalette;                                       // 0x0688(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
 	ETransitionAnimation                          MenuTransitionAnimation;                           // 0x06D8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FDE[0x7];                                     // 0x06D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EB0[0x7];                                     // 0x06D9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        MenuTransitionAnimationSpeed;                      // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPDA_ScrollBarStyle_C*                  ScrollBarStyle;                                    // 0x06E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TSoftClassPtr<class UClass>                   SaveGameManagerClass;                              // 0x06F0(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)

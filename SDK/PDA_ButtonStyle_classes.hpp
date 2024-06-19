@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "PDA_WidgetStyle_classes.hpp"
 #include "EColorPalette_structs.hpp"
 #include "EFontPalette_structs.hpp"
 #include "FWidgetAnimationData_structs.hpp"
+#include "PDA_WidgetStyle_classes.hpp"
 
 
 namespace SDK
@@ -35,7 +35,7 @@ public:
 	double                                        WidgetHeight;                                      // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CornerRadius;                                      // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFontPalette                                  FontStyle;                                         // 0x0050(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D56[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C00[0x7];                                     // 0x0051(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFWidgetAnimationData                  HighlightAnimation;                                // 0x0058(0x0028)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FFWidgetAnimationData                  UnhighlightAnimation;                              // 0x0080(0x0028)(Edit, BlueprintVisible, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstance*                      HighlightMaterial;                                 // 0x00A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

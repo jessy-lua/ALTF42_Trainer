@@ -12,12 +12,12 @@
 
 #include "ALS_RotationMode_structs.hpp"
 #include "ALS_PlayerCameraBehavior_structs.hpp"
-#include "ALS_Gait_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ALS_MovementState_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
 #include "ALS_MovementAction_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "ALS_MovementState_structs.hpp"
+#include "ALS_Gait_structs.hpp"
 #include "ALS_Stance_structs.hpp"
 #include "ALS_ViewMode_structs.hpp"
 #include "ALS_OverlayState_structs.hpp"
@@ -31,10 +31,10 @@ namespace SDK
 class UALS_PlayerCameraBehavior_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_38B8[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1787[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct ALS_PlayerCameraBehavior::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0358(0x0009)(HasGetValueTypeHash)
-	uint8                                         Pad_38B9[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1788[0x7];                                     // 0x0361(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0368(0x0008)()
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x0370(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0378(0x0020)()
@@ -109,7 +109,7 @@ public:
 	float                                         AimCamera_DefaultOffset_X;                         // 0x26D4(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         AimCamera_CrouchOffset_X;                          // 0x26D8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Time_Slow_Mode_Active_;                            // 0x26DC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38BA[0x3];                                     // 0x26DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1789[0x3];                                     // 0x26DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Velocity_LagSpeed_X;                               // 0x26E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Velocity_LagSpeed_Y;                               // 0x26E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Velocity_LagSpeed_Z;                               // 0x26F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

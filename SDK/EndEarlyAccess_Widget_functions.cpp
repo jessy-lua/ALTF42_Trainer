@@ -481,40 +481,6 @@ void UEndEarlyAccess_Widget_C::OnNavigationExit(class UInteractableMenuWidgetBP_
 }
 
 
-// Function EndEarlyAccess_Widget.EndEarlyAccess_Widget_C.OnPressedBack
-// (BlueprintCallable, BlueprintEvent)
-
-void UEndEarlyAccess_Widget_C::OnPressedBack()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EndEarlyAccess_Widget_C", "OnPressedBack");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function EndEarlyAccess_Widget.EndEarlyAccess_Widget_C.PreConstruct
-// (BlueprintCosmetic, Event, Public, BlueprintEvent)
-// Parameters:
-// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UEndEarlyAccess_Widget_C::PreConstruct(bool IsDesignTime)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("EndEarlyAccess_Widget_C", "PreConstruct");
-
-	Params::EndEarlyAccess_Widget_C_PreConstruct Parms{};
-
-	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function EndEarlyAccess_Widget.EndEarlyAccess_Widget_C.ShowDecisionDialog
 // (Public, BlueprintCallable, BlueprintEvent)
 
@@ -546,6 +512,40 @@ void UEndEarlyAccess_Widget_C::Tick(const struct FGeometry& MyGeometry, float In
 
 	Parms.MyGeometry = std::move(MyGeometry);
 	Parms.InDeltaTime = InDeltaTime;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function EndEarlyAccess_Widget.EndEarlyAccess_Widget_C.OnPressedBack
+// (BlueprintCallable, BlueprintEvent)
+
+void UEndEarlyAccess_Widget_C::OnPressedBack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EndEarlyAccess_Widget_C", "OnPressedBack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function EndEarlyAccess_Widget.EndEarlyAccess_Widget_C.PreConstruct
+// (BlueprintCosmetic, Event, Public, BlueprintEvent)
+// Parameters:
+// bool                                    IsDesignTime                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UEndEarlyAccess_Widget_C::PreConstruct(bool IsDesignTime)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("EndEarlyAccess_Widget_C", "PreConstruct");
+
+	Params::EndEarlyAccess_Widget_C_PreConstruct Parms{};
+
+	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

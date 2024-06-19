@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
+#include "FFontStyle_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "EWidgetStyleState_structs.hpp"
 #include "FWidgetAnimationData_structs.hpp"
-#include "FFontStyle_structs.hpp"
 #include "WBP_InteractableUserWidget_classes.hpp"
 
 
@@ -57,16 +57,16 @@ public:
 	void OnButtonClicked();
 	void OnButtonHovered();
 	void SetupButtonText();
+	void OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound);
+	void SetWidgetState(EWidgetStyleState Param_WidgetState);
 	void OnPressedBack(const struct FKeyEvent& KeyEvent);
 	void OnPressedDown(const struct FKeyEvent& KeyEvent);
 	void OnPressedLeft(const struct FKeyEvent& KeyEvent);
 	void OnPressedRight(const struct FKeyEvent& KeyEvent);
 	void OnPressedSelect(const struct FKeyEvent& KeyEvent);
 	void OnPressedUp(const struct FKeyEvent& KeyEvent);
-	void OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound);
 	void OverrideWidgetStyleFromConfig();
 	void PreConstruct(bool IsDesignTime);
-	void SetWidgetState(EWidgetStyleState Param_WidgetState);
 
 public:
 	static class UClass* StaticClass()

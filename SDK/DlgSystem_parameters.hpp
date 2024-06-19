@@ -41,7 +41,7 @@ public:
 	const class UDlgContext*                      Context;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	const class UObject*                          Participant;                                       // 0x0008(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1759[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17B4[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgConditionCustom_IsConditionMet) == 0x000008, "Wrong alignment on DlgConditionCustom_IsConditionMet");
 static_assert(sizeof(DlgConditionCustom_IsConditionMet) == 0x000018, "Wrong size on DlgConditionCustom_IsConditionMet");
@@ -56,7 +56,7 @@ struct DlgContext_ChooseChild final
 public:
 	int32                                         OptionIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175B[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17B6[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_ChooseChild) == 0x000004, "Wrong alignment on DlgContext_ChooseChild");
 static_assert(sizeof(DlgContext_ChooseChild) == 0x000008, "Wrong size on DlgContext_ChooseChild");
@@ -70,7 +70,7 @@ struct DlgContext_ChooseOption final
 public:
 	int32                                         OptionIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17B7[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_ChooseOption) == 0x000004, "Wrong alignment on DlgContext_ChooseOption");
 static_assert(sizeof(DlgContext_ChooseOption) == 0x000008, "Wrong size on DlgContext_ChooseOption");
@@ -84,7 +84,7 @@ struct DlgContext_ChooseOptionFromAll final
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175D[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17B8[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_ChooseOptionFromAll) == 0x000004, "Wrong alignment on DlgContext_ChooseOptionFromAll");
 static_assert(sizeof(DlgContext_ChooseOptionFromAll) == 0x000008, "Wrong size on DlgContext_ChooseOptionFromAll");
@@ -98,7 +98,7 @@ struct DlgContext_ChooseSpeechSequenceOptionFromReplicated final
 public:
 	int32                                         OptionIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175E[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17B9[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_ChooseSpeechSequenceOptionFromReplicated) == 0x000004, "Wrong alignment on DlgContext_ChooseSpeechSequenceOptionFromReplicated");
 static_assert(sizeof(DlgContext_ChooseSpeechSequenceOptionFromReplicated) == 0x000008, "Wrong size on DlgContext_ChooseSpeechSequenceOptionFromReplicated");
@@ -401,7 +401,7 @@ struct DlgContext_GetMutableNodeFromIndex final
 {
 public:
 	int32                                         NodeIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_175F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17BA[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDlgNode*                               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgContext_GetMutableNodeFromIndex) == 0x000008, "Wrong alignment on DlgContext_GetMutableNodeFromIndex");
@@ -454,7 +454,7 @@ struct DlgContext_GetOption final
 {
 public:
 	int32                                         OptionIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1760[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17BB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDlgEdge                               ReturnValue;                                       // 0x0008(0x0070)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgContext_GetOption) == 0x000008, "Wrong alignment on DlgContext_GetOption");
@@ -468,7 +468,7 @@ struct DlgContext_GetOptionEnterConditions final
 {
 public:
 	int32                                         OptionIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1761[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17BC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDlgCondition>                  ReturnValue;                                       // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgContext_GetOptionEnterConditions) == 0x000008, "Wrong alignment on DlgContext_GetOptionEnterConditions");
@@ -482,7 +482,7 @@ struct DlgContext_GetOptionFromAll final
 {
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1762[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17BD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDlgEdgeData                           ReturnValue;                                       // 0x0008(0x0078)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgContext_GetOptionFromAll) == 0x000008, "Wrong alignment on DlgContext_GetOptionFromAll");
@@ -544,7 +544,7 @@ struct DlgContext_GetOptionText final
 {
 public:
 	int32                                         OptionIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1763[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17BE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgContext_GetOptionText) == 0x000008, "Wrong alignment on DlgContext_GetOptionText");
@@ -558,7 +558,7 @@ struct DlgContext_GetOptionTextFromAll final
 {
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1764[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17BF[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   ReturnValue;                                       // 0x0008(0x0018)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgContext_GetOptionTextFromAll) == 0x000008, "Wrong alignment on DlgContext_GetOptionTextFromAll");
@@ -630,7 +630,7 @@ public:
 	struct FGuid                                  NodeGuid;                                          // 0x0004(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLocalHistory;                                     // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0015(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1765[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C0[0x2];                                     // 0x0016(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_IsNodeVisited) == 0x000004, "Wrong alignment on DlgContext_IsNodeVisited");
 static_assert(sizeof(DlgContext_IsNodeVisited) == 0x000018, "Wrong size on DlgContext_IsNodeVisited");
@@ -647,7 +647,7 @@ public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIndexSkipsUnsatisfiedEdges;                       // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0005(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1766[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C1[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_IsOptionConnectedToEndNode) == 0x000004, "Wrong alignment on DlgContext_IsOptionConnectedToEndNode");
 static_assert(sizeof(DlgContext_IsOptionConnectedToEndNode) == 0x000008, "Wrong size on DlgContext_IsOptionConnectedToEndNode");
@@ -664,7 +664,7 @@ public:
 	bool                                          bLocalHistory;                                     // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIndexSkipsUnsatisfiedEdges;                       // 0x0005(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0006(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1767[0x1];                                     // 0x0007(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C2[0x1];                                     // 0x0007(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_IsOptionConnectedToVisitedNode) == 0x000004, "Wrong alignment on DlgContext_IsOptionConnectedToVisitedNode");
 static_assert(sizeof(DlgContext_IsOptionConnectedToVisitedNode) == 0x000008, "Wrong size on DlgContext_IsOptionConnectedToVisitedNode");
@@ -680,7 +680,7 @@ struct DlgContext_IsOptionSatisfied final
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1768[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C3[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_IsOptionSatisfied) == 0x000004, "Wrong alignment on DlgContext_IsOptionSatisfied");
 static_assert(sizeof(DlgContext_IsOptionSatisfied) == 0x000008, "Wrong size on DlgContext_IsOptionSatisfied");
@@ -694,7 +694,7 @@ struct DlgContext_IsValidAllOptionIndex final
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1769[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C4[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_IsValidAllOptionIndex) == 0x000004, "Wrong alignment on DlgContext_IsValidAllOptionIndex");
 static_assert(sizeof(DlgContext_IsValidAllOptionIndex) == 0x000008, "Wrong size on DlgContext_IsValidAllOptionIndex");
@@ -708,7 +708,7 @@ struct DlgContext_IsValidNodeGUID final
 public:
 	struct FGuid                                  NodeGuid;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_176A[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C5[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_IsValidNodeGUID) == 0x000004, "Wrong alignment on DlgContext_IsValidNodeGUID");
 static_assert(sizeof(DlgContext_IsValidNodeGUID) == 0x000014, "Wrong size on DlgContext_IsValidNodeGUID");
@@ -722,7 +722,7 @@ struct DlgContext_IsValidNodeIndex final
 public:
 	int32                                         NodeIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_176B[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C6[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_IsValidNodeIndex) == 0x000004, "Wrong alignment on DlgContext_IsValidNodeIndex");
 static_assert(sizeof(DlgContext_IsValidNodeIndex) == 0x000008, "Wrong size on DlgContext_IsValidNodeIndex");
@@ -736,7 +736,7 @@ struct DlgContext_IsValidOptionIndex final
 public:
 	int32                                         OptionIndex;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_176C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C7[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_IsValidOptionIndex) == 0x000004, "Wrong alignment on DlgContext_IsValidOptionIndex");
 static_assert(sizeof(DlgContext_IsValidOptionIndex) == 0x000008, "Wrong size on DlgContext_IsValidOptionIndex");
@@ -750,7 +750,7 @@ struct DlgContext_WasNodeGUIDVisitedInThisContext final
 public:
 	struct FGuid                                  NodeGuid;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_176D[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C8[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_WasNodeGUIDVisitedInThisContext) == 0x000004, "Wrong alignment on DlgContext_WasNodeGUIDVisitedInThisContext");
 static_assert(sizeof(DlgContext_WasNodeGUIDVisitedInThisContext) == 0x000014, "Wrong size on DlgContext_WasNodeGUIDVisitedInThisContext");
@@ -764,7 +764,7 @@ struct DlgContext_WasNodeIndexVisitedInThisContext final
 public:
 	int32                                         NodeIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_176E[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17C9[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgContext_WasNodeIndexVisitedInThisContext) == 0x000004, "Wrong alignment on DlgContext_WasNodeIndexVisitedInThisContext");
 static_assert(sizeof(DlgContext_WasNodeIndexVisitedInThisContext) == 0x000008, "Wrong size on DlgContext_WasNodeIndexVisitedInThisContext");
@@ -1010,7 +1010,7 @@ struct DlgDialogue_GetMutableNodeFromIndex final
 {
 public:
 	int32                                         NodeIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1772[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17CD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDlgNode*                               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgDialogue_GetMutableNodeFromIndex) == 0x000008, "Wrong alignment on DlgDialogue_GetMutableNodeFromIndex");
@@ -1360,7 +1360,7 @@ struct DlgDialogue_HasParticipant final
 public:
 	class FName                                   ParticipantName;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1773[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17CE[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogue_HasParticipant) == 0x000004, "Wrong alignment on DlgDialogue_HasParticipant");
 static_assert(sizeof(DlgDialogue_HasParticipant) == 0x00000C, "Wrong size on DlgDialogue_HasParticipant");
@@ -1374,7 +1374,7 @@ struct DlgDialogue_IsValidNodeGUID final
 public:
 	struct FGuid                                  NodeGuid;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1774[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17CF[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogue_IsValidNodeGUID) == 0x000004, "Wrong alignment on DlgDialogue_IsValidNodeGUID");
 static_assert(sizeof(DlgDialogue_IsValidNodeGUID) == 0x000014, "Wrong size on DlgDialogue_IsValidNodeGUID");
@@ -1388,7 +1388,7 @@ struct DlgDialogue_IsValidNodeIndex final
 public:
 	int32                                         NodeIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1775[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D0[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogue_IsValidNodeIndex) == 0x000004, "Wrong alignment on DlgDialogue_IsValidNodeIndex");
 static_assert(sizeof(DlgDialogue_IsValidNodeIndex) == 0x000008, "Wrong size on DlgDialogue_IsValidNodeIndex");
@@ -1403,7 +1403,7 @@ public:
 	class FName                                   ValueName;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bNewValue;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1776[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D1[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogueParticipant_ModifyBoolValue) == 0x000004, "Wrong alignment on DlgDialogueParticipant_ModifyBoolValue");
 static_assert(sizeof(DlgDialogueParticipant_ModifyBoolValue) == 0x00000C, "Wrong size on DlgDialogueParticipant_ModifyBoolValue");
@@ -1418,10 +1418,10 @@ struct DlgDialogueParticipant_ModifyFloatValue final
 public:
 	class FName                                   ValueName;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDelta;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1777[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D2[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Value;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1778[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D3[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogueParticipant_ModifyFloatValue) == 0x000004, "Wrong alignment on DlgDialogueParticipant_ModifyFloatValue");
 static_assert(sizeof(DlgDialogueParticipant_ModifyFloatValue) == 0x000014, "Wrong size on DlgDialogueParticipant_ModifyFloatValue");
@@ -1437,10 +1437,10 @@ struct DlgDialogueParticipant_ModifyIntValue final
 public:
 	class FName                                   ValueName;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDelta;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1779[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D4[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Value;                                             // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_177A[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D5[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogueParticipant_ModifyIntValue) == 0x000004, "Wrong alignment on DlgDialogueParticipant_ModifyIntValue");
 static_assert(sizeof(DlgDialogueParticipant_ModifyIntValue) == 0x000014, "Wrong size on DlgDialogueParticipant_ModifyIntValue");
@@ -1457,7 +1457,7 @@ public:
 	class FName                                   ValueName;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   NameValue;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_177B[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D6[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogueParticipant_ModifyNameValue) == 0x000004, "Wrong alignment on DlgDialogueParticipant_ModifyNameValue");
 static_assert(sizeof(DlgDialogueParticipant_ModifyNameValue) == 0x000014, "Wrong size on DlgDialogueParticipant_ModifyNameValue");
@@ -1473,7 +1473,7 @@ public:
 	class UDlgContext*                            Context;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   EventName;                                         // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_177C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D7[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogueParticipant_OnDialogueEvent) == 0x000008, "Wrong alignment on DlgDialogueParticipant_OnDialogueEvent");
 static_assert(sizeof(DlgDialogueParticipant_OnDialogueEvent) == 0x000018, "Wrong size on DlgDialogueParticipant_OnDialogueEvent");
@@ -1489,7 +1489,7 @@ public:
 	const class UDlgContext*                      Context;                                           // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   ConditionName;                                     // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_177D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogueParticipant_CheckCondition) == 0x000008, "Wrong alignment on DlgDialogueParticipant_CheckCondition");
 static_assert(sizeof(DlgDialogueParticipant_CheckCondition) == 0x000018, "Wrong size on DlgDialogueParticipant_CheckCondition");
@@ -1504,7 +1504,7 @@ struct DlgDialogueParticipant_GetBoolValue final
 public:
 	class FName                                   ValueName;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_177E[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17D9[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgDialogueParticipant_GetBoolValue) == 0x000004, "Wrong alignment on DlgDialogueParticipant_GetBoolValue");
 static_assert(sizeof(DlgDialogueParticipant_GetBoolValue) == 0x00000C, "Wrong size on DlgDialogueParticipant_GetBoolValue");
@@ -1636,7 +1636,7 @@ public:
 	class UDlgDialogue*                           Dialogue;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UObject*>                        Participants;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1788[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E3[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgManager_CanStartDialogue) == 0x000008, "Wrong alignment on DlgManager_CanStartDialogue");
 static_assert(sizeof(DlgManager_CanStartDialogue) == 0x000020, "Wrong size on DlgManager_CanStartDialogue");
@@ -1651,7 +1651,7 @@ struct DlgManager_DoesObjectImplementDialogueParticipantInterface final
 public:
 	const class UObject*                          Object;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1789[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E4[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgManager_DoesObjectImplementDialogueParticipantInterface) == 0x000008, "Wrong alignment on DlgManager_DoesObjectImplementDialogueParticipantInterface");
 static_assert(sizeof(DlgManager_DoesObjectImplementDialogueParticipantInterface) == 0x000010, "Wrong size on DlgManager_DoesObjectImplementDialogueParticipantInterface");
@@ -1913,7 +1913,7 @@ struct DlgManager_IsObjectACustomCondition final
 public:
 	const class UObject*                          Object;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_178A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgManager_IsObjectACustomCondition) == 0x000008, "Wrong alignment on DlgManager_IsObjectACustomCondition");
 static_assert(sizeof(DlgManager_IsObjectACustomCondition) == 0x000010, "Wrong size on DlgManager_IsObjectACustomCondition");
@@ -1927,7 +1927,7 @@ struct DlgManager_IsObjectACustomEvent final
 public:
 	const class UObject*                          Object;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_178B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgManager_IsObjectACustomEvent) == 0x000008, "Wrong alignment on DlgManager_IsObjectACustomEvent");
 static_assert(sizeof(DlgManager_IsObjectACustomEvent) == 0x000010, "Wrong size on DlgManager_IsObjectACustomEvent");
@@ -1941,7 +1941,7 @@ struct DlgManager_IsObjectACustomTextArgument final
 public:
 	const class UObject*                          Object;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_178C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgManager_IsObjectACustomTextArgument) == 0x000008, "Wrong alignment on DlgManager_IsObjectACustomTextArgument");
 static_assert(sizeof(DlgManager_IsObjectACustomTextArgument) == 0x000010, "Wrong size on DlgManager_IsObjectACustomTextArgument");
@@ -1955,7 +1955,7 @@ struct DlgManager_IsObjectANodeData final
 public:
 	const class UObject*                          Object;                                            // 0x0000(0x0008)(ConstParm, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_178D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E8[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(DlgManager_IsObjectANodeData) == 0x000008, "Wrong alignment on DlgManager_IsObjectANodeData");
 static_assert(sizeof(DlgManager_IsObjectANodeData) == 0x000010, "Wrong size on DlgManager_IsObjectANodeData");
@@ -1983,7 +1983,7 @@ public:
 	struct FGuid                                  StartNodeGUID;                                     // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<struct FGuid>                            AlreadyVisitedNodes;                               // 0x0028(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bFireEnterEvents;                                  // 0x0078(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_178E[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E9[0x7];                                     // 0x0079(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDlgContext*                            ReturnValue;                                       // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgManager_ResumeDialogueFromNodeGUID) == 0x000008, "Wrong alignment on DlgManager_ResumeDialogueFromNodeGUID");
@@ -2003,10 +2003,10 @@ public:
 	class UDlgDialogue*                           Dialogue;                                          // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class UObject*>                        Participants;                                      // 0x0008(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         StartIndex;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_178F[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17EA[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<int32>                                   AlreadyVisitedNodes;                               // 0x0020(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bFireEnterEvents;                                  // 0x0070(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1790[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17EB[0x7];                                     // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UDlgContext*                            ReturnValue;                                       // 0x0078(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgManager_ResumeDialogueFromNodeIndex) == 0x000008, "Wrong alignment on DlgManager_ResumeDialogueFromNodeIndex");
@@ -2181,7 +2181,7 @@ struct DlgNode_GetNodeChildAt final
 {
 public:
 	int32                                         EdgeIndex;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1794[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17EF[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDlgEdge                               ReturnValue;                                       // 0x0008(0x0070)(ConstParm, Parm, OutParm, ReturnParm, ReferenceParm, ContainsInstancedReference, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(DlgNode_GetNodeChildAt) == 0x000008, "Wrong alignment on DlgNode_GetNodeChildAt");

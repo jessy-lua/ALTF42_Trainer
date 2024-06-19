@@ -26,7 +26,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FBF[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3065[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -50,7 +50,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FC0[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3066[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -74,7 +74,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FC1[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3067[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -98,7 +98,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FC2[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3068[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -122,7 +122,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FC3[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3069[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -146,7 +146,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FC4[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_306A[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -166,7 +166,7 @@ struct BossStatue_Widget_C_ExecuteUbergraph_BossStatue_Widget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2FC5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_306B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0018(0x0010)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
@@ -188,7 +188,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FC6[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_306C[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -212,7 +212,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FC7[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_306D[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -236,7 +236,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FC8[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_306E[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -260,7 +260,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FC9[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_306F[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -284,7 +284,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FCA[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3070[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -308,7 +308,7 @@ public:
 	struct FSlateColor                            ColorTint;                                         // 0x00D8(0x0014)(Edit, BlueprintVisible)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00EC(0x0014)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0100(0x0014)()
-	uint8                                         Pad_2FCB[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3071[0xC];                                     // 0x0114(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0120(0x00D0)()
 	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x01F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

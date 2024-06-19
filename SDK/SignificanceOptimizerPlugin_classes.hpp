@@ -24,7 +24,7 @@ class USignificanceOptimizationParametersDataAsset final : public UDataAsset
 {
 public:
 	struct FSignificanceRenderDecisionModeParameters RenderModeSignificanceOptimizationParameters;      // 0x0030(0x0002)(Edit, EditFixedSize, DisableEditOnInstance, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E1[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2430[0x6];                                     // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSignificanceDistanceDecisionModeParameters> DistanceModeSignificanceOptimizationParameters;    // 0x0038(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	TArray<struct FSignificanceAngleDecisionModeParameters> AngleModeSignificanceOptimizationParameters;       // 0x0048(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 	TArray<struct FSignificanceDistanceAndRenderDecisionModeParameters> DistanceAndRenderModeSignificanceOptimizationParameters; // 0x0058(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
@@ -66,10 +66,10 @@ public:
 	bool                                          bActivateSignificanceOptimizerForOwner;            // 0x00A0(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	ESignificanceDecisionMode                     SignificanceDecisionMode;                          // 0x00A1(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	EPostSignificanceType                         PostSignificanceType;                              // 0x00A2(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_24E2[0x1];                                     // 0x00A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2431[0x1];                                     // 0x00A3(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TimeToForgetRenderedActor;                         // 0x00A4(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FSignificanceRenderDecisionModeParameters RenderModeSignificanceOptimizationParameters;      // 0x00A8(0x0002)(Edit, EditFixedSize, DisableEditOnInstance, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_24E3[0x6];                                     // 0x00AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2432[0x6];                                     // 0x00AA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSignificanceDistanceDecisionModeParameters> DistanceModeSignificanceOptimizationParameters;    // 0x00B0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FSignificanceAngleDecisionModeParameters> AngleModeSignificanceOptimizationParameters;       // 0x00C0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FSignificanceDistanceAndRenderDecisionModeParameters> DistanceAndRenderModeSignificanceOptimizationParameters; // 0x00D0(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, Protected, NativeAccessSpecifierProtected)
@@ -90,11 +90,11 @@ public:
 	bool                                          bWasScreenSpaceRatioParameterArrayInitialized;     // 0x0177(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bWasScreenSpaceRatioAndRenderParameterArrayInitialized; // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bWasScreenSpaceRatioAndAngleParameterArrayInitialized; // 0x0179(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_24E4[0x6];                                     // 0x017A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2433[0x6];                                     // 0x017A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class USignificanceOptimizationParametersDataAsset* SignificanceOptimizationParametersOverridingDataAsset; // 0x0180(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, NoDestructor, Protected, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TWeakObjectPtr<class AActor>                  Owner;                                             // 0x0188(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	ESignificanceLevel                            CurrentSignificanceLevel;                          // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_24E5[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2434[0x7];                                     // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSignificanceComponentOwnerData        CurrentOwnerData;                                  // 0x0198(0x0018)(NoDestructor, NativeAccessSpecifierPrivate)
 	FMulticastInlineDelegateProperty_             ApplySignificanceOptimization;                     // 0x01B0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, BlueprintCallable, NativeAccessSpecifierPublic)
 
@@ -158,7 +158,7 @@ class USignificanceOptimizerSettings final : public UDeveloperSettings
 {
 public:
 	float                                         SignificanceUpdateInterval;                        // 0x0038(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Config, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E8[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2437[0x4];                                     // 0x003C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -179,9 +179,9 @@ static_assert(offsetof(USignificanceOptimizerSettings, SignificanceUpdateInterva
 class USignificanceOptimizerSubsystem final : public UTickableWorldSubsystem
 {
 public:
-	uint8                                         Pad_24E9[0x64];                                    // 0x0040(0x0064)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2438[0x64];                                    // 0x0040(0x0064)(Fixing Size After Last Property [ Dumper-7 ])
 	TWeakObjectPtr<class USignificanceOptimizerSettings> SignificanceOptimizerSettingsRef;                  // 0x00A4(0x0008)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_24EA[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2439[0x4];                                     // 0x00AC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<TWeakObjectPtr<class USignificanceOptimizerComponent>> RegisteredSignificanceOptimizationComponents;      // 0x00B0(0x0010)(ExportObject, ZeroConstructor, ContainsInstancedReference, UObjectWrapper, NativeAccessSpecifierPrivate)
 	TWeakObjectPtr<class APlayerController>       PlayerControllerRef;                               // 0x00C0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	TWeakObjectPtr<class APlayerCameraManager>    PlayerCameraManagerRef;                            // 0x00C8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPrivate)

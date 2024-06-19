@@ -187,6 +187,20 @@ void UDecisionDialogWidgetBP_C::OnNavigationExit(class UInteractableMenuWidgetBP
 }
 
 
+// Function DecisionDialogWidgetBP.DecisionDialogWidgetBP_C.SetGlobalSettings
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+
+void UDecisionDialogWidgetBP_C::SetGlobalSettings()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("DecisionDialogWidgetBP_C", "SetGlobalSettings");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function DecisionDialogWidgetBP.DecisionDialogWidgetBP_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -204,20 +218,6 @@ void UDecisionDialogWidgetBP_C::PreConstruct(bool IsDesignTime)
 	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function DecisionDialogWidgetBP.DecisionDialogWidgetBP_C.SetGlobalSettings
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UDecisionDialogWidgetBP_C::SetGlobalSettings()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("DecisionDialogWidgetBP_C", "SetGlobalSettings");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

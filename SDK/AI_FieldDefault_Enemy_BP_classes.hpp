@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "AIModule_structs.hpp"
+#include "MantleType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Mantle_Asset_structs.hpp"
 #include "ALS_Base_CharacterBP_classes.hpp"
-#include "Engine_structs.hpp"
-#include "MantleType_structs.hpp"
 #include "ALS_OverlayState_structs.hpp"
-#include "AIModule_structs.hpp"
 
 
 namespace SDK
@@ -26,7 +26,7 @@ namespace SDK
 class AAI_FieldDefault_Enemy_BP_C final : public AALS_Base_CharacterBP_C
 {
 public:
-	uint8                                         Pad_3A88[0x6];                                     // 0x0B42(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C4[0x6];                                     // 0x0B42(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame_AI_FieldDefault_Enemy_BP_C;         // 0x0B48(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UBoxComponent*                          Hit_Coillsion;                                     // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   Spear_SM;                                          // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -60,30 +60,30 @@ public:
 	bool                                          SeePlayer;                                         // 0x0D73(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          AtkPossible_;                                      // 0x0D74(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Random_Roam_;                                      // 0x0D75(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A89[0x2];                                     // 0x0D76(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C5[0x2];                                     // 0x0D76(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class ANPC_MoveTarget_BP_C*                   FirstLocation_MoveTarget;                          // 0x0D78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	float                                         AttackAnd_Delay;                                   // 0x0D80(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A8A[0x4];                                     // 0x0D84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C6[0x4];                                     // 0x0D84(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           PowerAttack_Montage;                               // 0x0D88(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         PowerAttack_Play_Rate;                             // 0x0D90(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A8B[0x4];                                     // 0x0D94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C7[0x4];                                     // 0x0D94(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        PowerAttack_Distance;                              // 0x0D98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PowerAttack_Persentage;                            // 0x0DA0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A8C[0x4];                                     // 0x0DA4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C8[0x4];                                     // 0x0DA4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           Simple_Attack_Montage;                             // 0x0DA8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         SimpleAttack_Play_Rate;                            // 0x0DB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A8D[0x4];                                     // 0x0DB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39C9[0x4];                                     // 0x0DB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        SimpleAttack_Distance;                             // 0x0DB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SimpleAtk_Active;                                  // 0x0DC0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PowerAtk_Active;                                   // 0x0DC1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Brigre_CamView;                                    // 0x0DC2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Tutorial_Enemy;                                    // 0x0DC3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Respawning_;                                       // 0x0DC4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A8E[0x3];                                     // 0x0DC5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39CA[0x3];                                     // 0x0DC5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATutorial_Enemy_Respawn_BP_C*           TutorialEnemy_Respawner;                           // 0x0DC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ADefaultAI_DetectPlayerZone_C*          Detect_Zone;                                       // 0x0DD0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                         DetectZone_AI_Integer;                             // 0x0DD8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3A8F[0x4];                                     // 0x0DDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39CB[0x4];                                     // 0x0DDC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABase_EnemyRespawn_BP_C*                AI_Spawner;                                        // 0x0DE0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class ABase_EnemyRespawn_BP_C*                Base_EnemySpawner;                                 // 0x0DE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 

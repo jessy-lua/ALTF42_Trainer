@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
-#include "JsonUtilities_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "CoreUObject_classes.hpp"
 #include "Engine_structs.hpp"
+#include "JsonUtilities_structs.hpp"
 
 
 namespace SDK
@@ -28,9 +28,9 @@ public:
 	class UPDA_MenuSystemConfig_C*                MenuSystemConfig;                                  // 0x0030(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bGameRequiresResolutionApply;                      // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EWindowMode                                   WindowModeToApply;                                 // 0x0039(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F31[0x2];                                     // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E10[0x2];                                     // 0x003A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FIntPoint                              ResolutionToApply;                                 // 0x003C(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F32[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3E11[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTimerHandle                           ApplyGameUserSettingsTimer;                        // 0x0048(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FJsonObjectWrapper                     CustomSettingsJson;                                // 0x0050(0x0020)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UPDA_SettingsData_C*                    WindowMode;                                        // 0x0070(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)

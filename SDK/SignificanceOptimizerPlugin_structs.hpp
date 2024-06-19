@@ -53,6 +53,69 @@ enum class EPostSignificanceType : uint8
 	EPostSignificanceType_MAX                = 3,
 };
 
+// ScriptStruct SignificanceOptimizerPlugin.SignificanceAngleDecisionModeParameters
+// 0x0008 (0x0008 - 0x0000)
+struct FSignificanceAngleDecisionModeParameters final
+{
+public:
+	ESignificanceLevel                            SignificanceLevel;                                 // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2424[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         AngleToViewport;                                   // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FSignificanceAngleDecisionModeParameters) == 0x000004, "Wrong alignment on FSignificanceAngleDecisionModeParameters");
+static_assert(sizeof(FSignificanceAngleDecisionModeParameters) == 0x000008, "Wrong size on FSignificanceAngleDecisionModeParameters");
+static_assert(offsetof(FSignificanceAngleDecisionModeParameters, SignificanceLevel) == 0x000000, "Member 'FSignificanceAngleDecisionModeParameters::SignificanceLevel' has a wrong offset!");
+static_assert(offsetof(FSignificanceAngleDecisionModeParameters, AngleToViewport) == 0x000004, "Member 'FSignificanceAngleDecisionModeParameters::AngleToViewport' has a wrong offset!");
+
+// ScriptStruct SignificanceOptimizerPlugin.SignificanceDistanceDecisionModeParameters
+// 0x0010 (0x0010 - 0x0000)
+struct FSignificanceDistanceDecisionModeParameters final
+{
+public:
+	ESignificanceLevel                            SignificanceLevel;                                 // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2425[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	double                                        DistanceToViewport;                                // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FSignificanceDistanceDecisionModeParameters) == 0x000008, "Wrong alignment on FSignificanceDistanceDecisionModeParameters");
+static_assert(sizeof(FSignificanceDistanceDecisionModeParameters) == 0x000010, "Wrong size on FSignificanceDistanceDecisionModeParameters");
+static_assert(offsetof(FSignificanceDistanceDecisionModeParameters, SignificanceLevel) == 0x000000, "Member 'FSignificanceDistanceDecisionModeParameters::SignificanceLevel' has a wrong offset!");
+static_assert(offsetof(FSignificanceDistanceDecisionModeParameters, DistanceToViewport) == 0x000008, "Member 'FSignificanceDistanceDecisionModeParameters::DistanceToViewport' has a wrong offset!");
+
+// ScriptStruct SignificanceOptimizerPlugin.SignificanceWeightedDistanceAndAngleDecisionModeParameters
+// 0x0028 (0x0028 - 0x0000)
+struct FSignificanceWeightedDistanceAndAngleDecisionModeParameters final
+{
+public:
+	float                                         BlendWeight;                                       // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2426[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSignificanceAngleDecisionModeParameters> GivenAngleSignificanceLevels;                      // 0x0008(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+	TArray<struct FSignificanceDistanceDecisionModeParameters> GivenDistanceSignificanceLevels;                   // 0x0018(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters) == 0x000008, "Wrong alignment on FSignificanceWeightedDistanceAndAngleDecisionModeParameters");
+static_assert(sizeof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters) == 0x000028, "Wrong size on FSignificanceWeightedDistanceAndAngleDecisionModeParameters");
+static_assert(offsetof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters, BlendWeight) == 0x000000, "Member 'FSignificanceWeightedDistanceAndAngleDecisionModeParameters::BlendWeight' has a wrong offset!");
+static_assert(offsetof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters, GivenAngleSignificanceLevels) == 0x000008, "Member 'FSignificanceWeightedDistanceAndAngleDecisionModeParameters::GivenAngleSignificanceLevels' has a wrong offset!");
+static_assert(offsetof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters, GivenDistanceSignificanceLevels) == 0x000018, "Member 'FSignificanceWeightedDistanceAndAngleDecisionModeParameters::GivenDistanceSignificanceLevels' has a wrong offset!");
+
+// ScriptStruct SignificanceOptimizerPlugin.SignificanceComponentOwnerData
+// 0x0018 (0x0018 - 0x0000)
+struct FSignificanceComponentOwnerData final
+{
+public:
+	bool                                          bIsRendered;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2427[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         Angle;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	double                                        SquaredDistance;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         ScreenSpaceRatio;                                  // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         Pad_2428[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FSignificanceComponentOwnerData) == 0x000008, "Wrong alignment on FSignificanceComponentOwnerData");
+static_assert(sizeof(FSignificanceComponentOwnerData) == 0x000018, "Wrong size on FSignificanceComponentOwnerData");
+static_assert(offsetof(FSignificanceComponentOwnerData, bIsRendered) == 0x000000, "Member 'FSignificanceComponentOwnerData::bIsRendered' has a wrong offset!");
+static_assert(offsetof(FSignificanceComponentOwnerData, Angle) == 0x000004, "Member 'FSignificanceComponentOwnerData::Angle' has a wrong offset!");
+static_assert(offsetof(FSignificanceComponentOwnerData, SquaredDistance) == 0x000008, "Member 'FSignificanceComponentOwnerData::SquaredDistance' has a wrong offset!");
+static_assert(offsetof(FSignificanceComponentOwnerData, ScreenSpaceRatio) == 0x000010, "Member 'FSignificanceComponentOwnerData::ScreenSpaceRatio' has a wrong offset!");
+
 // ScriptStruct SignificanceOptimizerPlugin.SignificanceRenderDecisionModeParameters
 // 0x0002 (0x0002 - 0x0000)
 struct FSignificanceRenderDecisionModeParameters final
@@ -66,53 +129,6 @@ static_assert(sizeof(FSignificanceRenderDecisionModeParameters) == 0x000002, "Wr
 static_assert(offsetof(FSignificanceRenderDecisionModeParameters, SignificanceLevelWhenRendered) == 0x000000, "Member 'FSignificanceRenderDecisionModeParameters::SignificanceLevelWhenRendered' has a wrong offset!");
 static_assert(offsetof(FSignificanceRenderDecisionModeParameters, SignificanceLevelWhenNotRendered) == 0x000001, "Member 'FSignificanceRenderDecisionModeParameters::SignificanceLevelWhenNotRendered' has a wrong offset!");
 
-// ScriptStruct SignificanceOptimizerPlugin.SignificanceComponentOwnerData
-// 0x0018 (0x0018 - 0x0000)
-struct FSignificanceComponentOwnerData final
-{
-public:
-	bool                                          bIsRendered;                                       // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24D5[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         Angle;                                             // 0x0004(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	double                                        SquaredDistance;                                   // 0x0008(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         ScreenSpaceRatio;                                  // 0x0010(0x0004)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24D6[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FSignificanceComponentOwnerData) == 0x000008, "Wrong alignment on FSignificanceComponentOwnerData");
-static_assert(sizeof(FSignificanceComponentOwnerData) == 0x000018, "Wrong size on FSignificanceComponentOwnerData");
-static_assert(offsetof(FSignificanceComponentOwnerData, bIsRendered) == 0x000000, "Member 'FSignificanceComponentOwnerData::bIsRendered' has a wrong offset!");
-static_assert(offsetof(FSignificanceComponentOwnerData, Angle) == 0x000004, "Member 'FSignificanceComponentOwnerData::Angle' has a wrong offset!");
-static_assert(offsetof(FSignificanceComponentOwnerData, SquaredDistance) == 0x000008, "Member 'FSignificanceComponentOwnerData::SquaredDistance' has a wrong offset!");
-static_assert(offsetof(FSignificanceComponentOwnerData, ScreenSpaceRatio) == 0x000010, "Member 'FSignificanceComponentOwnerData::ScreenSpaceRatio' has a wrong offset!");
-
-// ScriptStruct SignificanceOptimizerPlugin.SignificanceDistanceDecisionModeParameters
-// 0x0010 (0x0010 - 0x0000)
-struct FSignificanceDistanceDecisionModeParameters final
-{
-public:
-	ESignificanceLevel                            SignificanceLevel;                                 // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24D7[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	double                                        DistanceToViewport;                                // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FSignificanceDistanceDecisionModeParameters) == 0x000008, "Wrong alignment on FSignificanceDistanceDecisionModeParameters");
-static_assert(sizeof(FSignificanceDistanceDecisionModeParameters) == 0x000010, "Wrong size on FSignificanceDistanceDecisionModeParameters");
-static_assert(offsetof(FSignificanceDistanceDecisionModeParameters, SignificanceLevel) == 0x000000, "Member 'FSignificanceDistanceDecisionModeParameters::SignificanceLevel' has a wrong offset!");
-static_assert(offsetof(FSignificanceDistanceDecisionModeParameters, DistanceToViewport) == 0x000008, "Member 'FSignificanceDistanceDecisionModeParameters::DistanceToViewport' has a wrong offset!");
-
-// ScriptStruct SignificanceOptimizerPlugin.SignificanceAngleDecisionModeParameters
-// 0x0008 (0x0008 - 0x0000)
-struct FSignificanceAngleDecisionModeParameters final
-{
-public:
-	ESignificanceLevel                            SignificanceLevel;                                 // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24D8[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         AngleToViewport;                                   // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FSignificanceAngleDecisionModeParameters) == 0x000004, "Wrong alignment on FSignificanceAngleDecisionModeParameters");
-static_assert(sizeof(FSignificanceAngleDecisionModeParameters) == 0x000008, "Wrong size on FSignificanceAngleDecisionModeParameters");
-static_assert(offsetof(FSignificanceAngleDecisionModeParameters, SignificanceLevel) == 0x000000, "Member 'FSignificanceAngleDecisionModeParameters::SignificanceLevel' has a wrong offset!");
-static_assert(offsetof(FSignificanceAngleDecisionModeParameters, AngleToViewport) == 0x000004, "Member 'FSignificanceAngleDecisionModeParameters::AngleToViewport' has a wrong offset!");
-
 // ScriptStruct SignificanceOptimizerPlugin.SignificanceDistanceAndRenderDecisionModeParameters
 // 0x0010 (0x0010 - 0x0000)
 struct FSignificanceDistanceAndRenderDecisionModeParameters final
@@ -120,7 +136,7 @@ struct FSignificanceDistanceAndRenderDecisionModeParameters final
 public:
 	ESignificanceLevel                            SignificanceLevelWhenRendered;                     // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESignificanceLevel                            SignificanceLevelWhenNotRendered;                  // 0x0001(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24D9[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2429[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        DistanceToViewport;                                // 0x0008(0x0008)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FSignificanceDistanceAndRenderDecisionModeParameters) == 0x000008, "Wrong alignment on FSignificanceDistanceAndRenderDecisionModeParameters");
@@ -135,7 +151,7 @@ struct FSignificanceDistanceAndAngleDecisionModeParameters final
 {
 public:
 	float                                         AngleToViewport;                                   // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24DA[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_242A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSignificanceDistanceDecisionModeParameters> GivenAngleDistanceRangesAndSignificanceLevels;     // 0x0008(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FSignificanceDistanceAndAngleDecisionModeParameters) == 0x000008, "Wrong alignment on FSignificanceDistanceAndAngleDecisionModeParameters");
@@ -151,7 +167,7 @@ public:
 	float                                         BlendWeight;                                       // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESignificanceLevel                            SignificanceLevelWhenRendered;                     // 0x0004(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESignificanceLevel                            SignificanceLevelWhenNotRendered;                  // 0x0005(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24DB[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_242B[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSignificanceDistanceDecisionModeParameters> GivenDistanceSignificanceLevels;                   // 0x0008(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FSignificanceWeightedDistanceAndRenderDecisionModeParameters) == 0x000008, "Wrong alignment on FSignificanceWeightedDistanceAndRenderDecisionModeParameters");
@@ -161,29 +177,13 @@ static_assert(offsetof(FSignificanceWeightedDistanceAndRenderDecisionModeParamet
 static_assert(offsetof(FSignificanceWeightedDistanceAndRenderDecisionModeParameters, SignificanceLevelWhenNotRendered) == 0x000005, "Member 'FSignificanceWeightedDistanceAndRenderDecisionModeParameters::SignificanceLevelWhenNotRendered' has a wrong offset!");
 static_assert(offsetof(FSignificanceWeightedDistanceAndRenderDecisionModeParameters, GivenDistanceSignificanceLevels) == 0x000008, "Member 'FSignificanceWeightedDistanceAndRenderDecisionModeParameters::GivenDistanceSignificanceLevels' has a wrong offset!");
 
-// ScriptStruct SignificanceOptimizerPlugin.SignificanceWeightedDistanceAndAngleDecisionModeParameters
-// 0x0028 (0x0028 - 0x0000)
-struct FSignificanceWeightedDistanceAndAngleDecisionModeParameters final
-{
-public:
-	float                                         BlendWeight;                                       // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24DC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSignificanceAngleDecisionModeParameters> GivenAngleSignificanceLevels;                      // 0x0008(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-	TArray<struct FSignificanceDistanceDecisionModeParameters> GivenDistanceSignificanceLevels;                   // 0x0018(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters) == 0x000008, "Wrong alignment on FSignificanceWeightedDistanceAndAngleDecisionModeParameters");
-static_assert(sizeof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters) == 0x000028, "Wrong size on FSignificanceWeightedDistanceAndAngleDecisionModeParameters");
-static_assert(offsetof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters, BlendWeight) == 0x000000, "Member 'FSignificanceWeightedDistanceAndAngleDecisionModeParameters::BlendWeight' has a wrong offset!");
-static_assert(offsetof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters, GivenAngleSignificanceLevels) == 0x000008, "Member 'FSignificanceWeightedDistanceAndAngleDecisionModeParameters::GivenAngleSignificanceLevels' has a wrong offset!");
-static_assert(offsetof(FSignificanceWeightedDistanceAndAngleDecisionModeParameters, GivenDistanceSignificanceLevels) == 0x000018, "Member 'FSignificanceWeightedDistanceAndAngleDecisionModeParameters::GivenDistanceSignificanceLevels' has a wrong offset!");
-
 // ScriptStruct SignificanceOptimizerPlugin.SignificanceScreenSpaceRatioDecisionModeParameters
 // 0x0008 (0x0008 - 0x0000)
 struct FSignificanceScreenSpaceRatioDecisionModeParameters final
 {
 public:
 	ESignificanceLevel                            SignificanceLevel;                                 // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24DD[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_242C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ScreenSpaceRatio;                                  // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FSignificanceScreenSpaceRatioDecisionModeParameters) == 0x000004, "Wrong alignment on FSignificanceScreenSpaceRatioDecisionModeParameters");
@@ -198,7 +198,7 @@ struct FSignificanceScreenSpaceRatioAndRenderDecisionModeParameters final
 public:
 	ESignificanceLevel                            SignificanceLevelWhenRendered;                     // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESignificanceLevel                            SignificanceLevelWhenNotRendered;                  // 0x0001(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24DE[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_242D[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ScreenSpaceRatio;                                  // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FSignificanceScreenSpaceRatioAndRenderDecisionModeParameters) == 0x000004, "Wrong alignment on FSignificanceScreenSpaceRatioAndRenderDecisionModeParameters");
@@ -213,7 +213,7 @@ struct FSignificanceScreenSpaceRatioAndAngleDecisionModeParameters final
 {
 public:
 	float                                         AngleToViewport;                                   // 0x0000(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24DF[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_242E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSignificanceScreenSpaceRatioDecisionModeParameters> GivenAngleScreenSpaceRatioRangesAndSignificanceLevels; // 0x0008(0x0010)(Edit, ZeroConstructor, DisableEditOnInstance, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FSignificanceScreenSpaceRatioAndAngleDecisionModeParameters) == 0x000008, "Wrong alignment on FSignificanceScreenSpaceRatioAndAngleDecisionModeParameters");
@@ -227,7 +227,7 @@ struct FSignificanceOptimizedActorParameters final
 {
 public:
 	ESignificanceLevel                            SignificanceLevel;                                 // 0x0000(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24E0[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_242F[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         TickInterval;                                      // 0x0004(0x0004)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FSignificanceOptimizedActorParameters) == 0x000004, "Wrong alignment on FSignificanceOptimizedActorParameters");

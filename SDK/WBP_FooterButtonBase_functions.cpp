@@ -127,6 +127,42 @@ void UWBP_FooterButtonBase_C::UpdateButtonIcon(EInputDeviceType InputDeviceType)
 }
 
 
+// Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.OnSetHighlightEffect
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EWidgetStyleState                       Param_HighlightState                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bPlaySound                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_FooterButtonBase_C::OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterButtonBase_C", "OnSetHighlightEffect");
+
+	Params::WBP_FooterButtonBase_C_OnSetHighlightEffect Parms{};
+
+	Parms.Param_HighlightState = Param_HighlightState;
+	Parms.bPlaySound = bPlaySound;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.RefreshWidget
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_FooterButtonBase_C::RefreshWidget()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_FooterButtonBase_C", "RefreshWidget");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.OnPressedBack
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -167,28 +203,6 @@ void UWBP_FooterButtonBase_C::OnPressedSelect(const struct FKeyEvent& KeyEvent)
 }
 
 
-// Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.OnSetHighlightEffect
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EWidgetStyleState                       Param_HighlightState                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bPlaySound                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_FooterButtonBase_C::OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_FooterButtonBase_C", "OnSetHighlightEffect");
-
-	Params::WBP_FooterButtonBase_C_OnSetHighlightEffect Parms{};
-
-	Parms.Param_HighlightState = Param_HighlightState;
-	Parms.bPlaySound = bPlaySound;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.PreConstruct
 // (BlueprintCosmetic, Event, Public, BlueprintEvent)
 // Parameters:
@@ -206,20 +220,6 @@ void UWBP_FooterButtonBase_C::PreConstruct(bool IsDesignTime)
 	Parms.IsDesignTime = IsDesignTime;
 
 	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.RefreshWidget
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_FooterButtonBase_C::RefreshWidget()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_FooterButtonBase_C", "RefreshWidget");
-
-	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

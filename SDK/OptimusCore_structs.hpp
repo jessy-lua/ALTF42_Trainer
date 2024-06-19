@@ -187,10 +187,10 @@ struct FOptimusDataDomain final
 {
 public:
 	EOptimusDataDomainType                        Type;                                              // 0x0000(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A01[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A52[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FName>                           DimensionNames;                                    // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         Multiplier;                                        // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A02[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A53[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Expression;                                        // 0x0020(0x0010)(Edit, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FName>                           LevelNames;                                        // 0x0030(0x0010)(ZeroConstructor, Deprecated, NativeAccessSpecifierPrivate)
 };
@@ -246,7 +246,7 @@ static_assert(offsetof(FOptimusShaderText, ShaderText) == 0x000010, "Member 'FOp
 struct alignas(0x08) FOptimusAction
 {
 public:
-	uint8                                         Pad_1A03[0x18];                                    // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A54[0x18];                                    // 0x0000(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusAction) == 0x000008, "Wrong alignment on FOptimusAction");
 static_assert(sizeof(FOptimusAction) == 0x000018, "Wrong size on FOptimusAction");
@@ -256,7 +256,7 @@ static_assert(sizeof(FOptimusAction) == 0x000018, "Wrong size on FOptimusAction"
 struct FOptimusCompoundAction final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A04[0x10];                                    // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A55[0x10];                                    // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusCompoundAction) == 0x000008, "Wrong alignment on FOptimusCompoundAction");
 static_assert(sizeof(FOptimusCompoundAction) == 0x000028, "Wrong size on FOptimusCompoundAction");
@@ -266,7 +266,7 @@ static_assert(sizeof(FOptimusCompoundAction) == 0x000028, "Wrong size on FOptimu
 struct FOptimusComponentBindingAction_AddBinding final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A05[0x18];                                    // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A56[0x18];                                    // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusComponentBindingAction_AddBinding) == 0x000008, "Wrong alignment on FOptimusComponentBindingAction_AddBinding");
 static_assert(sizeof(FOptimusComponentBindingAction_AddBinding) == 0x000030, "Wrong size on FOptimusComponentBindingAction_AddBinding");
@@ -276,7 +276,7 @@ static_assert(sizeof(FOptimusComponentBindingAction_AddBinding) == 0x000030, "Wr
 struct FOptimusComponentBindingAction_RemoveBinding final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A06[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A57[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusComponentBindingAction_RemoveBinding) == 0x000008, "Wrong alignment on FOptimusComponentBindingAction_RemoveBinding");
 static_assert(sizeof(FOptimusComponentBindingAction_RemoveBinding) == 0x000048, "Wrong size on FOptimusComponentBindingAction_RemoveBinding");
@@ -286,7 +286,7 @@ static_assert(sizeof(FOptimusComponentBindingAction_RemoveBinding) == 0x000048, 
 struct FOptimusComponentBindingAction_RenameBinding final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A07[0x10];                                    // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A58[0x10];                                    // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusComponentBindingAction_RenameBinding) == 0x000008, "Wrong alignment on FOptimusComponentBindingAction_RenameBinding");
 static_assert(sizeof(FOptimusComponentBindingAction_RenameBinding) == 0x000028, "Wrong size on FOptimusComponentBindingAction_RenameBinding");
@@ -296,7 +296,7 @@ static_assert(sizeof(FOptimusComponentBindingAction_RenameBinding) == 0x000028, 
 struct FOptimusComponentBindingAction_SetComponentSource final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A08[0x28];                                    // 0x0018(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A59[0x28];                                    // 0x0018(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusComponentBindingAction_SetComponentSource) == 0x000008, "Wrong alignment on FOptimusComponentBindingAction_SetComponentSource");
 static_assert(sizeof(FOptimusComponentBindingAction_SetComponentSource) == 0x000040, "Wrong size on FOptimusComponentBindingAction_SetComponentSource");
@@ -306,7 +306,7 @@ static_assert(sizeof(FOptimusComponentBindingAction_SetComponentSource) == 0x000
 struct FOptimusNodeAction_RenameNode final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A09[0x40];                                    // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A5A[0x40];                                    // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeAction_RenameNode) == 0x000008, "Wrong alignment on FOptimusNodeAction_RenameNode");
 static_assert(sizeof(FOptimusNodeAction_RenameNode) == 0x000058, "Wrong size on FOptimusNodeAction_RenameNode");
@@ -316,7 +316,7 @@ static_assert(sizeof(FOptimusNodeAction_RenameNode) == 0x000058, "Wrong size on 
 struct FOptimusNodeAction_MoveNode final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A0A[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A5B[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeAction_MoveNode) == 0x000008, "Wrong alignment on FOptimusNodeAction_MoveNode");
 static_assert(sizeof(FOptimusNodeAction_MoveNode) == 0x000048, "Wrong size on FOptimusNodeAction_MoveNode");
@@ -326,7 +326,7 @@ static_assert(sizeof(FOptimusNodeAction_MoveNode) == 0x000048, "Wrong size on FO
 struct FOptimusNodeAction_SetPinValue final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A0B[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A5C[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeAction_SetPinValue) == 0x000008, "Wrong alignment on FOptimusNodeAction_SetPinValue");
 static_assert(sizeof(FOptimusNodeAction_SetPinValue) == 0x000048, "Wrong size on FOptimusNodeAction_SetPinValue");
@@ -336,7 +336,7 @@ static_assert(sizeof(FOptimusNodeAction_SetPinValue) == 0x000048, "Wrong size on
 struct FOptimusNodeAction_SetPinName final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A0C[0x20];                                    // 0x0018(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A5D[0x20];                                    // 0x0018(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeAction_SetPinName) == 0x000008, "Wrong alignment on FOptimusNodeAction_SetPinName");
 static_assert(sizeof(FOptimusNodeAction_SetPinName) == 0x000038, "Wrong size on FOptimusNodeAction_SetPinName");
@@ -346,7 +346,7 @@ static_assert(sizeof(FOptimusNodeAction_SetPinName) == 0x000038, "Wrong size on 
 struct FOptimusNodeAction_SetPinType final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A0D[0x20];                                    // 0x0018(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A5E[0x20];                                    // 0x0018(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeAction_SetPinType) == 0x000008, "Wrong alignment on FOptimusNodeAction_SetPinType");
 static_assert(sizeof(FOptimusNodeAction_SetPinType) == 0x000038, "Wrong size on FOptimusNodeAction_SetPinType");
@@ -356,7 +356,7 @@ static_assert(sizeof(FOptimusNodeAction_SetPinType) == 0x000038, "Wrong size on 
 struct FOptimusNodeAction_SetPinDataDomain final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A0E[0x90];                                    // 0x0018(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A5F[0x90];                                    // 0x0018(0x0090)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeAction_SetPinDataDomain) == 0x000008, "Wrong alignment on FOptimusNodeAction_SetPinDataDomain");
 static_assert(sizeof(FOptimusNodeAction_SetPinDataDomain) == 0x0000A8, "Wrong size on FOptimusNodeAction_SetPinDataDomain");
@@ -366,7 +366,7 @@ static_assert(sizeof(FOptimusNodeAction_SetPinDataDomain) == 0x0000A8, "Wrong si
 struct FOptimusNodeAction_AddRemovePin : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A0F[0xA0];                                    // 0x0018(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A60[0xA0];                                    // 0x0018(0x00A0)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeAction_AddRemovePin) == 0x000008, "Wrong alignment on FOptimusNodeAction_AddRemovePin");
 static_assert(sizeof(FOptimusNodeAction_AddRemovePin) == 0x0000B8, "Wrong size on FOptimusNodeAction_AddRemovePin");
@@ -400,7 +400,7 @@ static_assert(sizeof(FOptimusNodeAction_RemovePin) == 0x0000B8, "Wrong size on F
 struct FOptimusNodeAction_MovePin final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A10[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A61[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeAction_MovePin) == 0x000008, "Wrong alignment on FOptimusNodeAction_MovePin");
 static_assert(sizeof(FOptimusNodeAction_MovePin) == 0x000048, "Wrong size on FOptimusNodeAction_MovePin");
@@ -410,7 +410,7 @@ static_assert(sizeof(FOptimusNodeAction_MovePin) == 0x000048, "Wrong size on FOp
 struct alignas(0x10) FOptimusNodeGraphAction_AddGraph final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A11[0x78];                                    // 0x0018(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A62[0x78];                                    // 0x0018(0x0078)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_AddGraph) == 0x000010, "Wrong alignment on FOptimusNodeGraphAction_AddGraph");
 static_assert(sizeof(FOptimusNodeGraphAction_AddGraph) == 0x000090, "Wrong size on FOptimusNodeGraphAction_AddGraph");
@@ -420,7 +420,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_AddGraph) == 0x000090, "Wrong size 
 struct FOptimusNodeGraphAction_RemoveGraph final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A12[0x40];                                    // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A63[0x40];                                    // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_RemoveGraph) == 0x000008, "Wrong alignment on FOptimusNodeGraphAction_RemoveGraph");
 static_assert(sizeof(FOptimusNodeGraphAction_RemoveGraph) == 0x000058, "Wrong size on FOptimusNodeGraphAction_RemoveGraph");
@@ -430,7 +430,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_RemoveGraph) == 0x000058, "Wrong si
 struct FOptimusNodeGraphAction_RenameGraph final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A13[0x20];                                    // 0x0018(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A64[0x20];                                    // 0x0018(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_RenameGraph) == 0x000008, "Wrong alignment on FOptimusNodeGraphAction_RenameGraph");
 static_assert(sizeof(FOptimusNodeGraphAction_RenameGraph) == 0x000038, "Wrong size on FOptimusNodeGraphAction_RenameGraph");
@@ -440,7 +440,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_RenameGraph) == 0x000038, "Wrong si
 struct alignas(0x10) FOptimusNodeGraphAction_AddNode final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A14[0x88];                                    // 0x0018(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A65[0x88];                                    // 0x0018(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_AddNode) == 0x000010, "Wrong alignment on FOptimusNodeGraphAction_AddNode");
 static_assert(sizeof(FOptimusNodeGraphAction_AddNode) == 0x0000A0, "Wrong size on FOptimusNodeGraphAction_AddNode");
@@ -450,7 +450,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_AddNode) == 0x0000A0, "Wrong size o
 struct alignas(0x10) FOptimusNodeGraphAction_DuplicateNode final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A15[0x88];                                    // 0x0018(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A66[0x88];                                    // 0x0018(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_DuplicateNode) == 0x000010, "Wrong alignment on FOptimusNodeGraphAction_DuplicateNode");
 static_assert(sizeof(FOptimusNodeGraphAction_DuplicateNode) == 0x0000A0, "Wrong size on FOptimusNodeGraphAction_DuplicateNode");
@@ -460,7 +460,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_DuplicateNode) == 0x0000A0, "Wrong 
 struct FOptimusNodeGraphAction_RemoveNode final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A16[0x48];                                    // 0x0018(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A67[0x48];                                    // 0x0018(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_RemoveNode) == 0x000008, "Wrong alignment on FOptimusNodeGraphAction_RemoveNode");
 static_assert(sizeof(FOptimusNodeGraphAction_RemoveNode) == 0x000060, "Wrong size on FOptimusNodeGraphAction_RemoveNode");
@@ -470,7 +470,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_RemoveNode) == 0x000060, "Wrong siz
 struct FOptimusNodeGraphAction_AddRemoveLink : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A17[0x28];                                    // 0x0018(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A68[0x28];                                    // 0x0018(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_AddRemoveLink) == 0x000008, "Wrong alignment on FOptimusNodeGraphAction_AddRemoveLink");
 static_assert(sizeof(FOptimusNodeGraphAction_AddRemoveLink) == 0x000040, "Wrong size on FOptimusNodeGraphAction_AddRemoveLink");
@@ -496,7 +496,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_RemoveLink) == 0x000040, "Wrong siz
 struct FOptimusNodeGraphAction_ConnectAdderPin final : public FOptimusNodeGraphAction_AddRemoveLink
 {
 public:
-	uint8                                         Pad_1A18[0x68];                                    // 0x0040(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A69[0x68];                                    // 0x0040(0x0068)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_ConnectAdderPin) == 0x000008, "Wrong alignment on FOptimusNodeGraphAction_ConnectAdderPin");
 static_assert(sizeof(FOptimusNodeGraphAction_ConnectAdderPin) == 0x0000A8, "Wrong size on FOptimusNodeGraphAction_ConnectAdderPin");
@@ -506,7 +506,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_ConnectAdderPin) == 0x0000A8, "Wron
 struct FOptimusNodeGraphAction_PackageKernelFunction final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A19[0x98];                                    // 0x0018(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6A[0x98];                                    // 0x0018(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_PackageKernelFunction) == 0x000008, "Wrong alignment on FOptimusNodeGraphAction_PackageKernelFunction");
 static_assert(sizeof(FOptimusNodeGraphAction_PackageKernelFunction) == 0x0000B0, "Wrong size on FOptimusNodeGraphAction_PackageKernelFunction");
@@ -516,7 +516,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_PackageKernelFunction) == 0x0000B0,
 struct FOptimusNodeGraphAction_UnpackageKernelFunction final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A1A[0x48];                                    // 0x0018(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6B[0x48];                                    // 0x0018(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusNodeGraphAction_UnpackageKernelFunction) == 0x000008, "Wrong alignment on FOptimusNodeGraphAction_UnpackageKernelFunction");
 static_assert(sizeof(FOptimusNodeGraphAction_UnpackageKernelFunction) == 0x000060, "Wrong size on FOptimusNodeGraphAction_UnpackageKernelFunction");
@@ -526,7 +526,7 @@ static_assert(sizeof(FOptimusNodeGraphAction_UnpackageKernelFunction) == 0x00006
 struct FOptimusResourceAction_AddResource final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A1B[0x58];                                    // 0x0018(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6C[0x58];                                    // 0x0018(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusResourceAction_AddResource) == 0x000008, "Wrong alignment on FOptimusResourceAction_AddResource");
 static_assert(sizeof(FOptimusResourceAction_AddResource) == 0x000070, "Wrong size on FOptimusResourceAction_AddResource");
@@ -536,7 +536,7 @@ static_assert(sizeof(FOptimusResourceAction_AddResource) == 0x000070, "Wrong siz
 struct FOptimusResourceAction_RemoveResource final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A1C[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6D[0x30];                                    // 0x0018(0x0030)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusResourceAction_RemoveResource) == 0x000008, "Wrong alignment on FOptimusResourceAction_RemoveResource");
 static_assert(sizeof(FOptimusResourceAction_RemoveResource) == 0x000048, "Wrong size on FOptimusResourceAction_RemoveResource");
@@ -546,7 +546,7 @@ static_assert(sizeof(FOptimusResourceAction_RemoveResource) == 0x000048, "Wrong 
 struct FOptimusResourceAction_RenameResource final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A1D[0x10];                                    // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6E[0x10];                                    // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusResourceAction_RenameResource) == 0x000008, "Wrong alignment on FOptimusResourceAction_RenameResource");
 static_assert(sizeof(FOptimusResourceAction_RenameResource) == 0x000028, "Wrong size on FOptimusResourceAction_RenameResource");
@@ -556,7 +556,7 @@ static_assert(sizeof(FOptimusResourceAction_RenameResource) == 0x000028, "Wrong 
 struct FOptimusResourceAction_SetDataType final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A1E[0x28];                                    // 0x0018(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A6F[0x28];                                    // 0x0018(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusResourceAction_SetDataType) == 0x000008, "Wrong alignment on FOptimusResourceAction_SetDataType");
 static_assert(sizeof(FOptimusResourceAction_SetDataType) == 0x000040, "Wrong size on FOptimusResourceAction_SetDataType");
@@ -566,7 +566,7 @@ static_assert(sizeof(FOptimusResourceAction_SetDataType) == 0x000040, "Wrong siz
 struct FOptimusResourceAction_SetDataDomain final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A1F[0x88];                                    // 0x0018(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A70[0x88];                                    // 0x0018(0x0088)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusResourceAction_SetDataDomain) == 0x000008, "Wrong alignment on FOptimusResourceAction_SetDataDomain");
 static_assert(sizeof(FOptimusResourceAction_SetDataDomain) == 0x0000A0, "Wrong size on FOptimusResourceAction_SetDataDomain");
@@ -576,7 +576,7 @@ static_assert(sizeof(FOptimusResourceAction_SetDataDomain) == 0x0000A0, "Wrong s
 struct FOptimusVariableAction_AddVariable final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A20[0x18];                                    // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A71[0x18];                                    // 0x0018(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusVariableAction_AddVariable) == 0x000008, "Wrong alignment on FOptimusVariableAction_AddVariable");
 static_assert(sizeof(FOptimusVariableAction_AddVariable) == 0x000030, "Wrong size on FOptimusVariableAction_AddVariable");
@@ -586,7 +586,7 @@ static_assert(sizeof(FOptimusVariableAction_AddVariable) == 0x000030, "Wrong siz
 struct FOptimusVariableAction_RemoveVariable final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A21[0x40];                                    // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A72[0x40];                                    // 0x0018(0x0040)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusVariableAction_RemoveVariable) == 0x000008, "Wrong alignment on FOptimusVariableAction_RemoveVariable");
 static_assert(sizeof(FOptimusVariableAction_RemoveVariable) == 0x000058, "Wrong size on FOptimusVariableAction_RemoveVariable");
@@ -596,7 +596,7 @@ static_assert(sizeof(FOptimusVariableAction_RemoveVariable) == 0x000058, "Wrong 
 struct FOptimusVariableAction_RenameVariable final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A22[0x10];                                    // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A73[0x10];                                    // 0x0018(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusVariableAction_RenameVariable) == 0x000008, "Wrong alignment on FOptimusVariableAction_RenameVariable");
 static_assert(sizeof(FOptimusVariableAction_RenameVariable) == 0x000028, "Wrong size on FOptimusVariableAction_RenameVariable");
@@ -606,7 +606,7 @@ static_assert(sizeof(FOptimusVariableAction_RenameVariable) == 0x000028, "Wrong 
 struct FOptimusVariableAction_SetDataType final : public FOptimusAction
 {
 public:
-	uint8                                         Pad_1A23[0x28];                                    // 0x0018(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A74[0x28];                                    // 0x0018(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusVariableAction_SetDataType) == 0x000008, "Wrong alignment on FOptimusVariableAction_SetDataType");
 static_assert(sizeof(FOptimusVariableAction_SetDataType) == 0x000040, "Wrong size on FOptimusVariableAction_SetDataType");
@@ -649,7 +649,7 @@ struct FOptimusDebugDrawParameters final
 {
 public:
 	bool                                          bForceEnable;                                      // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A24[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A75[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MaxLineCount;                                      // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxTriangleCount;                                  // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxCharacterCount;                                 // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -672,7 +672,7 @@ public:
 	struct FShaderValueTypeHandle                 ValueType;                                         // 0x0010(0x0008)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 Value;                                             // 0x0018(0x0010)(ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A25[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A76[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusGraphVariableDescription) == 0x000008, "Wrong alignment on FOptimusGraphVariableDescription");
 static_assert(sizeof(FOptimusGraphVariableDescription) == 0x000030, "Wrong size on FOptimusGraphVariableDescription");
@@ -736,11 +736,11 @@ public:
 	class FName                                   TypeCategory;                                      // 0x002C(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TWeakObjectPtr<class UObject>                 TypeObject;                                        // 0x0034(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHasCustomPinColor;                                // 0x003C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A26[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A77[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CustomPinColor;                                    // 0x0040(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EOptimusDataTypeUsageFlags                    UsageFlags;                                        // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EOptimusDataTypeFlags                         TypeFlags;                                         // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A27[0x6];                                     // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A78[0x6];                                     // 0x0052(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FOptimusDataType) == 0x000008, "Wrong alignment on FOptimusDataType");
 static_assert(sizeof(FOptimusDataType) == 0x000058, "Wrong size on FOptimusDataType");
@@ -762,7 +762,7 @@ struct FOptimusComputeGraphInfo final
 public:
 	EOptimusNodeGraphType                         GraphType;                                         // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   GraphName;                                         // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A28[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A79[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UOptimusComputeGraph*                   ComputeGraph;                                      // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FOptimusComputeGraphInfo) == 0x000008, "Wrong alignment on FOptimusComputeGraphInfo");
@@ -778,7 +778,7 @@ struct FOptimusDeformerInstanceExecInfo final
 public:
 	class FName                                   GraphName;                                         // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EOptimusNodeGraphType                         GraphType;                                         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A29[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A7A[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UComputeGraph*                          ComputeGraph;                                      // 0x0010(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FComputeGraphInstance                  ComputeGraphInstance;                              // 0x0018(0x0018)(NativeAccessSpecifierPublic)
 };

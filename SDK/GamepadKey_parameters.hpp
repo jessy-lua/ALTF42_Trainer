@@ -70,7 +70,7 @@ public:
 	struct FSlateFontInfo                         CallFunc_GetGlobalFonts_LargeTitleFont;            // 0x0228(0x0058)(HasGetValueTypeHash)
 	struct FSlateFontInfo                         CallFunc_GetGlobalFonts_ValueFont;                 // 0x0280(0x0058)(HasGetValueTypeHash)
 	bool                                          CallFunc_GetGlobalFonts_OnlyUppercase;             // 0x02D8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3348[0x3];                                     // 0x02D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2088[0x3];                                     // 0x02D9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_GetGlobalColors_MainColor_2;              // 0x02DC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetGlobalColors_HighlightColor_2;         // 0x02EC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetGlobalColors_HighlightExtraColor_2;    // 0x02FC(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

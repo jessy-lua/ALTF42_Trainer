@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "Engine_classes.hpp"
-#include "FInputActionDataElement_structs.hpp"
 #include "InputCore_structs.hpp"
+#include "FInputActionDataElement_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK

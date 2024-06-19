@@ -85,7 +85,7 @@ public:
 	class UDlgDialogue*                           Dialogue;                                          // 0x0028(0x0008)(Net, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<class UObject*>                        SerializedParticipants;                            // 0x0030(0x0010)(Net, ZeroConstructor, RepNotify, Protected, NativeAccessSpecifierProtected)
 	TMap<class FName, class UObject*>             Participants;                                      // 0x0040(0x0050)(Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_175A[0x120];                                   // 0x0090(0x0120)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17B5[0x120];                                   // 0x0090(0x0120)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool ChooseChild(int32 OptionIndex);
@@ -170,11 +170,11 @@ static_assert(offsetof(UDlgContext, Participants) == 0x000040, "Member 'UDlgCont
 class UDlgDialogue final : public UObject
 {
 public:
-	uint8                                         Pad_176F[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17CA[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Version;                                           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class FName                                   Name_DlgDialogue;                                  // 0x0034(0x0008)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FGuid                                  Guid;                                              // 0x003C(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1770[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17CB[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDlgParticipantClass>           ParticipantsClasses;                               // 0x0050(0x0010)(Edit, EditFixedSize, ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TMap<class FName, struct FDlgParticipantData> ParticipantsData;                                  // 0x0060(0x0050)(Edit, EditConst, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
 	TSet<class FName>                             AllSpeakerStates;                                  // 0x00B0(0x0050)(Edit, EditConst, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
@@ -182,7 +182,7 @@ public:
 	TArray<class UDlgNode*>                       StartNodes;                                        // 0x0108(0x0010)(Edit, ExportObject, ZeroConstructor, EditConst, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	TArray<class UDlgNode*>                       Nodes;                                             // 0x0118(0x0010)(ExportObject, EditFixedSize, ZeroConstructor, ContainsInstancedReference, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
 	TMap<struct FGuid, int32>                     NodesGUIDToIndexMap;                               // 0x0128(0x0050)(Edit, EditConst, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1771[0x8];                                     // 0x0178(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17CC[0x8];                                     // 0x0178(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UAssetUserData*>                 AssetUserData;                                     // 0x0180(0x0010)(Edit, ExportObject, ZeroConstructor, ContainsInstancedReference, AdvancedDisplay, UObjectWrapper, NativeAccessSpecifierPublic)
 
 public:
@@ -339,9 +339,9 @@ static_assert(sizeof(UDlgEventCustomHideCategories) == 0x000028, "Wrong size on 
 class UDlgTestObjectPrimitivesBase : public UObject
 {
 public:
-	uint8                                         Pad_177F[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17DA[0x8];                                     // 0x0028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Integer;                                           // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1780[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17DB[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 String;                                            // 0x0038(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -364,9 +364,9 @@ static_assert(offsetof(UDlgTestObjectPrimitivesBase, String) == 0x000038, "Membe
 class UDlgTestObjectPrimitives_DefaultToInstanced final : public UDlgTestObjectPrimitivesBase
 {
 public:
-	uint8                                         Pad_1781[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17DC[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         InstancedChild;                                    // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1782[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17DD[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -387,9 +387,9 @@ static_assert(offsetof(UDlgTestObjectPrimitives_DefaultToInstanced, InstancedChi
 class UDlgTestObjectPrimitives_ChildA : public UDlgTestObjectPrimitivesBase
 {
 public:
-	uint8                                         Pad_1783[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17DE[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         IntegerChildA;                                     // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1784[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17DF[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -410,7 +410,7 @@ static_assert(offsetof(UDlgTestObjectPrimitives_ChildA, IntegerChildA) == 0x0000
 class UDlgTestObjectPrimitives_ChildB final : public UDlgTestObjectPrimitivesBase
 {
 public:
-	uint8                                         Pad_1785[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E0[0x8];                                     // 0x0048(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 StringChildB;                                      // 0x0050(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 
 public:
@@ -432,9 +432,9 @@ static_assert(offsetof(UDlgTestObjectPrimitives_ChildB, StringChildB) == 0x00005
 class UDlgTestObjectPrimitives_GrandChildA_Of_ChildA final : public UDlgTestObjectPrimitives_ChildA
 {
 public:
-	uint8                                         Pad_1786[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E1[0x8];                                     // 0x0058(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         IntegerGrandChildA_Of_ChildA;                      // 0x0060(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1787[0x4];                                     // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17E2[0x4];                                     // 0x0064(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -514,13 +514,13 @@ static_assert(sizeof(UDlgManager) == 0x000028, "Wrong size on UDlgManager");
 class UDlgNode : public UObject
 {
 public:
-	uint8                                         Pad_1791[0x18];                                    // 0x0028(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17EC[0x18];                                    // 0x0028(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   OwnerName;                                         // 0x0040(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bCheckChildrenOnEvaluation;                        // 0x0048(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1792[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17ED[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDlgCondition>                  EnterConditions;                                   // 0x0050(0x0010)(Edit, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	EDlgEntryRestriction                          EnterRestriction;                                  // 0x0060(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1793[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17EE[0x7];                                     // 0x0061(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FDlgEvent>                      EnterEvents;                                       // 0x0068(0x0010)(Edit, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	struct FGuid                                  NodeGuid;                                          // 0x0078(0x0010)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AdvancedDisplay, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	TArray<struct FDlgEdge>                       Children;                                          // 0x0088(0x0010)(Edit, EditFixedSize, ZeroConstructor, EditConst, ContainsInstancedReference, AdvancedDisplay, Protected, NativeAccessSpecifierProtected)
@@ -641,7 +641,7 @@ class UDlgNode_Proxy final : public UDlgNode
 {
 public:
 	int32                                         NodeIndex;                                         // 0x0098(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1795[0x4];                                     // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F0[0x4];                                     // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -665,7 +665,7 @@ public:
 	EDlgNodeSelectorType                          SelectorType;                                      // 0x0098(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bAvoidPickingSameOptionTwiceInARow;                // 0x0099(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bCycleThroughSatisfiedOptionsWithoutRepetition;    // 0x009A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1796[0x5];                                     // 0x009B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F1[0x5];                                     // 0x009B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   DynamicDisplayText;                                // 0x00A0(0x0018)(Transient, Protected, NativeAccessSpecifierProtected)
 
 public:
@@ -695,7 +695,7 @@ class UDlgNode_Speech final : public UDlgNode
 public:
 	bool                                          bIsVirtualParent;                                  // 0x0098(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bVirtualParentFireDirectChildEnterEvents;          // 0x0099(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1797[0x6];                                     // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F2[0x6];                                     // 0x009A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Text;                                              // 0x00A0(0x0018)(Edit, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FDlgTextArgument>               TextArguments;                                     // 0x00B8(0x0010)(Edit, EditFixedSize, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	class FName                                   SpeakerState;                                      // 0x00C8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
@@ -703,7 +703,7 @@ public:
 	class USoundBase*                             VoiceSoundWave;                                    // 0x00D8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UDialogueWave*                          VoiceDialogueWave;                                 // 0x00E0(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	class UObject*                                GenericData;                                       // 0x00E8(0x0008)(Edit, ZeroConstructor, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1798[0x20];                                    // 0x00F0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F3[0x20];                                    // 0x00F0(0x0020)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	bool IsVirtualParent() const;
@@ -737,7 +737,7 @@ class UDlgNode_SpeechSequence final : public UDlgNode
 public:
 	TArray<struct FDlgSpeechSequenceEntry>        SpeechSequence;                                    // 0x0098(0x0010)(Edit, ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
 	TArray<struct FDlgEdge>                       InnerEdges;                                        // 0x00A8(0x0010)(ZeroConstructor, ContainsInstancedReference, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_1799[0x8];                                     // 0x00B8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F4[0x8];                                     // 0x00B8(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	const TArray<struct FDlgSpeechSequenceEntry> GetNodeSpeechSequence() const;
@@ -792,20 +792,20 @@ public:
 	EDlgVoiceDisplayedFields                      DialogueDisplayedVoiceFields;                      // 0x0041(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowGenericData;                                  // 0x0042(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowAdvancedChildren;                             // 0x0043(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_179A[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F5[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UClass*>                         BlacklistedReflectionClasses;                      // 0x0048(0x0010)(Edit, ZeroConstructor, Config, NativeAccessSpecifierPublic)
 	TSoftClassPtr<class UClass>                   DefaultCustomNodeDataClass;                        // 0x0058(0x0028)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDlgClassPickerDisplayMode                    ClassPickerDisplayMode;                            // 0x0080(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bBatchOnlyInGameDialogues;                         // 0x0081(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_179B[0x6];                                     // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F6[0x6];                                     // 0x0082(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TSet<class FString>                           AdditionalTextFormatFileExtensionsToLookFor;       // 0x0088(0x0050)(Edit, Config, NativeAccessSpecifierPublic)
 	bool                                          bSetDefaultEdgeTexts;                              // 0x00D8(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSetDefaultEdgeTextOnFirstChildOnly;               // 0x00D9(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_179C[0x6];                                     // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F7[0x6];                                     // 0x00DA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   DefaultTextEdgeToEndNode;                          // 0x00E0(0x0018)(Edit, Config, NativeAccessSpecifierPublic)
 	class FText                                   DefaultTextEdgeToNormalNode;                       // 0x00F8(0x0018)(Edit, Config, NativeAccessSpecifierPublic)
 	EDlgTextNamespaceLocalization                 DialogueTextNamespaceLocalization;                 // 0x0110(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_179D[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F8[0x7];                                     // 0x0111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 DialogueTextGlobalNamespaceName;                   // 0x0118(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 DialogueTextPrefixNamespaceName;                   // 0x0128(0x0010)(Edit, ZeroConstructor, Config, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TSet<class FString>                           LocalizationIgnoredStrings;                        // 0x0138(0x0050)(Edit, Config, AdvancedDisplay, NativeAccessSpecifierPublic)
@@ -818,7 +818,7 @@ public:
 	ENYLoggerLogLevel                             OpenMessageLogLevelsHigherThan;                    // 0x01DD(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bHideEmptyDialogueBrowserCategories;               // 0x01DE(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowExternalURLsToolbar;                          // 0x01DF(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_179E[0x50];                                    // 0x01E0(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17F9[0x50];                                    // 0x01E0(0x0050)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         DescriptionWrapTextAt;                             // 0x0230(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMargin                                DescriptionTextMargin;                             // 0x0234(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	EHorizontalAlignment                          TitleHorizontalAlignment;                          // 0x0244(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -826,7 +826,7 @@ public:
 	bool                                          bShowHasEnterEventsIcon;                           // 0x0246(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowHasVoiceIcon;                                 // 0x0247(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowHasGenericDataIcon;                           // 0x0248(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_179F[0x3];                                     // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FA[0x3];                                     // 0x0249(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           SpeechNodeColor;                                   // 0x024C(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           RootNodeColor;                                     // 0x025C(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           EndNodeColor;                                      // 0x026C(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -842,12 +842,12 @@ public:
 	struct FLinearColor                           BorderBackgroundColorHighlighted;                  // 0x030C(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMargin                                DescriptionSpeakerMargin;                          // 0x031C(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	EHorizontalAlignment                          DescriptionSpeakerHorizontalAlignment;             // 0x032C(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17A0[0x3];                                     // 0x032D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FB[0x3];                                     // 0x032D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         WireThickness;                                     // 0x0330(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWireDrawBubbles;                                  // 0x0334(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowEdgeHasConditionsIcon;                        // 0x0335(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowEdgeText;                                     // 0x0336(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17A1[0x1];                                     // 0x0337(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FC[0x1];                                     // 0x0337(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         GraphEdgeTextWrapAt;                               // 0x0338(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         GraphEdgeTextCharLimit;                            // 0x033C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FMargin                                GraphEdgeTextMargin;                               // 0x0340(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
@@ -855,17 +855,17 @@ public:
 	struct FLinearColor                           GraphEdgeTextBackgroundColor;                      // 0x0360(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           WireBaseColor;                                     // 0x0370(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowDifferentColorForConditionWires;              // 0x0380(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17A2[0x3];                                     // 0x0381(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FD[0x3];                                     // 0x0381(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           WireWithConditionsColor;                           // 0x0384(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           WireHoveredColor;                                  // 0x0394(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowPrimarySecondaryEdges;                        // 0x03A4(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDrawPrimaryEdges;                                 // 0x03A5(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDrawSecondaryEdges;                               // 0x03A6(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17A3[0x1];                                     // 0x03A7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FE[0x1];                                     // 0x03A7(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           WirePrimaryEdgeColor;                              // 0x03A8(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           WireSecondaryEdgeColor;                            // 0x03B8(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShowEventsAndConditions;                          // 0x03C8(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17A4[0x3];                                     // 0x03C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_17FF[0x3];                                     // 0x03C9(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           GraphConditionBackgroundColor;                     // 0x03CC(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           GraphConditionBorderColor;                         // 0x03DC(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLinearColor                           GraphConditionTextColor;                           // 0x03EC(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -878,7 +878,7 @@ public:
 	struct FMargin                                GraphEventTextMargin;                              // 0x045C(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         OffsetBetweenColumnsX;                             // 0x046C(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OffsetBetweenRowsY;                                // 0x0470(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_17A5[0x4];                                     // 0x0474(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1800[0x4];                                     // 0x0474(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

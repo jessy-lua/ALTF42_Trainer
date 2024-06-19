@@ -26,7 +26,7 @@ public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0298(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class USceneComponent*                        DefaultSceneRoot;                                  // 0x02A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	bool                                          bLevelIsMainMenu;                                  // 0x02A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FDF[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EB1[0x7];                                     // 0x02A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UUserWidget>             MenuContainerInstantiator;                         // 0x02B0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
 	TArray<class ACameraActor*>                   MenuCameras;                                       // 0x02D8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate)
 	TMap<class USoundClass*, double>              SoundClasses;                                      // 0x02E8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)

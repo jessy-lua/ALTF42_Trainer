@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "InteractableUserWidget_classes.hpp"
 #include "UMG_structs.hpp"
 
@@ -40,14 +40,14 @@ public:
 	class UScrollBox*                             SubButtonsScrollBox;                               // 0x07E0(0x0008)(BlueprintVisible, ExportObject, BlueprintReadOnly, ZeroConstructor, DisableEditOnInstance, InstancedReference, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	TArray<class FText>                           OptionsArray;                                      // 0x07E8(0x0010)(Edit, BlueprintVisible)
 	int32                                         ActiveOptionIndex;                                 // 0x07F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3379[0x4];                                     // 0x07FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_329D[0x4];                                     // 0x07FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UOptionsPickerSubButton_C*>      SubButtonWidgets;                                  // 0x0800(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	FMulticastInlineDelegateProperty_             OnOptionChanged;                                   // 0x0810(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	int32                                         DefaultOptionIndex;                                // 0x0820(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_337A[0x4];                                     // 0x0824(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_329E[0x4];                                     // 0x0824(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UTexture2D*>                     OptionsImageArray;                                 // 0x0828(0x0010)(Edit, BlueprintVisible)
 	bool                                          ShowSubButtons;                                    // 0x0838(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_337B[0x3];                                     // 0x0839(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_329F[0x3];                                     // 0x0839(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           OptionsPickerBgColor;                              // 0x083C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           OptionsPickerHighlightColor;                       // 0x084C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           OptionsPickerExtraHighlightColor;                  // 0x085C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

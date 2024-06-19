@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "InteractableMenuWidgetBP_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -54,7 +54,7 @@ public:
 	class UALTF42_GameInstance_C*                 ALTF42_GI;                                         // 0x07D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          MenuIn_;                                           // 0x07E0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          EndStage_;                                         // 0x07E1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_3405[0x6];                                     // 0x07E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3553[0x6];                                     // 0x07E2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UWorld>                  Level;                                             // 0x07E8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, UObjectWrapper, HasGetValueTypeHash)
 
 public:
@@ -83,10 +83,10 @@ public:
 	void OnGlobalSettingsApply();
 	void OnNavigationEnter(class UInteractableMenuWidgetBP_C* NavigateFromMenu, bool Param_bIsGamepadBeingUsed, int32 Param_PlayerIndex);
 	void OnNavigationExit(class UInteractableMenuWidgetBP_C* NavigateToMenu, class UInteractableMenuWidgetBP_C* NavigateFromMenu);
-	void OnPressedBack();
-	void PreConstruct(bool IsDesignTime);
 	void ShowDecisionDialog();
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
+	void OnPressedBack();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

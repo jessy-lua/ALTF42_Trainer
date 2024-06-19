@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "InteractableMenuWidgetBP_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -30,14 +30,14 @@ public:
 	FMulticastInlineDelegateProperty_             OnClickedBack;                                     // 0x0718(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          InvertLookXDefault;                                // 0x0728(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          InvertLookYDefault;                                // 0x0729(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33D9[0x6];                                     // 0x072A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32FE[0x6];                                     // 0x072A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CameraSpeedXDefault;                               // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CameraSpeedYDefault;                               // 0x0738(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RumbleDefault;                                     // 0x0740(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsDirty;                                          // 0x0741(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          LoadedInvertLookX;                                 // 0x0742(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          LoadedInvertLookY;                                 // 0x0743(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33DA[0x4];                                     // 0x0744(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_32FF[0x4];                                     // 0x0744(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        LoadedCameraSpeedX;                                // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        LoadedCameraSpeedY;                                // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          LoadedRumble;                                      // 0x0758(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

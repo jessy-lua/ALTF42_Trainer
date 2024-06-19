@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "CoreUObject_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "CoreUObject_structs.hpp"
 #include "FFontStyle_structs.hpp"
 
 
@@ -48,7 +48,7 @@ struct WBP_EditableText_C_ExecuteUbergraph_WBP_EditableText final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D49[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BF3[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_ComponentBoundEvent_Text_1;                 // 0x0008(0x0018)(ConstParm)
 	class FText                                   K2Node_ComponentBoundEvent_Text;                   // 0x0020(0x0018)(ConstParm)
 	ETextCommit                                   K2Node_ComponentBoundEvent_CommitMethod;           // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -95,7 +95,7 @@ public:
 	class FText                                   CallFunc_TextToLower_ReturnValue;                  // 0x00A8(0x0018)()
 	class FText                                   CallFunc_TextToUpper_ReturnValue;                  // 0x00C0(0x0018)()
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00D8(0x0014)()
-	uint8                                         Pad_3D4A[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BF4[0x4];                                     // 0x00EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEditableTextStyle                     K2Node_MakeStruct_EditableTextStyle;               // 0x00F0(0x02F0)()
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x03E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

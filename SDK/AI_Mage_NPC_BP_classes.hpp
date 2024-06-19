@@ -10,11 +10,11 @@
 
 #include "Basic.hpp"
 
-#include "AI_StepTalk_WhoOrWhere_structs.hpp"
-#include "Mantle_Asset_structs.hpp"
-#include "ALS_Base_CharacterBP_classes.hpp"
-#include "Engine_structs.hpp"
 #include "MantleType_structs.hpp"
+#include "Engine_structs.hpp"
+#include "Mantle_Asset_structs.hpp"
+#include "AI_StepTalk_WhoOrWhere_structs.hpp"
+#include "ALS_Base_CharacterBP_classes.hpp"
 #include "ALS_OverlayState_structs.hpp"
 
 
@@ -26,7 +26,7 @@ namespace SDK
 class AAI_Mage_NPC_BP_C final : public AALS_Base_CharacterBP_C
 {
 public:
-	uint8                                         Pad_3B7D[0x6];                                     // 0x0B42(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A76[0x6];                                     // 0x0B42(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame_AI_Mage_NPC_BP_C;                   // 0x0B48(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UGroomComponent*                        Hair;                                              // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UStaticMeshComponent*                   SM_WizardMustaches;                                // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -66,14 +66,14 @@ public:
 	class AALTF42_InGame_PC_Loco_C*               ALTF42_PC_AI_Mage_NPC_BP_C;                        // 0x0DB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UALTF42_GameInstance_C*                 ALTF42_GI;                                         // 0x0DC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	EAI_StepTalk_WhoOrWhere                       Who_NPC;                                           // 0x0DC8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B7E[0x7];                                     // 0x0DC9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A77[0x7];                                     // 0x0DC9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   NPC_NAme;                                          // 0x0DD0(0x0018)(Edit, BlueprintVisible)
 	class UObject*                                NPC_Image;                                         // 0x0DE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	bool                                          Hit_;                                              // 0x0DF0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Loop_Active;                                       // 0x0DF1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          NPC_StartAction_;                                  // 0x0DF2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          NPC_ActionMode;                                    // 0x0DF3(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B7F[0x4];                                     // 0x0DF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A78[0x4];                                     // 0x0DF4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimSequenceBase*                      NPC_Action_Anim;                                   // 0x0DF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UAnimMontage*                           NPC_Hit_Anim;                                      // 0x0E00(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class FText                                   Hit_Talk;                                          // 0x0E08(0x0018)(Edit, BlueprintVisible)
@@ -81,7 +81,7 @@ public:
 	float                                         MeetHI_PlayRate;                                   // 0x0E28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Random_Roam_;                                      // 0x0E2C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          First_Meet_;                                       // 0x0E2D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B80[0x2];                                     // 0x0E2E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A79[0x2];                                     // 0x0E2E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Talk_Npc_Name;                                     // 0x0E30(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
 	class UObject*                                Talk_NPC_Image;                                    // 0x0E48(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class FText                                   Talk_Speak_Text_;                                  // 0x0E50(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -89,7 +89,7 @@ public:
 	int32                                         MaxTalk;                                           // 0x0E6C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          TextJumpPossible;                                  // 0x0E70(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          NPC_TalkStart_;                                    // 0x0E71(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3B81[0x6];                                     // 0x0E72(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3A7A[0x6];                                     // 0x0E72(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class AWizardTower_Door_BP_C*                 Door_Value;                                        // 0x0E78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 
 public:

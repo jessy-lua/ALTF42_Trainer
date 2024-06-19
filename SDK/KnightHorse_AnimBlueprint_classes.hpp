@@ -24,10 +24,10 @@ namespace SDK
 class UKnightHorse_AnimBlueprint_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_31B8[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_322C[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct KnightHorse_AnimBlueprint::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0358(0x0003)(HasGetValueTypeHash)
-	uint8                                         Pad_31B9[0x5];                                     // 0x035B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_322D[0x5];                                     // 0x035B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0360(0x0008)()
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x0368(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0370(0x0020)()

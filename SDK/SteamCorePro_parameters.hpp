@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "OnlineSubsystemUtils_structs.hpp"
-#include "SteamCoreShared_structs.hpp"
 #include "SteamCorePro_structs.hpp"
+#include "SteamCoreShared_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 
@@ -28,7 +28,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Filename;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_229F[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21E7[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProAppsAsyncActionGetFileDetails* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProAppsAsyncActionGetFileDetails_GetFileDetailsAsync) == 0x000008, "Wrong alignment on SteamCoreProAppsAsyncActionGetFileDetails_GetFileDetailsAsync");
@@ -45,7 +45,7 @@ struct SteamCoreProAppsAsyncActionGetFileDetails_HandleCallback final
 public:
 	struct FFileDetailsResult                     Data;                                              // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22A0[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21E8[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProAppsAsyncActionGetFileDetails_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProAppsAsyncActionGetFileDetails_HandleCallback");
 static_assert(sizeof(SteamCoreProAppsAsyncActionGetFileDetails_HandleCallback) == 0x000030, "Wrong size on SteamCoreProAppsAsyncActionGetFileDetails_HandleCallback");
@@ -92,7 +92,7 @@ struct SteamProFriends_ActivateGameOverlayToStore final
 public:
 	int32                                         AppID;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamOverlayToStoreFlag                      Flag;                                              // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22A7[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21EF[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_ActivateGameOverlayToStore) == 0x000004, "Wrong alignment on SteamProFriends_ActivateGameOverlayToStore");
 static_assert(sizeof(SteamProFriends_ActivateGameOverlayToStore) == 0x000008, "Wrong size on SteamProFriends_ActivateGameOverlayToStore");
@@ -119,7 +119,7 @@ struct SteamProFriends_ActivateGameOverlayToWebPage final
 public:
 	class FString                                 URL;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamActivateGameOverlayToWebPageMode        Mode;                                              // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22A8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_ActivateGameOverlayToWebPage) == 0x000008, "Wrong alignment on SteamProFriends_ActivateGameOverlayToWebPage");
 static_assert(sizeof(SteamProFriends_ActivateGameOverlayToWebPage) == 0x000018, "Wrong size on SteamProFriends_ActivateGameOverlayToWebPage");
@@ -134,7 +134,7 @@ public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCommunityProfileItemType                ItemType;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22A9[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F1[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_BHasEquippedProfileItem) == 0x000008, "Wrong alignment on SteamProFriends_BHasEquippedProfileItem");
 static_assert(sizeof(SteamProFriends_BHasEquippedProfileItem) == 0x000010, "Wrong size on SteamProFriends_BHasEquippedProfileItem");
@@ -149,7 +149,7 @@ struct SteamProFriends_CloseClanChatWindowInSteam final
 public:
 	struct FSteamID                               SteamIDClanChat;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22AA[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_CloseClanChatWindowInSteam) == 0x000008, "Wrong alignment on SteamProFriends_CloseClanChatWindowInSteam");
 static_assert(sizeof(SteamProFriends_CloseClanChatWindowInSteam) == 0x000010, "Wrong size on SteamProFriends_CloseClanChatWindowInSteam");
@@ -163,7 +163,7 @@ struct SteamProFriends_GetChatMemberByIndex final
 public:
 	struct FSteamID                               SteamIDClan;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         User;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22AB[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F3[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetChatMemberByIndex) == 0x000008, "Wrong alignment on SteamProFriends_GetChatMemberByIndex");
@@ -182,7 +182,7 @@ public:
 	int32                                         InGame;                                            // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Chatting;                                          // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22AC[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F4[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetClanActivityCounts) == 0x000008, "Wrong alignment on SteamProFriends_GetClanActivityCounts");
 static_assert(sizeof(SteamProFriends_GetClanActivityCounts) == 0x000018, "Wrong size on SteamProFriends_GetClanActivityCounts");
@@ -198,7 +198,7 @@ struct SteamProFriends_GetClanByIndex final
 {
 public:
 	int32                                         Clan;                                              // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22AD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetClanByIndex) == 0x000008, "Wrong alignment on SteamProFriends_GetClanByIndex");
@@ -213,7 +213,7 @@ struct SteamProFriends_GetClanChatMemberCount final
 public:
 	struct FSteamID                               SteamIDClan;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22AE[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F6[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetClanChatMemberCount) == 0x000008, "Wrong alignment on SteamProFriends_GetClanChatMemberCount");
 static_assert(sizeof(SteamProFriends_GetClanChatMemberCount) == 0x000010, "Wrong size on SteamProFriends_GetClanChatMemberCount");
@@ -227,13 +227,13 @@ struct SteamProFriends_GetClanChatMessage final
 public:
 	struct FSteamID                               SteamIDClanChat;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         MessageID;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22AF[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F7[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamChatEntryType                           ChatEntryType;                                     // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B0[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F8[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               SteamIDChatter;                                    // 0x0028(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B1[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21F9[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetClanChatMessage) == 0x000008, "Wrong alignment on SteamProFriends_GetClanChatMessage");
 static_assert(sizeof(SteamProFriends_GetClanChatMessage) == 0x000038, "Wrong size on SteamProFriends_GetClanChatMessage");
@@ -275,7 +275,7 @@ struct SteamProFriends_GetClanOfficerByIndex final
 public:
 	struct FSteamID                               SteamIDClan;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Officer;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B2[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21FA[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetClanOfficerByIndex) == 0x000008, "Wrong alignment on SteamProFriends_GetClanOfficerByIndex");
@@ -291,7 +291,7 @@ struct SteamProFriends_GetClanOfficerCount final
 public:
 	struct FSteamID                               SteamIDClan;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B3[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21FB[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetClanOfficerCount) == 0x000008, "Wrong alignment on SteamProFriends_GetClanOfficerCount");
 static_assert(sizeof(SteamProFriends_GetClanOfficerCount) == 0x000010, "Wrong size on SteamProFriends_GetClanOfficerCount");
@@ -330,7 +330,7 @@ struct SteamProFriends_GetCoplayFriend final
 {
 public:
 	int32                                         CoplayFriend;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B4[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21FC[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetCoplayFriend) == 0x000008, "Wrong alignment on SteamProFriends_GetCoplayFriend");
@@ -355,7 +355,7 @@ struct SteamProFriends_GetFriendByIndex final
 {
 public:
 	int32                                         Ifriend;                                           // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21FD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<ESteamFriendFlags>                     Param_Flags;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -372,7 +372,7 @@ struct SteamProFriends_GetFriendCoplayGame final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B6[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21FE[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendCoplayGame) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendCoplayGame");
 static_assert(sizeof(SteamProFriends_GetFriendCoplayGame) == 0x000010, "Wrong size on SteamProFriends_GetFriendCoplayGame");
@@ -386,7 +386,7 @@ struct SteamProFriends_GetFriendCoplayTime final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B7[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_21FF[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendCoplayTime) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendCoplayTime");
 static_assert(sizeof(SteamProFriends_GetFriendCoplayTime) == 0x000010, "Wrong size on SteamProFriends_GetFriendCoplayTime");
@@ -400,7 +400,7 @@ struct SteamProFriends_GetFriendCount final
 public:
 	TArray<ESteamFriendFlags>                     Param_Flags;                                       // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B8[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2200[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendCount) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendCount");
 static_assert(sizeof(SteamProFriends_GetFriendCount) == 0x000018, "Wrong size on SteamProFriends_GetFriendCount");
@@ -414,7 +414,7 @@ struct SteamProFriends_GetFriendCountFromSource final
 public:
 	struct FSteamID                               SteamIDSource;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22B9[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2201[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendCountFromSource) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendCountFromSource");
 static_assert(sizeof(SteamProFriends_GetFriendCountFromSource) == 0x000010, "Wrong size on SteamProFriends_GetFriendCountFromSource");
@@ -428,7 +428,7 @@ struct SteamProFriends_GetFriendFromSourceByIndex final
 public:
 	struct FSteamID                               SteamIDSource;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Ifriend;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22BA[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2202[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetFriendFromSourceByIndex) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendFromSourceByIndex");
@@ -449,7 +449,7 @@ public:
 	int32                                         QueryPort;                                         // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDLobby;                                      // 0x0028(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22BB[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2203[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendGamePlayed) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendGamePlayed");
 static_assert(sizeof(SteamProFriends_GetFriendGamePlayed) == 0x000038, "Wrong size on SteamProFriends_GetFriendGamePlayed");
@@ -468,10 +468,10 @@ struct SteamProFriends_GetFriendMessage final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         MessageID;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22BC[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2204[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Text;                                              // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamChatEntryType                           ChatEntryType;                                     // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22BD[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2205[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetFriendMessage) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendMessage");
@@ -502,7 +502,7 @@ struct SteamProFriends_GetFriendPersonaNameHistory final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         PersonaName;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22BE[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2206[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetFriendPersonaNameHistory) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendPersonaNameHistory");
@@ -518,7 +518,7 @@ struct SteamProFriends_GetFriendPersonaState final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamPersonaState                            ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22BF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2207[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendPersonaState) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendPersonaState");
 static_assert(sizeof(SteamProFriends_GetFriendPersonaState) == 0x000010, "Wrong size on SteamProFriends_GetFriendPersonaState");
@@ -532,7 +532,7 @@ struct SteamProFriends_GetFriendRelationship final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamFriendRelationship                      ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2208[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendRelationship) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendRelationship");
 static_assert(sizeof(SteamProFriends_GetFriendRelationship) == 0x000010, "Wrong size on SteamProFriends_GetFriendRelationship");
@@ -561,7 +561,7 @@ struct SteamProFriends_GetFriendRichPresenceKeyByIndex final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Key;                                               // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C1[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2209[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetFriendRichPresenceKeyByIndex) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendRichPresenceKeyByIndex");
@@ -577,7 +577,7 @@ struct SteamProFriends_GetFriendRichPresenceKeyCount final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C2[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220A[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendRichPresenceKeyCount) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendRichPresenceKeyCount");
 static_assert(sizeof(SteamProFriends_GetFriendRichPresenceKeyCount) == 0x000010, "Wrong size on SteamProFriends_GetFriendRichPresenceKeyCount");
@@ -602,7 +602,7 @@ struct SteamProFriends_GetFriendsGroupIDByIndex final
 public:
 	int32                                         FriendGroup;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamFriendsGroupID                   ReturnValue;                                       // 0x0004(0x0002)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C3[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220B[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendsGroupIDByIndex) == 0x000004, "Wrong alignment on SteamProFriends_GetFriendsGroupIDByIndex");
 static_assert(sizeof(SteamProFriends_GetFriendsGroupIDByIndex) == 0x000008, "Wrong size on SteamProFriends_GetFriendsGroupIDByIndex");
@@ -615,7 +615,7 @@ struct SteamProFriends_GetFriendsGroupMembersCount final
 {
 public:
 	struct FSteamFriendsGroupID                   FriendsGroupID;                                    // 0x0000(0x0002)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C4[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220C[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetFriendsGroupMembersCount) == 0x000004, "Wrong alignment on SteamProFriends_GetFriendsGroupMembersCount");
@@ -629,10 +629,10 @@ struct SteamProFriends_GetFriendsGroupMembersList final
 {
 public:
 	struct FSteamFriendsGroupID                   FriendsGroupID;                                    // 0x0000(0x0002)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C5[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220D[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSteamID>                       SteamIDMembers;                                    // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         MembersCount;                                      // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C6[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220E[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendsGroupMembersList) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendsGroupMembersList");
 static_assert(sizeof(SteamProFriends_GetFriendsGroupMembersList) == 0x000020, "Wrong size on SteamProFriends_GetFriendsGroupMembersList");
@@ -646,7 +646,7 @@ struct SteamProFriends_GetFriendsGroupName final
 {
 public:
 	struct FSteamFriendsGroupID                   FriendsGroupID;                                    // 0x0000(0x0002)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C7[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_220F[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetFriendsGroupName) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendsGroupName");
@@ -661,7 +661,7 @@ struct SteamProFriends_GetFriendSteamLevel final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C8[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2210[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_GetFriendSteamLevel) == 0x000008, "Wrong alignment on SteamProFriends_GetFriendSteamLevel");
 static_assert(sizeof(SteamProFriends_GetFriendSteamLevel) == 0x000010, "Wrong size on SteamProFriends_GetFriendSteamLevel");
@@ -772,7 +772,7 @@ public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCommunityProfileItemType                ItemType;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamCommunityProfileItemProperty            Prop;                                              // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22C9[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2211[0x6];                                     // 0x000A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetProfileItemPropertyString) == 0x000008, "Wrong alignment on SteamProFriends_GetProfileItemPropertyString");
@@ -790,7 +790,7 @@ public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCommunityProfileItemType                ItemType;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamCommunityProfileItemProperty            Prop;                                              // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22CA[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2212[0x2];                                     // 0x000A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProFriends_GetProfileItemPropertyUint) == 0x000008, "Wrong alignment on SteamProFriends_GetProfileItemPropertyUint");
@@ -843,7 +843,7 @@ public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<ESteamFriendFlags>                     Param_Flags;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22CB[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2213[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_HasFriend) == 0x000008, "Wrong alignment on SteamProFriends_HasFriend");
 static_assert(sizeof(SteamProFriends_HasFriend) == 0x000020, "Wrong size on SteamProFriends_HasFriend");
@@ -859,7 +859,7 @@ public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 ConnectString;                                     // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22CC[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2214[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_InviteUserToGame) == 0x000008, "Wrong alignment on SteamProFriends_InviteUserToGame");
 static_assert(sizeof(SteamProFriends_InviteUserToGame) == 0x000020, "Wrong size on SteamProFriends_InviteUserToGame");
@@ -875,7 +875,7 @@ public:
 	struct FSteamID                               SteamIDClanChat;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDUser;                                       // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22CD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2215[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_IsClanChatAdmin) == 0x000008, "Wrong alignment on SteamProFriends_IsClanChatAdmin");
 static_assert(sizeof(SteamProFriends_IsClanChatAdmin) == 0x000018, "Wrong size on SteamProFriends_IsClanChatAdmin");
@@ -890,7 +890,7 @@ struct SteamProFriends_IsClanChatWindowOpenInSteam final
 public:
 	struct FSteamID                               SteamIDClanChat;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22CE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2216[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_IsClanChatWindowOpenInSteam) == 0x000008, "Wrong alignment on SteamProFriends_IsClanChatWindowOpenInSteam");
 static_assert(sizeof(SteamProFriends_IsClanChatWindowOpenInSteam) == 0x000010, "Wrong size on SteamProFriends_IsClanChatWindowOpenInSteam");
@@ -904,7 +904,7 @@ struct SteamProFriends_IsClanOfficialGameGroup final
 public:
 	struct FSteamID                               SteamIDClan;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22CF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2217[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_IsClanOfficialGameGroup) == 0x000008, "Wrong alignment on SteamProFriends_IsClanOfficialGameGroup");
 static_assert(sizeof(SteamProFriends_IsClanOfficialGameGroup) == 0x000010, "Wrong size on SteamProFriends_IsClanOfficialGameGroup");
@@ -918,7 +918,7 @@ struct SteamProFriends_IsClanPublic final
 public:
 	struct FSteamID                               SteamIDClan;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2218[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_IsClanPublic) == 0x000008, "Wrong alignment on SteamProFriends_IsClanPublic");
 static_assert(sizeof(SteamProFriends_IsClanPublic) == 0x000010, "Wrong size on SteamProFriends_IsClanPublic");
@@ -933,7 +933,7 @@ public:
 	struct FSteamID                               SteamIDUser;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDSource;                                     // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D1[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2219[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_IsUserInSource) == 0x000008, "Wrong alignment on SteamProFriends_IsUserInSource");
 static_assert(sizeof(SteamProFriends_IsUserInSource) == 0x000018, "Wrong size on SteamProFriends_IsUserInSource");
@@ -948,7 +948,7 @@ struct SteamProFriends_LeaveClanChatRoom final
 public:
 	struct FSteamID                               SteamIDClan;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_221A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_LeaveClanChatRoom) == 0x000008, "Wrong alignment on SteamProFriends_LeaveClanChatRoom");
 static_assert(sizeof(SteamProFriends_LeaveClanChatRoom) == 0x000010, "Wrong size on SteamProFriends_LeaveClanChatRoom");
@@ -962,7 +962,7 @@ struct SteamProFriends_OpenClanChatWindowInSteam final
 public:
 	struct FSteamID                               SteamIDClanChat;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_221B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_OpenClanChatWindowInSteam) == 0x000008, "Wrong alignment on SteamProFriends_OpenClanChatWindowInSteam");
 static_assert(sizeof(SteamProFriends_OpenClanChatWindowInSteam) == 0x000010, "Wrong size on SteamProFriends_OpenClanChatWindowInSteam");
@@ -976,7 +976,7 @@ struct SteamProFriends_RegisterProtocolInOverlayBrowser final
 public:
 	class FString                                 Protocol;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D4[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_221C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_RegisterProtocolInOverlayBrowser) == 0x000008, "Wrong alignment on SteamProFriends_RegisterProtocolInOverlayBrowser");
 static_assert(sizeof(SteamProFriends_RegisterProtocolInOverlayBrowser) == 0x000018, "Wrong size on SteamProFriends_RegisterProtocolInOverlayBrowser");
@@ -991,7 +991,7 @@ public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 MsgToSend;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D5[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_221D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_ReplyToFriendMessage) == 0x000008, "Wrong alignment on SteamProFriends_ReplyToFriendMessage");
 static_assert(sizeof(SteamProFriends_ReplyToFriendMessage) == 0x000020, "Wrong size on SteamProFriends_ReplyToFriendMessage");
@@ -1018,7 +1018,7 @@ public:
 	struct FSteamID                               SteamIDUser;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bRequireNameOnly;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D6[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_221E[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_RequestUserInformation) == 0x000008, "Wrong alignment on SteamProFriends_RequestUserInformation");
 static_assert(sizeof(SteamProFriends_RequestUserInformation) == 0x000010, "Wrong size on SteamProFriends_RequestUserInformation");
@@ -1034,7 +1034,7 @@ public:
 	struct FSteamID                               SteamIDClanChat;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Text;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D7[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_221F[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_SendClanChatMessage) == 0x000008, "Wrong alignment on SteamProFriends_SendClanChatMessage");
 static_assert(sizeof(SteamProFriends_SendClanChatMessage) == 0x000020, "Wrong size on SteamProFriends_SendClanChatMessage");
@@ -1049,7 +1049,7 @@ struct SteamProFriends_SetInGameVoiceSpeaking final
 public:
 	struct FSteamID                               SteamIDUser;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bSpeaking;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D8[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2220[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_SetInGameVoiceSpeaking) == 0x000008, "Wrong alignment on SteamProFriends_SetInGameVoiceSpeaking");
 static_assert(sizeof(SteamProFriends_SetInGameVoiceSpeaking) == 0x000010, "Wrong size on SteamProFriends_SetInGameVoiceSpeaking");
@@ -1088,7 +1088,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22D9[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2221[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProFriends_SetRichPresence) == 0x000008, "Wrong alignment on SteamProFriends_SetRichPresence");
 static_assert(sizeof(SteamProFriends_SetRichPresence) == 0x000028, "Wrong size on SteamProFriends_SetRichPresence");
@@ -1208,7 +1208,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22DA[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2222[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProFriendsAsyncActionSetPersonaName* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionSetPersonaName_SetPersonaNameAsync) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionSetPersonaName_SetPersonaNameAsync");
@@ -1239,7 +1239,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FSteamID>                       SteamIDClans;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22DB[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2223[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProFriendsAsyncActionDownloadClanActivityCounts* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionDownloadClanActivityCounts_DownloadClanActivityCountsAsync) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionDownloadClanActivityCounts_DownloadClanActivityCountsAsync");
@@ -1270,7 +1270,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDClan;                                       // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22DC[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2224[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProFriendsAsyncActionRequestClanOfficerList* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionRequestClanOfficerList_RequestClanOfficerListAsync) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionRequestClanOfficerList_RequestClanOfficerListAsync");
@@ -1287,7 +1287,7 @@ struct SteamCoreProFriendsAsyncActionRequestClanOfficerList_HandleCallback final
 public:
 	struct FClanOfficerListResponse               Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22DD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2225[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionRequestClanOfficerList_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionRequestClanOfficerList_HandleCallback");
 static_assert(sizeof(SteamCoreProFriendsAsyncActionRequestClanOfficerList_HandleCallback) == 0x000018, "Wrong size on SteamCoreProFriendsAsyncActionRequestClanOfficerList_HandleCallback");
@@ -1302,7 +1302,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDClan;                                       // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22DE[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2226[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProFriendsAsyncActionJoinClanChatRoom* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionJoinClanChatRoom_JoinClanChatRoomAsync) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionJoinClanChatRoom_JoinClanChatRoomAsync");
@@ -1319,7 +1319,7 @@ struct SteamCoreProFriendsAsyncActionJoinClanChatRoom_HandleCallback final
 public:
 	struct FJoinClanChatRoomCompletionResult      Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22DF[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2227[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionJoinClanChatRoom_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionJoinClanChatRoom_HandleCallback");
 static_assert(sizeof(SteamCoreProFriendsAsyncActionJoinClanChatRoom_HandleCallback) == 0x000018, "Wrong size on SteamCoreProFriendsAsyncActionJoinClanChatRoom_HandleCallback");
@@ -1350,7 +1350,7 @@ struct SteamCoreProFriendsAsyncActionEnumerateFollowingList_HandleCallback final
 public:
 	struct FFriendsEnumerateFollowingList         Data;                                              // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E0[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2228[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionEnumerateFollowingList_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionEnumerateFollowingList_HandleCallback");
 static_assert(sizeof(SteamCoreProFriendsAsyncActionEnumerateFollowingList_HandleCallback) == 0x000028, "Wrong size on SteamCoreProFriendsAsyncActionEnumerateFollowingList_HandleCallback");
@@ -1365,7 +1365,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamID;                                           // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E1[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2229[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProFriendsAsyncActionIsFollowing* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionIsFollowing_IsFollowingAsync) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionIsFollowing_IsFollowingAsync");
@@ -1382,7 +1382,7 @@ struct SteamCoreProFriendsAsyncActionIsFollowing_HandleCallback final
 public:
 	struct FFriendsIsFollowing                    Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E2[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_222A[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionIsFollowing_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionIsFollowing_HandleCallback");
 static_assert(sizeof(SteamCoreProFriendsAsyncActionIsFollowing_HandleCallback) == 0x000020, "Wrong size on SteamCoreProFriendsAsyncActionIsFollowing_HandleCallback");
@@ -1397,7 +1397,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamID;                                           // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E3[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_222B[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProFriendsAsyncActionGetFollowerCount* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionGetFollowerCount_GetFollowerCountAsync) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionGetFollowerCount_GetFollowerCountAsync");
@@ -1414,7 +1414,7 @@ struct SteamCoreProFriendsAsyncActionGetFollowerCount_HandleCallback final
 public:
 	struct FFriendsGetFollowerCount               Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E4[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_222C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProFriendsAsyncActionGetFollowerCount_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProFriendsAsyncActionGetFollowerCount_HandleCallback");
 static_assert(sizeof(SteamCoreProFriendsAsyncActionGetFollowerCount_HandleCallback) == 0x000020, "Wrong size on SteamCoreProFriendsAsyncActionGetFollowerCount_HandleCallback");
@@ -1429,7 +1429,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDUser;                                       // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bRequireNameOnly;                                  // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E6[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_222E[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Timeout;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProFriendsAsyncActionRequestUserInformation* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1460,7 +1460,7 @@ public:
 	struct FSteamID                               SteamIDUser;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E8[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2230[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServerStats_ClearUserAchievement) == 0x000008, "Wrong alignment on SteamProGameServerStats_ClearUserAchievement");
 static_assert(sizeof(SteamProGameServerStats_ClearUserAchievement) == 0x000020, "Wrong size on SteamProGameServerStats_ClearUserAchievement");
@@ -1477,7 +1477,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAchieved;                                         // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22E9[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2231[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServerStats_GetUserAchievement) == 0x000008, "Wrong alignment on SteamProGameServerStats_GetUserAchievement");
 static_assert(sizeof(SteamProGameServerStats_GetUserAchievement) == 0x000020, "Wrong size on SteamProGameServerStats_GetUserAchievement");
@@ -1495,7 +1495,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Data;                                              // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22EA[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2232[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServerStats_GetUserStatFloat) == 0x000008, "Wrong alignment on SteamProGameServerStats_GetUserStatFloat");
 static_assert(sizeof(SteamProGameServerStats_GetUserStatFloat) == 0x000020, "Wrong size on SteamProGameServerStats_GetUserStatFloat");
@@ -1513,7 +1513,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Data;                                              // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22EB[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2233[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServerStats_GetUserStatInt) == 0x000008, "Wrong alignment on SteamProGameServerStats_GetUserStatInt");
 static_assert(sizeof(SteamProGameServerStats_GetUserStatInt) == 0x000020, "Wrong size on SteamProGameServerStats_GetUserStatInt");
@@ -1556,7 +1556,7 @@ public:
 	struct FSteamID                               SteamIDUser;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22EC[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2234[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServerStats_SetUserAchievement) == 0x000008, "Wrong alignment on SteamProGameServerStats_SetUserAchievement");
 static_assert(sizeof(SteamProGameServerStats_SetUserAchievement) == 0x000020, "Wrong size on SteamProGameServerStats_SetUserAchievement");
@@ -1573,7 +1573,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Data;                                              // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22ED[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2235[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServerStats_SetUserStatFloat) == 0x000008, "Wrong alignment on SteamProGameServerStats_SetUserStatFloat");
 static_assert(sizeof(SteamProGameServerStats_SetUserStatFloat) == 0x000020, "Wrong size on SteamProGameServerStats_SetUserStatFloat");
@@ -1591,7 +1591,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Data;                                              // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22EE[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2236[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServerStats_SetUserStatInt) == 0x000008, "Wrong alignment on SteamProGameServerStats_SetUserStatInt");
 static_assert(sizeof(SteamProGameServerStats_SetUserStatInt) == 0x000020, "Wrong size on SteamProGameServerStats_SetUserStatInt");
@@ -1610,7 +1610,7 @@ public:
 	float                                         CountThisSession;                                  // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SessionLength;                                     // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22EF[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2237[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServerStats_UpdateUserAvgRateStat) == 0x000008, "Wrong alignment on SteamProGameServerStats_UpdateUserAvgRateStat");
 static_assert(sizeof(SteamProGameServerStats_UpdateUserAvgRateStat) == 0x000028, "Wrong size on SteamProGameServerStats_UpdateUserAvgRateStat");
@@ -1637,10 +1637,10 @@ struct SteamProInput_BWaitForData final
 {
 public:
 	bool                                          bWaitForever;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F0[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2238[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Timeout;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F1[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2239[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_BWaitForData) == 0x000004, "Wrong alignment on SteamProInput_BWaitForData");
 static_assert(sizeof(SteamProInput_BWaitForData) == 0x00000C, "Wrong size on SteamProInput_BWaitForData");
@@ -1769,7 +1769,7 @@ public:
 	struct FInputHandle                           Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProXboxOrigin                       Origin;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamCoreProInputActionOrigin                ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F2[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_223A[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetActionOriginFromXboxOrigin) == 0x000008, "Wrong alignment on SteamProInput_GetActionOriginFromXboxOrigin");
 static_assert(sizeof(SteamProInput_GetActionOriginFromXboxOrigin) == 0x000010, "Wrong size on SteamProInput_GetActionOriginFromXboxOrigin");
@@ -1798,7 +1798,7 @@ public:
 	struct FInputHandle                           Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<struct FInputActionSetHandle>          Data;                                              // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F3[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_223B[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetActiveActionSetLayers) == 0x000008, "Wrong alignment on SteamProInput_GetActiveActionSetLayers");
 static_assert(sizeof(SteamProInput_GetActiveActionSetLayers) == 0x000020, "Wrong size on SteamProInput_GetActiveActionSetLayers");
@@ -1844,7 +1844,7 @@ public:
 	struct FInputAnalogActionHandle               AnalogActionHandle;                                // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<ESteamCoreProInputActionOrigin>        OriginsOut;                                        // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F4[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_223C[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetAnalogActionOrigins) == 0x000008, "Wrong alignment on SteamProInput_GetAnalogActionOrigins");
 static_assert(sizeof(SteamProInput_GetAnalogActionOrigins) == 0x000030, "Wrong size on SteamProInput_GetAnalogActionOrigins");
@@ -1861,7 +1861,7 @@ struct SteamProInput_GetConnectedControllers final
 public:
 	TArray<struct FInputHandle>                   OutHandles;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F5[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_223D[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetConnectedControllers) == 0x000008, "Wrong alignment on SteamProInput_GetConnectedControllers");
 static_assert(sizeof(SteamProInput_GetConnectedControllers) == 0x000018, "Wrong size on SteamProInput_GetConnectedControllers");
@@ -1874,7 +1874,7 @@ struct SteamProInput_GetControllerForGamepadIndex final
 {
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_223E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FInputHandle                           ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProInput_GetControllerForGamepadIndex) == 0x000008, "Wrong alignment on SteamProInput_GetControllerForGamepadIndex");
@@ -1904,7 +1904,7 @@ public:
 	int32                                         Major;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Minor;                                             // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F7[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_223F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetDeviceBindingRevision) == 0x000008, "Wrong alignment on SteamProInput_GetDeviceBindingRevision");
 static_assert(sizeof(SteamProInput_GetDeviceBindingRevision) == 0x000018, "Wrong size on SteamProInput_GetDeviceBindingRevision");
@@ -1921,7 +1921,7 @@ public:
 	struct FInputHandle                           Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FInputDigitalActionHandle              DigitalActionHandle;                               // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FInputDigitalActionData                ReturnValue;                                       // 0x0010(0x0002)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F8[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2240[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetDigitalActionData) == 0x000008, "Wrong alignment on SteamProInput_GetDigitalActionData");
 static_assert(sizeof(SteamProInput_GetDigitalActionData) == 0x000018, "Wrong size on SteamProInput_GetDigitalActionData");
@@ -1952,7 +1952,7 @@ public:
 	struct FInputDigitalActionHandle              DigitalActionHandle;                               // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<ESteamCoreProInputActionOrigin>        OriginsOut;                                        // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22F9[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2241[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetDigitalActionOrigins) == 0x000008, "Wrong alignment on SteamProInput_GetDigitalActionOrigins");
 static_assert(sizeof(SteamProInput_GetDigitalActionOrigins) == 0x000030, "Wrong size on SteamProInput_GetDigitalActionOrigins");
@@ -1969,7 +1969,7 @@ struct SteamProInput_GetGamepadIndexForController final
 public:
 	struct FInputHandle                           Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FA[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2242[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetGamepadIndexForController) == 0x000008, "Wrong alignment on SteamProInput_GetGamepadIndexForController");
 static_assert(sizeof(SteamProInput_GetGamepadIndexForController) == 0x000010, "Wrong size on SteamProInput_GetGamepadIndexForController");
@@ -1982,7 +1982,7 @@ struct SteamProInput_GetGlyphForActionOrigin_Legacy final
 {
 public:
 	ESteamCoreProInputActionOrigin                Origin;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FB[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2243[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProInput_GetGlyphForActionOrigin_Legacy) == 0x000008, "Wrong alignment on SteamProInput_GetGlyphForActionOrigin_Legacy");
@@ -1996,7 +1996,7 @@ struct SteamProInput_GetGlyphForXboxOrigin final
 {
 public:
 	ESteamCoreProXboxOrigin                       Origin;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FC[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2244[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProInput_GetGlyphForXboxOrigin) == 0x000008, "Wrong alignment on SteamProInput_GetGlyphForXboxOrigin");
@@ -2011,7 +2011,7 @@ struct SteamProInput_GetInputTypeForHandle final
 public:
 	struct FInputHandle                           Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProInputType                        ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FD[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2245[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetInputTypeForHandle) == 0x000008, "Wrong alignment on SteamProInput_GetInputTypeForHandle");
 static_assert(sizeof(SteamProInput_GetInputTypeForHandle) == 0x000010, "Wrong size on SteamProInput_GetInputTypeForHandle");
@@ -2038,7 +2038,7 @@ struct SteamProInput_GetRemotePlaySessionID final
 public:
 	struct FInputHandle                           Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FE[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2246[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_GetRemotePlaySessionID) == 0x000008, "Wrong alignment on SteamProInput_GetRemotePlaySessionID");
 static_assert(sizeof(SteamProInput_GetRemotePlaySessionID) == 0x000010, "Wrong size on SteamProInput_GetRemotePlaySessionID");
@@ -2051,7 +2051,7 @@ struct SteamProInput_GetStringForActionOrigin final
 {
 public:
 	ESteamCoreProInputActionOrigin                Origin;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_22FF[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2247[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProInput_GetStringForActionOrigin) == 0x000008, "Wrong alignment on SteamProInput_GetStringForActionOrigin");
@@ -2065,7 +2065,7 @@ struct SteamProInput_GetStringForXboxOrigin final
 {
 public:
 	ESteamCoreProXboxOrigin                       Origin;                                            // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2300[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2248[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProInput_GetStringForXboxOrigin) == 0x000008, "Wrong alignment on SteamProInput_GetStringForXboxOrigin");
@@ -2092,7 +2092,7 @@ public:
 	struct FInputHandle                           Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProControllerPad                    TargetPad;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         DurationMicroSec;                                  // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2301[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2249[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_Legacy_TriggerHapticPulse) == 0x000008, "Wrong alignment on SteamProInput_Legacy_TriggerHapticPulse");
 static_assert(sizeof(SteamProInput_Legacy_TriggerHapticPulse) == 0x000010, "Wrong size on SteamProInput_Legacy_TriggerHapticPulse");
@@ -2111,7 +2111,7 @@ public:
 	uint8                                         OffMicroSec;                                       // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Repeat;                                            // 0x000B(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         Param_Flags;                                       // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2302[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_224A[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_Legacy_TriggerRepeatedHapticPulse) == 0x000008, "Wrong alignment on SteamProInput_Legacy_TriggerRepeatedHapticPulse");
 static_assert(sizeof(SteamProInput_Legacy_TriggerRepeatedHapticPulse) == 0x000010, "Wrong size on SteamProInput_Legacy_TriggerRepeatedHapticPulse");
@@ -2132,7 +2132,7 @@ public:
 	uint8                                         ColorG;                                            // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         ColorB;                                            // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamCoreProInputLEDFlag                     Param_Flags;                                       // 0x000B(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2303[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_224B[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_SetLEDColor) == 0x000008, "Wrong alignment on SteamProInput_SetLEDColor");
 static_assert(sizeof(SteamProInput_SetLEDColor) == 0x000010, "Wrong size on SteamProInput_SetLEDColor");
@@ -2149,7 +2149,7 @@ struct SteamProInput_ShowBindingPanel final
 public:
 	struct FInputHandle                           Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2304[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_224C[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_ShowBindingPanel) == 0x000008, "Wrong alignment on SteamProInput_ShowBindingPanel");
 static_assert(sizeof(SteamProInput_ShowBindingPanel) == 0x000010, "Wrong size on SteamProInput_ShowBindingPanel");
@@ -2203,7 +2203,7 @@ public:
 	struct FInputHandle                           Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	uint8                                         LeftSpeed;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         RightSpeed;                                        // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2305[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_224D[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInput_TriggerVibration) == 0x000008, "Wrong alignment on SteamProInput_TriggerVibration");
 static_assert(sizeof(SteamProInput_TriggerVibration) == 0x000010, "Wrong size on SteamProInput_TriggerVibration");
@@ -2219,7 +2219,7 @@ public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamItemDef                          ItemDef;                                           // 0x0004(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2307[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_224F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_AddPromoItem) == 0x000004, "Wrong alignment on SteamProInventory_AddPromoItem");
 static_assert(sizeof(SteamProInventory_AddPromoItem) == 0x00000C, "Wrong size on SteamProInventory_AddPromoItem");
@@ -2233,10 +2233,10 @@ struct SteamProInventory_AddPromoItems final
 {
 public:
 	struct FSteamInventoryResult                  OutResult;                                         // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2308[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2250[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSteamItemDef>                  ItemDefs;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2309[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2251[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_AddPromoItems) == 0x000008, "Wrong alignment on SteamProInventory_AddPromoItems");
 static_assert(sizeof(SteamProInventory_AddPromoItems) == 0x000020, "Wrong size on SteamProInventory_AddPromoItems");
@@ -2250,10 +2250,10 @@ struct SteamProInventory_CheckResultSteamID final
 {
 public:
 	struct FSteamInventoryResult                  Handle;                                            // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2252[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               SteamIDExpected;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2253[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_CheckResultSteamID) == 0x000008, "Wrong alignment on SteamProInventory_CheckResultSteamID");
 static_assert(sizeof(SteamProInventory_CheckResultSteamID) == 0x000018, "Wrong size on SteamProInventory_CheckResultSteamID");
@@ -2267,11 +2267,11 @@ struct SteamProInventory_ConsumeItem final
 {
 public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2254[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamItemInstanceID                   ItemConsume;                                       // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Quantity;                                          // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230D[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2255[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_ConsumeItem) == 0x000008, "Wrong alignment on SteamProInventory_ConsumeItem");
 static_assert(sizeof(SteamProInventory_ConsumeItem) == 0x000018, "Wrong size on SteamProInventory_ConsumeItem");
@@ -2286,11 +2286,11 @@ struct SteamProInventory_DeserializeResult final
 {
 public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2256[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 Buffer;                                            // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          bReservedMustBeFalse;                              // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_230F[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2257[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_DeserializeResult) == 0x000008, "Wrong alignment on SteamProInventory_DeserializeResult");
 static_assert(sizeof(SteamProInventory_DeserializeResult) == 0x000020, "Wrong size on SteamProInventory_DeserializeResult");
@@ -2316,13 +2316,13 @@ struct SteamProInventory_ExchangeItems final
 {
 public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2310[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2258[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSteamItemDef>                  ArrayGenerate;                                     // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 ArrayGenerateQuantity;                             // 0x0018(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<struct FSteamItemInstanceID>           ArrayDestroy;                                      // 0x0028(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 ArrayDestroyQuantity;                              // 0x0038(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2311[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2259[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_ExchangeItems) == 0x000008, "Wrong alignment on SteamProInventory_ExchangeItems");
 static_assert(sizeof(SteamProInventory_ExchangeItems) == 0x000050, "Wrong size on SteamProInventory_ExchangeItems");
@@ -2339,11 +2339,11 @@ struct SteamProInventory_GenerateItems final
 {
 public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2312[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSteamItemDef>                  ItemDefs;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Quantity;                                          // 0x0018(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2313[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225B[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GenerateItems) == 0x000008, "Wrong alignment on SteamProInventory_GenerateItems");
 static_assert(sizeof(SteamProInventory_GenerateItems) == 0x000030, "Wrong size on SteamProInventory_GenerateItems");
@@ -2359,7 +2359,7 @@ struct SteamProInventory_GetAllItems final
 public:
 	struct FSteamInventoryResult                  Handle;                                            // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2314[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225C[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetAllItems) == 0x000004, "Wrong alignment on SteamProInventory_GetAllItems");
 static_assert(sizeof(SteamProInventory_GetAllItems) == 0x000008, "Wrong size on SteamProInventory_GetAllItems");
@@ -2374,7 +2374,7 @@ public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<struct FSteamItemDef>                  ItemDefs;                                          // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2315[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetEligiblePromoItemDefinitionIDs) == 0x000008, "Wrong alignment on SteamProInventory_GetEligiblePromoItemDefinitionIDs");
 static_assert(sizeof(SteamProInventory_GetEligiblePromoItemDefinitionIDs) == 0x000020, "Wrong size on SteamProInventory_GetEligiblePromoItemDefinitionIDs");
@@ -2389,7 +2389,7 @@ struct SteamProInventory_GetItemDefinitionIDs final
 public:
 	TArray<struct FSteamItemDef>                  ItemDefs;                                          // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2316[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetItemDefinitionIDs) == 0x000008, "Wrong alignment on SteamProInventory_GetItemDefinitionIDs");
 static_assert(sizeof(SteamProInventory_GetItemDefinitionIDs) == 0x000018, "Wrong size on SteamProInventory_GetItemDefinitionIDs");
@@ -2402,11 +2402,11 @@ struct SteamProInventory_GetItemDefinitionProperty final
 {
 public:
 	struct FSteamItemDef                          ItemDef;                                           // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2317[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_225F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PropertyName;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2318[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2260[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetItemDefinitionProperty) == 0x000008, "Wrong alignment on SteamProInventory_GetItemDefinitionProperty");
 static_assert(sizeof(SteamProInventory_GetItemDefinitionProperty) == 0x000030, "Wrong size on SteamProInventory_GetItemDefinitionProperty");
@@ -2424,7 +2424,7 @@ public:
 	int32                                         Price;                                             // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BasePrice;                                         // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2319[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2261[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetItemPrice) == 0x000004, "Wrong alignment on SteamProInventory_GetItemPrice");
 static_assert(sizeof(SteamProInventory_GetItemPrice) == 0x000010, "Wrong size on SteamProInventory_GetItemPrice");
@@ -2439,10 +2439,10 @@ struct SteamProInventory_GetItemsByID final
 {
 public:
 	struct FSteamInventoryResult                  InventoryResult;                                   // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2262[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSteamItemInstanceID>           InstanceIDs;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231B[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2263[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetItemsByID) == 0x000008, "Wrong alignment on SteamProInventory_GetItemsByID");
 static_assert(sizeof(SteamProInventory_GetItemsByID) == 0x000020, "Wrong size on SteamProInventory_GetItemsByID");
@@ -2459,7 +2459,7 @@ public:
 	TArray<int32>                                 Prices;                                            // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 BasePrices;                                        // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231C[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2264[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetItemsWithPrices) == 0x000008, "Wrong alignment on SteamProInventory_GetItemsWithPrices");
 static_assert(sizeof(SteamProInventory_GetItemsWithPrices) == 0x000038, "Wrong size on SteamProInventory_GetItemsWithPrices");
@@ -2489,7 +2489,7 @@ public:
 	class FString                                 PropertyName;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231D[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2265[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetResultItemProperty) == 0x000008, "Wrong alignment on SteamProInventory_GetResultItemProperty");
 static_assert(sizeof(SteamProInventory_GetResultItemProperty) == 0x000030, "Wrong size on SteamProInventory_GetResultItemProperty");
@@ -2505,10 +2505,10 @@ struct SteamProInventory_GetResultItems final
 {
 public:
 	struct FSteamInventoryResult                  Handle;                                            // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2266[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FSteamItemDetails>              Items;                                             // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_231F[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2267[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetResultItems) == 0x000008, "Wrong alignment on SteamProInventory_GetResultItems");
 static_assert(sizeof(SteamProInventory_GetResultItems) == 0x000020, "Wrong size on SteamProInventory_GetResultItems");
@@ -2523,7 +2523,7 @@ struct SteamProInventory_GetResultStatus final
 public:
 	struct FSteamInventoryResult                  Handle;                                            // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamResult                                  ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2320[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2268[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GetResultStatus) == 0x000004, "Wrong alignment on SteamProInventory_GetResultStatus");
 static_assert(sizeof(SteamProInventory_GetResultStatus) == 0x000008, "Wrong size on SteamProInventory_GetResultStatus");
@@ -2561,7 +2561,7 @@ struct SteamProInventory_GrantPromoItems final
 public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2321[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2269[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_GrantPromoItems) == 0x000004, "Wrong alignment on SteamProInventory_GrantPromoItems");
 static_assert(sizeof(SteamProInventory_GrantPromoItems) == 0x000008, "Wrong size on SteamProInventory_GrantPromoItems");
@@ -2588,7 +2588,7 @@ public:
 	struct FSteamItemInstanceID                   ItemId;                                            // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 PropertyName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2322[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226A[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_RemoveProperty) == 0x000008, "Wrong alignment on SteamProInventory_RemoveProperty");
 static_assert(sizeof(SteamProInventory_RemoveProperty) == 0x000028, "Wrong size on SteamProInventory_RemoveProperty");
@@ -2603,10 +2603,10 @@ struct SteamProInventory_SerializeResult final
 {
 public:
 	struct FSteamInventoryResult                  Handle;                                            // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2323[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 Buffer;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2324[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_SerializeResult) == 0x000008, "Wrong alignment on SteamProInventory_SerializeResult");
 static_assert(sizeof(SteamProInventory_SerializeResult) == 0x000020, "Wrong size on SteamProInventory_SerializeResult");
@@ -2624,7 +2624,7 @@ public:
 	class FString                                 PropertyName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bValue;                                            // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0021(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2325[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226D[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_SetPropertyBool) == 0x000008, "Wrong alignment on SteamProInventory_SetPropertyBool");
 static_assert(sizeof(SteamProInventory_SetPropertyBool) == 0x000028, "Wrong size on SteamProInventory_SetPropertyBool");
@@ -2644,7 +2644,7 @@ public:
 	class FString                                 PropertyName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Value;                                             // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2326[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226E[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_SetPropertyFloat) == 0x000008, "Wrong alignment on SteamProInventory_SetPropertyFloat");
 static_assert(sizeof(SteamProInventory_SetPropertyFloat) == 0x000028, "Wrong size on SteamProInventory_SetPropertyFloat");
@@ -2664,7 +2664,7 @@ public:
 	class FString                                 PropertyName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Value;                                             // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2327[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_226F[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_SetPropertyInt) == 0x000008, "Wrong alignment on SteamProInventory_SetPropertyInt");
 static_assert(sizeof(SteamProInventory_SetPropertyInt) == 0x000028, "Wrong size on SteamProInventory_SetPropertyInt");
@@ -2684,7 +2684,7 @@ public:
 	class FString                                 PropertyName;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2328[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2270[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_SetPropertyString) == 0x000008, "Wrong alignment on SteamProInventory_SetPropertyString");
 static_assert(sizeof(SteamProInventory_SetPropertyString) == 0x000038, "Wrong size on SteamProInventory_SetPropertyString");
@@ -2713,7 +2713,7 @@ public:
 	struct FSteamInventoryUpdateHandle            Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamInventoryResult                  ResultHandle;                                      // 0x0008(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2329[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2271[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_SubmitUpdateProperties) == 0x000008, "Wrong alignment on SteamProInventory_SubmitUpdateProperties");
 static_assert(sizeof(SteamProInventory_SubmitUpdateProperties) == 0x000010, "Wrong size on SteamProInventory_SubmitUpdateProperties");
@@ -2727,13 +2727,13 @@ struct SteamProInventory_TransferItemQuantity final
 {
 public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232A[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2272[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamItemInstanceID                   ItemIDSource;                                      // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Quantity;                                          // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232B[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2273[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamItemInstanceID                   ItemIDDest;                                        // 0x0018(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232C[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2274[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_TransferItemQuantity) == 0x000008, "Wrong alignment on SteamProInventory_TransferItemQuantity");
 static_assert(sizeof(SteamProInventory_TransferItemQuantity) == 0x000028, "Wrong size on SteamProInventory_TransferItemQuantity");
@@ -2751,7 +2751,7 @@ public:
 	struct FSteamInventoryResult                  Result;                                            // 0x0000(0x0004)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamItemDef                          ListDefinition;                                    // 0x0004(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232D[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2275[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProInventory_TriggerItemDrop) == 0x000004, "Wrong alignment on SteamProInventory_TriggerItemDrop");
 static_assert(sizeof(SteamProInventory_TriggerItemDrop) == 0x00000C, "Wrong size on SteamProInventory_TriggerItemDrop");
@@ -2806,7 +2806,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamID;                                           // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232E[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2276[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs_RequestEligiblePromoItemDefinitionsIDsAsync) == 0x000008, "Wrong alignment on SteamCoreProInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs_RequestEligiblePromoItemDefinitionsIDsAsync");
@@ -2823,7 +2823,7 @@ struct SteamCoreProInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs_Ha
 public:
 	struct FSteamInventoryEligiblePromoItemDefIDs Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_232F[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2277[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs_HandleCallback");
 static_assert(sizeof(SteamCoreProInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs_HandleCallback) == 0x000020, "Wrong size on SteamCoreProInventoryAsyncActionRequestEligiblePromoItemDefinitionsIDs_HandleCallback");
@@ -2837,7 +2837,7 @@ struct SteamCoreProInventoryAsyncActionRequestPricesResult_RequestPricesAsync fi
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2330[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2278[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProInventoryAsyncActionRequestPricesResult* ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProInventoryAsyncActionRequestPricesResult_RequestPricesAsync) == 0x000008, "Wrong alignment on SteamCoreProInventoryAsyncActionRequestPricesResult_RequestPricesAsync");
@@ -2853,7 +2853,7 @@ struct SteamCoreProInventoryAsyncActionRequestPricesResult_HandleCallback final
 public:
 	struct FSteamInventoryRequestPricesResult     Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2331[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2279[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProInventoryAsyncActionRequestPricesResult_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProInventoryAsyncActionRequestPricesResult_HandleCallback");
 static_assert(sizeof(SteamCoreProInventoryAsyncActionRequestPricesResult_HandleCallback) == 0x000020, "Wrong size on SteamCoreProInventoryAsyncActionRequestPricesResult_HandleCallback");
@@ -2869,7 +2869,7 @@ public:
 	TArray<struct FSteamItemDef>                  ItemDefs;                                          // 0x0008(0x0010)(ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Quantity;                                          // 0x0018(0x0010)(ConstParm, Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2332[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227A[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProInventoryAsyncActionStartPurchaseResult* ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProInventoryAsyncActionStartPurchaseResult_StartPurchaseAsync) == 0x000008, "Wrong alignment on SteamCoreProInventoryAsyncActionStartPurchaseResult_StartPurchaseAsync");
@@ -2887,7 +2887,7 @@ struct SteamCoreProInventoryAsyncActionStartPurchaseResult_HandleCallback final
 public:
 	struct FSteamInventoryStartPurchaseResult     Data;                                              // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2333[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227B[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProInventoryAsyncActionStartPurchaseResult_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProInventoryAsyncActionStartPurchaseResult_HandleCallback");
 static_assert(sizeof(SteamCoreProInventoryAsyncActionStartPurchaseResult_HandleCallback) == 0x000030, "Wrong size on SteamCoreProInventoryAsyncActionStartPurchaseResult_HandleCallback");
@@ -2900,7 +2900,7 @@ struct SteamProMatchmaking_AddFavoriteGame final
 {
 public:
 	int32                                         AppID;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2335[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 IP;                                                // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ConnectionPort;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         QueryPort;                                         // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -2958,7 +2958,7 @@ struct SteamProMatchmaking_AddRequestLobbyListNearValueFilter final
 public:
 	class FString                                 KeyToMatch;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ValueToBeCloseTo;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2336[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227E[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_AddRequestLobbyListNearValueFilter) == 0x000008, "Wrong alignment on SteamProMatchmaking_AddRequestLobbyListNearValueFilter");
 static_assert(sizeof(SteamProMatchmaking_AddRequestLobbyListNearValueFilter) == 0x000018, "Wrong size on SteamProMatchmaking_AddRequestLobbyListNearValueFilter");
@@ -2973,7 +2973,7 @@ public:
 	class FString                                 KeyToMatch;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ValueToMatch;                                      // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamLobbyComparison                         ComparisonType;                                    // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2337[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_227F[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_AddRequestLobbyListNumericalFilter) == 0x000008, "Wrong alignment on SteamProMatchmaking_AddRequestLobbyListNumericalFilter");
 static_assert(sizeof(SteamProMatchmaking_AddRequestLobbyListNumericalFilter) == 0x000018, "Wrong size on SteamProMatchmaking_AddRequestLobbyListNumericalFilter");
@@ -3000,7 +3000,7 @@ public:
 	class FString                                 KeyToMatch;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ValueToMatch;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamLobbyComparison                         ComparisonType;                                    // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2338[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2280[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_AddRequestLobbyListStringFilter) == 0x000008, "Wrong alignment on SteamProMatchmaking_AddRequestLobbyListStringFilter");
 static_assert(sizeof(SteamProMatchmaking_AddRequestLobbyListStringFilter) == 0x000028, "Wrong size on SteamProMatchmaking_AddRequestLobbyListStringFilter");
@@ -3016,7 +3016,7 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Key;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2339[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2281[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_DeleteLobbyData) == 0x000008, "Wrong alignment on SteamProMatchmaking_DeleteLobbyData");
 static_assert(sizeof(SteamProMatchmaking_DeleteLobbyData) == 0x000020, "Wrong size on SteamProMatchmaking_DeleteLobbyData");
@@ -3037,7 +3037,7 @@ public:
 	TArray<ESteamFavoriteFlags>                   Param_Flags;                                       // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         TimeLastPlayedOnServer;                            // 0x0030(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0034(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_233A[0x3];                                     // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2282[0x3];                                     // 0x0035(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_GetFavoriteGame) == 0x000008, "Wrong alignment on SteamProMatchmaking_GetFavoriteGame");
 static_assert(sizeof(SteamProMatchmaking_GetFavoriteGame) == 0x000038, "Wrong size on SteamProMatchmaking_GetFavoriteGame");
@@ -3067,7 +3067,7 @@ struct SteamProMatchmaking_GetLobbyByIndex final
 {
 public:
 	int32                                         Lobby;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_233B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2283[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmaking_GetLobbyByIndex) == 0x000008, "Wrong alignment on SteamProMatchmaking_GetLobbyByIndex");
@@ -3082,11 +3082,11 @@ struct SteamProMatchmaking_GetLobbyChatEntry final
 public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         MessageID;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_233C[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2284[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               SteamIDUser;                                       // 0x0010(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Message;                                           // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamChatEntryType                           ChatEntryType;                                     // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_233D[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2285[0x3];                                     // 0x0029(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x002C(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmaking_GetLobbyChatEntry) == 0x000008, "Wrong alignment on SteamProMatchmaking_GetLobbyChatEntry");
@@ -3120,11 +3120,11 @@ struct SteamProMatchmaking_GetLobbyDataByIndex final
 public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         LobbyData;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_233E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2286[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Key;                                               // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_233F[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2287[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_GetLobbyDataByIndex) == 0x000008, "Wrong alignment on SteamProMatchmaking_GetLobbyDataByIndex");
 static_assert(sizeof(SteamProMatchmaking_GetLobbyDataByIndex) == 0x000038, "Wrong size on SteamProMatchmaking_GetLobbyDataByIndex");
@@ -3141,7 +3141,7 @@ struct SteamProMatchmaking_GetLobbyDataCount final
 public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2340[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2288[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_GetLobbyDataCount) == 0x000008, "Wrong alignment on SteamProMatchmaking_GetLobbyDataCount");
 static_assert(sizeof(SteamProMatchmaking_GetLobbyDataCount) == 0x000010, "Wrong size on SteamProMatchmaking_GetLobbyDataCount");
@@ -3156,10 +3156,10 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 GameServerIP;                                      // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         GameServerPort;                                    // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2341[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2289[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               SteamIDGameServer;                                 // 0x0020(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2342[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228A[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_GetLobbyGameServer) == 0x000008, "Wrong alignment on SteamProMatchmaking_GetLobbyGameServer");
 static_assert(sizeof(SteamProMatchmaking_GetLobbyGameServer) == 0x000030, "Wrong size on SteamProMatchmaking_GetLobbyGameServer");
@@ -3176,7 +3176,7 @@ struct SteamProMatchmaking_GetLobbyMemberByIndex final
 public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Member;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2343[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228B[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmaking_GetLobbyMemberByIndex) == 0x000008, "Wrong alignment on SteamProMatchmaking_GetLobbyMemberByIndex");
@@ -3209,7 +3209,7 @@ struct SteamProMatchmaking_GetLobbyMemberLimit final
 public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2344[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228C[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_GetLobbyMemberLimit) == 0x000008, "Wrong alignment on SteamProMatchmaking_GetLobbyMemberLimit");
 static_assert(sizeof(SteamProMatchmaking_GetLobbyMemberLimit) == 0x000010, "Wrong size on SteamProMatchmaking_GetLobbyMemberLimit");
@@ -3236,7 +3236,7 @@ struct SteamProMatchmaking_GetNumLobbyMembers final
 public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2345[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228D[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_GetNumLobbyMembers) == 0x000008, "Wrong alignment on SteamProMatchmaking_GetNumLobbyMembers");
 static_assert(sizeof(SteamProMatchmaking_GetNumLobbyMembers) == 0x000010, "Wrong size on SteamProMatchmaking_GetNumLobbyMembers");
@@ -3262,7 +3262,7 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDInvitee;                                    // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2346[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_InviteUserToLobby) == 0x000008, "Wrong alignment on SteamProMatchmaking_InviteUserToLobby");
 static_assert(sizeof(SteamProMatchmaking_InviteUserToLobby) == 0x000018, "Wrong size on SteamProMatchmaking_InviteUserToLobby");
@@ -3287,13 +3287,13 @@ struct SteamProMatchmaking_RemoveFavoriteGame final
 {
 public:
 	int32                                         AppID;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2347[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_228F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 IP;                                                // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ConnectionPort;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         QueryPort;                                         // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<ESteamFavoriteFlags>                   Param_Flags;                                       // 0x0020(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2348[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2290[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_RemoveFavoriteGame) == 0x000008, "Wrong alignment on SteamProMatchmaking_RemoveFavoriteGame");
 static_assert(sizeof(SteamProMatchmaking_RemoveFavoriteGame) == 0x000038, "Wrong size on SteamProMatchmaking_RemoveFavoriteGame");
@@ -3311,7 +3311,7 @@ struct SteamProMatchmaking_RequestLobbyData final
 public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2349[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2291[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_RequestLobbyData) == 0x000008, "Wrong alignment on SteamProMatchmaking_RequestLobbyData");
 static_assert(sizeof(SteamProMatchmaking_RequestLobbyData) == 0x000010, "Wrong size on SteamProMatchmaking_RequestLobbyData");
@@ -3326,7 +3326,7 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Message;                                           // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234A[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2292[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_SendLobbyChatMsg) == 0x000008, "Wrong alignment on SteamProMatchmaking_SendLobbyChatMsg");
 static_assert(sizeof(SteamProMatchmaking_SendLobbyChatMsg) == 0x000020, "Wrong size on SteamProMatchmaking_SendLobbyChatMsg");
@@ -3342,7 +3342,7 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDLobbyDependent;                             // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2293[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_SetLinkedLobby) == 0x000008, "Wrong alignment on SteamProMatchmaking_SetLinkedLobby");
 static_assert(sizeof(SteamProMatchmaking_SetLinkedLobby) == 0x000018, "Wrong size on SteamProMatchmaking_SetLinkedLobby");
@@ -3359,7 +3359,7 @@ public:
 	class FString                                 Key;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234C[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2294[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_SetLobbyData) == 0x000008, "Wrong alignment on SteamProMatchmaking_SetLobbyData");
 static_assert(sizeof(SteamProMatchmaking_SetLobbyData) == 0x000030, "Wrong size on SteamProMatchmaking_SetLobbyData");
@@ -3376,7 +3376,7 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 GameServerIP;                                      // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         GameServerPort;                                    // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234D[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2295[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               SteamIDGameServer;                                 // 0x0020(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmaking_SetLobbyGameServer) == 0x000008, "Wrong alignment on SteamProMatchmaking_SetLobbyGameServer");
@@ -3394,7 +3394,7 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bLobbyJoinable;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234E[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2296[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_SetLobbyJoinable) == 0x000008, "Wrong alignment on SteamProMatchmaking_SetLobbyJoinable");
 static_assert(sizeof(SteamProMatchmaking_SetLobbyJoinable) == 0x000010, "Wrong size on SteamProMatchmaking_SetLobbyJoinable");
@@ -3425,7 +3425,7 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         MaxMembers;                                        // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_234F[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2297[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_SetLobbyMemberLimit) == 0x000008, "Wrong alignment on SteamProMatchmaking_SetLobbyMemberLimit");
 static_assert(sizeof(SteamProMatchmaking_SetLobbyMemberLimit) == 0x000010, "Wrong size on SteamProMatchmaking_SetLobbyMemberLimit");
@@ -3441,7 +3441,7 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDNewOwner;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2350[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2298[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_SetLobbyOwner) == 0x000008, "Wrong alignment on SteamProMatchmaking_SetLobbyOwner");
 static_assert(sizeof(SteamProMatchmaking_SetLobbyOwner) == 0x000018, "Wrong size on SteamProMatchmaking_SetLobbyOwner");
@@ -3457,7 +3457,7 @@ public:
 	struct FSteamID                               SteamIDLobby;                                      // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamLobbyType                               LobbyType;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2351[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2299[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmaking_SetLobbyType) == 0x000008, "Wrong alignment on SteamProMatchmaking_SetLobbyType");
 static_assert(sizeof(SteamProMatchmaking_SetLobbyType) == 0x000010, "Wrong size on SteamProMatchmaking_SetLobbyType");
@@ -3472,7 +3472,7 @@ struct SteamProMatchmaking_CreateLobby final
 public:
 	TDelegate<void(struct FCreateLobbyData& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamLobbyType                               LobbyType;                                         // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2352[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_229A[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MaxMembers;                                        // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmaking_CreateLobby) == 0x000004, "Wrong alignment on SteamProMatchmaking_CreateLobby");
@@ -3512,10 +3512,10 @@ struct SteamCoreProMatchmakingAsyncActionCreateLobby_CreateLobbyAsync final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamLobbyType                               LobbyType;                                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2353[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_229B[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         MaxMembers;                                        // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2354[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_229C[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProMatchmakingAsyncActionCreateLobby* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProMatchmakingAsyncActionCreateLobby_CreateLobbyAsync) == 0x000008, "Wrong alignment on SteamCoreProMatchmakingAsyncActionCreateLobby_CreateLobbyAsync");
@@ -3533,7 +3533,7 @@ struct SteamCoreProMatchmakingAsyncActionCreateLobby_HandleCallback final
 public:
 	struct FCreateLobbyData                       Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2355[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_229D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProMatchmakingAsyncActionCreateLobby_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProMatchmakingAsyncActionCreateLobby_HandleCallback");
 static_assert(sizeof(SteamCoreProMatchmakingAsyncActionCreateLobby_HandleCallback) == 0x000018, "Wrong size on SteamCoreProMatchmakingAsyncActionCreateLobby_HandleCallback");
@@ -3547,7 +3547,7 @@ struct SteamCoreProMatchmakingAsyncActionRequestLobbyList_RequestLobbyListAsync 
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2356[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_229E[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProMatchmakingAsyncActionRequestLobbyList* ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProMatchmakingAsyncActionRequestLobbyList_RequestLobbyListAsync) == 0x000008, "Wrong alignment on SteamCoreProMatchmakingAsyncActionRequestLobbyList_RequestLobbyListAsync");
@@ -3563,7 +3563,7 @@ struct SteamCoreProMatchmakingAsyncActionRequestLobbyList_HandleCallback final
 public:
 	struct FLobbyMatchList                        Data;                                              // 0x0000(0x0004)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2357[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_229F[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProMatchmakingAsyncActionRequestLobbyList_HandleCallback) == 0x000004, "Wrong alignment on SteamCoreProMatchmakingAsyncActionRequestLobbyList_HandleCallback");
 static_assert(sizeof(SteamCoreProMatchmakingAsyncActionRequestLobbyList_HandleCallback) == 0x000008, "Wrong size on SteamCoreProMatchmakingAsyncActionRequestLobbyList_HandleCallback");
@@ -3578,7 +3578,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDLobby;                                      // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2358[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A0[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProMatchmakingAsyncActionJoinLobby* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProMatchmakingAsyncActionJoinLobby_JoinLobbyAsync) == 0x000008, "Wrong alignment on SteamCoreProMatchmakingAsyncActionJoinLobby_JoinLobbyAsync");
@@ -3595,7 +3595,7 @@ struct SteamCoreProMatchmakingAsyncActionJoinLobby_HandleCallback final
 public:
 	struct FJoinLobbyData                         Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2359[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A1[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProMatchmakingAsyncActionJoinLobby_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProMatchmakingAsyncActionJoinLobby_HandleCallback");
 static_assert(sizeof(SteamCoreProMatchmakingAsyncActionJoinLobby_HandleCallback) == 0x000018, "Wrong size on SteamCoreProMatchmakingAsyncActionJoinLobby_HandleCallback");
@@ -3620,9 +3620,9 @@ public:
 	bool                                          bUsesStats;                                        // 0x0072(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bShouldAdvertise;                                  // 0x0073(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseLobbiesVoiceChatIfAvailable;                   // 0x0074(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_235B[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A3[0x3];                                     // 0x0075(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Timeout;                                           // 0x0078(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_235C[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A4[0x4];                                     // 0x007C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProCreateSession*             ReturnValue;                                       // 0x0080(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProCreateSession_CreateSteamCoreProSession) == 0x000008, "Wrong alignment on SteamCoreProCreateSession_CreateSteamCoreProSession");
@@ -3656,7 +3656,7 @@ public:
 	ESteamLobbyDistanceFilter                     DistanceFilter;                                    // 0x005E(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bEmptyServersOnly;                                 // 0x005F(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSecureServersOnly;                                // 0x0060(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_235E[0x3];                                     // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A6[0x3];                                     // 0x0061(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Timeout;                                           // 0x0064(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProFindSession*               ReturnValue;                                       // 0x0068(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -3691,7 +3691,7 @@ struct SteamCoreProDestroySession_DestroySteamCoreProSession final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2360[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A8[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProDestroySession*            ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProDestroySession_DestroySteamCoreProSession) == 0x000008, "Wrong alignment on SteamCoreProDestroySession_DestroySteamCoreProSession");
@@ -3707,7 +3707,7 @@ struct SteamCoreProDestroySession_OnCompleted final
 public:
 	class FName                                   SessionName;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2361[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22A9[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProDestroySession_OnCompleted) == 0x000004, "Wrong alignment on SteamCoreProDestroySession_OnCompleted");
 static_assert(sizeof(SteamCoreProDestroySession_OnCompleted) == 0x00000C, "Wrong size on SteamCoreProDestroySession_OnCompleted");
@@ -3723,7 +3723,7 @@ public:
 	TMap<class FString, struct FSteamSessionSearchSetting> Settings;                                          // 0x0008(0x0050)(Parm, NativeAccessSpecifierPublic)
 	class FString                                 SessionName;                                       // 0x0058(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxPlayers;                                        // 0x0068(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2363[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AB[0x4];                                     // 0x006C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUpdateSession*             ReturnValue;                                       // 0x0070(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUpdateSession_UpdateSteamCoreProSession) == 0x000008, "Wrong alignment on SteamCoreProUpdateSession_UpdateSteamCoreProSession");
@@ -3741,7 +3741,7 @@ struct SteamCoreProUpdateSession_OnCompleted final
 public:
 	class FName                                   SessionName;                                       // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2364[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AC[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUpdateSession_OnCompleted) == 0x000004, "Wrong alignment on SteamCoreProUpdateSession_OnCompleted");
 static_assert(sizeof(SteamCoreProUpdateSession_OnCompleted) == 0x00000C, "Wrong size on SteamCoreProUpdateSession_OnCompleted");
@@ -3767,7 +3767,7 @@ public:
 	TDelegate<void(struct FGameServerItem& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 IP;                                                // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         QueryPort;                                         // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2365[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AD[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmakingServers_PingServer) == 0x000008, "Wrong alignment on SteamProMatchmakingServers_PingServer");
 static_assert(sizeof(SteamProMatchmakingServers_PingServer) == 0x000028, "Wrong size on SteamProMatchmakingServers_PingServer");
@@ -3785,7 +3785,7 @@ public:
 	float                                         Timeout;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2366[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AE[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmakingServers_RequestFavoritesServerList) == 0x000008, "Wrong alignment on SteamProMatchmakingServers_RequestFavoritesServerList");
@@ -3807,7 +3807,7 @@ public:
 	float                                         Timeout;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2367[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22AF[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmakingServers_RequestFriendsServerList) == 0x000008, "Wrong alignment on SteamProMatchmakingServers_RequestFriendsServerList");
@@ -3829,7 +3829,7 @@ public:
 	float                                         Timeout;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2368[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B0[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmakingServers_RequestHistoryServerList) == 0x000008, "Wrong alignment on SteamProMatchmakingServers_RequestHistoryServerList");
@@ -3851,7 +3851,7 @@ public:
 	float                                         Timeout;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2369[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B1[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmakingServers_RequestInternetServerList) == 0x000008, "Wrong alignment on SteamProMatchmakingServers_RequestInternetServerList");
@@ -3873,7 +3873,7 @@ public:
 	float                                         Timeout;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236A[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B2[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmakingServers_RequestLANServerList) == 0x000008, "Wrong alignment on SteamProMatchmakingServers_RequestLANServerList");
@@ -3895,7 +3895,7 @@ public:
 	float                                         Timeout;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x001C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236B[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B3[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0020(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProMatchmakingServers_RequestSpectatorServerList) == 0x000008, "Wrong alignment on SteamProMatchmakingServers_RequestSpectatorServerList");
@@ -3915,7 +3915,7 @@ public:
 	TDelegate<void(TArray<struct FGameServerRule>& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 IP;                                                // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         QueryPort;                                         // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236C[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B4[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProMatchmakingServers_ServerRules) == 0x000008, "Wrong alignment on SteamProMatchmakingServers_ServerRules");
 static_assert(sizeof(SteamProMatchmakingServers_ServerRules) == 0x000028, "Wrong size on SteamProMatchmakingServers_ServerRules");
@@ -3960,7 +3960,7 @@ struct SteamCoreProMatchmakingServersAsyncActionPingServer_HandleCallback final
 public:
 	struct FGameServerItem                        Data;                                              // 0x0000(0x00B0)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x00B0(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236D[0x7];                                     // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B5[0x7];                                     // 0x00B1(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProMatchmakingServersAsyncActionPingServer_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProMatchmakingServersAsyncActionPingServer_HandleCallback");
 static_assert(sizeof(SteamCoreProMatchmakingServersAsyncActionPingServer_HandleCallback) == 0x0000B8, "Wrong size on SteamCoreProMatchmakingServersAsyncActionPingServer_HandleCallback");
@@ -3988,7 +3988,7 @@ public:
 	float                                         Timeout;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236E[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B6[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProMatchmakingServersAsyncActionRequestServerList* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4012,7 +4012,7 @@ public:
 	float                                         Timeout;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_236F[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B7[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProMatchmakingServersAsyncActionRequestServerList* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4036,7 +4036,7 @@ public:
 	float                                         Timeout;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2370[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B8[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProMatchmakingServersAsyncActionRequestServerList* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4060,7 +4060,7 @@ public:
 	float                                         Timeout;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2371[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22B9[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProMatchmakingServersAsyncActionRequestServerList* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4084,7 +4084,7 @@ public:
 	float                                         Timeout;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2372[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22BA[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProMatchmakingServersAsyncActionRequestServerList* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4108,7 +4108,7 @@ public:
 	float                                         Timeout;                                           // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxResults;                                        // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIgnoreNonResponsive;                              // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2373[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22BB[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UServerFilter*                          ServerFilter;                                      // 0x0018(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProMatchmakingServersAsyncActionRequestServerList* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -4170,7 +4170,7 @@ struct SteamCoreProMatchmakingServersAsyncActionServerRules_HandleCallback final
 public:
 	TArray<struct FGameServerRule>                Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2374[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22BC[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProMatchmakingServersAsyncActionServerRules_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProMatchmakingServersAsyncActionServerRules_HandleCallback");
 static_assert(sizeof(SteamCoreProMatchmakingServersAsyncActionServerRules_HandleCallback) == 0x000018, "Wrong size on SteamCoreProMatchmakingServersAsyncActionServerRules_HandleCallback");
@@ -4426,7 +4426,7 @@ struct SteamProNetworking_AcceptP2PSessionWithUser final
 public:
 	struct FSteamID                               SteamIDRemote;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2378[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworking_AcceptP2PSessionWithUser) == 0x000008, "Wrong alignment on SteamProNetworking_AcceptP2PSessionWithUser");
 static_assert(sizeof(SteamProNetworking_AcceptP2PSessionWithUser) == 0x000010, "Wrong size on SteamProNetworking_AcceptP2PSessionWithUser");
@@ -4454,7 +4454,7 @@ public:
 	struct FSteamID                               SteamIDRemote;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Channel;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2379[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C1[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworking_CloseP2PChannelWithUser) == 0x000008, "Wrong alignment on SteamProNetworking_CloseP2PChannelWithUser");
 static_assert(sizeof(SteamProNetworking_CloseP2PChannelWithUser) == 0x000010, "Wrong size on SteamProNetworking_CloseP2PChannelWithUser");
@@ -4469,7 +4469,7 @@ struct SteamProNetworking_CloseP2PSessionWithUser final
 public:
 	struct FSteamID                               SteamIDRemote;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_237A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworking_CloseP2PSessionWithUser) == 0x000008, "Wrong alignment on SteamProNetworking_CloseP2PSessionWithUser");
 static_assert(sizeof(SteamProNetworking_CloseP2PSessionWithUser) == 0x000010, "Wrong size on SteamProNetworking_CloseP2PSessionWithUser");
@@ -4484,7 +4484,7 @@ public:
 	struct FSteamID                               SteamIDRemote;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamP2PSessionState                  ConnectionState;                                   // 0x0008(0x0028)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_237B[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C3[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworking_GetP2PSessionState) == 0x000008, "Wrong alignment on SteamProNetworking_GetP2PSessionState");
 static_assert(sizeof(SteamProNetworking_GetP2PSessionState) == 0x000038, "Wrong size on SteamProNetworking_GetP2PSessionState");
@@ -4500,7 +4500,7 @@ public:
 	int32                                         MessageSize;                                       // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Channel;                                           // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_237C[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C4[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworking_IsP2PPacketAvailable) == 0x000004, "Wrong alignment on SteamProNetworking_IsP2PPacketAvailable");
 static_assert(sizeof(SteamProNetworking_IsP2PPacketAvailable) == 0x00000C, "Wrong size on SteamProNetworking_IsP2PPacketAvailable");
@@ -4518,7 +4518,7 @@ public:
 	int32                                         MessageSize;                                       // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Channel;                                           // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_237D[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C5[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworking_ReadP2PPacket) == 0x000008, "Wrong alignment on SteamProNetworking_ReadP2PPacket");
 static_assert(sizeof(SteamProNetworking_ReadP2PPacket) == 0x000028, "Wrong size on SteamProNetworking_ReadP2PPacket");
@@ -4536,10 +4536,10 @@ public:
 	struct FSteamID                               SteamIDRemote;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 Data;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	ESteamP2PSend                                 P2PSendType;                                       // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_237E[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C6[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Channel;                                           // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_237F[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C7[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworking_SendP2PPacket) == 0x000008, "Wrong alignment on SteamProNetworking_SendP2PPacket");
 static_assert(sizeof(SteamProNetworking_SendP2PPacket) == 0x000028, "Wrong size on SteamProNetworking_SendP2PPacket");
@@ -4581,7 +4581,7 @@ public:
 	class FString                                 String;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamNetworkPingLocation              Result;                                            // 0x0010(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2380[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C8[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworkingUtils_ParsePingLocationString) == 0x000008, "Wrong alignment on SteamProNetworkingUtils_ParsePingLocationString");
 static_assert(sizeof(SteamProNetworkingUtils_ParsePingLocationString) == 0x000028, "Wrong size on SteamProNetworkingUtils_ParsePingLocationString");
@@ -4596,7 +4596,7 @@ struct SteamProNetworkingUtils_CheckPingDataUpToDate final
 public:
 	float                                         MaxAgeSeconds;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2381[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22C9[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworkingUtils_CheckPingDataUpToDate) == 0x000004, "Wrong alignment on SteamProNetworkingUtils_CheckPingDataUpToDate");
 static_assert(sizeof(SteamProNetworkingUtils_CheckPingDataUpToDate) == 0x000008, "Wrong size on SteamProNetworkingUtils_CheckPingDataUpToDate");
@@ -4611,7 +4611,7 @@ public:
 	struct FSteamNetworkPingLocation              Location1;                                         // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FSteamNetworkPingLocation              Location2;                                         // 0x0010(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2382[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CA[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworkingUtils_EstimatePingTimeBetweenTwoLocations) == 0x000008, "Wrong alignment on SteamProNetworkingUtils_EstimatePingTimeBetweenTwoLocations");
 static_assert(sizeof(SteamProNetworkingUtils_EstimatePingTimeBetweenTwoLocations) == 0x000028, "Wrong size on SteamProNetworkingUtils_EstimatePingTimeBetweenTwoLocations");
@@ -4626,7 +4626,7 @@ struct SteamProNetworkingUtils_EstimatePingTimeFromLocalHost final
 public:
 	struct FSteamNetworkPingLocation              RemoteLocation;                                    // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2383[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CB[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworkingUtils_EstimatePingTimeFromLocalHost) == 0x000008, "Wrong alignment on SteamProNetworkingUtils_EstimatePingTimeFromLocalHost");
 static_assert(sizeof(SteamProNetworkingUtils_EstimatePingTimeFromLocalHost) == 0x000018, "Wrong size on SteamProNetworkingUtils_EstimatePingTimeFromLocalHost");
@@ -4640,7 +4640,7 @@ struct SteamProNetworkingUtils_GetLocalPingLocation final
 public:
 	struct FSteamNetworkPingLocation              Result;                                            // 0x0000(0x0010)(Parm, OutParm, NativeAccessSpecifierPublic)
 	float                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2384[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CC[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProNetworkingUtils_GetLocalPingLocation) == 0x000008, "Wrong alignment on SteamProNetworkingUtils_GetLocalPingLocation");
 static_assert(sizeof(SteamProNetworkingUtils_GetLocalPingLocation) == 0x000018, "Wrong size on SteamProNetworkingUtils_GetLocalPingLocation");
@@ -4665,7 +4665,7 @@ struct SteamProParentalSettings_BIsAppBlocked final
 public:
 	int32                                         AppID;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2385[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CD[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProParentalSettings_BIsAppBlocked) == 0x000004, "Wrong alignment on SteamProParentalSettings_BIsAppBlocked");
 static_assert(sizeof(SteamProParentalSettings_BIsAppBlocked) == 0x000008, "Wrong size on SteamProParentalSettings_BIsAppBlocked");
@@ -4679,7 +4679,7 @@ struct SteamProParentalSettings_BIsAppInBlockList final
 public:
 	int32                                         AppID;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2386[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CE[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProParentalSettings_BIsAppInBlockList) == 0x000004, "Wrong alignment on SteamProParentalSettings_BIsAppInBlockList");
 static_assert(sizeof(SteamProParentalSettings_BIsAppInBlockList) == 0x000008, "Wrong size on SteamProParentalSettings_BIsAppInBlockList");
@@ -4742,7 +4742,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPartyBeaconID                         BeaconID;                                          // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2387[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22CF[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProSteamPartiesAsyncActionJoinParty* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProSteamPartiesAsyncActionJoinParty_JoinPartyAsync) == 0x000008, "Wrong alignment on SteamCoreProSteamPartiesAsyncActionJoinParty_JoinPartyAsync");
@@ -4759,7 +4759,7 @@ struct SteamCoreProSteamPartiesAsyncActionJoinParty_HandleCallback final
 public:
 	struct FJoinPartyData                         Data;                                              // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2388[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D0[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProSteamPartiesAsyncActionJoinParty_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProSteamPartiesAsyncActionJoinParty_HandleCallback");
 static_assert(sizeof(SteamCoreProSteamPartiesAsyncActionJoinParty_HandleCallback) == 0x000030, "Wrong size on SteamCoreProSteamPartiesAsyncActionJoinParty_HandleCallback");
@@ -4773,12 +4773,12 @@ struct SteamCoreProSteamPartiesAsyncActionCreateBeacon_CreateBeaconAsync final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OpenSlots;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2389[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D1[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamPartyBeaconLocation              BeaconLocation;                                    // 0x0010(0x0018)(Parm, NativeAccessSpecifierPublic)
 	class FString                                 ConnectString;                                     // 0x0028(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 MetaData;                                          // 0x0038(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0048(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_238A[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D2[0x4];                                     // 0x004C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProSteamPartiesAsyncActionCreateBeacon* ReturnValue;                                       // 0x0050(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProSteamPartiesAsyncActionCreateBeacon_CreateBeaconAsync) == 0x000008, "Wrong alignment on SteamCoreProSteamPartiesAsyncActionCreateBeacon_CreateBeaconAsync");
@@ -4798,7 +4798,7 @@ struct SteamCoreProSteamPartiesAsyncActionCreateBeacon_HandleCallback final
 public:
 	struct FCreateBeaconData                      Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_238B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D3[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProSteamPartiesAsyncActionCreateBeacon_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProSteamPartiesAsyncActionCreateBeacon_HandleCallback");
 static_assert(sizeof(SteamCoreProSteamPartiesAsyncActionCreateBeacon_HandleCallback) == 0x000018, "Wrong size on SteamCoreProSteamPartiesAsyncActionCreateBeacon_HandleCallback");
@@ -4845,10 +4845,10 @@ public:
 	int32                                         DLC;                                               // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAvailable;                                        // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_238D[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D5[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Param_Name;                                        // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_238E[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D6[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_BGetDLCDataByIndex) == 0x000008, "Wrong alignment on SteamProApps_BGetDLCDataByIndex");
 static_assert(sizeof(SteamProApps_BGetDLCDataByIndex) == 0x000028, "Wrong size on SteamProApps_BGetDLCDataByIndex");
@@ -4865,7 +4865,7 @@ struct SteamProApps_BIsAppInstalled final
 public:
 	int32                                         AppID;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_238F[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D7[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_BIsAppInstalled) == 0x000004, "Wrong alignment on SteamProApps_BIsAppInstalled");
 static_assert(sizeof(SteamProApps_BIsAppInstalled) == 0x000008, "Wrong size on SteamProApps_BIsAppInstalled");
@@ -4890,7 +4890,7 @@ struct SteamProApps_BIsDlcInstalled final
 public:
 	int32                                         AppID;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2390[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D8[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_BIsDlcInstalled) == 0x000004, "Wrong alignment on SteamProApps_BIsDlcInstalled");
 static_assert(sizeof(SteamProApps_BIsDlcInstalled) == 0x000008, "Wrong size on SteamProApps_BIsDlcInstalled");
@@ -4926,7 +4926,7 @@ struct SteamProApps_BIsSubscribedApp final
 public:
 	int32                                         AppID;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2391[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22D9[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_BIsSubscribedApp) == 0x000004, "Wrong alignment on SteamProApps_BIsSubscribedApp");
 static_assert(sizeof(SteamProApps_BIsSubscribedApp) == 0x000008, "Wrong size on SteamProApps_BIsSubscribedApp");
@@ -4963,7 +4963,7 @@ public:
 	int32                                         SecondsAllowed;                                    // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SecondsPlayed;                                     // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2392[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22DA[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_BIsTimedTrial) == 0x000004, "Wrong alignment on SteamProApps_BIsTimedTrial");
 static_assert(sizeof(SteamProApps_BIsTimedTrial) == 0x00000C, "Wrong size on SteamProApps_BIsTimedTrial");
@@ -4999,10 +4999,10 @@ struct SteamProApps_GetAppInstallDir final
 {
 public:
 	int32                                         AppID;                                             // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2393[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22DB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Folder;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2394[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22DC[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_GetAppInstallDir) == 0x000008, "Wrong alignment on SteamProApps_GetAppInstallDir");
 static_assert(sizeof(SteamProApps_GetAppInstallDir) == 0x000020, "Wrong size on SteamProApps_GetAppInstallDir");
@@ -5039,7 +5039,7 @@ struct SteamProApps_GetCurrentBetaName final
 public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2395[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22DD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_GetCurrentBetaName) == 0x000008, "Wrong alignment on SteamProApps_GetCurrentBetaName");
 static_assert(sizeof(SteamProApps_GetCurrentBetaName) == 0x000018, "Wrong size on SteamProApps_GetCurrentBetaName");
@@ -5077,7 +5077,7 @@ public:
 	int32                                         BytesDownloaded;                                   // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BytesTotal;                                        // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2396[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22DE[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_GetDlcDownloadProgress) == 0x000004, "Wrong alignment on SteamProApps_GetDlcDownloadProgress");
 static_assert(sizeof(SteamProApps_GetDlcDownloadProgress) == 0x000010, "Wrong size on SteamProApps_GetDlcDownloadProgress");
@@ -5108,7 +5108,7 @@ public:
 	int32                                         MaxDepots;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Depots;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2397[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22DF[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_GetInstalledDepots) == 0x000008, "Wrong alignment on SteamProApps_GetInstalledDepots");
 static_assert(sizeof(SteamProApps_GetInstalledDepots) == 0x000020, "Wrong size on SteamProApps_GetInstalledDepots");
@@ -5124,7 +5124,7 @@ struct SteamProApps_GetLaunchCommandLine final
 public:
 	class FString                                 CommandLine;                                       // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2398[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E0[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProApps_GetLaunchCommandLine) == 0x000008, "Wrong alignment on SteamProApps_GetLaunchCommandLine");
 static_assert(sizeof(SteamProApps_GetLaunchCommandLine) == 0x000018, "Wrong size on SteamProApps_GetLaunchCommandLine");
@@ -5233,7 +5233,7 @@ public:
 	class FString                                 KeyToFind;                                         // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         ValuesToFind;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_239A[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E2[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_AddGameSearchParams) == 0x000008, "Wrong alignment on SteamProGameSearch_AddGameSearchParams");
 static_assert(sizeof(SteamProGameSearch_AddGameSearchParams) == 0x000028, "Wrong size on SteamProGameSearch_AddGameSearchParams");
@@ -5270,7 +5270,7 @@ struct SteamProGameSearch_EndGame final
 public:
 	class FString                                 UniqueGameID;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_239B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E3[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_EndGame) == 0x000008, "Wrong alignment on SteamProGameSearch_EndGame");
 static_assert(sizeof(SteamProGameSearch_EndGame) == 0x000018, "Wrong size on SteamProGameSearch_EndGame");
@@ -5295,7 +5295,7 @@ struct SteamProGameSearch_HostConfirmGameStart final
 public:
 	class FString                                 UniqueGameID;                                      // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_239C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E4[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_HostConfirmGameStart) == 0x000008, "Wrong alignment on SteamProGameSearch_HostConfirmGameStart");
 static_assert(sizeof(SteamProGameSearch_HostConfirmGameStart) == 0x000018, "Wrong size on SteamProGameSearch_HostConfirmGameStart");
@@ -5311,7 +5311,7 @@ public:
 	int32                                         PlayerMax;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxTeamSize;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_239D[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E5[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_RequestPlayersForGame) == 0x000004, "Wrong alignment on SteamProGameSearch_RequestPlayersForGame");
 static_assert(sizeof(SteamProGameSearch_RequestPlayersForGame) == 0x000010, "Wrong size on SteamProGameSearch_RequestPlayersForGame");
@@ -5329,7 +5329,7 @@ public:
 	class FString                                 ConnectionDetails;                                 // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumConnectionDetails;                              // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_239E[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E6[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_RetrieveConnectionDetails) == 0x000008, "Wrong alignment on SteamProGameSearch_RetrieveConnectionDetails");
 static_assert(sizeof(SteamProGameSearch_RetrieveConnectionDetails) == 0x000020, "Wrong size on SteamProGameSearch_RetrieveConnectionDetails");
@@ -5346,7 +5346,7 @@ public:
 	int32                                         PlayerMin;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayerMax;                                         // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_239F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E7[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_SearchForGameSolo) == 0x000004, "Wrong alignment on SteamProGameSearch_SearchForGameSolo");
 static_assert(sizeof(SteamProGameSearch_SearchForGameSolo) == 0x00000C, "Wrong size on SteamProGameSearch_SearchForGameSolo");
@@ -5363,7 +5363,7 @@ public:
 	int32                                         PlayerMin;                                         // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         PlayerMax;                                         // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23A0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_SearchForGameWithLobby) == 0x000008, "Wrong alignment on SteamProGameSearch_SearchForGameWithLobby");
 static_assert(sizeof(SteamProGameSearch_SearchForGameWithLobby) == 0x000018, "Wrong size on SteamProGameSearch_SearchForGameWithLobby");
@@ -5379,7 +5379,7 @@ struct SteamProGameSearch_SetConnectionDetails final
 public:
 	class FString                                 ConnectionDetails;                                 // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23A1[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22E9[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_SetConnectionDetails) == 0x000008, "Wrong alignment on SteamProGameSearch_SetConnectionDetails");
 static_assert(sizeof(SteamProGameSearch_SetConnectionDetails) == 0x000018, "Wrong size on SteamProGameSearch_SetConnectionDetails");
@@ -5394,7 +5394,7 @@ public:
 	class FString                                 Key;                                               // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Values;                                            // 0x0010(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23A2[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22EA[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_SetGameHostParams) == 0x000008, "Wrong alignment on SteamProGameSearch_SetGameHostParams");
 static_assert(sizeof(SteamProGameSearch_SetGameHostParams) == 0x000028, "Wrong size on SteamProGameSearch_SetGameHostParams");
@@ -5411,7 +5411,7 @@ public:
 	struct FSteamID                               SteamIDPlayer;                                     // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamPlayerResult                            PlayerResult;                                      // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamGameSearchErrorCode                     ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23A3[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22EB[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameSearch_SubmitPlayerResult) == 0x000008, "Wrong alignment on SteamProGameSearch_SubmitPlayerResult");
 static_assert(sizeof(SteamProGameSearch_SubmitPlayerResult) == 0x000020, "Wrong size on SteamProGameSearch_SubmitPlayerResult");
@@ -5452,7 +5452,7 @@ public:
 	TArray<uint8>                                 Ticket;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamID;                                           // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamBeginAuthSessionResult                  ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23A5[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22ED[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServer_BeginAuthSession) == 0x000008, "Wrong alignment on SteamProGameServer_BeginAuthSession");
 static_assert(sizeof(SteamProGameServer_BeginAuthSession) == 0x000020, "Wrong size on SteamProGameServer_BeginAuthSession");
@@ -5491,7 +5491,7 @@ public:
 	class FString                                 PlayerName;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Score;                                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23A6[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22EE[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServer_BUpdateUserData) == 0x000008, "Wrong alignment on SteamProGameServer_BUpdateUserData");
 static_assert(sizeof(SteamProGameServer_BUpdateUserData) == 0x000020, "Wrong size on SteamProGameServer_BUpdateUserData");
@@ -5554,7 +5554,7 @@ public:
 	TArray<uint8>                                 Ticket;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FSteamNetworkingIdentity               SteamNetworkingIdentity;                           // 0x0010(0x0088)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamTicketHandle                     ReturnValue;                                       // 0x0098(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23A7[0x4];                                     // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22EF[0x4];                                     // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServer_GetAuthSessionTicket) == 0x000008, "Wrong alignment on SteamProGameServer_GetAuthSessionTicket");
 static_assert(sizeof(SteamProGameServer_GetAuthSessionTicket) == 0x0000A0, "Wrong size on SteamProGameServer_GetAuthSessionTicket");
@@ -5647,7 +5647,7 @@ public:
 	struct FSteamID                               SteamIDUser;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamIDGroup;                                      // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23A8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServer_RequestUserGroupStatus) == 0x000008, "Wrong alignment on SteamProGameServer_RequestUserGroupStatus");
 static_assert(sizeof(SteamProGameServer_RequestUserGroupStatus) == 0x000018, "Wrong size on SteamProGameServer_RequestUserGroupStatus");
@@ -5841,7 +5841,7 @@ public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamUserHasLicenseForAppResult              ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23A9[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F1[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProGameServer_UserHasLicenseForApp) == 0x000008, "Wrong alignment on SteamProGameServer_UserHasLicenseForApp");
 static_assert(sizeof(SteamProGameServer_UserHasLicenseForApp) == 0x000010, "Wrong size on SteamProGameServer_UserHasLicenseForApp");
@@ -5880,7 +5880,7 @@ struct SteamProParties_DestroyBeacon final
 public:
 	struct FPartyBeaconID                         BeaconID;                                          // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23AB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProParties_DestroyBeacon) == 0x000008, "Wrong alignment on SteamProParties_DestroyBeacon");
 static_assert(sizeof(SteamProParties_DestroyBeacon) == 0x000010, "Wrong size on SteamProParties_DestroyBeacon");
@@ -5895,7 +5895,7 @@ public:
 	TArray<struct FSteamPartyBeaconLocation>      LocationList;                                      // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         MaxNumLocations;                                   // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23AC[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F4[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProParties_GetAvailableBeaconLocations) == 0x000008, "Wrong alignment on SteamProParties_GetAvailableBeaconLocations");
 static_assert(sizeof(SteamProParties_GetAvailableBeaconLocations) == 0x000018, "Wrong size on SteamProParties_GetAvailableBeaconLocations");
@@ -5909,7 +5909,7 @@ struct SteamProParties_GetBeaconByIndex final
 {
 public:
 	int32                                         Param_Index;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23AD[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPartyBeaconID                         ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProParties_GetBeaconByIndex) == 0x000008, "Wrong alignment on SteamProParties_GetBeaconByIndex");
@@ -5927,7 +5927,7 @@ public:
 	struct FSteamPartyBeaconLocation              Location;                                          // 0x0010(0x0018)(Parm, OutParm, NativeAccessSpecifierPublic)
 	class FString                                 OutMetadata;                                       // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0038(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23AE[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F6[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProParties_GetBeaconDetails) == 0x000008, "Wrong alignment on SteamProParties_GetBeaconDetails");
 static_assert(sizeof(SteamProParties_GetBeaconDetails) == 0x000040, "Wrong size on SteamProParties_GetBeaconDetails");
@@ -5944,10 +5944,10 @@ struct SteamProParties_GetBeaconLocationData final
 public:
 	struct FSteamPartyBeaconLocation              BeaconLocation;                                    // 0x0000(0x0018)(Parm, NativeAccessSpecifierPublic)
 	ESteamPartiesBeaconLocationData               EData;                                             // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23AF[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F7[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PCHDataStringOut;                                  // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B0[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F8[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProParties_GetBeaconLocationData) == 0x000008, "Wrong alignment on SteamProParties_GetBeaconLocationData");
 static_assert(sizeof(SteamProParties_GetBeaconLocationData) == 0x000038, "Wrong size on SteamProParties_GetBeaconLocationData");
@@ -5974,7 +5974,7 @@ struct SteamProParties_GetNumAvailableBeaconLocations final
 public:
 	int32                                         NumLocations;                                      // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B1[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22F9[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProParties_GetNumAvailableBeaconLocations) == 0x000004, "Wrong alignment on SteamProParties_GetNumAvailableBeaconLocations");
 static_assert(sizeof(SteamProParties_GetNumAvailableBeaconLocations) == 0x000008, "Wrong size on SteamProParties_GetNumAvailableBeaconLocations");
@@ -6013,7 +6013,7 @@ public:
 	TDelegate<void(struct FChangeNumOpenSlotsData& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPartyBeaconID                         BeaconID;                                          // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         OpenSlots;                                         // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B2[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22FA[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProParties_ChangeNumOpenSlots) == 0x000008, "Wrong alignment on SteamProParties_ChangeNumOpenSlots");
 static_assert(sizeof(SteamProParties_ChangeNumOpenSlots) == 0x000020, "Wrong size on SteamProParties_ChangeNumOpenSlots");
@@ -6028,7 +6028,7 @@ struct SteamProParties_CreateBeacon final
 public:
 	TDelegate<void(struct FCreateBeaconData& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OpenSlots;                                         // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B3[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22FB[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamPartyBeaconLocation              BeaconLocation;                                    // 0x0018(0x0018)(Parm, NativeAccessSpecifierPublic)
 	class FString                                 ConnectString;                                     // 0x0030(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 MetaData;                                          // 0x0040(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -6074,7 +6074,7 @@ public:
 	int32                                         ResolutionX;                                       // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ResolutionY;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B5[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22FD[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemotePlay_BGetSessionClientResolution) == 0x000004, "Wrong alignment on SteamProRemotePlay_BGetSessionClientResolution");
 static_assert(sizeof(SteamProRemotePlay_BGetSessionClientResolution) == 0x000010, "Wrong size on SteamProRemotePlay_BGetSessionClientResolution");
@@ -6090,7 +6090,7 @@ struct SteamProRemotePlay_BSendRemotePlayTogetherInvite final
 public:
 	struct FSteamID                               SteamIDFriend;                                     // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22FE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemotePlay_BSendRemotePlayTogetherInvite) == 0x000008, "Wrong alignment on SteamProRemotePlay_BSendRemotePlayTogetherInvite");
 static_assert(sizeof(SteamProRemotePlay_BSendRemotePlayTogetherInvite) == 0x000010, "Wrong size on SteamProRemotePlay_BSendRemotePlayTogetherInvite");
@@ -6117,7 +6117,7 @@ struct SteamProRemotePlay_GetSessionClientFormFactor final
 public:
 	int32                                         SessionID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamCoreProDeviceFormFactor                 ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B7[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_22FF[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemotePlay_GetSessionClientFormFactor) == 0x000004, "Wrong alignment on SteamProRemotePlay_GetSessionClientFormFactor");
 static_assert(sizeof(SteamProRemotePlay_GetSessionClientFormFactor) == 0x000008, "Wrong size on SteamProRemotePlay_GetSessionClientFormFactor");
@@ -6130,7 +6130,7 @@ struct SteamProRemotePlay_GetSessionClientName final
 {
 public:
 	int32                                         SessionID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B8[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2300[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProRemotePlay_GetSessionClientName) == 0x000008, "Wrong alignment on SteamProRemotePlay_GetSessionClientName");
@@ -6168,7 +6168,7 @@ struct SteamProRemotePlay_GetSessionSteamID final
 {
 public:
 	int32                                         SessionID;                                         // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23B9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2301[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProRemotePlay_GetSessionSteamID) == 0x000008, "Wrong alignment on SteamProRemotePlay_GetSessionSteamID");
@@ -6205,7 +6205,7 @@ struct SteamProRemoteStorage_FileDelete final
 public:
 	class FString                                 File;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BB[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2303[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_FileDelete) == 0x000008, "Wrong alignment on SteamProRemoteStorage_FileDelete");
 static_assert(sizeof(SteamProRemoteStorage_FileDelete) == 0x000018, "Wrong size on SteamProRemoteStorage_FileDelete");
@@ -6219,7 +6219,7 @@ struct SteamProRemoteStorage_FileExists final
 public:
 	class FString                                 File;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BC[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2304[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_FileExists) == 0x000008, "Wrong alignment on SteamProRemoteStorage_FileExists");
 static_assert(sizeof(SteamProRemoteStorage_FileExists) == 0x000018, "Wrong size on SteamProRemoteStorage_FileExists");
@@ -6233,7 +6233,7 @@ struct SteamProRemoteStorage_FileForget final
 public:
 	class FString                                 File;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2305[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_FileForget) == 0x000008, "Wrong alignment on SteamProRemoteStorage_FileForget");
 static_assert(sizeof(SteamProRemoteStorage_FileForget) == 0x000018, "Wrong size on SteamProRemoteStorage_FileForget");
@@ -6247,7 +6247,7 @@ struct SteamProRemoteStorage_FilePersisted final
 public:
 	class FString                                 File;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2306[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_FilePersisted) == 0x000008, "Wrong alignment on SteamProRemoteStorage_FilePersisted");
 static_assert(sizeof(SteamProRemoteStorage_FilePersisted) == 0x000018, "Wrong size on SteamProRemoteStorage_FilePersisted");
@@ -6280,7 +6280,7 @@ public:
 	TArray<uint8>                                 Buffer;                                            // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         BytesToRead;                                       // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x002C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23BF[0x3];                                     // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2307[0x3];                                     // 0x002D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_FileReadAsyncComplete) == 0x000008, "Wrong alignment on SteamProRemoteStorage_FileReadAsyncComplete");
 static_assert(sizeof(SteamProRemoteStorage_FileReadAsyncComplete) == 0x000030, "Wrong size on SteamProRemoteStorage_FileReadAsyncComplete");
@@ -6297,7 +6297,7 @@ public:
 	class FString                                 File;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 Data;                                              // 0x0010(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C0[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2308[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_FileWrite) == 0x000008, "Wrong alignment on SteamProRemoteStorage_FileWrite");
 static_assert(sizeof(SteamProRemoteStorage_FileWrite) == 0x000028, "Wrong size on SteamProRemoteStorage_FileWrite");
@@ -6312,7 +6312,7 @@ struct SteamProRemoteStorage_FileWriteStreamCancel final
 public:
 	struct FUGCFileWriteStreamHandle              Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2309[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_FileWriteStreamCancel) == 0x000008, "Wrong alignment on SteamProRemoteStorage_FileWriteStreamCancel");
 static_assert(sizeof(SteamProRemoteStorage_FileWriteStreamCancel) == 0x000010, "Wrong size on SteamProRemoteStorage_FileWriteStreamCancel");
@@ -6326,7 +6326,7 @@ struct SteamProRemoteStorage_FileWriteStreamClose final
 public:
 	struct FUGCFileWriteStreamHandle              Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_230A[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_FileWriteStreamClose) == 0x000008, "Wrong alignment on SteamProRemoteStorage_FileWriteStreamClose");
 static_assert(sizeof(SteamProRemoteStorage_FileWriteStreamClose) == 0x000010, "Wrong size on SteamProRemoteStorage_FileWriteStreamClose");
@@ -6354,7 +6354,7 @@ public:
 	struct FUGCFileWriteStreamHandle              Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 Data;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C3[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_230B[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_FileWriteStreamWriteChunk) == 0x000008, "Wrong alignment on SteamProRemoteStorage_FileWriteStreamWriteChunk");
 static_assert(sizeof(SteamProRemoteStorage_FileWriteStreamWriteChunk) == 0x000020, "Wrong size on SteamProRemoteStorage_FileWriteStreamWriteChunk");
@@ -6379,7 +6379,7 @@ struct SteamProRemoteStorage_GetCachedUGCHandle final
 {
 public:
 	int32                                         ICachedContent;                                    // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C4[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_230C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamUGCHandle                        ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProRemoteStorage_GetCachedUGCHandle) == 0x000008, "Wrong alignment on SteamProRemoteStorage_GetCachedUGCHandle");
@@ -6420,7 +6420,7 @@ struct SteamProRemoteStorage_GetFileSize final
 public:
 	class FString                                 File;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C5[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_230D[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_GetFileSize) == 0x000008, "Wrong alignment on SteamProRemoteStorage_GetFileSize");
 static_assert(sizeof(SteamProRemoteStorage_GetFileSize) == 0x000018, "Wrong size on SteamProRemoteStorage_GetFileSize");
@@ -6434,7 +6434,7 @@ struct SteamProRemoteStorage_GetFileTimestamp final
 public:
 	class FString                                 File;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C6[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_230E[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_GetFileTimestamp) == 0x000008, "Wrong alignment on SteamProRemoteStorage_GetFileTimestamp");
 static_assert(sizeof(SteamProRemoteStorage_GetFileTimestamp) == 0x000018, "Wrong size on SteamProRemoteStorage_GetFileTimestamp");
@@ -6460,7 +6460,7 @@ public:
 	int32                                         TotalBytes;                                        // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AvailableBytes;                                    // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C7[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_230F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_GetQuota) == 0x000004, "Wrong alignment on SteamProRemoteStorage_GetQuota");
 static_assert(sizeof(SteamProRemoteStorage_GetQuota) == 0x00000C, "Wrong size on SteamProRemoteStorage_GetQuota");
@@ -6486,7 +6486,7 @@ struct SteamProRemoteStorage_GetSyncPlatforms final
 public:
 	class FString                                 File;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamRemoteStoragePlatform                   ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2310[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_GetSyncPlatforms) == 0x000008, "Wrong alignment on SteamProRemoteStorage_GetSyncPlatforms");
 static_assert(sizeof(SteamProRemoteStorage_GetSyncPlatforms) == 0x000018, "Wrong size on SteamProRemoteStorage_GetSyncPlatforms");
@@ -6500,13 +6500,13 @@ struct SteamProRemoteStorage_GetUGCDetails final
 public:
 	struct FSteamUGCHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23C9[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2311[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Param_Name;                                        // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         FileSizeInBytes;                                   // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23CA[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2312[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               SteamIDOwner;                                      // 0x0028(0x0008)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23CB[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2313[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_GetUGCDetails) == 0x000008, "Wrong alignment on SteamProRemoteStorage_GetUGCDetails");
 static_assert(sizeof(SteamProRemoteStorage_GetUGCDetails) == 0x000038, "Wrong size on SteamProRemoteStorage_GetUGCDetails");
@@ -6526,7 +6526,7 @@ public:
 	int32                                         BytesDownloaded;                                   // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BytesExpected;                                     // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23CC[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2314[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_GetUGCDownloadProgress) == 0x000008, "Wrong alignment on SteamProRemoteStorage_GetUGCDownloadProgress");
 static_assert(sizeof(SteamProRemoteStorage_GetUGCDownloadProgress) == 0x000018, "Wrong size on SteamProRemoteStorage_GetUGCDownloadProgress");
@@ -6576,7 +6576,7 @@ public:
 	class FString                                 File;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamRemoteStoragePlatform                   RemoteStoragePlatform;                             // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23CD[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2315[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_SetSyncPlatforms) == 0x000008, "Wrong alignment on SteamProRemoteStorage_SetSyncPlatforms");
 static_assert(sizeof(SteamProRemoteStorage_SetSyncPlatforms) == 0x000018, "Wrong size on SteamProRemoteStorage_SetSyncPlatforms");
@@ -6594,7 +6594,7 @@ public:
 	int32                                         DataToRead;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Offset;                                            // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamUGCReadAction                           Action;                                            // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23CE[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2316[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0024(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProRemoteStorage_UGCRead) == 0x000008, "Wrong alignment on SteamProRemoteStorage_UGCRead");
@@ -6659,7 +6659,7 @@ public:
 	TDelegate<void(struct FRemoteStorageDownloadUGCResult& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamUGCHandle                        Content;                                           // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Priority;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23CF[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2317[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_UGCDownload) == 0x000008, "Wrong alignment on SteamProRemoteStorage_UGCDownload");
 static_assert(sizeof(SteamProRemoteStorage_UGCDownload) == 0x000020, "Wrong size on SteamProRemoteStorage_UGCDownload");
@@ -6676,7 +6676,7 @@ public:
 	struct FSteamUGCHandle                        Content;                                           // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Location;                                          // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Priority;                                          // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23D0[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2318[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProRemoteStorage_UGCDownloadToLocation) == 0x000008, "Wrong alignment on SteamProRemoteStorage_UGCDownloadToLocation");
 static_assert(sizeof(SteamProRemoteStorage_UGCDownloadToLocation) == 0x000030, "Wrong size on SteamProRemoteStorage_UGCDownloadToLocation");
@@ -6695,7 +6695,7 @@ public:
 	int32                                         Width;                                             // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Height;                                            // 0x0024(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FScreenshotHandle                      ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23D2[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231A[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProScreenshots_AddScreenshotToLibrary) == 0x000008, "Wrong alignment on SteamProScreenshots_AddScreenshotToLibrary");
 static_assert(sizeof(SteamProScreenshots_AddScreenshotToLibrary) == 0x000030, "Wrong size on SteamProScreenshots_AddScreenshotToLibrary");
@@ -6711,11 +6711,11 @@ struct SteamProScreenshots_AddVRScreenshotToLibrary final
 {
 public:
 	ESteamVRScreenshotType                        EType;                                             // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23D3[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231B[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Filename;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 VRFileName;                                        // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FScreenshotHandle                      ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23D4[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231C[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProScreenshots_AddVRScreenshotToLibrary) == 0x000008, "Wrong alignment on SteamProScreenshots_AddVRScreenshotToLibrary");
 static_assert(sizeof(SteamProScreenshots_AddVRScreenshotToLibrary) == 0x000030, "Wrong size on SteamProScreenshots_AddVRScreenshotToLibrary");
@@ -6763,10 +6763,10 @@ struct SteamProScreenshots_SetLocation final
 {
 public:
 	struct FScreenshotHandle                      Handle;                                            // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23D5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Location;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23D6[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProScreenshots_SetLocation) == 0x000008, "Wrong alignment on SteamProScreenshots_SetLocation");
 static_assert(sizeof(SteamProScreenshots_SetLocation) == 0x000020, "Wrong size on SteamProScreenshots_SetLocation");
@@ -6780,10 +6780,10 @@ struct SteamProScreenshots_TagPublishedFile final
 {
 public:
 	struct FScreenshotHandle                      Handle;                                            // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23D7[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_231F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23D8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2320[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProScreenshots_TagPublishedFile) == 0x000008, "Wrong alignment on SteamProScreenshots_TagPublishedFile");
 static_assert(sizeof(SteamProScreenshots_TagPublishedFile) == 0x000018, "Wrong size on SteamProScreenshots_TagPublishedFile");
@@ -6797,10 +6797,10 @@ struct SteamProScreenshots_TagUser final
 {
 public:
 	struct FScreenshotHandle                      Handle;                                            // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23D9[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2321[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamID                               SteamID;                                           // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23DA[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2322[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProScreenshots_TagUser) == 0x000008, "Wrong alignment on SteamProScreenshots_TagUser");
 static_assert(sizeof(SteamProScreenshots_TagUser) == 0x000018, "Wrong size on SteamProScreenshots_TagUser");
@@ -6817,7 +6817,7 @@ public:
 	int32                                         Width;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Height;                                            // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FScreenshotHandle                      ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23DB[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2323[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProScreenshots_WriteScreenshot) == 0x000008, "Wrong alignment on SteamProScreenshots_WriteScreenshot");
 static_assert(sizeof(SteamProScreenshots_WriteScreenshot) == 0x000020, "Wrong size on SteamProScreenshots_WriteScreenshot");
@@ -6834,7 +6834,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamUGCContentDescriptorID                  DescId;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23DD[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2325[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_AddContentDescriptor) == 0x000008, "Wrong alignment on SteamProUGC_AddContentDescriptor");
 static_assert(sizeof(SteamProUGC_AddContentDescriptor) == 0x000010, "Wrong size on SteamProUGC_AddContentDescriptor");
@@ -6850,7 +6850,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 TagName;                                           // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23DE[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2326[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_AddExcludedTag) == 0x000008, "Wrong alignment on SteamProUGC_AddExcludedTag");
 static_assert(sizeof(SteamProUGC_AddExcludedTag) == 0x000020, "Wrong size on SteamProUGC_AddExcludedTag");
@@ -6867,7 +6867,7 @@ public:
 	class FString                                 Key;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23DF[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2327[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_AddItemKeyValueTag) == 0x000008, "Wrong alignment on SteamProUGC_AddItemKeyValueTag");
 static_assert(sizeof(SteamProUGC_AddItemKeyValueTag) == 0x000030, "Wrong size on SteamProUGC_AddItemKeyValueTag");
@@ -6885,7 +6885,7 @@ public:
 	class FString                                 PreviewFile;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamItemPreviewType                         Type;                                              // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E0[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2328[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_AddItemPreviewFile) == 0x000008, "Wrong alignment on SteamProUGC_AddItemPreviewFile");
 static_assert(sizeof(SteamProUGC_AddItemPreviewFile) == 0x000020, "Wrong size on SteamProUGC_AddItemPreviewFile");
@@ -6902,7 +6902,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 VideoID;                                           // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E1[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2329[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_AddItemPreviewVideo) == 0x000008, "Wrong alignment on SteamProUGC_AddItemPreviewVideo");
 static_assert(sizeof(SteamProUGC_AddItemPreviewVideo) == 0x000020, "Wrong size on SteamProUGC_AddItemPreviewVideo");
@@ -6919,7 +6919,7 @@ public:
 	class FString                                 Key;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0018(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E2[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_232A[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_AddRequiredKeyValueTag) == 0x000008, "Wrong alignment on SteamProUGC_AddRequiredKeyValueTag");
 static_assert(sizeof(SteamProUGC_AddRequiredKeyValueTag) == 0x000030, "Wrong size on SteamProUGC_AddRequiredKeyValueTag");
@@ -6936,7 +6936,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 TagName;                                           // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E3[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_232B[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_AddRequiredTag) == 0x000008, "Wrong alignment on SteamProUGC_AddRequiredTag");
 static_assert(sizeof(SteamProUGC_AddRequiredTag) == 0x000020, "Wrong size on SteamProUGC_AddRequiredTag");
@@ -6952,7 +6952,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<class FString>                         TagGroups;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E4[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_232C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_AddRequiredTagGroup) == 0x000008, "Wrong alignment on SteamProUGC_AddRequiredTagGroup");
 static_assert(sizeof(SteamProUGC_AddRequiredTagGroup) == 0x000020, "Wrong size on SteamProUGC_AddRequiredTagGroup");
@@ -6966,10 +6966,10 @@ struct SteamProUGC_BInitWorkshopForGameServer final
 {
 public:
 	int32                                         WorkshopDepotID;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E5[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_232D[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Folder;                                            // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E6[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_232E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_BInitWorkshopForGameServer) == 0x000008, "Wrong alignment on SteamProUGC_BInitWorkshopForGameServer");
 static_assert(sizeof(SteamProUGC_BInitWorkshopForGameServer) == 0x000020, "Wrong size on SteamProUGC_BInitWorkshopForGameServer");
@@ -6984,7 +6984,7 @@ struct SteamProUGC_CreateQueryAllUGCRequest final
 public:
 	ESteamUGCQuery                                QueryType;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamUGCMatchingUGCType                      FileType;                                          // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E7[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_232F[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CreatorAppID;                                      // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ConsumerAppID;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Page;                                              // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7021,7 +7021,7 @@ public:
 	ESteamUserUGCList                             ListType;                                          // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamUGCMatchingUGCType                      MatchingUGCType;                                   // 0x0009(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamUserUGCListSortOrder                    SortOrder;                                         // 0x000A(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E8[0x1];                                     // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2330[0x1];                                     // 0x000B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CreatorAppID;                                      // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ConsumerAppID;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Page;                                              // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -7046,7 +7046,7 @@ public:
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bHighPriority;                                     // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23E9[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2331[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_DownloadItem) == 0x000008, "Wrong alignment on SteamProUGC_DownloadItem");
 static_assert(sizeof(SteamProUGC_DownloadItem) == 0x000010, "Wrong size on SteamProUGC_DownloadItem");
@@ -7063,7 +7063,7 @@ public:
 	int32                                         BytesDownloaded;                                   // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BytesTotal;                                        // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EA[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2332[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetItemDownloadInfo) == 0x000008, "Wrong alignment on SteamProUGC_GetItemDownloadInfo");
 static_assert(sizeof(SteamProUGC_GetItemDownloadInfo) == 0x000018, "Wrong size on SteamProUGC_GetItemDownloadInfo");
@@ -7079,11 +7079,11 @@ struct SteamProUGC_GetItemInstallInfo final
 public:
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         SizeOnDisk;                                        // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EB[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2333[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Folder;                                            // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Timestamp;                                         // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EC[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2334[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetItemInstallInfo) == 0x000008, "Wrong alignment on SteamProUGC_GetItemInstallInfo");
 static_assert(sizeof(SteamProUGC_GetItemInstallInfo) == 0x000028, "Wrong size on SteamProUGC_GetItemInstallInfo");
@@ -7101,7 +7101,7 @@ public:
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<ESteamItemState>                       States;                                            // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23ED[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2335[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetItemState) == 0x000008, "Wrong alignment on SteamProUGC_GetItemState");
 static_assert(sizeof(SteamProUGC_GetItemState) == 0x000020, "Wrong size on SteamProUGC_GetItemState");
@@ -7118,7 +7118,7 @@ public:
 	int32                                         BytesProcessed;                                    // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         BytesTotal;                                        // 0x000C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamItemUpdateStatus                        ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2336[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetItemUpdateProgress) == 0x000008, "Wrong alignment on SteamProUGC_GetItemUpdateProgress");
 static_assert(sizeof(SteamProUGC_GetItemUpdateProgress) == 0x000018, "Wrong size on SteamProUGC_GetItemUpdateProgress");
@@ -7150,7 +7150,7 @@ public:
 	class FString                                 OriginalFileName;                                  // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamItemPreviewType                         PreviewType;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0031(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23EF[0x6];                                     // 0x0032(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2337[0x6];                                     // 0x0032(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetQueryUGCAdditionalPreview) == 0x000008, "Wrong alignment on SteamProUGC_GetQueryUGCAdditionalPreview");
 static_assert(sizeof(SteamProUGC_GetQueryUGCAdditionalPreview) == 0x000038, "Wrong size on SteamProUGC_GetQueryUGCAdditionalPreview");
@@ -7169,11 +7169,11 @@ struct SteamProUGC_GetQueryUGCChildren final
 public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F0[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2338[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FPublishedFileID>               PublishedFileIDs;                                  // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         MaxEntries;                                        // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F1[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2339[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetQueryUGCChildren) == 0x000008, "Wrong alignment on SteamProUGC_GetQueryUGCChildren");
 static_assert(sizeof(SteamProUGC_GetQueryUGCChildren) == 0x000028, "Wrong size on SteamProUGC_GetQueryUGCChildren");
@@ -7194,7 +7194,7 @@ public:
 	class FString                                 Key;                                               // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0020(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F2[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_233A[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetQueryUGCKeyValueTag) == 0x000008, "Wrong alignment on SteamProUGC_GetQueryUGCKeyValueTag");
 static_assert(sizeof(SteamProUGC_GetQueryUGCKeyValueTag) == 0x000038, "Wrong size on SteamProUGC_GetQueryUGCKeyValueTag");
@@ -7212,11 +7212,11 @@ struct SteamProUGC_GetQueryUGCMetadata final
 public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F3[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_233B[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 MetaData;                                          // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MetadataSize;                                      // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0024(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F4[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_233C[0x3];                                     // 0x0025(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetQueryUGCMetadata) == 0x000008, "Wrong alignment on SteamProUGC_GetQueryUGCMetadata");
 static_assert(sizeof(SteamProUGC_GetQueryUGCMetadata) == 0x000028, "Wrong size on SteamProUGC_GetQueryUGCMetadata");
@@ -7278,10 +7278,10 @@ struct SteamProUGC_GetQueryUGCPreviewURL final
 public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F5[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_233D[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 URL;                                               // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F6[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_233E[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetQueryUGCPreviewURL) == 0x000008, "Wrong alignment on SteamProUGC_GetQueryUGCPreviewURL");
 static_assert(sizeof(SteamProUGC_GetQueryUGCPreviewURL) == 0x000028, "Wrong size on SteamProUGC_GetQueryUGCPreviewURL");
@@ -7297,10 +7297,10 @@ struct SteamProUGC_GetQueryUGCResult final
 public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F7[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_233F[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamUGCDetails                       Details;                                           // 0x0010(0x00A8)(Parm, OutParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x00B8(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F8[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2340[0x7];                                     // 0x00B9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetQueryUGCResult) == 0x000008, "Wrong alignment on SteamProUGC_GetQueryUGCResult");
 static_assert(sizeof(SteamProUGC_GetQueryUGCResult) == 0x0000C0, "Wrong size on SteamProUGC_GetQueryUGCResult");
@@ -7317,10 +7317,10 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamItemStatistic                           StatType;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23F9[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2341[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 StatValue;                                         // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23FA[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2342[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetQueryUGCStatistic) == 0x000008, "Wrong alignment on SteamProUGC_GetQueryUGCStatistic");
 static_assert(sizeof(SteamProUGC_GetQueryUGCStatistic) == 0x000028, "Wrong size on SteamProUGC_GetQueryUGCStatistic");
@@ -7340,7 +7340,7 @@ public:
 	int32                                         IndexTag;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23FB[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2343[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetQueryUGCTag) == 0x000008, "Wrong alignment on SteamProUGC_GetQueryUGCTag");
 static_assert(sizeof(SteamProUGC_GetQueryUGCTag) == 0x000028, "Wrong size on SteamProUGC_GetQueryUGCTag");
@@ -7360,7 +7360,7 @@ public:
 	int32                                         IndexTag;                                          // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 Value;                                             // 0x0010(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23FC[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2344[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_GetQueryUGCTagDisplayName) == 0x000008, "Wrong alignment on SteamProUGC_GetQueryUGCTagDisplayName");
 static_assert(sizeof(SteamProUGC_GetQueryUGCTagDisplayName) == 0x000028, "Wrong size on SteamProUGC_GetQueryUGCTagDisplayName");
@@ -7418,7 +7418,7 @@ struct SteamProUGC_ReleaseQueryUGCRequest final
 public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23FD[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2345[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_ReleaseQueryUGCRequest) == 0x000008, "Wrong alignment on SteamProUGC_ReleaseQueryUGCRequest");
 static_assert(sizeof(SteamProUGC_ReleaseQueryUGCRequest) == 0x000010, "Wrong size on SteamProUGC_ReleaseQueryUGCRequest");
@@ -7433,7 +7433,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamUGCContentDescriptorID                  DescId;                                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23FE[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2346[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_RemoveContentDescriptor) == 0x000008, "Wrong alignment on SteamProUGC_RemoveContentDescriptor");
 static_assert(sizeof(SteamProUGC_RemoveContentDescriptor) == 0x000010, "Wrong size on SteamProUGC_RemoveContentDescriptor");
@@ -7449,7 +7449,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Key;                                               // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_23FF[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2347[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_RemoveItemKeyValueTags) == 0x000008, "Wrong alignment on SteamProUGC_RemoveItemKeyValueTags");
 static_assert(sizeof(SteamProUGC_RemoveItemKeyValueTags) == 0x000020, "Wrong size on SteamProUGC_RemoveItemKeyValueTags");
@@ -7465,7 +7465,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2400[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2348[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_RemoveItemPreview) == 0x000008, "Wrong alignment on SteamProUGC_RemoveItemPreview");
 static_assert(sizeof(SteamProUGC_RemoveItemPreview) == 0x000010, "Wrong size on SteamProUGC_RemoveItemPreview");
@@ -7481,7 +7481,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         MaxAgeSeconds;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2401[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2349[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetAllowCachedResponse) == 0x000008, "Wrong alignment on SteamProUGC_SetAllowCachedResponse");
 static_assert(sizeof(SteamProUGC_SetAllowCachedResponse) == 0x000010, "Wrong size on SteamProUGC_SetAllowCachedResponse");
@@ -7497,7 +7497,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 MatchCloudFileName;                                // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2402[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234A[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetCloudFileNameFilter) == 0x000008, "Wrong alignment on SteamProUGC_SetCloudFileNameFilter");
 static_assert(sizeof(SteamProUGC_SetCloudFileNameFilter) == 0x000020, "Wrong size on SteamProUGC_SetCloudFileNameFilter");
@@ -7513,7 +7513,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 ContentFolder;                                     // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2403[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234B[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetItemContent) == 0x000008, "Wrong alignment on SteamProUGC_SetItemContent");
 static_assert(sizeof(SteamProUGC_SetItemContent) == 0x000020, "Wrong size on SteamProUGC_SetItemContent");
@@ -7529,7 +7529,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Description;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2404[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetItemDescription) == 0x000008, "Wrong alignment on SteamProUGC_SetItemDescription");
 static_assert(sizeof(SteamProUGC_SetItemDescription) == 0x000020, "Wrong size on SteamProUGC_SetItemDescription");
@@ -7545,7 +7545,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 MetaData;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2405[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetItemMetadata) == 0x000008, "Wrong alignment on SteamProUGC_SetItemMetadata");
 static_assert(sizeof(SteamProUGC_SetItemMetadata) == 0x000020, "Wrong size on SteamProUGC_SetItemMetadata");
@@ -7561,7 +7561,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 PreviewFile;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2406[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetItemPreview) == 0x000008, "Wrong alignment on SteamProUGC_SetItemPreview");
 static_assert(sizeof(SteamProUGC_SetItemPreview) == 0x000020, "Wrong size on SteamProUGC_SetItemPreview");
@@ -7577,7 +7577,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<class FString>                         Tags;                                              // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2407[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_234F[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetItemTags) == 0x000008, "Wrong alignment on SteamProUGC_SetItemTags");
 static_assert(sizeof(SteamProUGC_SetItemTags) == 0x000020, "Wrong size on SteamProUGC_SetItemTags");
@@ -7593,7 +7593,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Title;                                             // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2408[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2350[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetItemTitle) == 0x000008, "Wrong alignment on SteamProUGC_SetItemTitle");
 static_assert(sizeof(SteamProUGC_SetItemTitle) == 0x000020, "Wrong size on SteamProUGC_SetItemTitle");
@@ -7609,7 +7609,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Language;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2409[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2351[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetItemUpdateLanguage) == 0x000008, "Wrong alignment on SteamProUGC_SetItemUpdateLanguage");
 static_assert(sizeof(SteamProUGC_SetItemUpdateLanguage) == 0x000020, "Wrong size on SteamProUGC_SetItemUpdateLanguage");
@@ -7625,7 +7625,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamRemoteStoragePublishedFileVisibility    Visibility;                                        // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_240A[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2352[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetItemVisibility) == 0x000008, "Wrong alignment on SteamProUGC_SetItemVisibility");
 static_assert(sizeof(SteamProUGC_SetItemVisibility) == 0x000010, "Wrong size on SteamProUGC_SetItemVisibility");
@@ -7641,7 +7641,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Language;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_240B[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2353[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetLanguage) == 0x000008, "Wrong alignment on SteamProUGC_SetLanguage");
 static_assert(sizeof(SteamProUGC_SetLanguage) == 0x000020, "Wrong size on SteamProUGC_SetLanguage");
@@ -7657,7 +7657,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bMatchAnyTag;                                      // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_240C[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2354[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetMatchAnyTag) == 0x000008, "Wrong alignment on SteamProUGC_SetMatchAnyTag");
 static_assert(sizeof(SteamProUGC_SetMatchAnyTag) == 0x000010, "Wrong size on SteamProUGC_SetMatchAnyTag");
@@ -7673,7 +7673,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Days;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_240D[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2355[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetRankedByTrendDays) == 0x000008, "Wrong alignment on SteamProUGC_SetRankedByTrendDays");
 static_assert(sizeof(SteamProUGC_SetRankedByTrendDays) == 0x000010, "Wrong size on SteamProUGC_SetRankedByTrendDays");
@@ -7689,7 +7689,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bReturnAdditionalPreviews;                         // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_240E[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2356[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetReturnAdditionalPreviews) == 0x000008, "Wrong alignment on SteamProUGC_SetReturnAdditionalPreviews");
 static_assert(sizeof(SteamProUGC_SetReturnAdditionalPreviews) == 0x000010, "Wrong size on SteamProUGC_SetReturnAdditionalPreviews");
@@ -7705,7 +7705,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bReturnChildren;                                   // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_240F[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2357[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetReturnChildren) == 0x000008, "Wrong alignment on SteamProUGC_SetReturnChildren");
 static_assert(sizeof(SteamProUGC_SetReturnChildren) == 0x000010, "Wrong size on SteamProUGC_SetReturnChildren");
@@ -7721,7 +7721,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bReturnKeyValueTags;                               // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2410[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2358[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetReturnKeyValueTags) == 0x000008, "Wrong alignment on SteamProUGC_SetReturnKeyValueTags");
 static_assert(sizeof(SteamProUGC_SetReturnKeyValueTags) == 0x000010, "Wrong size on SteamProUGC_SetReturnKeyValueTags");
@@ -7737,7 +7737,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bReturnLongDescription;                            // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2411[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2359[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetReturnLongDescription) == 0x000008, "Wrong alignment on SteamProUGC_SetReturnLongDescription");
 static_assert(sizeof(SteamProUGC_SetReturnLongDescription) == 0x000010, "Wrong size on SteamProUGC_SetReturnLongDescription");
@@ -7753,7 +7753,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bReturnMetadata;                                   // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2412[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_235A[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetReturnMetadata) == 0x000008, "Wrong alignment on SteamProUGC_SetReturnMetadata");
 static_assert(sizeof(SteamProUGC_SetReturnMetadata) == 0x000010, "Wrong size on SteamProUGC_SetReturnMetadata");
@@ -7769,7 +7769,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bReturnOnlyIDs;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2413[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_235B[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetReturnOnlyIDs) == 0x000008, "Wrong alignment on SteamProUGC_SetReturnOnlyIDs");
 static_assert(sizeof(SteamProUGC_SetReturnOnlyIDs) == 0x000010, "Wrong size on SteamProUGC_SetReturnOnlyIDs");
@@ -7785,7 +7785,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Days;                                              // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2414[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_235C[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetReturnPlaytimeStats) == 0x000008, "Wrong alignment on SteamProUGC_SetReturnPlaytimeStats");
 static_assert(sizeof(SteamProUGC_SetReturnPlaytimeStats) == 0x000010, "Wrong size on SteamProUGC_SetReturnPlaytimeStats");
@@ -7801,7 +7801,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bReturnTotalOnly;                                  // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2415[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_235D[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetReturnTotalOnly) == 0x000008, "Wrong alignment on SteamProUGC_SetReturnTotalOnly");
 static_assert(sizeof(SteamProUGC_SetReturnTotalOnly) == 0x000010, "Wrong size on SteamProUGC_SetReturnTotalOnly");
@@ -7817,7 +7817,7 @@ public:
 	struct FUGCQueryHandle                        Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 SearchText;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2416[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_235E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetSearchText) == 0x000008, "Wrong alignment on SteamProUGC_SetSearchText");
 static_assert(sizeof(SteamProUGC_SetSearchText) == 0x000020, "Wrong size on SteamProUGC_SetSearchText");
@@ -7842,7 +7842,7 @@ struct SteamProUGC_StartItemUpdate final
 {
 public:
 	int32                                         ConsumerAppID;                                     // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2417[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_235F[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FUGCUpdateHandle                       ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -7870,10 +7870,10 @@ struct SteamProUGC_UpdateItemPreviewFile final
 public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2418[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2360[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PreviewFile;                                       // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2419[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2361[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_UpdateItemPreviewFile) == 0x000008, "Wrong alignment on SteamProUGC_UpdateItemPreviewFile");
 static_assert(sizeof(SteamProUGC_UpdateItemPreviewFile) == 0x000028, "Wrong size on SteamProUGC_UpdateItemPreviewFile");
@@ -7889,10 +7889,10 @@ struct SteamProUGC_UpdateItemPreviewVideo final
 public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_241A[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2362[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 PreviewVideo;                                      // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_241B[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2363[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_UpdateItemPreviewVideo) == 0x000008, "Wrong alignment on SteamProUGC_UpdateItemPreviewVideo");
 static_assert(sizeof(SteamProUGC_UpdateItemPreviewVideo) == 0x000028, "Wrong size on SteamProUGC_UpdateItemPreviewVideo");
@@ -7909,7 +7909,7 @@ public:
 	TDelegate<void(struct FAddAppDependencyResult& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_241C[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2364[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_AddAppDependency) == 0x000008, "Wrong alignment on SteamProUGC_AddAppDependency");
 static_assert(sizeof(SteamProUGC_AddAppDependency) == 0x000020, "Wrong size on SteamProUGC_AddAppDependency");
@@ -7939,7 +7939,7 @@ struct SteamProUGC_AddItemToFavorites final
 public:
 	TDelegate<void(struct FUserFavoriteItemsListChanged& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_241D[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2365[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0018(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProUGC_AddItemToFavorites) == 0x000008, "Wrong alignment on SteamProUGC_AddItemToFavorites");
@@ -7956,7 +7956,7 @@ public:
 	TDelegate<void(struct FCreateItemResult& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ConsumerAppID;                                     // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamWorkshopFileType                        FileType;                                          // 0x0014(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_241E[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2366[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_CreateItem) == 0x000004, "Wrong alignment on SteamProUGC_CreateItem");
 static_assert(sizeof(SteamProUGC_CreateItem) == 0x000018, "Wrong size on SteamProUGC_CreateItem");
@@ -8022,7 +8022,7 @@ public:
 	TDelegate<void(struct FRemoveAppDependencyResult& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_241F[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2367[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_RemoveAppDependency) == 0x000008, "Wrong alignment on SteamProUGC_RemoveAppDependency");
 static_assert(sizeof(SteamProUGC_RemoveAppDependency) == 0x000020, "Wrong size on SteamProUGC_RemoveAppDependency");
@@ -8052,7 +8052,7 @@ struct SteamProUGC_RemoveItemFromFavorites final
 public:
 	TDelegate<void(struct FUserFavoriteItemsListChanged& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2420[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2368[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0018(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProUGC_RemoveItemFromFavorites) == 0x000008, "Wrong alignment on SteamProUGC_RemoveItemFromFavorites");
@@ -8082,7 +8082,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bAllowLegacyUpload;                                // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2421[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2369[0x6];                                     // 0x000A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetAllowLegacyUpload) == 0x000008, "Wrong alignment on SteamProUGC_SetAllowLegacyUpload");
 static_assert(sizeof(SteamProUGC_SetAllowLegacyUpload) == 0x000010, "Wrong size on SteamProUGC_SetAllowLegacyUpload");
@@ -8098,7 +8098,7 @@ public:
 	TDelegate<void(struct FSetUserItemVoteResult& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bVoteUp;                                           // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2422[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_236A[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUGC_SetUserItemVote) == 0x000008, "Wrong alignment on SteamProUGC_SetUserItemVote");
 static_assert(sizeof(SteamProUGC_SetUserItemVote) == 0x000020, "Wrong size on SteamProUGC_SetUserItemVote");
@@ -8191,7 +8191,7 @@ struct SteamCoreProUGCAsyncActionStopPlaytimeTrackingForAllItems_StopPlaytimeTra
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2423[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_236B[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionStopPlaytimeTrackingForAllItems* ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionStopPlaytimeTrackingForAllItems_StopPlaytimeTrackingForAllItemsAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionStopPlaytimeTrackingForAllItems_StopPlaytimeTrackingForAllItemsAsync");
@@ -8221,7 +8221,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPublishedFileID>               PublishedFileIDs;                                  // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2424[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_236C[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionStopPlaytimeTracking* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionStopPlaytimeTracking_StopPlaytimeTrackingAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionStopPlaytimeTracking_StopPlaytimeTrackingAsync");
@@ -8252,7 +8252,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FPublishedFileID>               PublishedFileIDs;                                  // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2425[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_236D[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionStartPlaytimeTracking* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionStartPlaytimeTracking_StartPlaytimeTrackingAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionStartPlaytimeTracking_StartPlaytimeTrackingAsync");
@@ -8283,7 +8283,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileIDs;                                  // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2426[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_236E[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionUnsubscribeItem* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionUnsubscribeItem_UnsubscribeItemAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionUnsubscribeItem_UnsubscribeItemAsync");
@@ -8300,7 +8300,7 @@ struct SteamCoreProUGCAsyncActionUnsubscribeItem_HandleCallback final
 public:
 	struct FRemoteStorageSubscribePublishedFileResult Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2427[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_236F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionUnsubscribeItem_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionUnsubscribeItem_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionUnsubscribeItem_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUGCAsyncActionUnsubscribeItem_HandleCallback");
@@ -8315,7 +8315,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileIDs;                                  // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2428[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2370[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionSubscribeItem* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionSubscribeItem_SubscribeItemAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionSubscribeItem_SubscribeItemAsync");
@@ -8332,7 +8332,7 @@ struct SteamCoreProUGCAsyncActionSubscribeItem_HandleCallback final
 public:
 	struct FRemoteStorageSubscribePublishedFileResult Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2429[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2371[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionSubscribeItem_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionSubscribeItem_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionSubscribeItem_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUGCAsyncActionSubscribeItem_HandleCallback");
@@ -8346,10 +8346,10 @@ struct SteamCoreProUGCAsyncActionRemoveItemFromFavorites_RemoveItemFromFavorites
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_242A[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2372[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_242B[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2373[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionRemoveItemFromFavorites* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionRemoveItemFromFavorites_RemoveItemFromFavoritesAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionRemoveItemFromFavorites_RemoveItemFromFavoritesAsync");
@@ -8367,7 +8367,7 @@ struct SteamCoreProUGCAsyncActionRemoveItemFromFavorites_HandleCallback final
 public:
 	struct FUserFavoriteItemsListChanged          Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_242C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2374[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionRemoveItemFromFavorites_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionRemoveItemFromFavorites_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionRemoveItemFromFavorites_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUGCAsyncActionRemoveItemFromFavorites_HandleCallback");
@@ -8381,10 +8381,10 @@ struct SteamCoreProUGCAsyncActionAddItemToFavorites_AddItemToFavoritesAsync fina
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_242D[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2375[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_242E[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2376[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionAddItemToFavorites* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionAddItemToFavorites_AddItemToFavoritesAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionAddItemToFavorites_AddItemToFavoritesAsync");
@@ -8402,7 +8402,7 @@ struct SteamCoreProUGCAsyncActionAddItemToFavorites_HandleCallback final
 public:
 	struct FUserFavoriteItemsListChanged          Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_242F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2377[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionAddItemToFavorites_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionAddItemToFavorites_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionAddItemToFavorites_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUGCAsyncActionAddItemToFavorites_HandleCallback");
@@ -8417,7 +8417,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2430[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2378[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionGetUserItemVote* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionGetUserItemVote_GetUserItemVoteAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionGetUserItemVote_GetUserItemVoteAsync");
@@ -8434,7 +8434,7 @@ struct SteamCoreProUGCAsyncActionGetUserItemVote_HandleCallback final
 public:
 	struct FGetUserItemVoteResult                 Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2431[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2379[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionGetUserItemVote_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionGetUserItemVote_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionGetUserItemVote_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUGCAsyncActionGetUserItemVote_HandleCallback");
@@ -8449,7 +8449,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bVoteUp;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2432[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237A[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Timeout;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProUGCAsyncActionSetUserItemVote* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -8468,7 +8468,7 @@ struct SteamCoreProUGCAsyncActionSetUserItemVote_HandleCallback final
 public:
 	struct FSetUserItemVoteResult                 Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2433[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237B[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionSetUserItemVote_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionSetUserItemVote_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionSetUserItemVote_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUGCAsyncActionSetUserItemVote_HandleCallback");
@@ -8484,7 +8484,7 @@ public:
 	struct FUGCUpdateHandle                       Handle;                                            // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 ChangeNote;                                        // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2434[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237C[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionSubmitItemUpdate* ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionSubmitItemUpdate_SubmitItemUpdateAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionSubmitItemUpdate_SubmitItemUpdateAsync");
@@ -8502,7 +8502,7 @@ struct SteamCoreProUGCAsyncActionSubmitItemUpdate_HandleCallback final
 public:
 	struct FSubmitItemUpdateResult                Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2435[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionSubmitItemUpdate_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionSubmitItemUpdate_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionSubmitItemUpdate_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUGCAsyncActionSubmitItemUpdate_HandleCallback");
@@ -8517,9 +8517,9 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ConsumerAppID;                                     // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamWorkshopFileType                        FileType;                                          // 0x000C(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2436[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237E[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2437[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_237F[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionCreateItem*  ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionCreateItem_CreateItemAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionCreateItem_CreateItemAsync");
@@ -8537,7 +8537,7 @@ struct SteamCoreProUGCAsyncActionCreateItem_HandleCallback final
 public:
 	struct FCreateItemResult                      Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2438[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2380[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionCreateItem_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionCreateItem_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionCreateItem_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUGCAsyncActionCreateItem_HandleCallback");
@@ -8552,7 +8552,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FUGCQueryHandle                        Handle;                                            // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2439[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2381[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionSendQueryUGCRequest* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionSendQueryUGCRequest_SendQueryUGCRequestAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionSendQueryUGCRequest_SendQueryUGCRequestAsync");
@@ -8569,7 +8569,7 @@ struct SteamCoreProUGCAsyncActionSendQueryUGCRequest_HandleCallback final
 public:
 	struct FSteamUGCQueryCompleted                Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_243A[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2382[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionSendQueryUGCRequest_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionSendQueryUGCRequest_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionSendQueryUGCRequest_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUGCAsyncActionSendQueryUGCRequest_HandleCallback");
@@ -8602,7 +8602,7 @@ struct SteamCoreProUGCAsyncActionAddAppDependency_HandleCallback final
 public:
 	struct FAddAppDependencyResult                Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_243B[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2383[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionAddAppDependency_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionAddAppDependency_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionAddAppDependency_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUGCAsyncActionAddAppDependency_HandleCallback");
@@ -8635,7 +8635,7 @@ struct SteamCoreProUGCAsyncActionRemoveAppDependency_HandleCallback final
 public:
 	struct FRemoveAppDependencyResult             Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_243C[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2384[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionRemoveAppDependency_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionRemoveAppDependency_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionRemoveAppDependency_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUGCAsyncActionRemoveAppDependency_HandleCallback");
@@ -8651,7 +8651,7 @@ public:
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       ChildPublishedFileId;                              // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_243D[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2385[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionAddUGCDependency* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionAddUGCDependency_AddDependencyAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionAddUGCDependency_AddDependencyAsync");
@@ -8669,7 +8669,7 @@ struct SteamCoreProUGCAsyncActionAddUGCDependency_HandleCallback final
 public:
 	struct FAddUGCDependencyResult                Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_243E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2386[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionAddUGCDependency_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionAddUGCDependency_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionAddUGCDependency_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUGCAsyncActionAddUGCDependency_HandleCallback");
@@ -8685,7 +8685,7 @@ public:
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       ChildPublishedFileId;                              // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_243F[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2387[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionRemoveUGCDependency* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionRemoveUGCDependency_RemoveDependencyAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionRemoveUGCDependency_RemoveDependencyAsync");
@@ -8703,7 +8703,7 @@ struct SteamCoreProUGCAsyncActionRemoveUGCDependency_HandleCallback final
 public:
 	struct FRemoveUGCDependencyResult             Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2440[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2388[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionRemoveUGCDependency_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionRemoveUGCDependency_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionRemoveUGCDependency_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUGCAsyncActionRemoveUGCDependency_HandleCallback");
@@ -8718,7 +8718,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2441[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2389[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionDeleteItem*  ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionDeleteItem_DeleteItemAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionDeleteItem_DeleteItemAsync");
@@ -8735,7 +8735,7 @@ struct SteamCoreProUGCAsyncActionDeleteItem_HandleCallback final
 public:
 	struct FUGCDeleteItemResult                   Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2442[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_238A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionDeleteItem_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionDeleteItem_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionDeleteItem_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUGCAsyncActionDeleteItem_HandleCallback");
@@ -8750,7 +8750,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2443[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_238B[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUGCAsyncActionGetAppDependencies* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionGetAppDependencies_GetAppDependenciesAsync) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionGetAppDependencies_GetAppDependenciesAsync");
@@ -8767,7 +8767,7 @@ struct SteamCoreProUGCAsyncActionGetAppDependencies_HandleCallback final
 public:
 	struct FGetAppDependenciesResult              Data;                                              // 0x0000(0x0028)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0028(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2444[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_238C[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionGetAppDependencies_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionGetAppDependencies_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionGetAppDependencies_HandleCallback) == 0x000030, "Wrong size on SteamCoreProUGCAsyncActionGetAppDependencies_HandleCallback");
@@ -8782,7 +8782,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bHighPriority;                                     // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2445[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_238D[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Timeout;                                           // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProUGCAsyncActionDownloadItem* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -8801,7 +8801,7 @@ struct SteamCoreProUGCAsyncActionDownloadItem_HandleCallback final
 public:
 	struct FDownloadItemResult                    Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2446[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_238E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUGCAsyncActionDownloadItem_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUGCAsyncActionDownloadItem_HandleCallback");
 static_assert(sizeof(SteamCoreProUGCAsyncActionDownloadItem_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUGCAsyncActionDownloadItem_HandleCallback");
@@ -8816,7 +8816,7 @@ public:
 	struct FSteamID                               SteamIDGameServer;                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 ServerIP;                                          // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ServerPort;                                        // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2448[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2390[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUser_AdvertiseGame) == 0x000008, "Wrong alignment on SteamProUser_AdvertiseGame");
 static_assert(sizeof(SteamProUser_AdvertiseGame) == 0x000020, "Wrong size on SteamProUser_AdvertiseGame");
@@ -8832,7 +8832,7 @@ public:
 	TArray<uint8>                                 Ticket;                                            // 0x0000(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamID;                                           // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamBeginAuthSessionResult                  ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2449[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2391[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUser_BeginAuthSession) == 0x000008, "Wrong alignment on SteamProUser_BeginAuthSession");
 static_assert(sizeof(SteamProUser_BeginAuthSession) == 0x000020, "Wrong size on SteamProUser_BeginAuthSession");
@@ -8924,10 +8924,10 @@ struct SteamProUser_DecompressVoice final
 public:
 	TArray<uint8>                                 CompressedBuffer;                                  // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	int32                                         DesiredSampleRate;                                 // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_244A[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2392[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 DestBuffer;                                        // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	ESteamVoiceResult                             ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_244B[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2393[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUser_DecompressVoice) == 0x000008, "Wrong alignment on SteamProUser_DecompressVoice");
 static_assert(sizeof(SteamProUser_DecompressVoice) == 0x000030, "Wrong size on SteamProUser_DecompressVoice");
@@ -8955,7 +8955,7 @@ public:
 	TArray<uint8>                                 Ticket;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	struct FSteamNetworkingIdentity               SteamNetworkingIdentity;                           // 0x0010(0x0088)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamTicketHandle                     ReturnValue;                                       // 0x0098(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_244C[0x4];                                     // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2394[0x4];                                     // 0x009C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUser_GetAuthSessionTicket) == 0x000008, "Wrong alignment on SteamProUser_GetAuthSessionTicket");
 static_assert(sizeof(SteamProUser_GetAuthSessionTicket) == 0x0000A0, "Wrong size on SteamProUser_GetAuthSessionTicket");
@@ -8970,7 +8970,7 @@ struct SteamProUser_GetAuthTicketForWebApi final
 public:
 	class FString                                 Identity;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamTicketHandle                     ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_244D[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2395[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUser_GetAuthTicketForWebApi) == 0x000008, "Wrong alignment on SteamProUser_GetAuthTicketForWebApi");
 static_assert(sizeof(SteamProUser_GetAuthTicketForWebApi) == 0x000018, "Wrong size on SteamProUser_GetAuthTicketForWebApi");
@@ -8986,7 +8986,7 @@ public:
 	int32                                         UncompressedBytes;                                 // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         UncompressedVoiceDesiredSampleRate;                // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamVoiceResult                             ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_244E[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2396[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUser_GetAvailableVoice) == 0x000004, "Wrong alignment on SteamProUser_GetAvailableVoice");
 static_assert(sizeof(SteamProUser_GetAvailableVoice) == 0x000010, "Wrong size on SteamProUser_GetAvailableVoice");
@@ -9002,7 +9002,7 @@ struct SteamProUser_GetEncryptedAppTicket final
 public:
 	TArray<uint8>                                 Ticket;                                            // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_244F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2397[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUser_GetEncryptedAppTicket) == 0x000008, "Wrong alignment on SteamProUser_GetEncryptedAppTicket");
 static_assert(sizeof(SteamProUser_GetEncryptedAppTicket) == 0x000018, "Wrong size on SteamProUser_GetEncryptedAppTicket");
@@ -9016,7 +9016,7 @@ struct SteamProUser_GetGameBadgeLevel final
 public:
 	int32                                         Series;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bFoil;                                             // 0x0004(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2450[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2398[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProUser_GetGameBadgeLevel) == 0x000004, "Wrong alignment on SteamProUser_GetGameBadgeLevel");
@@ -9077,7 +9077,7 @@ public:
 	TArray<uint8>                                 DestBuffer;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         BytesWritten;                                      // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamVoiceResult                             ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2451[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2399[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUser_GetVoice) == 0x000008, "Wrong alignment on SteamProUser_GetVoice");
 static_assert(sizeof(SteamProUser_GetVoice) == 0x000018, "Wrong size on SteamProUser_GetVoice");
@@ -9104,7 +9104,7 @@ public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         AppID;                                             // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamUserHasLicenseForAppResult              ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2452[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_239A[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUser_UserHasLicenseForApp) == 0x000008, "Wrong alignment on SteamProUser_UserHasLicenseForApp");
 static_assert(sizeof(SteamProUser_UserHasLicenseForApp) == 0x000010, "Wrong size on SteamProUser_UserHasLicenseForApp");
@@ -9146,7 +9146,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 DataToInclude;                                     // 0x0008(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2453[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_239B[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserAsyncActionRequestEncryptedAppTicket* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserAsyncActionRequestEncryptedAppTicket_RequestEncryptedAppTicketAsync) == 0x000008, "Wrong alignment on SteamCoreProUserAsyncActionRequestEncryptedAppTicket_RequestEncryptedAppTicketAsync");
@@ -9177,7 +9177,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 RedirectURL;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2454[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_239C[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserAsyncActionRequestStoreAuthURL* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserAsyncActionRequestStoreAuthURL_RequestStoreAuthURLAsync) == 0x000008, "Wrong alignment on SteamCoreProUserAsyncActionRequestStoreAuthURL_RequestStoreAuthURLAsync");
@@ -9194,7 +9194,7 @@ struct SteamCoreProUserAsyncActionRequestStoreAuthURL_HandleCallback final
 public:
 	struct FStoreAuthURLResponse                  Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2455[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_239D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserAsyncActionRequestStoreAuthURL_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserAsyncActionRequestStoreAuthURL_HandleCallback");
 static_assert(sizeof(SteamCoreProUserAsyncActionRequestStoreAuthURL_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUserAsyncActionRequestStoreAuthURL_HandleCallback");
@@ -9208,7 +9208,7 @@ struct SteamProUserStats_ClearAchievement final
 public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2457[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_239F[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_ClearAchievement) == 0x000008, "Wrong alignment on SteamProUserStats_ClearAchievement");
 static_assert(sizeof(SteamProUserStats_ClearAchievement) == 0x000018, "Wrong size on SteamProUserStats_ClearAchievement");
@@ -9223,7 +9223,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAchieved;                                         // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0011(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2458[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A0[0x6];                                     // 0x0012(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetAchievement) == 0x000008, "Wrong alignment on SteamProUserStats_GetAchievement");
 static_assert(sizeof(SteamProUserStats_GetAchievement) == 0x000018, "Wrong size on SteamProUserStats_GetAchievement");
@@ -9239,7 +9239,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Percent;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2459[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A1[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetAchievementAchievedPercent) == 0x000008, "Wrong alignment on SteamProUserStats_GetAchievementAchievedPercent");
 static_assert(sizeof(SteamProUserStats_GetAchievementAchievedPercent) == 0x000018, "Wrong size on SteamProUserStats_GetAchievementAchievedPercent");
@@ -9254,10 +9254,10 @@ struct SteamProUserStats_GetAchievementAndUnlockTime final
 public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAchieved;                                         // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_245A[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A2[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         UnlockTime;                                        // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_245B[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A3[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetAchievementAndUnlockTime) == 0x000008, "Wrong alignment on SteamProUserStats_GetAchievementAndUnlockTime");
 static_assert(sizeof(SteamProUserStats_GetAchievementAndUnlockTime) == 0x000020, "Wrong size on SteamProUserStats_GetAchievementAndUnlockTime");
@@ -9300,7 +9300,7 @@ struct SteamProUserStats_GetAchievementName final
 {
 public:
 	int32                                         Achievement;                                       // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_245C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A4[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamProUserStats_GetAchievementName) == 0x000008, "Wrong alignment on SteamProUserStats_GetAchievementName");
@@ -9317,7 +9317,7 @@ public:
 	int32                                         MinProgress;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxProgress;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_245D[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A5[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetAchievementProgressLimits) == 0x000008, "Wrong alignment on SteamProUserStats_GetAchievementProgressLimits");
 static_assert(sizeof(SteamProUserStats_GetAchievementProgressLimits) == 0x000020, "Wrong size on SteamProUserStats_GetAchievementProgressLimits");
@@ -9335,7 +9335,7 @@ public:
 	float                                         MinProgress;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MaxProgress;                                       // 0x0014(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_245E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A6[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetAchievementProgressLimitsFloat) == 0x000008, "Wrong alignment on SteamProUserStats_GetAchievementProgressLimitsFloat");
 static_assert(sizeof(SteamProUserStats_GetAchievementProgressLimitsFloat) == 0x000020, "Wrong size on SteamProUserStats_GetAchievementProgressLimitsFloat");
@@ -9351,12 +9351,12 @@ struct SteamProUserStats_GetDownloadedLeaderboardEntry final
 public:
 	struct FSteamLeaderboardEntries               LeaderboardEntries;                                // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         Param_Index;                                       // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_245F[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A7[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamLeaderboardEntry                 LeaderboardEntry;                                  // 0x0010(0x0020)(Parm, OutParm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 Details;                                           // 0x0030(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	TArray<int32>                                 OutDetails;                                        // 0x0040(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0050(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2460[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A8[0x7];                                     // 0x0051(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetDownloadedLeaderboardEntry) == 0x000008, "Wrong alignment on SteamProUserStats_GetDownloadedLeaderboardEntry");
 static_assert(sizeof(SteamProUserStats_GetDownloadedLeaderboardEntry) == 0x000058, "Wrong size on SteamProUserStats_GetDownloadedLeaderboardEntry");
@@ -9375,7 +9375,7 @@ public:
 	class FString                                 StatName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Data;                                              // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2461[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23A9[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetGlobalStatFloat) == 0x000008, "Wrong alignment on SteamProUserStats_GetGlobalStatFloat");
 static_assert(sizeof(SteamProUserStats_GetGlobalStatFloat) == 0x000018, "Wrong size on SteamProUserStats_GetGlobalStatFloat");
@@ -9390,10 +9390,10 @@ struct SteamProUserStats_GetGlobalStatHistoryFloat final
 public:
 	class FString                                 StatName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         HistoryDays;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2462[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AA[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<float>                                 Data;                                              // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2463[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AB[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetGlobalStatHistoryFloat) == 0x000008, "Wrong alignment on SteamProUserStats_GetGlobalStatHistoryFloat");
 static_assert(sizeof(SteamProUserStats_GetGlobalStatHistoryFloat) == 0x000030, "Wrong size on SteamProUserStats_GetGlobalStatHistoryFloat");
@@ -9409,10 +9409,10 @@ struct SteamProUserStats_GetGlobalStatHistoryInt final
 public:
 	class FString                                 StatName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         HistoryDays;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2464[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AC[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 Data;                                              // 0x0018(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0028(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2465[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AD[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetGlobalStatHistoryInt) == 0x000008, "Wrong alignment on SteamProUserStats_GetGlobalStatHistoryInt");
 static_assert(sizeof(SteamProUserStats_GetGlobalStatHistoryInt) == 0x000030, "Wrong size on SteamProUserStats_GetGlobalStatHistoryInt");
@@ -9429,7 +9429,7 @@ public:
 	class FString                                 StatName;                                          // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Data;                                              // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2466[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AE[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetGlobalStatInt) == 0x000008, "Wrong alignment on SteamProUserStats_GetGlobalStatInt");
 static_assert(sizeof(SteamProUserStats_GetGlobalStatInt) == 0x000018, "Wrong size on SteamProUserStats_GetGlobalStatInt");
@@ -9444,7 +9444,7 @@ struct SteamProUserStats_GetLeaderboardDisplayType final
 public:
 	struct FSteamLeaderboard                      SteamLeaderboard;                                  // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamLeaderboardDisplayType                  ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2467[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23AF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetLeaderboardDisplayType) == 0x000008, "Wrong alignment on SteamProUserStats_GetLeaderboardDisplayType");
 static_assert(sizeof(SteamProUserStats_GetLeaderboardDisplayType) == 0x000010, "Wrong size on SteamProUserStats_GetLeaderboardDisplayType");
@@ -9458,7 +9458,7 @@ struct SteamProUserStats_GetLeaderboardEntryCount final
 public:
 	struct FSteamLeaderboard                      SteamLeaderboard;                                  // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2468[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B0[0x4];                                     // 0x000C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetLeaderboardEntryCount) == 0x000008, "Wrong alignment on SteamProUserStats_GetLeaderboardEntryCount");
 static_assert(sizeof(SteamProUserStats_GetLeaderboardEntryCount) == 0x000010, "Wrong size on SteamProUserStats_GetLeaderboardEntryCount");
@@ -9485,7 +9485,7 @@ struct SteamProUserStats_GetLeaderboardSortMethod final
 public:
 	struct FSteamLeaderboard                      SteamLeaderboard;                                  // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamLeaderboardSortMethod                   ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2469[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetLeaderboardSortMethod) == 0x000008, "Wrong alignment on SteamProUserStats_GetLeaderboardSortMethod");
 static_assert(sizeof(SteamProUserStats_GetLeaderboardSortMethod) == 0x000010, "Wrong size on SteamProUserStats_GetLeaderboardSortMethod");
@@ -9500,9 +9500,9 @@ public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Percent;                                           // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAchieved;                                         // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_246A[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B2[0x3];                                     // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_246B[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B3[0x4];                                     // 0x001C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetMostAchievedAchievementInfo) == 0x000008, "Wrong alignment on SteamProUserStats_GetMostAchievedAchievementInfo");
 static_assert(sizeof(SteamProUserStats_GetMostAchievedAchievementInfo) == 0x000020, "Wrong size on SteamProUserStats_GetMostAchievedAchievementInfo");
@@ -9517,13 +9517,13 @@ struct SteamProUserStats_GetNextMostAchievedAchievementInfo final
 {
 public:
 	int32                                         IteratorPrevious;                                  // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_246C[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B4[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Percent;                                           // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAchieved;                                         // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_246D[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B5[0x3];                                     // 0x001D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         ReturnValue;                                       // 0x0020(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_246E[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B6[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetNextMostAchievedAchievementInfo) == 0x000008, "Wrong alignment on SteamProUserStats_GetNextMostAchievedAchievementInfo");
 static_assert(sizeof(SteamProUserStats_GetNextMostAchievedAchievementInfo) == 0x000028, "Wrong size on SteamProUserStats_GetNextMostAchievedAchievementInfo");
@@ -9552,7 +9552,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Data;                                              // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_246F[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B7[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetStatFloat) == 0x000008, "Wrong alignment on SteamProUserStats_GetStatFloat");
 static_assert(sizeof(SteamProUserStats_GetStatFloat) == 0x000018, "Wrong size on SteamProUserStats_GetStatFloat");
@@ -9568,7 +9568,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Data;                                              // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2470[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B8[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetStatInt) == 0x000008, "Wrong alignment on SteamProUserStats_GetStatInt");
 static_assert(sizeof(SteamProUserStats_GetStatInt) == 0x000018, "Wrong size on SteamProUserStats_GetStatInt");
@@ -9596,7 +9596,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAchieved;                                         // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2471[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23B9[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetUserAchievement) == 0x000008, "Wrong alignment on SteamProUserStats_GetUserAchievement");
 static_assert(sizeof(SteamProUserStats_GetUserAchievement) == 0x000020, "Wrong size on SteamProUserStats_GetUserAchievement");
@@ -9613,10 +9613,10 @@ public:
 	struct FSteamID                               SteamIDUser;                                       // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bAchieved;                                         // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2472[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23BA[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         UnlockTime;                                        // 0x001C(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2473[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23BB[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetUserAchievementAndUnlockTime) == 0x000008, "Wrong alignment on SteamProUserStats_GetUserAchievementAndUnlockTime");
 static_assert(sizeof(SteamProUserStats_GetUserAchievementAndUnlockTime) == 0x000028, "Wrong size on SteamProUserStats_GetUserAchievementAndUnlockTime");
@@ -9635,7 +9635,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Data;                                              // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2474[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23BC[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetUserStatFloat) == 0x000008, "Wrong alignment on SteamProUserStats_GetUserStatFloat");
 static_assert(sizeof(SteamProUserStats_GetUserStatFloat) == 0x000020, "Wrong size on SteamProUserStats_GetUserStatFloat");
@@ -9653,7 +9653,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Data;                                              // 0x0018(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x001C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2475[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23BD[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_GetUserStatInteger) == 0x000008, "Wrong alignment on SteamProUserStats_GetUserStatInteger");
 static_assert(sizeof(SteamProUserStats_GetUserStatInteger) == 0x000020, "Wrong size on SteamProUserStats_GetUserStatInteger");
@@ -9671,7 +9671,7 @@ public:
 	int32                                         CurrentProgress;                                   // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         MaxProgress;                                       // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2476[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23BE[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_IndicateAchievementProgress) == 0x000008, "Wrong alignment on SteamProUserStats_IndicateAchievementProgress");
 static_assert(sizeof(SteamProUserStats_IndicateAchievementProgress) == 0x000020, "Wrong size on SteamProUserStats_IndicateAchievementProgress");
@@ -9711,7 +9711,7 @@ struct SteamProUserStats_SetAchievement final
 public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2477[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23BF[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_SetAchievement) == 0x000008, "Wrong alignment on SteamProUserStats_SetAchievement");
 static_assert(sizeof(SteamProUserStats_SetAchievement) == 0x000018, "Wrong size on SteamProUserStats_SetAchievement");
@@ -9726,7 +9726,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Data;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2478[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C0[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_SetStatFloat) == 0x000008, "Wrong alignment on SteamProUserStats_SetStatFloat");
 static_assert(sizeof(SteamProUserStats_SetStatFloat) == 0x000018, "Wrong size on SteamProUserStats_SetStatFloat");
@@ -9742,7 +9742,7 @@ public:
 	class FString                                 Param_Name;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Data;                                              // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2479[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C1[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_SetStatInt) == 0x000008, "Wrong alignment on SteamProUserStats_SetStatInt");
 static_assert(sizeof(SteamProUserStats_SetStatInt) == 0x000018, "Wrong size on SteamProUserStats_SetStatInt");
@@ -9770,7 +9770,7 @@ public:
 	float                                         CountThisSession;                                  // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         SessionLength;                                     // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_247A[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C2[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_UpdateAvgRateStat) == 0x000008, "Wrong alignment on SteamProUserStats_UpdateAvgRateStat");
 static_assert(sizeof(SteamProUserStats_UpdateAvgRateStat) == 0x000020, "Wrong size on SteamProUserStats_UpdateAvgRateStat");
@@ -9802,10 +9802,10 @@ public:
 	TDelegate<void(struct FLeaderboardScoresDownloaded& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamLeaderboard                      SteamLeaderboard;                                  // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamLeaderboardDataRequest                  DataRequest;                                       // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_247B[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C3[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RangeStart;                                        // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         RangeEnd;                                          // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_247C[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C4[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_DownloadLeaderboardEntries) == 0x000008, "Wrong alignment on SteamProUserStats_DownloadLeaderboardEntries");
 static_assert(sizeof(SteamProUserStats_DownloadLeaderboardEntries) == 0x000028, "Wrong size on SteamProUserStats_DownloadLeaderboardEntries");
@@ -9852,7 +9852,7 @@ public:
 	class FString                                 LeaderboardName;                                   // 0x0010(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamLeaderboardSortMethod                   SortMethod;                                        // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamLeaderboardDisplayType                  DisplayType;                                       // 0x0021(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_247D[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C5[0x6];                                     // 0x0022(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUserStats_FindOrCreateLeaderboard) == 0x000008, "Wrong alignment on SteamProUserStats_FindOrCreateLeaderboard");
 static_assert(sizeof(SteamProUserStats_FindOrCreateLeaderboard) == 0x000028, "Wrong size on SteamProUserStats_FindOrCreateLeaderboard");
@@ -9917,7 +9917,7 @@ public:
 	TDelegate<void(struct FLeaderboardScoreUploaded& Data, bool bWasSuccessful)> Callback;                                          // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamLeaderboard                      SteamLeaderboard;                                  // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamLeaderboardUploadScoreMethod            UploadScoreMethod;                                 // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_247E[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C6[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Score;                                             // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                 ScoreDetails;                                      // 0x0020(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 };
@@ -9937,7 +9937,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 LeaderboardName;                                   // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_247F[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C7[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserStatsAsyncActionFindLeaderboard* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionFindLeaderboard_FindLeaderboardAsync) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionFindLeaderboard_FindLeaderboardAsync");
@@ -9954,7 +9954,7 @@ struct SteamCoreProUserStatsAsyncActionFindLeaderboard_HandleCallback final
 public:
 	struct FLeaderboardFindResult                 Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2480[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionFindLeaderboard_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionFindLeaderboard_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionFindLeaderboard_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUserStatsAsyncActionFindLeaderboard_HandleCallback");
@@ -9969,7 +9969,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamLeaderboard                      SteamLeaderboard;                                  // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamLeaderboardDataRequest                  Request;                                           // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2481[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23C9[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         RangeStart;                                        // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         RangeEnd;                                          // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -9992,7 +9992,7 @@ struct SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntries_HandleCallback
 public:
 	struct FLeaderboardScoresDownloaded           Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2482[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23CA[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntries_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntries_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntries_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntries_HandleCallback");
@@ -10023,7 +10023,7 @@ struct SteamCoreProUserStatsAsyncActionDownloadRequestGlobalStats_HandleCallback
 public:
 	struct FGlobalStatsReceived                   Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2483[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23CB[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionDownloadRequestGlobalStats_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionDownloadRequestGlobalStats_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionDownloadRequestGlobalStats_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUserStatsAsyncActionDownloadRequestGlobalStats_HandleCallback");
@@ -10037,7 +10037,7 @@ struct SteamCoreProUserStatsAsyncActionRequestGlobalAchievementPercentages_Reque
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2484[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23CC[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserStatsAsyncActionRequestGlobalAchievementPercentages* ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionRequestGlobalAchievementPercentages_RequestGlobalAchievementPercentagesAsync) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionRequestGlobalAchievementPercentages_RequestGlobalAchievementPercentagesAsync");
@@ -10053,7 +10053,7 @@ struct SteamCoreProUserStatsAsyncActionRequestGlobalAchievementPercentages_Handl
 public:
 	struct FGlobalAchievementPercentagesReady     Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2485[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23CD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionRequestGlobalAchievementPercentages_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionRequestGlobalAchievementPercentages_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionRequestGlobalAchievementPercentages_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUserStatsAsyncActionRequestGlobalAchievementPercentages_HandleCallback");
@@ -10067,7 +10067,7 @@ struct SteamCoreProUserStatsAsyncActionGetNumberOfCurrentPlayers_GetNumberOfCurr
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2486[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23CE[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserStatsAsyncActionGetNumberOfCurrentPlayers* ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionGetNumberOfCurrentPlayers_GetNumberOfCurrentPlayersAsync) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionGetNumberOfCurrentPlayers_GetNumberOfCurrentPlayersAsync");
@@ -10083,7 +10083,7 @@ struct SteamCoreProUserStatsAsyncActionGetNumberOfCurrentPlayers_HandleCallback 
 public:
 	struct FNumberOfCurrentPlayers                Data;                                              // 0x0000(0x0008)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2487[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23CF[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionGetNumberOfCurrentPlayers_HandleCallback) == 0x000004, "Wrong alignment on SteamCoreProUserStatsAsyncActionGetNumberOfCurrentPlayers_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionGetNumberOfCurrentPlayers_HandleCallback) == 0x00000C, "Wrong size on SteamCoreProUserStatsAsyncActionGetNumberOfCurrentPlayers_HandleCallback");
@@ -10098,11 +10098,11 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamLeaderboard                      SteamLeaderboard;                                  // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamLeaderboardUploadScoreMethod            UploadScoreMethod;                                 // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2488[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D0[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Score;                                             // 0x0014(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<int32>                                 ScoreDetails;                                      // 0x0018(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0028(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2489[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D1[0x4];                                     // 0x002C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserStatsAsyncActionUploadLeaderboardScore* ReturnValue;                                       // 0x0030(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionUploadLeaderboardScore_UploadLeaderboardScoreAsync) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionUploadLeaderboardScore_UploadLeaderboardScoreAsync");
@@ -10122,7 +10122,7 @@ struct SteamCoreProUserStatsAsyncActionUploadLeaderboardScore_HandleCallback fin
 public:
 	struct FLeaderboardScoreUploaded              Data;                                              // 0x0000(0x0020)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_248A[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D2[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionUploadLeaderboardScore_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionUploadLeaderboardScore_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionUploadLeaderboardScore_HandleCallback) == 0x000028, "Wrong size on SteamCoreProUserStatsAsyncActionUploadLeaderboardScore_HandleCallback");
@@ -10138,7 +10138,7 @@ public:
 	class FString                                 LeaderboardName;                                   // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamLeaderboardSortMethod                   SortMethod;                                        // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamLeaderboardDisplayType                  DisplayType;                                       // 0x0019(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_248B[0x2];                                     // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D3[0x2];                                     // 0x001A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         Timeout;                                           // 0x001C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class USteamCoreProUserStatsAsyncActionFindOrCreateLeaderboard* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -10158,7 +10158,7 @@ struct SteamCoreProUserStatsAsyncActionFindOrCreateLeaderboard_HandleCallback fi
 public:
 	struct FFindOrCreateLeaderboardData           Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_248C[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D4[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionFindOrCreateLeaderboard_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionFindOrCreateLeaderboard_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionFindOrCreateLeaderboard_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUserStatsAsyncActionFindOrCreateLeaderboard_HandleCallback");
@@ -10173,7 +10173,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamID                               SteamID;                                           // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_248D[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D5[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserStatsAsyncActionRequestUserStats* ReturnValue;                                       // 0x0018(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionRequestUserStats_RequestUserStatsAsync) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionRequestUserStats_RequestUserStatsAsync");
@@ -10190,7 +10190,7 @@ struct SteamCoreProUserStatsAsyncActionRequestUserStats_HandleCallback final
 public:
 	struct FRequestUserStatsData                  Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_248E[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D6[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionRequestUserStats_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionRequestUserStats_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionRequestUserStats_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUserStatsAsyncActionRequestUserStats_HandleCallback");
@@ -10204,7 +10204,7 @@ struct SteamCoreProUserStatsAsyncActionRequestCurrentStats_RequestCurrentStatsAs
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2490[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D8[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserStatsAsyncActionRequestCurrentStats* ReturnValue;                                       // 0x0010(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionRequestCurrentStats_RequestCurrentStatsAsync) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionRequestCurrentStats_RequestCurrentStatsAsync");
@@ -10220,7 +10220,7 @@ struct SteamCoreProUserStatsAsyncActionRequestCurrentStats_HandleCallback final
 public:
 	struct FRequestCurrentStatsData               Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2491[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23D9[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionRequestCurrentStats_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionRequestCurrentStats_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionRequestCurrentStats_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUserStatsAsyncActionRequestCurrentStats_HandleCallback");
@@ -10236,7 +10236,7 @@ public:
 	struct FSteamLeaderboard                      SteamLeaderboard;                                  // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	TArray<struct FSteamID>                       Users;                                             // 0x0010(0x0010)(Parm, ZeroConstructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0020(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2492[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23DA[0x4];                                     // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserStatsAsyncActionDownloadLeaderboardEntriesForUsers* ReturnValue;                                       // 0x0028(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntriesForUsers_DownloadLeaderboardEntriesForUsersAsync) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntriesForUsers_DownloadLeaderboardEntriesForUsersAsync");
@@ -10254,7 +10254,7 @@ struct SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntriesForUsers_Handle
 public:
 	struct FLeaderboardScoresDownloadedForUsers   Data;                                              // 0x0000(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2493[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23DB[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntriesForUsers_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntriesForUsers_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntriesForUsers_HandleCallback) == 0x000020, "Wrong size on SteamCoreProUserStatsAsyncActionDownloadLeaderboardEntriesForUsers_HandleCallback");
@@ -10270,7 +10270,7 @@ public:
 	struct FSteamLeaderboard                      SteamLeaderboard;                                  // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamUGCHandle                        Handle;                                            // 0x0010(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	float                                         Timeout;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2494[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23DC[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProUserStatsAsyncActionAttachLeaderboardUGC* ReturnValue;                                       // 0x0020(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionAttachLeaderboardUGC_AttachLeaderboardUGCAsync) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionAttachLeaderboardUGC_AttachLeaderboardUGCAsync");
@@ -10288,7 +10288,7 @@ struct SteamCoreProUserStatsAsyncActionAttachLeaderboardUGC_HandleCallback final
 public:
 	struct FAttachLeaderboardUGCData              Data;                                              // 0x0000(0x0010)(ConstParm, Parm, OutParm, ReferenceParm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          bWasSuccessful;                                    // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2495[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23DD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamCoreProUserStatsAsyncActionAttachLeaderboardUGC_HandleCallback) == 0x000008, "Wrong alignment on SteamCoreProUserStatsAsyncActionAttachLeaderboardUGC_HandleCallback");
 static_assert(sizeof(SteamCoreProUserStatsAsyncActionAttachLeaderboardUGC_HandleCallback) == 0x000018, "Wrong size on SteamCoreProUserStatsAsyncActionAttachLeaderboardUGC_HandleCallback");
@@ -10301,7 +10301,7 @@ struct SteamCoreProVoice_ConstructSteamCoreProVoice final
 {
 public:
 	int32                                         AudioSampleRate;                                   // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2496[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23DE[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USteamCoreProVoice*                     ReturnValue;                                       // 0x0008(0x0008)(Parm, OutParm, ZeroConstructor, ReturnParm, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamCoreProVoice_ConstructSteamCoreProVoice) == 0x000008, "Wrong alignment on SteamCoreProVoice_ConstructSteamCoreProVoice");
@@ -10350,7 +10350,7 @@ struct SteamCoreProAsyncActionListenForControllerChange_HandleCallback final
 {
 public:
 	bool                                          bIsConnected;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2497[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23DF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PlatformUserId;                                    // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         UserId;                                            // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -10444,7 +10444,7 @@ struct SteamUtilities_BreakTicketHandle final
 {
 public:
 	struct FSteamTicketHandle                     Handle;                                            // 0x0000(0x0004)(Parm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2498[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E0[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamUtilities_BreakTicketHandle) == 0x000008, "Wrong alignment on SteamUtilities_BreakTicketHandle");
@@ -10499,7 +10499,7 @@ public:
 	struct FSteamID                               A;                                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               B;                                                 // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2499[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E1[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_Equal) == 0x000008, "Wrong alignment on SteamUtilities_Equal");
 static_assert(sizeof(SteamUtilities_Equal) == 0x000018, "Wrong size on SteamUtilities_Equal");
@@ -10515,7 +10515,7 @@ public:
 	struct FSteamID                               A;                                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               B;                                                 // 0x0008(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProIdentical                        Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_249A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E2[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_Equal_Exec) == 0x000008, "Wrong alignment on SteamUtilities_Equal_Exec");
 static_assert(sizeof(SteamUtilities_Equal_Exec) == 0x000018, "Wrong size on SteamUtilities_Equal_Exec");
@@ -10543,7 +10543,7 @@ struct SteamUtilities_GetAccountType final
 public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamAccountType                             ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_249B[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_GetAccountType) == 0x000008, "Wrong alignment on SteamUtilities_GetAccountType");
 static_assert(sizeof(SteamUtilities_GetAccountType) == 0x000010, "Wrong size on SteamUtilities_GetAccountType");
@@ -10556,7 +10556,7 @@ struct SteamUtilities_GetFriendsList final
 {
 public:
 	EFriendListType                               FriendListType;                                    // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_249C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E4[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FOnlineFriendSteamCoreBlueprint> ReturnValue;                                       // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamUtilities_GetFriendsList) == 0x000008, "Wrong alignment on SteamUtilities_GetFriendsList");
@@ -10595,7 +10595,7 @@ public:
 	class FString                                 Key;                                               // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         OutValue;                                          // 0x0038(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x003C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_249D[0x3];                                     // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E5[0x3];                                     // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_GetInteger) == 0x000008, "Wrong alignment on SteamUtilities_GetInteger");
 static_assert(sizeof(SteamUtilities_GetInteger) == 0x000040, "Wrong size on SteamUtilities_GetInteger");
@@ -10611,7 +10611,7 @@ struct SteamUtilities_GetPingFromHostData final
 public:
 	class FString                                 Data;                                              // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_249E[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E6[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_GetPingFromHostData) == 0x000008, "Wrong alignment on SteamUtilities_GetPingFromHostData");
 static_assert(sizeof(SteamUtilities_GetPingFromHostData) == 0x000018, "Wrong size on SteamUtilities_GetPingFromHostData");
@@ -10651,7 +10651,7 @@ public:
 	class FString                                 Key;                                               // 0x0028(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 OutValue;                                          // 0x0038(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0048(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_249F[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E7[0x7];                                     // 0x0049(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_GetString) == 0x000008, "Wrong alignment on SteamUtilities_GetString");
 static_assert(sizeof(SteamUtilities_GetString) == 0x000050, "Wrong size on SteamUtilities_GetString");
@@ -10667,7 +10667,7 @@ struct SteamUtilities_GetType final
 public:
 	struct FSteamSessionSetting                   Settings;                                          // 0x0000(0x0028)(Parm, NativeAccessSpecifierPublic)
 	ESteamAttributeType                           ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A0[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E8[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_GetType) == 0x000008, "Wrong alignment on SteamUtilities_GetType");
 static_assert(sizeof(SteamUtilities_GetType) == 0x000030, "Wrong size on SteamUtilities_GetType");
@@ -10681,7 +10681,7 @@ struct SteamUtilities_IsGameIDValid final
 public:
 	struct FSteamGameID                           GameId;                                            // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23E9[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsGameIDValid) == 0x000008, "Wrong alignment on SteamUtilities_IsGameIDValid");
 static_assert(sizeof(SteamUtilities_IsGameIDValid) == 0x000010, "Wrong size on SteamUtilities_IsGameIDValid");
@@ -10695,7 +10695,7 @@ struct SteamUtilities_IsGameIDValid_Exec final
 public:
 	struct FSteamGameID                           GameId;                                            // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProValid                            Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23EA[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsGameIDValid_Exec) == 0x000008, "Wrong alignment on SteamUtilities_IsGameIDValid_Exec");
 static_assert(sizeof(SteamUtilities_IsGameIDValid_Exec) == 0x000010, "Wrong size on SteamUtilities_IsGameIDValid_Exec");
@@ -10709,7 +10709,7 @@ struct SteamUtilities_IsLobby final
 public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23EB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsLobby) == 0x000008, "Wrong alignment on SteamUtilities_IsLobby");
 static_assert(sizeof(SteamUtilities_IsLobby) == 0x000010, "Wrong size on SteamUtilities_IsLobby");
@@ -10724,7 +10724,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LocalUserNum;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A4[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23EC[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsLocalPlayerTalking) == 0x000008, "Wrong alignment on SteamUtilities_IsLocalPlayerTalking");
 static_assert(sizeof(SteamUtilities_IsLocalPlayerTalking) == 0x000010, "Wrong size on SteamUtilities_IsLocalPlayerTalking");
@@ -10740,7 +10740,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerState*                           Player;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A5[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23ED[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsPlayerMuted) == 0x000008, "Wrong alignment on SteamUtilities_IsPlayerMuted");
 static_assert(sizeof(SteamUtilities_IsPlayerMuted) == 0x000018, "Wrong size on SteamUtilities_IsPlayerMuted");
@@ -10755,7 +10755,7 @@ struct SteamUtilities_IsPublishedFileIDValid final
 public:
 	struct FPublishedFileID                       PublishedFileID;                                   // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23EE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsPublishedFileIDValid) == 0x000008, "Wrong alignment on SteamUtilities_IsPublishedFileIDValid");
 static_assert(sizeof(SteamUtilities_IsPublishedFileIDValid) == 0x000010, "Wrong size on SteamUtilities_IsPublishedFileIDValid");
@@ -10769,7 +10769,7 @@ struct SteamUtilities_IsPublishedFileIDValid_Exec final
 public:
 	struct FPublishedFileID                       Handle;                                            // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProValid                            Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23EF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsPublishedFileIDValid_Exec) == 0x000008, "Wrong alignment on SteamUtilities_IsPublishedFileIDValid_Exec");
 static_assert(sizeof(SteamUtilities_IsPublishedFileIDValid_Exec) == 0x000010, "Wrong size on SteamUtilities_IsPublishedFileIDValid_Exec");
@@ -10795,7 +10795,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class APlayerState*                           Player;                                            // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F0[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsRemotePlayerTalking) == 0x000008, "Wrong alignment on SteamUtilities_IsRemotePlayerTalking");
 static_assert(sizeof(SteamUtilities_IsRemotePlayerTalking) == 0x000018, "Wrong size on SteamUtilities_IsRemotePlayerTalking");
@@ -10821,7 +10821,7 @@ struct SteamUtilities_IsSteamIDValid_Exec final
 public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProValid                            Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24A9[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F1[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsSteamIDValid_Exec) == 0x000008, "Wrong alignment on SteamUtilities_IsSteamIDValid_Exec");
 static_assert(sizeof(SteamUtilities_IsSteamIDValid_Exec) == 0x000010, "Wrong size on SteamUtilities_IsSteamIDValid_Exec");
@@ -10835,7 +10835,7 @@ struct SteamUtilities_IsSteamInventoryUpdateHandleValid final
 public:
 	struct FSteamInventoryUpdateHandle            Handle;                                            // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24AA[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsSteamInventoryUpdateHandleValid) == 0x000008, "Wrong alignment on SteamUtilities_IsSteamInventoryUpdateHandleValid");
 static_assert(sizeof(SteamUtilities_IsSteamInventoryUpdateHandleValid) == 0x000010, "Wrong size on SteamUtilities_IsSteamInventoryUpdateHandleValid");
@@ -10849,7 +10849,7 @@ struct SteamUtilities_IsSteamInventoryUpdateHandleValid_Exec final
 public:
 	struct FSteamInventoryUpdateHandle            Handle;                                            // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProValid                            Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24AB[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsSteamInventoryUpdateHandleValid_Exec) == 0x000008, "Wrong alignment on SteamUtilities_IsSteamInventoryUpdateHandleValid_Exec");
 static_assert(sizeof(SteamUtilities_IsSteamInventoryUpdateHandleValid_Exec) == 0x000010, "Wrong size on SteamUtilities_IsSteamInventoryUpdateHandleValid_Exec");
@@ -10874,7 +10874,7 @@ struct SteamUtilities_IsSteamTicketHandleValid final
 public:
 	struct FSteamTicketHandle                     Handle;                                            // 0x0000(0x0004)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24AC[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F4[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsSteamTicketHandleValid) == 0x000004, "Wrong alignment on SteamUtilities_IsSteamTicketHandleValid");
 static_assert(sizeof(SteamUtilities_IsSteamTicketHandleValid) == 0x000008, "Wrong size on SteamUtilities_IsSteamTicketHandleValid");
@@ -10888,7 +10888,7 @@ struct SteamUtilities_IsSteamTicketHandleValid_Exec final
 public:
 	struct FSteamTicketHandle                     Handle;                                            // 0x0000(0x0004)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProValid                            Result;                                            // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24AD[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F5[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsSteamTicketHandleValid_Exec) == 0x000004, "Wrong alignment on SteamUtilities_IsSteamTicketHandleValid_Exec");
 static_assert(sizeof(SteamUtilities_IsSteamTicketHandleValid_Exec) == 0x000008, "Wrong size on SteamUtilities_IsSteamTicketHandleValid_Exec");
@@ -10902,7 +10902,7 @@ struct SteamUtilities_IsUGCHandleValid final
 public:
 	struct FSteamUGCHandle                        Handle;                                            // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24AE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsUGCHandleValid) == 0x000008, "Wrong alignment on SteamUtilities_IsUGCHandleValid");
 static_assert(sizeof(SteamUtilities_IsUGCHandleValid) == 0x000010, "Wrong size on SteamUtilities_IsUGCHandleValid");
@@ -10916,7 +10916,7 @@ struct SteamUtilities_IsUGCHandleValid_Exec final
 public:
 	struct FSteamUGCHandle                        Handle;                                            // 0x0000(0x0008)(ConstParm, Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProValid                            Result;                                            // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24AF[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F7[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsUGCHandleValid_Exec) == 0x000008, "Wrong alignment on SteamUtilities_IsUGCHandleValid_Exec");
 static_assert(sizeof(SteamUtilities_IsUGCHandleValid_Exec) == 0x000010, "Wrong size on SteamUtilities_IsUGCHandleValid_Exec");
@@ -10941,7 +10941,7 @@ struct SteamUtilities_IsValid final
 public:
 	struct FSteamID                               SteamID;                                           // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F8[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_IsValid) == 0x000008, "Wrong alignment on SteamUtilities_IsValid");
 static_assert(sizeof(SteamUtilities_IsValid) == 0x000010, "Wrong size on SteamUtilities_IsValid");
@@ -10981,7 +10981,7 @@ struct SteamUtilities_K2_IsPlayerInSession final
 public:
 	int32                                         LocalUserNum;                                      // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B1[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23F9[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_K2_IsPlayerInSession) == 0x000004, "Wrong alignment on SteamUtilities_K2_IsPlayerInSession");
 static_assert(sizeof(SteamUtilities_K2_IsPlayerInSession) == 0x000008, "Wrong size on SteamUtilities_K2_IsPlayerInSession");
@@ -10997,7 +10997,7 @@ public:
 	class APlayerController*                      KickedPlayer;                                      // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FText                                   KickReason;                                        // 0x0010(0x0018)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B2[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FA[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_KickPlayer) == 0x000008, "Wrong alignment on SteamUtilities_KickPlayer");
 static_assert(sizeof(SteamUtilities_KickPlayer) == 0x000030, "Wrong size on SteamUtilities_KickPlayer");
@@ -11034,7 +11034,7 @@ struct SteamUtilities_MakeInteger final
 {
 public:
 	int32                                         Value;                                             // 0x0000(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B3[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSteamSessionSetting                   ReturnValue;                                       // 0x0008(0x0028)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(SteamUtilities_MakeInteger) == 0x000008, "Wrong alignment on SteamUtilities_MakeInteger");
@@ -11074,7 +11074,7 @@ struct SteamUtilities_MakeSearchInteger final
 {
 public:
 	ESteamComparisonOp                            ComparisonOperator;                                // 0x0000(0x0001)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B4[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FC[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Value;                                             // 0x0004(0x0004)(ConstParm, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamSessionSearchSetting             ReturnValue;                                       // 0x0008(0x0020)(Parm, OutParm, ReturnParm, NativeAccessSpecifierPublic)
 };
@@ -11143,7 +11143,7 @@ struct SteamUtilities_MakeTicketHandle final
 public:
 	class FString                                 Value;                                             // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FSteamTicketHandle                     ReturnValue;                                       // 0x0010(0x0004)(Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B5[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FD[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_MakeTicketHandle) == 0x000008, "Wrong alignment on SteamUtilities_MakeTicketHandle");
 static_assert(sizeof(SteamUtilities_MakeTicketHandle) == 0x000018, "Wrong size on SteamUtilities_MakeTicketHandle");
@@ -11170,11 +11170,11 @@ struct SteamUtilities_MuteRemoteTalker final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LocalUserNum;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B6[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FE[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerState*                           PlayerState;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsSystemWide;                                     // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B7[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_23FF[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_MuteRemoteTalker) == 0x000008, "Wrong alignment on SteamUtilities_MuteRemoteTalker");
 static_assert(sizeof(SteamUtilities_MuteRemoteTalker) == 0x000020, "Wrong size on SteamUtilities_MuteRemoteTalker");
@@ -11192,7 +11192,7 @@ public:
 	struct FSteamID                               A;                                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamID                               B;                                                 // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B8[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2400[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_NotEqual) == 0x000008, "Wrong alignment on SteamUtilities_NotEqual");
 static_assert(sizeof(SteamUtilities_NotEqual) == 0x000018, "Wrong size on SteamUtilities_NotEqual");
@@ -11208,7 +11208,7 @@ public:
 	struct FPublishedFileID                       A;                                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       B;                                                 // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24B9[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2401[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_PublishedFileID_Equals) == 0x000008, "Wrong alignment on SteamUtilities_PublishedFileID_Equals");
 static_assert(sizeof(SteamUtilities_PublishedFileID_Equals) == 0x000018, "Wrong size on SteamUtilities_PublishedFileID_Equals");
@@ -11224,7 +11224,7 @@ public:
 	struct FPublishedFileID                       A;                                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       B;                                                 // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProIdentical                        Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24BA[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2402[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_PublishedFileID_Equals_Exec) == 0x000008, "Wrong alignment on SteamUtilities_PublishedFileID_Equals_Exec");
 static_assert(sizeof(SteamUtilities_PublishedFileID_Equals_Exec) == 0x000018, "Wrong size on SteamUtilities_PublishedFileID_Equals_Exec");
@@ -11240,7 +11240,7 @@ public:
 	struct FPublishedFileID                       A;                                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FPublishedFileID                       B;                                                 // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24BB[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2403[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_PublishedFileID_NotEquals) == 0x000008, "Wrong alignment on SteamUtilities_PublishedFileID_NotEquals");
 static_assert(sizeof(SteamUtilities_PublishedFileID_NotEquals) == 0x000018, "Wrong size on SteamUtilities_PublishedFileID_NotEquals");
@@ -11269,7 +11269,7 @@ public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FLatentActionInfo                      LatentInfo;                                        // 0x0008(0x0018)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	EFriendListType                               FriendListType;                                    // 0x0020(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24BC[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2404[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_ReadFriendList) == 0x000008, "Wrong alignment on SteamUtilities_ReadFriendList");
 static_assert(sizeof(SteamUtilities_ReadFriendList) == 0x000028, "Wrong size on SteamUtilities_ReadFriendList");
@@ -11361,7 +11361,7 @@ public:
 	struct FSteamItemInstanceID                   A;                                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamItemInstanceID                   B;                                                 // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24BD[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2405[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_SteamItemInstanceID_Equals) == 0x000008, "Wrong alignment on SteamUtilities_SteamItemInstanceID_Equals");
 static_assert(sizeof(SteamUtilities_SteamItemInstanceID_Equals) == 0x000018, "Wrong size on SteamUtilities_SteamItemInstanceID_Equals");
@@ -11377,7 +11377,7 @@ public:
 	struct FSteamItemInstanceID                   A;                                                 // 0x0000(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	struct FSteamItemInstanceID                   B;                                                 // 0x0008(0x0008)(Parm, NoDestructor, NativeAccessSpecifierPublic)
 	ESteamCoreProIdentical                        Result;                                            // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24BE[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2406[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_SteamItemInstanceID_Equals_Exec) == 0x000008, "Wrong alignment on SteamUtilities_SteamItemInstanceID_Equals_Exec");
 static_assert(sizeof(SteamUtilities_SteamItemInstanceID_Equals_Exec) == 0x000018, "Wrong size on SteamUtilities_SteamItemInstanceID_Equals_Exec");
@@ -11396,7 +11396,7 @@ public:
 	class APlayerController*                      SpecificPlayer;                                    // 0x0050(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUsingSockets;                                     // 0x0058(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0059(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24BF[0x6];                                     // 0x005A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2407[0x6];                                     // 0x005A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_TryJoinServer) == 0x000008, "Wrong alignment on SteamUtilities_TryJoinServer");
 static_assert(sizeof(SteamUtilities_TryJoinServer) == 0x000060, "Wrong size on SteamUtilities_TryJoinServer");
@@ -11414,11 +11414,11 @@ struct SteamUtilities_UnmuteRemoteTalker final
 public:
 	class UObject*                                WorldContextObject;                                // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         LocalUserNum;                                      // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C0[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2408[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class APlayerState*                           PlayerState;                                       // 0x0010(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsSystemWide;                                     // 0x0018(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0019(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C1[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2409[0x6];                                     // 0x001A(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_UnmuteRemoteTalker) == 0x000008, "Wrong alignment on SteamUtilities_UnmuteRemoteTalker");
 static_assert(sizeof(SteamUtilities_UnmuteRemoteTalker) == 0x000020, "Wrong size on SteamUtilities_UnmuteRemoteTalker");
@@ -11434,11 +11434,11 @@ struct SteamUtilities_WriteBytesToFile final
 {
 public:
 	bool                                          bOverwriteIfExists;                                // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C2[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240A[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 AbsoluteFilePath;                                  // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<uint8>                                 DataBuffer;                                        // 0x0018(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0028(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C3[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240B[0x7];                                     // 0x0029(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamUtilities_WriteBytesToFile) == 0x000008, "Wrong alignment on SteamUtilities_WriteBytesToFile");
 static_assert(sizeof(SteamUtilities_WriteBytesToFile) == 0x000030, "Wrong size on SteamUtilities_WriteBytesToFile");
@@ -11531,7 +11531,7 @@ struct SteamProUtils_GetEnteredGamepadTextInput final
 public:
 	class FString                                 Text;                                              // 0x0000(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C5[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240D[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUtils_GetEnteredGamepadTextInput) == 0x000008, "Wrong alignment on SteamProUtils_GetEnteredGamepadTextInput");
 static_assert(sizeof(SteamProUtils_GetEnteredGamepadTextInput) == 0x000018, "Wrong size on SteamProUtils_GetEnteredGamepadTextInput");
@@ -11555,10 +11555,10 @@ struct SteamProUtils_GetImageRGBA final
 {
 public:
 	int32                                         IImage;                                            // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C6[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<uint8>                                 OutBuffer;                                         // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C7[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_240F[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUtils_GetImageRGBA) == 0x000008, "Wrong alignment on SteamProUtils_GetImageRGBA");
 static_assert(sizeof(SteamProUtils_GetImageRGBA) == 0x000020, "Wrong size on SteamProUtils_GetImageRGBA");
@@ -11575,7 +11575,7 @@ public:
 	int32                                         Width;                                             // 0x0004(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         Height;                                            // 0x0008(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C8[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2410[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUtils_GetImageSize) == 0x000004, "Wrong alignment on SteamProUtils_GetImageSize");
 static_assert(sizeof(SteamProUtils_GetImageSize) == 0x000010, "Wrong size on SteamProUtils_GetImageSize");
@@ -11792,13 +11792,13 @@ struct SteamProUtils_ShowFloatingGamepadTextInput final
 {
 public:
 	ESteamFloatingGamepadTextInputMode            KeyboardMode;                                      // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24C9[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2411[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TextFieldXPosition;                                // 0x0004(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TextFieldYPosition;                                // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TextFieldWidth;                                    // 0x000C(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         TextFieldHeight;                                   // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0014(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24CA[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2412[0x3];                                     // 0x0015(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUtils_ShowFloatingGamepadTextInput) == 0x000004, "Wrong alignment on SteamProUtils_ShowFloatingGamepadTextInput");
 static_assert(sizeof(SteamProUtils_ShowFloatingGamepadTextInput) == 0x000018, "Wrong size on SteamProUtils_ShowFloatingGamepadTextInput");
@@ -11816,13 +11816,13 @@ struct SteamProUtils_ShowGamepadTextInput final
 public:
 	ESteamGamepadTextInputMode                    InputMode;                                         // 0x0000(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ESteamGamepadTextInputLineMode                LineInputMode;                                     // 0x0001(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24CB[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2413[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 Description;                                       // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         CharMax;                                           // 0x0018(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24CC[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2414[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ExistingText;                                      // 0x0020(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24CD[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2415[0x7];                                     // 0x0031(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProUtils_ShowGamepadTextInput) == 0x000008, "Wrong alignment on SteamProUtils_ShowGamepadTextInput");
 static_assert(sizeof(SteamProUtils_ShowGamepadTextInput) == 0x000038, "Wrong size on SteamProUtils_ShowGamepadTextInput");
@@ -11861,10 +11861,10 @@ struct SteamProVideo_GetOPFStringForApp final
 {
 public:
 	int32                                         VideoAppID;                                        // 0x0000(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24CF[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2417[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 OutBuffer;                                         // 0x0008(0x0010)(Parm, OutParm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24D0[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2418[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProVideo_GetOPFStringForApp) == 0x000008, "Wrong alignment on SteamProVideo_GetOPFStringForApp");
 static_assert(sizeof(SteamProVideo_GetOPFStringForApp) == 0x000020, "Wrong size on SteamProVideo_GetOPFStringForApp");
@@ -11901,7 +11901,7 @@ struct SteamProVideo_IsBroadcasting final
 public:
 	int32                                         NumViewers;                                        // 0x0000(0x0004)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0004(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_24D1[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2419[0x3];                                     // 0x0005(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(SteamProVideo_IsBroadcasting) == 0x000004, "Wrong alignment on SteamProVideo_IsBroadcasting");
 static_assert(sizeof(SteamProVideo_IsBroadcasting) == 0x000008, "Wrong size on SteamProVideo_IsBroadcasting");

@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "EnhancedInput_structs.hpp"
 #include "EInputDeviceType_structs.hpp"
+#include "EnhancedInput_structs.hpp"
 
 
 namespace SDK
@@ -23,10 +23,10 @@ struct FFKeyBinderButtonData final
 {
 public:
 	EPlayerMappableKeySlot                        Slot_28_327279A94DCF1DDB275ADBBCA7413FF4;          // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D47[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BF1[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   MappingName_29_6AA835D54DCEE96811E5D0996332A529;   // 0x0004(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EInputDeviceType                              AllowedInputDeviceType_15_DAFF5D1940A78F8E6E1147A2B8E5AFDE; // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D48[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BF2[0x3];                                     // 0x000D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInputMappingContext*                   InputMappingContext_21_1F3BE39F474046CD0DF5DF950CD672DB; // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UInputAction*                           InputAction_22_530579024C59D26661E9C0881054F689;   // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };

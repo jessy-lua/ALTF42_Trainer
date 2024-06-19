@@ -181,7 +181,7 @@ struct FAnimNode_RigLogic final : public FAnimNode_Base
 public:
 	struct FPoseLink                              AnimSequence;                                      // 0x0010(0x0010)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 	int32                                         LODThreshold;                                      // 0x0020(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1FA4[0x3C];                                    // 0x0024(0x003C)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FF4[0x3C];                                    // 0x0024(0x003C)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FAnimNode_RigLogic) == 0x000008, "Wrong alignment on FAnimNode_RigLogic");
 static_assert(sizeof(FAnimNode_RigLogic) == 0x000060, "Wrong size on FAnimNode_RigLogic");
@@ -205,7 +205,7 @@ struct FRigUnit_RigLogic_Data final
 {
 public:
 	TWeakObjectPtr<class USkeletalMeshComponent>  SkelMeshComponent;                                 // 0x0000(0x0008)(ExportObject, ZeroConstructor, Transient, InstancedReference, IsPlainOldData, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FA5[0x18];                                    // 0x0008(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FF5[0x18];                                    // 0x0008(0x0018)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<int32>                                 InputCurveIndices;                                 // 0x0020(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	TArray<int32>                                 NeuralNetMaskCurveIndices;                         // 0x0030(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	TArray<int32>                                 HierarchyBoneIndices;                              // 0x0040(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
@@ -214,7 +214,7 @@ public:
 	TArray<struct FRigUnit_RigLogic_IntArray>     CurveElementIndicesForAnimMaps;                    // 0x0070(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	TArray<struct FRigUnit_RigLogic_IntArray>     RigLogicIndicesForAnimMaps;                        // 0x0080(0x0010)(ZeroConstructor, Transient, NativeAccessSpecifierPublic)
 	uint32                                        CurrentLOD;                                        // 0x0090(0x0004)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FA6[0x4];                                     // 0x0094(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FF6[0x4];                                     // 0x0094(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRigUnit_RigLogic_Data) == 0x000008, "Wrong alignment on FRigUnit_RigLogic_Data");
 static_assert(sizeof(FRigUnit_RigLogic_Data) == 0x000098, "Wrong size on FRigUnit_RigLogic_Data");
@@ -235,7 +235,7 @@ struct FRigUnit_RigLogic final : public FRigUnitMutable
 public:
 	struct FRigUnit_RigLogic_Data                 Data;                                              // 0x0160(0x0098)(Transient, ContainsInstancedReference, NativeAccessSpecifierPrivate)
 	bool                                          bIsInitialized;                                    // 0x01F8(0x0001)(ZeroConstructor, Transient, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_1FA7[0x7];                                     // 0x01F9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FF7[0x7];                                     // 0x01F9(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FRigUnit_RigLogic) == 0x000010, "Wrong alignment on FRigUnit_RigLogic");
 static_assert(sizeof(FRigUnit_RigLogic) == 0x000200, "Wrong size on FRigUnit_RigLogic");

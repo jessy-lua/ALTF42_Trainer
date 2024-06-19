@@ -142,7 +142,7 @@ enum class EDatasmithCADRetessellationRule : uint8
 struct FDatasmithImportInfo final
 {
 public:
-	uint8                                         Pad_27BD[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_274E[0x1];                                     // 0x0000(0x0001)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDatasmithImportInfo) == 0x000001, "Wrong alignment on FDatasmithImportInfo");
 static_assert(sizeof(FDatasmithImportInfo) == 0x000001, "Wrong size on FDatasmithImportInfo");
@@ -154,7 +154,7 @@ struct FDatasmithCameraLookatTrackingSettingsTemplate final
 public:
 	uint8                                         bEnableLookAtTracking : 1;                         // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bAllowRoll : 1;                                    // 0x0000(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_27BE[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_274F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class AActor>                  ActorToTrack;                                      // 0x0008(0x0028)(UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FDatasmithCameraLookatTrackingSettingsTemplate) == 0x000008, "Wrong alignment on FDatasmithCameraLookatTrackingSettingsTemplate");
@@ -191,7 +191,7 @@ struct FDatasmithCameraFocusSettingsTemplate final
 {
 public:
 	ECameraFocusMethod                            FocusMethod;                                       // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_27BF[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2750[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         ManualFocusDistance;                               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FDatasmithCameraFocusSettingsTemplate) == 0x000004, "Wrong alignment on FDatasmithCameraFocusSettingsTemplate");
@@ -211,14 +211,14 @@ public:
 	uint8                                         bOverride_CameraISO : 1;                           // 0x0000(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         bOverride_CameraShutterSpeed : 1;                  // 0x0000(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
 	uint8                                         BitPad_5F : 2;                                     // 0x0000(0x0001)(Fixing Bit-Field Size For New Byte [ Dumper-7 ])
-	uint8                                         Pad_27C0[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2751[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	uint8                                         bOverride_DepthOfFieldFstop : 1;                   // 0x0004(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_27C1[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2752[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         WhiteTemp;                                         // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         VignetteIntensity;                                 // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector4                               ColorSaturation;                                   // 0x0010(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EAutoExposureMethod                           AutoExposureMethod;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_27C2[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2753[0x3];                                     // 0x0031(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CameraISO;                                         // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         CameraShutterSpeed;                                // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         DepthOfFieldFstop;                                 // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -232,6 +232,29 @@ static_assert(offsetof(FDatasmithPostProcessSettingsTemplate, AutoExposureMethod
 static_assert(offsetof(FDatasmithPostProcessSettingsTemplate, CameraISO) == 0x000034, "Member 'FDatasmithPostProcessSettingsTemplate::CameraISO' has a wrong offset!");
 static_assert(offsetof(FDatasmithPostProcessSettingsTemplate, CameraShutterSpeed) == 0x000038, "Member 'FDatasmithPostProcessSettingsTemplate::CameraShutterSpeed' has a wrong offset!");
 static_assert(offsetof(FDatasmithPostProcessSettingsTemplate, DepthOfFieldFstop) == 0x00003C, "Member 'FDatasmithPostProcessSettingsTemplate::DepthOfFieldFstop' has a wrong offset!");
+
+// ScriptStruct DatasmithContent.DatasmithMeshBuildSettingsTemplate
+// 0x0010 (0x0010 - 0x0000)
+struct FDatasmithMeshBuildSettingsTemplate final
+{
+public:
+	uint8                                         bUseMikkTSpace : 1;                                // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bRecomputeNormals : 1;                             // 0x0000(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bRecomputeTangents : 1;                            // 0x0000(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bRemoveDegenerates : 1;                            // 0x0000(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bUseHighPrecisionTangentBasis : 1;                 // 0x0000(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bUseFullPrecisionUVs : 1;                          // 0x0000(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         bGenerateLightmapUVs : 1;                          // 0x0000(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_2754[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         MinLightmapResolution;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         SrcLightmapIndex;                                  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         DstLightmapIndex;                                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FDatasmithMeshBuildSettingsTemplate) == 0x000004, "Wrong alignment on FDatasmithMeshBuildSettingsTemplate");
+static_assert(sizeof(FDatasmithMeshBuildSettingsTemplate) == 0x000010, "Wrong size on FDatasmithMeshBuildSettingsTemplate");
+static_assert(offsetof(FDatasmithMeshBuildSettingsTemplate, MinLightmapResolution) == 0x000004, "Member 'FDatasmithMeshBuildSettingsTemplate::MinLightmapResolution' has a wrong offset!");
+static_assert(offsetof(FDatasmithMeshBuildSettingsTemplate, SrcLightmapIndex) == 0x000008, "Member 'FDatasmithMeshBuildSettingsTemplate::SrcLightmapIndex' has a wrong offset!");
+static_assert(offsetof(FDatasmithMeshBuildSettingsTemplate, DstLightmapIndex) == 0x00000C, "Member 'FDatasmithMeshBuildSettingsTemplate::DstLightmapIndex' has a wrong offset!");
 
 // ScriptStruct DatasmithContent.DatasmithAssetImportOptions
 // 0x0008 (0x0008 - 0x0000)
@@ -285,7 +308,7 @@ public:
 	bool                                          bIncludeLight;                                     // 0x0003(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIncludeCamera;                                    // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIncludeAnimation;                                 // 0x0005(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_27C3[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2755[0x2];                                     // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FDatasmithAssetImportOptions           AssetOptions;                                      // 0x0008(0x0008)(BlueprintVisible, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 	struct FDatasmithStaticMeshImportOptions      StaticMeshOptions;                                 // 0x0010(0x0004)(Edit, BlueprintVisible, Config, NoDestructor, AdvancedDisplay, NativeAccessSpecifierPublic)
 };
@@ -309,7 +332,7 @@ public:
 	float                                         MaxEdgeLength;                                     // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         NormalTolerance;                                   // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EDatasmithCADStitchingTechnique               StitchingTechnique;                                // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_27C4[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2756[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDatasmithTessellationOptions) == 0x000004, "Wrong alignment on FDatasmithTessellationOptions");
 static_assert(sizeof(FDatasmithTessellationOptions) == 0x000010, "Wrong size on FDatasmithTessellationOptions");
@@ -324,7 +347,7 @@ struct FDatasmithRetessellationOptions final : public FDatasmithTessellationOpti
 {
 public:
 	EDatasmithCADRetessellationRule               RetessellationRule;                                // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_27C5[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2757[0x3];                                     // 0x0011(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FDatasmithRetessellationOptions) == 0x000004, "Wrong alignment on FDatasmithRetessellationOptions");
 static_assert(sizeof(FDatasmithRetessellationOptions) == 0x000014, "Wrong size on FDatasmithRetessellationOptions");
@@ -340,29 +363,6 @@ public:
 static_assert(alignof(FDatasmithStaticParameterSetTemplate) == 0x000008, "Wrong alignment on FDatasmithStaticParameterSetTemplate");
 static_assert(sizeof(FDatasmithStaticParameterSetTemplate) == 0x000050, "Wrong size on FDatasmithStaticParameterSetTemplate");
 static_assert(offsetof(FDatasmithStaticParameterSetTemplate, StaticSwitchParameters) == 0x000000, "Member 'FDatasmithStaticParameterSetTemplate::StaticSwitchParameters' has a wrong offset!");
-
-// ScriptStruct DatasmithContent.DatasmithMeshBuildSettingsTemplate
-// 0x0010 (0x0010 - 0x0000)
-struct FDatasmithMeshBuildSettingsTemplate final
-{
-public:
-	uint8                                         bUseMikkTSpace : 1;                                // 0x0000(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bRecomputeNormals : 1;                             // 0x0000(0x0001)(BitIndex: 0x01, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bRecomputeTangents : 1;                            // 0x0000(0x0001)(BitIndex: 0x02, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bRemoveDegenerates : 1;                            // 0x0000(0x0001)(BitIndex: 0x03, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bUseHighPrecisionTangentBasis : 1;                 // 0x0000(0x0001)(BitIndex: 0x04, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bUseFullPrecisionUVs : 1;                          // 0x0000(0x0001)(BitIndex: 0x05, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         bGenerateLightmapUVs : 1;                          // 0x0000(0x0001)(BitIndex: 0x06, PropSize: 0x0001 (NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_27C6[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         MinLightmapResolution;                             // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         SrcLightmapIndex;                                  // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         DstLightmapIndex;                                  // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FDatasmithMeshBuildSettingsTemplate) == 0x000004, "Wrong alignment on FDatasmithMeshBuildSettingsTemplate");
-static_assert(sizeof(FDatasmithMeshBuildSettingsTemplate) == 0x000010, "Wrong size on FDatasmithMeshBuildSettingsTemplate");
-static_assert(offsetof(FDatasmithMeshBuildSettingsTemplate, MinLightmapResolution) == 0x000004, "Member 'FDatasmithMeshBuildSettingsTemplate::MinLightmapResolution' has a wrong offset!");
-static_assert(offsetof(FDatasmithMeshBuildSettingsTemplate, SrcLightmapIndex) == 0x000008, "Member 'FDatasmithMeshBuildSettingsTemplate::SrcLightmapIndex' has a wrong offset!");
-static_assert(offsetof(FDatasmithMeshBuildSettingsTemplate, DstLightmapIndex) == 0x00000C, "Member 'FDatasmithMeshBuildSettingsTemplate::DstLightmapIndex' has a wrong offset!");
 
 // ScriptStruct DatasmithContent.DatasmithStaticMaterialTemplate
 // 0x0010 (0x0010 - 0x0000)

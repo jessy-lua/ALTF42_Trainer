@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
+#include "AIModule_structs.hpp"
+#include "MantleType_structs.hpp"
+#include "Engine_structs.hpp"
 #include "Mantle_Asset_structs.hpp"
 #include "ALS_Base_CharacterBP_classes.hpp"
-#include "Engine_structs.hpp"
-#include "MantleType_structs.hpp"
 #include "ALS_OverlayState_structs.hpp"
-#include "AIModule_structs.hpp"
 
 
 namespace SDK
@@ -26,7 +26,7 @@ namespace SDK
 class AAI_SkelZombie_Ver02_BP_C final : public AALS_Base_CharacterBP_C
 {
 public:
-	uint8                                         Pad_3AAD[0x6];                                     // 0x0B42(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39E9[0x6];                                     // 0x0B42(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame_AI_SkelZombie_Ver02_BP_C;           // 0x0B48(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UAudioComponent*                        Zombie_Spawn_Cue;                                  // 0x0B50(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        Zombie_Idle_Cue;                                   // 0x0B58(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -67,18 +67,18 @@ public:
 	bool                                          SeePlayer;                                         // 0x0DAB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          AtkPossible_;                                      // 0x0DAC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Random_Roam_;                                      // 0x0DAD(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AAE[0x2];                                     // 0x0DAE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39EA[0x2];                                     // 0x0DAE(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         AttackAnd_Delay;                                   // 0x0DB0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AAF[0x4];                                     // 0x0DB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39EB[0x4];                                     // 0x0DB4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           PowerAttack_Montage;                               // 0x0DB8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         PowerAttack_Play_Rate;                             // 0x0DC0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB0[0x4];                                     // 0x0DC4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39EC[0x4];                                     // 0x0DC4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        PowerAttack_Distance;                              // 0x0DC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         PowerAttack_Persentage;                            // 0x0DD0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB1[0x4];                                     // 0x0DD4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39ED[0x4];                                     // 0x0DD4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimMontage*                           JUMP_Attack_Montage;                               // 0x0DD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	float                                         JUMP_Attack_Play_Rate;                             // 0x0DE0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB2[0x4];                                     // 0x0DE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39EE[0x4];                                     // 0x0DE4(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        JUMP_Attack_Distance;                              // 0x0DE8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SimpleAtk_Active;                                  // 0x0DF0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PowerAtk_Active;                                   // 0x0DF1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -89,18 +89,18 @@ public:
 	bool                                          Ragdoll_Check_;                                    // 0x0E00(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          PlayerbleSensing_;                                 // 0x0E01(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          TestDeActive_;                                     // 0x0E02(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_3AB3[0x1];                                     // 0x0E03(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39EF[0x1];                                     // 0x0E03(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         JumpAtk_Speed;                                     // 0x0E04(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        OpenMouth;                                         // 0x0E08(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         BA_Material_ID;                                    // 0x0E10(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB4[0x4];                                     // 0x0E14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39F0[0x4];                                     // 0x0E14(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInterface*>             BA_SkeletonMaterialsArray;                         // 0x0E18(0x0010)(Edit, BlueprintVisible)
 	int32                                         BB_Material_ID;                                    // 0x0E28(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3AB5[0x4];                                     // 0x0E2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39F1[0x4];                                     // 0x0E2C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class UMaterialInterface*>             BB_SkeletonBBMaterialsArray;                       // 0x0E30(0x0010)(Edit, BlueprintVisible)
 	double                                        Launch_Velocity_Z;                                 // 0x0E40(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Spawner_ID;                                        // 0x0E48(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_3AB6[0x4];                                     // 0x0E4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_39F2[0x4];                                     // 0x0E4C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundBase*                             New_Sound;                                         // 0x0E50(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 
 public:

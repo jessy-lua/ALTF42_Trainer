@@ -43,7 +43,7 @@ void MainThread()
 	}
 
 
-	unreal::text_base = reinterpret_cast<std::uint8_t*>(text_section.start);
+	unreal::text_base = reinterpret_cast<std::uint8_t*>(GetModuleHandleA(NULL));
 	unreal::text_size = static_cast<std::size_t>(text_section.size);
 
 	std::uintptr_t g_objects = unreal::find_objects();
@@ -52,8 +52,8 @@ void MainThread()
 	SDK::UObject::GObjects.InitManually( reinterpret_cast<void*>(g_objects) );
 	SDK::FName::InitManually(reinterpret_cast<void*>(g_name_append));
 #ifdef DEBUG
-	std::printf("GObjects: 0x%llX\n", g_objects);
-	std::printf("GNameAppend: 0x%llX\n", g_name_append);
+	std::printf("GObjects: 0x%llX\n", g_objects - (std::uintptr_t)unreal::text_base);
+	std::printf("GNameAppend: 0x%llX\n", g_name_append - (std::uintptr_t)unreal::text_base);
 #endif
 	/* Functions returning "static" instances */
 	SDK::UEngine* Engine = SDK::UEngine::GetEngine();

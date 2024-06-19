@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "AIModule_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "LiveLinkInterface_structs.hpp"
-#include "AIModule_structs.hpp"
 
 
 namespace SDK
@@ -24,7 +24,7 @@ namespace SDK
 class AMH_Tarzan_BP_C final : public ACharacter
 {
 public:
-	uint8                                         Pad_37E4[0x8];                                     // 0x0678(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37F9[0x8];                                     // 0x0678(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0680(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class ULODSyncComponent*                      LODSync;                                           // 0x0688(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UAIJumpNavComponent_C*                  AIJumpNavComponent;                                // 0x0690(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
@@ -38,17 +38,17 @@ public:
 	class USkeletalMeshComponent*                 Face_SK;                                           // 0x06D0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         _____0_Alpha_2B1D7FA84B80BC9D5AE7EC8DAB2792FE;     // 0x06D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            _____0__Direction_2B1D7FA84B80BC9D5AE7EC8DAB2792FE; // 0x06DC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_37E5[0x3];                                     // 0x06DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37FA[0x3];                                     // 0x06DD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     ___x_0;                                            // 0x06E0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         RunStart_TL_Alpha_5EB79AD6408EF4767555FEA5B435E3B9; // 0x06E8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            RunStart_TL__Direction_5EB79AD6408EF4767555FEA5B435E3B9; // 0x06EC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_37E6[0x3];                                     // 0x06ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37FB[0x3];                                     // 0x06ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     RunStart_TL;                                       // 0x06F0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FLiveLinkSubjectName                   LLink_Face_Subj;                                   // 0x06F8(0x0008)(Edit, BlueprintVisible, NoDestructor, HasGetValueTypeHash)
 	bool                                          LLink_Face_Head;                                   // 0x0700(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RetargetModeEnabled;                               // 0x0701(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EAnimationMode                                RetargetOrigBodyAnimMode;                          // 0x0702(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_37E7[0x5];                                     // 0x0703(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37FC[0x5];                                     // 0x0703(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TSubclassOf<class UAnimInstance>              RetargetOrigAnimClass;                             // 0x0708(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class FName                                   NPC_NAme;                                          // 0x0710(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             NPC_Icon;                                          // 0x0718(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -62,7 +62,7 @@ public:
 	class ATeleportTarget_BP_C*                   EndLocation;                                       // 0x0768(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, HasGetValueTypeHash)
 	double                                        PoseEnd;                                           // 0x0770(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         JumpPose;                                          // 0x0778(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_37E8[0x4];                                     // 0x077C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_37FD[0x4];                                     // 0x077C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        LookAlpha;                                         // 0x0780(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UAudioComponent*                        TarzanSong;                                        // 0x0788(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	double                                        JumpDuration;                                      // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -22,7 +22,7 @@ struct SmallSimple_Talk_Widget_C_ExecuteUbergraph_SmallSimple_Talk_Widget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3459[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3596[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_CustomEvent_NPC_NAme;                       // 0x0008(0x0018)()
 	class UObject*                                K2Node_CustomEvent_NPC_Image;                      // 0x0020(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class FText                                   K2Node_CustomEvent_Talk_Text;                      // 0x0028(0x0018)()
@@ -52,7 +52,7 @@ struct SmallSimple_Talk_Widget_C_Get_NPCImage final
 public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x00D0)(Parm, OutParm, ReturnParm)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00D0(0x0014)()
-	uint8                                         Pad_345A[0xC];                                     // 0x00E4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3597[0xC];                                     // 0x00E4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00F0(0x00D0)()
 };
 static_assert(alignof(SmallSimple_Talk_Widget_C_Get_NPCImage) == 0x000010, "Wrong alignment on SmallSimple_Talk_Widget_C_Get_NPCImage");

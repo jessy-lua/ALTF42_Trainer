@@ -20,7 +20,7 @@ struct FALTF42_Game_SaveStruct final
 {
 public:
 	bool                                          Game_First_Open__94_890F1EB84E85AAE03E09CBB87EBA44F8; // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F21[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3458[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 FamilyName_97_32402902408A241B447B778F4AB9813A;    // 0x0008(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	class FName                                   Progress_Level_Name_101_A53E515C463119C88D0491A259026000; // 0x0018(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Dulcinea_ItemGive__135_2A9096B048ADAB14D4CD1598E654DDE7; // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -43,7 +43,7 @@ public:
 	bool                                          Stage06_Clear_151_A533D6ED4F0F74EAEA83E5875C96DA43; // 0x0031(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Stage07_Clear_153_AFDDA3EE4784F6F88094D7A520C92953; // 0x0032(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Stage08_Clear_159_E7D3A1CE462FC02500E863B94ADAE245; // 0x0033(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F22[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3459[0x4];                                     // 0x0034(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<class FString>                         RecordName_List_163_082F23134C502FFB2A7D8CA6A26AB349; // 0x0038(0x0010)(Edit, BlueprintVisible)
 	class FString                                 LastRecordName_166_9151A22E4A9DF05F664081A3E65C4D7F; // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash)
 	bool                                          Stage09_Clear_168_8EB335A84308EFF7827D7CB9CE3AA27D; // 0x0058(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

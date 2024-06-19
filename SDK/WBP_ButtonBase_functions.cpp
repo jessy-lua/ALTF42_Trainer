@@ -149,6 +149,48 @@ void UWBP_ButtonBase_C::SetupButtonText()
 }
 
 
+// Function WBP_ButtonBase.WBP_ButtonBase_C.OnSetHighlightEffect
+// (BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EWidgetStyleState                       Param_HighlightState                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    bPlaySound                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ButtonBase_C::OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ButtonBase_C", "OnSetHighlightEffect");
+
+	Params::WBP_ButtonBase_C_OnSetHighlightEffect Parms{};
+
+	Parms.Param_HighlightState = Param_HighlightState;
+	Parms.bPlaySound = bPlaySound;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_ButtonBase.WBP_ButtonBase_C.SetWidgetState
+// (Public, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// EWidgetStyleState                       Param_WidgetState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void UWBP_ButtonBase_C::SetWidgetState(EWidgetStyleState Param_WidgetState)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_ButtonBase_C", "SetWidgetState");
+
+	Params::WBP_ButtonBase_C_SetWidgetState Parms{};
+
+	Parms.Param_WidgetState = Param_WidgetState;
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_ButtonBase.WBP_ButtonBase_C.OnPressedBack
 // (BlueprintCallable, BlueprintEvent)
 // Parameters:
@@ -269,28 +311,6 @@ void UWBP_ButtonBase_C::OnPressedUp(const struct FKeyEvent& KeyEvent)
 }
 
 
-// Function WBP_ButtonBase.WBP_ButtonBase_C.OnSetHighlightEffect
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EWidgetStyleState                       Param_HighlightState                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bPlaySound                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ButtonBase_C::OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ButtonBase_C", "OnSetHighlightEffect");
-
-	Params::WBP_ButtonBase_C_OnSetHighlightEffect Parms{};
-
-	Parms.Param_HighlightState = Param_HighlightState;
-	Parms.bPlaySound = bPlaySound;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_ButtonBase.WBP_ButtonBase_C.OverrideWidgetStyleFromConfig
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 
@@ -320,26 +340,6 @@ void UWBP_ButtonBase_C::PreConstruct(bool IsDesignTime)
 	Params::WBP_ButtonBase_C_PreConstruct Parms{};
 
 	Parms.IsDesignTime = IsDesignTime;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_ButtonBase.WBP_ButtonBase_C.SetWidgetState
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// EWidgetStyleState                       Param_WidgetState                                      (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_ButtonBase_C::SetWidgetState(EWidgetStyleState Param_WidgetState)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ButtonBase_C", "SetWidgetState");
-
-	Params::WBP_ButtonBase_C_SetWidgetState Parms{};
-
-	Parms.Param_WidgetState = Param_WidgetState;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

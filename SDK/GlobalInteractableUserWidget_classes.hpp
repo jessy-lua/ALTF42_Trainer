@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "SlateCore_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "InputCore_structs.hpp"
 #include "UMG_classes.hpp"
 
@@ -46,18 +46,18 @@ public:
 	struct FSlateFontInfo                         LargeTitleFont;                                    // 0x0458(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FSlateFontInfo                         ValueFont;                                         // 0x04B0(0x0058)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          OnlyUppercase;                                     // 0x0508(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_332E[0x3];                                     // 0x0509(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3254[0x3];                                     // 0x0509(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           MenuBackgroundColor;                               // 0x050C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           WidgetBackgroundColor;                             // 0x051C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           SymbolColor;                                       // 0x052C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_332F[0x4];                                     // 0x053C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3255[0x4];                                     // 0x053C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundCue*                              BackgroundMusic;                                   // 0x0540(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsGamepadBeingUsed;                               // 0x0548(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3330[0x7];                                     // 0x0549(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3256[0x7];                                     // 0x0549(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnChangeInputDeviceUI;                             // 0x0550(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bIsMenu;                                           // 0x0560(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsActiveMenu;                                     // 0x0561(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3331[0x6];                                     // 0x0562(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3257[0x6];                                     // 0x0562(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FKey>                           KeybindingsUp;                                     // 0x0568(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FKey>                           KeybindingsDown;                                   // 0x0578(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FKey>                           KeybindingsLeft;                                   // 0x0588(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -66,19 +66,19 @@ public:
 	TArray<struct FKey>                           KeybindingsBack;                                   // 0x05B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          bAllowNavigation;                                  // 0x05C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsNavigationCooledDown;                           // 0x05C9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3332[0x6];                                     // 0x05CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3258[0x6];                                     // 0x05CA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   PressedKey;                                        // 0x05D0(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	bool                                          bPlayFadeAnimations;                               // 0x05E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3333[0x7];                                     // 0x05E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3259[0x7];                                     // 0x05E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        PlayFadeAnimationLength;                           // 0x05F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           SubtleColor;                                       // 0x05F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	TArray<struct FKey>                           KeybindingsReset;                                  // 0x0608(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FKey>                           KeybindingsExtra;                                  // 0x0618(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          bIntroLogosSkippable;                              // 0x0628(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3334[0x3];                                     // 0x0629(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_325A[0x3];                                     // 0x0629(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           DecisionButtonColor;                               // 0x062C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           SliderBackgroundColor;                             // 0x063C(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3335[0x4];                                     // 0x064C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_325B[0x4];                                     // 0x064C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USoundCue*                              CreditsMusic;                                      // 0x0650(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsSelectCooledDown;                                // 0x0658(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsBackCooledDown;                                  // 0x0659(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -87,9 +87,9 @@ public:
 	bool                                          bIntroEnabled;                                     // 0x065C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsHoldCooledDown;                                  // 0x065D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsReleasedCooledDown;                              // 0x065E(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3336[0x1];                                     // 0x065F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_325C[0x1];                                     // 0x065F(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         PlayerIndex;                                       // 0x0660(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_3337[0x4];                                     // 0x0664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_325D[0x4];                                     // 0x0664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FKey>                           Keybindings_MenuLeft;                              // 0x0668(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FKey>                           Keybindings_MenuRight;                             // 0x0678(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	TArray<struct FKey>                           Keybindings_PadLeft;                               // 0x0688(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)

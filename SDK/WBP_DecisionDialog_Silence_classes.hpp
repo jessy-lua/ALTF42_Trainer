@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
-#include "CoreUObject_structs.hpp"
-#include "ETransitionAnimation_structs.hpp"
 #include "FFontStyle_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "Engine_structs.hpp"
 #include "WBP_InteractableMenu_classes.hpp"
 #include "EInputDeviceType_structs.hpp"
+#include "ETransitionAnimation_structs.hpp"
 
 
 namespace SDK
@@ -46,7 +46,7 @@ public:
 	class FText                                   DeclineText;                                       // 0x0498(0x0018)(Edit, BlueprintVisible, ExposeOnSpawn)
 	FMulticastInlineDelegateProperty_             DecisionDecline;                                   // 0x04B0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bDecisionDialogIsReady;                            // 0x04C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2BB3[0x7];                                     // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC8[0x7];                                     // 0x04C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        SecondsUntilRevert;                                // 0x04C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             AutoRevert;                                        // 0x04D0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	struct FTimerHandle                           AutoRevertTimerHandle;                             // 0x04E0(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
@@ -57,7 +57,7 @@ public:
 	struct FLinearColor                           BodyTextColor;                                     // 0x0514(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           BarFillColor;                                      // 0x0524(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           BarBackgroundColor;                                // 0x0534(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2BB4[0x4];                                     // 0x0544(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DC9[0x4];                                     // 0x0544(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_InteractableMenu_C*                SourceMenu;                                        // 0x0548(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FFFontStyle                            TextTitleFontStyle;                                // 0x0550(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FFFontStyle                            TextBodyFontStyle;                                 // 0x05D0(0x0080)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)

@@ -12,8 +12,8 @@
 
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ALTF42_Bike_AnimBP_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "ALTF42_Bike_AnimBP_structs.hpp"
 
 
 namespace SDK
@@ -24,10 +24,10 @@ namespace SDK
 class UALTF42_Bike_AnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_38A1[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_389E[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct ALTF42_Bike_AnimBP::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0358(0x0014)(HasGetValueTypeHash)
-	uint8                                         Pad_38A2[0x4];                                     // 0x036C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_389F[0x4];                                     // 0x036C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0370(0x0008)()
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x0378(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0380(0x0020)()
@@ -58,18 +58,18 @@ public:
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_1;                        // 0x0EC0(0x0128)()
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone;                          // 0x0FE8(0x0128)()
 	bool                                          IsInAir;                                           // 0x1110(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38A3[0x7];                                     // 0x1111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38A0[0x7];                                     // 0x1111(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Speed;                                             // 0x1118(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        SteeringAngle;                                     // 0x1120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsManual;                                          // 0x1128(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPedaling;                                        // 0x1129(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPreload;                                         // 0x112A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38A4[0x5];                                     // 0x112B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38A1[0x5];                                     // 0x112B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        WheelRot;                                          // 0x1130(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        F_Susp;                                            // 0x1138(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        R_Susp;                                            // 0x1140(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsReversing;                                       // 0x1148(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38A5[0x7];                                     // 0x1149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38A2[0x7];                                     // 0x1149(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Testaaa;                                           // 0x1150(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

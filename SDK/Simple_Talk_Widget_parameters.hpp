@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "SlateCore_structs.hpp"
 #include "UMG_structs.hpp"
 
 
@@ -24,7 +24,7 @@ struct Simple_Talk_Widget_C_ExecuteUbergraph_Simple_Talk_Widget final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_345B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3598[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_CustomEvent_NPC_NAme;                       // 0x0008(0x0018)()
 	class UObject*                                K2Node_CustomEvent_NPC_Image;                      // 0x0020(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash)
 	class FText                                   K2Node_CustomEvent_Talk_Text;                      // 0x0028(0x0018)()
@@ -60,7 +60,7 @@ public:
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x00E8(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class AALTF42_InGame_PC_Loco_C*               K2Node_DynamicCast_AsALTF42_in_Game_PC_Loco;       // 0x00F0(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x00F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_345C[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3599[0x7];                                     // 0x00F9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0100(0x00D0)()
 	struct FDeprecateSlateVector2D                K2Node_MakeStruct_ImageSize_ImplicitCast;          // 0x01D0(0x0008)(NoDestructor, HasGetValueTypeHash)
 };
@@ -82,7 +82,7 @@ struct Simple_Talk_Widget_C_Get_NPCImage final
 public:
 	struct FSlateBrush                            ReturnValue;                                       // 0x0000(0x00D0)(Parm, OutParm, ReturnParm)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x00D0(0x0014)()
-	uint8                                         Pad_345D[0xC];                                     // 0x00E4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_359A[0xC];                                     // 0x00E4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x00F0(0x00D0)()
 };
 static_assert(alignof(Simple_Talk_Widget_C_Get_NPCImage) == 0x000010, "Wrong alignment on Simple_Talk_Widget_C_Get_NPCImage");

@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
+#include "EColorPalette_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
-#include "EColorPalette_structs.hpp"
 
 
 namespace SDK::Params
@@ -29,17 +29,17 @@ public:
 	float                                         CallFunc_GetScrollOffsetOfEnd_ReturnValue;         // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_DoubleDouble_ReturnValue;      // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable;                                // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E83[0x2];                                     // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3813[0x2];                                     // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default;                             // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UPDA_MenuSystemConfig_C*                K2Node_CustomEvent_MenuSystemConfig_1;             // 0x0030(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor;                      // 0x0038(0x0014)()
 	bool                                          Temp_bool_Variable_1;                              // 0x004C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E84[0x3];                                     // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3814[0x3];                                     // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           K2Node_Select_Default_1;                           // 0x0050(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_1;                    // 0x0060(0x0014)()
 	struct FLinearColor                           CallFunc_GetColorByName_Color;                     // 0x0074(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetColorByName_Color_1;                   // 0x0084(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E85[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3815[0x4];                                     // 0x0094(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPDA_MenuSystemConfig_C*                K2Node_CustomEvent_MenuSystemConfig;               // 0x0098(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetColorByName_Color_2;                   // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector4                               CallFunc_MakeVector4_ReturnValue;                  // 0x00B0(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -49,12 +49,12 @@ public:
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush;                      // 0x0170(0x00D0)()
 	struct FVector4                               CallFunc_MakeVector4_ReturnValue_2;                // 0x0240(0x0020)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Temp_bool_Variable_2;                              // 0x0260(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E86[0xF];                                     // 0x0261(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3816[0xF];                                     // 0x0261(0x000F)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrushOutlineSettings             K2Node_MakeStruct_SlateBrushOutlineSettings_2;     // 0x0270(0x0040)()
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush_1;                    // 0x02B0(0x00D0)()
 	struct FLinearColor                           K2Node_Select_Default_2;                           // 0x0380(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FSlateColor                            K2Node_MakeStruct_SlateColor_2;                    // 0x0390(0x0014)()
-	uint8                                         Pad_3E87[0xC];                                     // 0x03A4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3817[0xC];                                     // 0x03A4(0x000C)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            K2Node_MakeStruct_SlateBrush_2;                    // 0x03B0(0x00D0)()
 	struct FScrollBarStyle                        K2Node_MakeStruct_ScrollBarStyle;                  // 0x0480(0x0770)()
 	double                                        K2Node_CallDelegate_CurrentOffset_ImplicitCast;    // 0x0BF0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -101,11 +101,11 @@ struct BP_MenuScrollBox_C_GetColorByName final
 public:
 	class UPDA_MenuSystemConfig_C*                MenuSystemConfig;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EColorPalette                                 ColorName;                                         // 0x0008(0x0001)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E88[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3818[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           Color;                                             // 0x000C(0x0010)(Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EColorPalette                                 NoneColor;                                         // 0x001C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E89[0x2];                                     // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3819[0x2];                                     // 0x001E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_Map_Find_Value;                           // 0x0020(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };

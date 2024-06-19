@@ -82,7 +82,7 @@ public:
 	int32                                         DataInterfaceIndex;                                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         DataInterfaceBindingIndex;                         // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bKernelInput;                                      // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19F3[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A44[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 BindingFunctionNameOverride;                       // 0x0018(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 BindingFunctionNamespace;                          // 0x0028(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -102,7 +102,7 @@ struct FComputeGraphInstance final
 {
 public:
 	TArray<class UComputeDataProvider*>           DataProviders;                                     // 0x0000(0x0010)(ZeroConstructor, Transient, UObjectWrapper, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_19F4[0x8];                                     // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A45[0x8];                                     // 0x0010(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FComputeGraphInstance) == 0x000008, "Wrong alignment on FComputeGraphInstance");
 static_assert(sizeof(FComputeGraphInstance) == 0x000018, "Wrong size on FComputeGraphInstance");
@@ -115,7 +115,7 @@ struct FComputeKernelPermutationBool final
 public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          Value;                                             // 0x0010(0x0001)(Edit, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19F5[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A46[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FComputeKernelPermutationBool) == 0x000008, "Wrong alignment on FComputeKernelPermutationBool");
 static_assert(sizeof(FComputeKernelPermutationBool) == 0x000018, "Wrong size on FComputeKernelPermutationBool");
@@ -164,7 +164,7 @@ struct FComputeKernelPermutationVector final
 public:
 	TMap<class FString, uint32>                   Permutations;                                      // 0x0000(0x0050)(NativeAccessSpecifierPublic)
 	uint32                                        BitCount;                                          // 0x0050(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19F6[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A47[0x4];                                     // 0x0054(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FComputeKernelPermutationVector) == 0x000008, "Wrong alignment on FComputeKernelPermutationVector");
 static_assert(sizeof(FComputeKernelPermutationVector) == 0x000058, "Wrong size on FComputeKernelPermutationVector");
@@ -176,7 +176,7 @@ static_assert(offsetof(FComputeKernelPermutationVector, BitCount) == 0x000050, "
 struct alignas(0x08) FShaderValueTypeHandle final
 {
 public:
-	uint8                                         Pad_19F7[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A48[0x8];                                     // 0x0000(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FShaderValueTypeHandle) == 0x000008, "Wrong alignment on FShaderValueTypeHandle");
 static_assert(sizeof(FShaderValueTypeHandle) == 0x000008, "Wrong size on FShaderValueTypeHandle");
@@ -188,10 +188,10 @@ struct alignas(0x08) FShaderValueType final
 public:
 	EShaderFundamentalType                        Type;                                              // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EShaderFundamentalDimensionType               DimensionType;                                     // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19F8[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A49[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	class FName                                   Name;                                              // 0x0004(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bIsDynamicArray;                                   // 0x000C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19F9[0x13];                                    // 0x000D(0x0013)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A4A[0x13];                                    // 0x000D(0x0013)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FShaderValueType) == 0x000008, "Wrong alignment on FShaderValueType");
 static_assert(sizeof(FShaderValueType) == 0x000020, "Wrong size on FShaderValueType");
@@ -211,7 +211,7 @@ public:
 	uint16                                        ArrayElementCount;                                 // 0x0028(0x0002)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EShaderParamBindingType                       BindingType;                                       // 0x002A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EShaderResourceType                           ResourceType;                                      // 0x002B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19FA[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A4B[0x4];                                     // 0x002C(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FShaderParamTypeDefinition) == 0x000008, "Wrong alignment on FShaderParamTypeDefinition");
 static_assert(sizeof(FShaderParamTypeDefinition) == 0x000030, "Wrong size on FShaderParamTypeDefinition");
@@ -230,7 +230,7 @@ public:
 	class FString                                 Name;                                              // 0x0000(0x0010)(Edit, ZeroConstructor, EditConst, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	TArray<struct FShaderParamTypeDefinition>     ParamTypes;                                        // 0x0010(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPublic)
 	bool                                          bHasReturnType;                                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19FB[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A4C[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FShaderFunctionDefinition) == 0x000008, "Wrong alignment on FShaderFunctionDefinition");
 static_assert(sizeof(FShaderFunctionDefinition) == 0x000028, "Wrong size on FShaderFunctionDefinition");

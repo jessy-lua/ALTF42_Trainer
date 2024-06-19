@@ -11,9 +11,9 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "EInputDeviceType_structs.hpp"
-#include "InputCore_structs.hpp"
 #include "WBP_ButtonBase_classes.hpp"
+#include "InputCore_structs.hpp"
+#include "EInputDeviceType_structs.hpp"
 #include "EWidgetStyleState_structs.hpp"
 
 
@@ -45,11 +45,11 @@ public:
 	void OnButtonUnhovered();
 	void SetupMappedKeys();
 	void UpdateButtonIcon(EInputDeviceType InputDeviceType);
+	void OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound);
+	void RefreshWidget();
 	void OnPressedBack(const struct FKeyEvent& KeyEvent);
 	void OnPressedSelect(const struct FKeyEvent& KeyEvent);
-	void OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound);
 	void PreConstruct(bool IsDesignTime);
-	void RefreshWidget();
 
 public:
 	static class UClass* StaticClass()

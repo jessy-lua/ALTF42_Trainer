@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_FuncLib.BP_FuncLib_C
 // 0x0000 (0x0028 - 0x0028)
-class BP_FuncLib::UBP_FuncLib_C final : public UBlueprintFunctionLibrary
+class UBP_FuncLib_C final : public UBlueprintFunctionLibrary
 {
 public:
 	static void CombineTransform(const struct FTransform& A, const struct FTransform& B, class UObject* __WorldContext, struct FTransform* Out);
@@ -41,15 +41,15 @@ public:
 public:
 	static class UClass* StaticClass()
 	{
-		return StaticBPGeneratedClassImpl<"BlueprintGeneratedClass BP_FuncLib.BP_FuncLib_C", true, "BP_FuncLib_C">();
+		return StaticBPGeneratedClassImpl<"BP_FuncLib_C">();
 	}
-	static class BP_FuncLib::UBP_FuncLib_C* GetDefaultObj()
+	static class UBP_FuncLib_C* GetDefaultObj()
 	{
-		return GetDefaultObjImpl<BP_FuncLib::UBP_FuncLib_C>();
+		return GetDefaultObjImpl<UBP_FuncLib_C>();
 	}
 };
-static_assert(alignof(BP_FuncLib::UBP_FuncLib_C) == 0x000008, "Wrong alignment on BP_FuncLib::UBP_FuncLib_C");
-static_assert(sizeof(BP_FuncLib::UBP_FuncLib_C) == 0x000028, "Wrong size on BP_FuncLib::UBP_FuncLib_C");
+static_assert(alignof(UBP_FuncLib_C) == 0x000008, "Wrong alignment on UBP_FuncLib_C");
+static_assert(sizeof(UBP_FuncLib_C) == 0x000028, "Wrong size on UBP_FuncLib_C");
 
 }
 

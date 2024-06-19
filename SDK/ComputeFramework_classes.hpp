@@ -60,7 +60,7 @@ class UComputeKernelSource : public UObject
 public:
 	class FString                                 EntryPoint;                                        // 0x0028(0x0010)(Edit, ZeroConstructor, EditConst, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FIntVector                             GroupSize;                                         // 0x0038(0x000C)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19FC[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A4D[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FComputeKernelPermutationSet           PermutationSet;                                    // 0x0048(0x0010)(Edit, EditConst, NativeAccessSpecifierPublic)
 	struct FComputeKernelDefinitionSet            DefinitionsSet;                                    // 0x0058(0x0010)(Edit, EditConst, NativeAccessSpecifierPublic)
 	TArray<class UComputeSource*>                 AdditionalSources;                                 // 0x0068(0x0010)(Edit, ZeroConstructor, UObjectWrapper, NativeAccessSpecifierPublic)
@@ -118,7 +118,7 @@ public:
 	TArray<struct FComputeGraphEdge>              GraphEdges;                                        // 0x0048(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
 	TArray<TSubclassOf<class UObject>>            Bindings;                                          // 0x0058(0x0010)(ZeroConstructor, Protected, UObjectWrapper, NativeAccessSpecifierProtected)
 	TArray<int32>                                 DataInterfaceToBinding;                            // 0x0068(0x0010)(ZeroConstructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_19FD[0x18];                                    // 0x0078(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A4E[0x18];                                    // 0x0078(0x0018)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -173,7 +173,7 @@ class UComputeKernel final : public UObject
 public:
 	class UComputeKernelSource*                   KernelSource;                                      // 0x0028(0x0008)(Edit, ZeroConstructor, NoDestructor, AssetRegistrySearchable, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         KernelFlags;                                       // 0x0030(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_19FF[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A50[0x4];                                     // 0x0034(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

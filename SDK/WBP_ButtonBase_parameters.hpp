@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "FFontStyle_structs.hpp"
 #include "SlateCore_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "FFontStyle_structs.hpp"
 #include "EWidgetStyleState_structs.hpp"
 
 
@@ -25,12 +25,12 @@ struct WBP_ButtonBase_C_ApplyWidgetStyleActive final
 {
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E6C[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D54[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E6D[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D55[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FClamp_ReturnValue_1;                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -54,7 +54,7 @@ struct WBP_ButtonBase_C_ApplyWidgetStyleDisabled final
 {
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E6E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D56[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_ButtonBase_C_ApplyWidgetStyleDisabled) == 0x000004, "Wrong alignment on WBP_ButtonBase_C_ApplyWidgetStyleDisabled");
@@ -68,11 +68,11 @@ struct WBP_ButtonBase_C_ApplyWidgetStyleHighlighted final
 {
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E6F[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D57[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0010(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E70[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D58[0x7];                                     // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FClamp_ReturnValue_1;                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -97,12 +97,12 @@ struct WBP_ButtonBase_C_ApplyWidgetStyleNormal final
 {
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E71[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D59[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_Multiply_DoubleDouble_ReturnValue;        // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        CallFunc_FClamp_ReturnValue;                       // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E72[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D5A[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CallFunc_FClamp_ReturnValue_1;                     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         CallFunc_SetScalarParameterValue_Value_ImplicitCast; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -126,15 +126,15 @@ struct WBP_ButtonBase_C_ExecuteUbergraph_WBP_ButtonBase final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E73[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D5B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKeyEvent                              K2Node_Event_KeyEvent_5;                           // 0x0008(0x0040)()
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E74[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D5C[0x7];                                     // 0x0049(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKeyEvent                              K2Node_Event_KeyEvent_4;                           // 0x0050(0x0040)()
 	EWidgetStyleState                             K2Node_Event_HighlightState;                       // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bPlaySound;                           // 0x0091(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0092(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E75[0x5];                                     // 0x0093(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D5D[0x5];                                     // 0x0093(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKeyEvent                              K2Node_Event_KeyEvent_3;                           // 0x0098(0x0040)()
 	struct FKeyEvent                              K2Node_Event_KeyEvent_2;                           // 0x00D8(0x0040)()
 	struct FKeyEvent                              K2Node_Event_KeyEvent_1;                           // 0x0118(0x0040)()
@@ -166,6 +166,61 @@ public:
 static_assert(alignof(WBP_ButtonBase_C_SetupButtonText) == 0x000001, "Wrong alignment on WBP_ButtonBase_C_SetupButtonText");
 static_assert(sizeof(WBP_ButtonBase_C_SetupButtonText) == 0x000001, "Wrong size on WBP_ButtonBase_C_SetupButtonText");
 static_assert(offsetof(WBP_ButtonBase_C_SetupButtonText, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'WBP_ButtonBase_C_SetupButtonText::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+
+// Function WBP_ButtonBase.WBP_ButtonBase_C.OnSetHighlightEffect
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_ButtonBase_C_OnSetHighlightEffect final
+{
+public:
+	EWidgetStyleState                             Param_HighlightState;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bPlaySound;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ButtonBase_C_OnSetHighlightEffect) == 0x000001, "Wrong alignment on WBP_ButtonBase_C_OnSetHighlightEffect");
+static_assert(sizeof(WBP_ButtonBase_C_OnSetHighlightEffect) == 0x000002, "Wrong size on WBP_ButtonBase_C_OnSetHighlightEffect");
+static_assert(offsetof(WBP_ButtonBase_C_OnSetHighlightEffect, Param_HighlightState) == 0x000000, "Member 'WBP_ButtonBase_C_OnSetHighlightEffect::Param_HighlightState' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_OnSetHighlightEffect, bPlaySound) == 0x000001, "Member 'WBP_ButtonBase_C_OnSetHighlightEffect::bPlaySound' has a wrong offset!");
+
+// Function WBP_ButtonBase.WBP_ButtonBase_C.SetWidgetState
+// 0x0048 (0x0048 - 0x0000)
+struct WBP_ButtonBase_C_SetWidgetState final
+{
+public:
+	EWidgetStyleState                             Param_WidgetState;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	EWidgetStyleState                             NewLocalVar_0;                                     // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D5E[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D5F[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_3D60[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_PlayAnimation_StartAtTime_ImplicitCast;   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_PlayAnimation_StartAtTime_ImplicitCast_1; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_1; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_PlayAnimation_StartAtTime_ImplicitCast_2; // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_2; // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_ButtonBase_C_SetWidgetState) == 0x000008, "Wrong alignment on WBP_ButtonBase_C_SetWidgetState");
+static_assert(sizeof(WBP_ButtonBase_C_SetWidgetState) == 0x000048, "Wrong size on WBP_ButtonBase_C_SetWidgetState");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, Param_WidgetState) == 0x000000, "Member 'WBP_ButtonBase_C_SetWidgetState::Param_WidgetState' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, NewLocalVar_0) == 0x000001, "Member 'WBP_ButtonBase_C_SetWidgetState::NewLocalVar_0' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'WBP_ButtonBase_C_SetWidgetState::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_IsValid_ReturnValue) == 0x000003, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_IsValid_ReturnValue_1) == 0x000010, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_IsValid_ReturnValue_2) == 0x000020, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_ReturnValue_2) == 0x000028, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_StartAtTime_ImplicitCast) == 0x000030, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_StartAtTime_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast) == 0x000034, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_StartAtTime_ImplicitCast_1) == 0x000038, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_StartAtTime_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_1) == 0x00003C, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_1' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_StartAtTime_ImplicitCast_2) == 0x000040, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_StartAtTime_ImplicitCast_2' has a wrong offset!");
+static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_2) == 0x000044, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_2' has a wrong offset!");
 
 // Function WBP_ButtonBase.WBP_ButtonBase_C.OnPressedBack
 // 0x0040 (0x0040 - 0x0000)
@@ -233,19 +288,6 @@ static_assert(alignof(WBP_ButtonBase_C_OnPressedUp) == 0x000008, "Wrong alignmen
 static_assert(sizeof(WBP_ButtonBase_C_OnPressedUp) == 0x000040, "Wrong size on WBP_ButtonBase_C_OnPressedUp");
 static_assert(offsetof(WBP_ButtonBase_C_OnPressedUp, KeyEvent) == 0x000000, "Member 'WBP_ButtonBase_C_OnPressedUp::KeyEvent' has a wrong offset!");
 
-// Function WBP_ButtonBase.WBP_ButtonBase_C.OnSetHighlightEffect
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_ButtonBase_C_OnSetHighlightEffect final
-{
-public:
-	EWidgetStyleState                             Param_HighlightState;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bPlaySound;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ButtonBase_C_OnSetHighlightEffect) == 0x000001, "Wrong alignment on WBP_ButtonBase_C_OnSetHighlightEffect");
-static_assert(sizeof(WBP_ButtonBase_C_OnSetHighlightEffect) == 0x000002, "Wrong size on WBP_ButtonBase_C_OnSetHighlightEffect");
-static_assert(offsetof(WBP_ButtonBase_C_OnSetHighlightEffect, Param_HighlightState) == 0x000000, "Member 'WBP_ButtonBase_C_OnSetHighlightEffect::Param_HighlightState' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_OnSetHighlightEffect, bPlaySound) == 0x000001, "Member 'WBP_ButtonBase_C_OnSetHighlightEffect::bPlaySound' has a wrong offset!");
-
 // Function WBP_ButtonBase.WBP_ButtonBase_C.OverrideWidgetStyleFromConfig
 // 0x0108 (0x0108 - 0x0000)
 struct WBP_ButtonBase_C_OverrideWidgetStyleFromConfig final
@@ -256,12 +298,12 @@ public:
 	struct FLinearColor                           CallFunc_GetColorByName_Color_1;                   // 0x0090(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetColorByName_Color_2;                   // 0x00A0(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x00B0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E76[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D61[0x3];                                     // 0x00B1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_GetColorByName_Color_3;                   // 0x00B4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetColorByName_Color_4;                   // 0x00C4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetColorByName_Color_5;                   // 0x00D4(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x00E4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E77[0x3];                                     // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D62[0x3];                                     // 0x00E5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FLinearColor                           CallFunc_GetColorByName_Color_6;                   // 0x00E8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FLinearColor                           CallFunc_GetColorByName_Color_7;                   // 0x00F8(0x0010)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -289,48 +331,6 @@ public:
 static_assert(alignof(WBP_ButtonBase_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_ButtonBase_C_PreConstruct");
 static_assert(sizeof(WBP_ButtonBase_C_PreConstruct) == 0x000001, "Wrong size on WBP_ButtonBase_C_PreConstruct");
 static_assert(offsetof(WBP_ButtonBase_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_ButtonBase_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function WBP_ButtonBase.WBP_ButtonBase_C.SetWidgetState
-// 0x0048 (0x0048 - 0x0000)
-struct WBP_ButtonBase_C_SetWidgetState final
-{
-public:
-	EWidgetStyleState                             Param_WidgetState;                                 // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	EWidgetStyleState                             NewLocalVar_0;                                     // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0003(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E78[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E79[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E7A[0x7];                                     // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_2;              // 0x0028(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_PlayAnimation_StartAtTime_ImplicitCast;   // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast; // 0x0034(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_PlayAnimation_StartAtTime_ImplicitCast_1; // 0x0038(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_1; // 0x003C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_PlayAnimation_StartAtTime_ImplicitCast_2; // 0x0040(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_2; // 0x0044(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_ButtonBase_C_SetWidgetState) == 0x000008, "Wrong alignment on WBP_ButtonBase_C_SetWidgetState");
-static_assert(sizeof(WBP_ButtonBase_C_SetWidgetState) == 0x000048, "Wrong size on WBP_ButtonBase_C_SetWidgetState");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, Param_WidgetState) == 0x000000, "Member 'WBP_ButtonBase_C_SetWidgetState::Param_WidgetState' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, NewLocalVar_0) == 0x000001, "Member 'WBP_ButtonBase_C_SetWidgetState::NewLocalVar_0' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, K2Node_SwitchEnum_CmpSuccess) == 0x000002, "Member 'WBP_ButtonBase_C_SetWidgetState::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_IsValid_ReturnValue) == 0x000003, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_IsValid_ReturnValue_1) == 0x000010, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_IsValid_ReturnValue_2) == 0x000020, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_ReturnValue_2) == 0x000028, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_StartAtTime_ImplicitCast) == 0x000030, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_StartAtTime_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast) == 0x000034, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_StartAtTime_ImplicitCast_1) == 0x000038, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_StartAtTime_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_1) == 0x00003C, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_1' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_StartAtTime_ImplicitCast_2) == 0x000040, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_StartAtTime_ImplicitCast_2' has a wrong offset!");
-static_assert(offsetof(WBP_ButtonBase_C_SetWidgetState, CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_2) == 0x000044, "Member 'WBP_ButtonBase_C_SetWidgetState::CallFunc_PlayAnimation_PlaybackSpeed_ImplicitCast_2' has a wrong offset!");
 
 }
 

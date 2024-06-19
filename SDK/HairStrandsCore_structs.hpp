@@ -315,15 +315,15 @@ struct FGroomCacheImportSettings final
 public:
 	bool                                          bImportGroomCache;                                 // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGroomCacheImportType                         ImportType;                                        // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A68[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AB9[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         FrameStart;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         FrameEnd;                                          // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSkipEmptyFrames;                                  // 0x000C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bImportGroomAsset;                                 // 0x000D(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A69[0x2];                                     // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ABA[0x2];                                     // 0x000E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSoftObjectPath                        GroomAsset;                                        // 0x0010(0x0020)(Edit, BlueprintVisible, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverrideConversionSettings;                       // 0x0030(0x0001)(BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A6A[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ABB[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGroomConversionSettings               ConversionSettings;                                // 0x0038(0x0030)(BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FGroomCacheImportSettings) == 0x000008, "Wrong alignment on FGroomCacheImportSettings");
@@ -346,21 +346,21 @@ public:
 	float                                         HairLength;                                        // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         HairWidth;                                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HairWidth_Override;                                // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A6B[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ABC[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HairRootScale;                                     // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HairRootScale_Override;                            // 0x0010(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A6C[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ABD[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HairTipScale;                                      // 0x0014(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HairTipScale_Override;                             // 0x0018(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A6D[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ABE[0x3];                                     // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HairShadowDensity;                                 // 0x001C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HairShadowDensity_Override;                        // 0x0020(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A6E[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ABF[0x3];                                     // 0x0021(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HairRaytracingRadiusScale;                         // 0x0024(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HairRaytracingRadiusScale_Override;                // 0x0028(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseHairRaytracingGeometry;                        // 0x0029(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseHairRaytracingGeometry_Override;               // 0x002A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A6F[0x1];                                     // 0x002B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC0[0x1];                                     // 0x002B(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LODBias;                                           // 0x002C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseStableRasterization;                           // 0x0030(0x0001)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseStableRasterization_Override;                  // 0x0031(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -368,10 +368,10 @@ public:
 	bool                                          bScatterSceneLighting_Override;                    // 0x0033(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSupportVoxelization;                              // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSupportVoxelization_Override;                     // 0x0035(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A70[0x2];                                     // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC1[0x2];                                     // 0x0036(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HairLengthScale;                                   // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HairLengthScale_Override;                          // 0x003C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A71[0x3];                                     // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC2[0x3];                                     // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHairGroupDesc) == 0x000004, "Wrong alignment on FHairGroupDesc");
 static_assert(sizeof(FHairGroupDesc) == 0x000040, "Wrong size on FHairGroupDesc");
@@ -459,7 +459,7 @@ struct FHairGroupInfoWithVisibility final : public FHairGroupInfo
 {
 public:
 	bool                                          bIsVisible;                                        // 0x0038(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A72[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC3[0x7];                                     // 0x0039(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHairGroupInfoWithVisibility) == 0x000008, "Wrong alignment on FHairGroupInfoWithVisibility");
 static_assert(sizeof(FHairGroupInfoWithVisibility) == 0x000040, "Wrong size on FHairGroupInfoWithVisibility");
@@ -473,7 +473,7 @@ public:
 	float                                         ClusterDecimation;                                 // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHairCardsClusterType                         Type;                                              // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseGuide;                                         // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A73[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC4[0x2];                                     // 0x0006(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHairCardsClusterSettings) == 0x000004, "Wrong alignment on FHairCardsClusterSettings");
 static_assert(sizeof(FHairCardsClusterSettings) == 0x000008, "Wrong size on FHairCardsClusterSettings");
@@ -487,10 +487,10 @@ struct FHairCardsGeometrySettings final
 {
 public:
 	EHairCardsGenerationType                      GenerationType;                                    // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A74[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC5[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         CardsCount;                                        // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHairCardsClusterType                         ClusterType;                                       // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A75[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC6[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         MinSegmentLength;                                  // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AngularThreshold;                                  // 0x0010(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         MinCardsLength;                                    // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -564,7 +564,7 @@ public:
 	class UTexture2D*                             AttributeTexture;                                  // 0x0018(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTexture2D*                             AuxilaryDataTexture;                               // 0x0020(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UTexture2D*                             MaterialTexture;                                   // 0x0028(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A76[0x8];                                     // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC7[0x8];                                     // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHairGroupCardsTextures) == 0x000008, "Wrong alignment on FHairGroupCardsTextures");
 static_assert(sizeof(FHairGroupCardsTextures) == 0x000038, "Wrong size on FHairGroupCardsTextures");
@@ -583,7 +583,7 @@ public:
 	class UMaterialInterface*                     Material;                                          // 0x0000(0x0008)(ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FName                                   MaterialSlotName;                                  // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EHairCardsSourceType                          SourceType;                                        // 0x0010(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A77[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC8[0x7];                                     // 0x0011(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UStaticMesh*                            ProceduralMesh;                                    // 0x0018(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 ProceduralMeshKey;                                 // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UStaticMesh*                            ImportedMesh;                                      // 0x0030(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -624,7 +624,7 @@ public:
 	EGroomBindingType                             BindingType;                                       // 0x0016(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGroomOverrideType                            Simulation;                                        // 0x0017(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGroomOverrideType                            GlobalInterpolation;                               // 0x0018(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A78[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AC9[0x3];                                     // 0x0019(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHairLODSettings) == 0x000004, "Wrong alignment on FHairLODSettings");
 static_assert(sizeof(FHairLODSettings) == 0x00001C, "Wrong size on FHairLODSettings");
@@ -659,7 +659,7 @@ struct FHairInterpolationSettings final
 public:
 	EGroomGuideType                               GuideType;                                         // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bOverrideGuides;                                   // 0x0001(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A79[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACA[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HairToGuideDensity;                                // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         RiggedGuideNumCurves;                              // 0x0008(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         RiggedGuideNumPoints;                              // 0x000C(0x0004)(Edit, BlueprintVisible, BlueprintReadOnly, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -686,7 +686,7 @@ struct FHairDeformationSettings final
 {
 public:
 	bool                                          bEnableRigging;                                    // 0x0000(0x0001)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A7A[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACB[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         NumCurves;                                         // 0x0004(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         NumPoints;                                         // 0x0008(0x0004)(ZeroConstructor, Deprecated, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -717,7 +717,7 @@ struct FHairGroupsLOD final
 {
 public:
 	EGroomLODType                                 LODType;                                           // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A7B[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACC[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TArray<struct FHairLODSettings>               LODs;                                              // 0x0008(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FHairGroupsLOD) == 0x000008, "Wrong alignment on FHairGroupsLOD");
@@ -755,13 +755,13 @@ struct FHairSolverSettings final
 public:
 	bool                                          EnableSimulation;                                  // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGroomNiagaraSolvers                          NiagaraSolver;                                     // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A7C[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACD[0x6];                                     // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UNiagaraSystem>          CustomSystem;                                      // 0x0008(0x0028)(Edit, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         GravityPreloading;                                 // 0x0030(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         SubSteps;                                          // 0x0034(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         IterationCount;                                    // 0x0038(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bForceVisible;                                     // 0x003C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A7D[0x3];                                     // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACE[0x3];                                     // 0x003D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHairSolverSettings) == 0x000008, "Wrong alignment on FHairSolverSettings");
 static_assert(sizeof(FHairSolverSettings) == 0x000040, "Wrong size on FHairSolverSettings");
@@ -780,7 +780,7 @@ struct FHairExternalForces final
 public:
 	struct FVector                                GravityVector;                                     // 0x0000(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AirDrag;                                           // 0x0018(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A7E[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ACF[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                AirVelocity;                                       // 0x0020(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FHairExternalForces) == 0x000008, "Wrong alignment on FHairExternalForces");
@@ -789,6 +789,31 @@ static_assert(offsetof(FHairExternalForces, GravityVector) == 0x000000, "Member 
 static_assert(offsetof(FHairExternalForces, AirDrag) == 0x000018, "Member 'FHairExternalForces::AirDrag' has a wrong offset!");
 static_assert(offsetof(FHairExternalForces, AirVelocity) == 0x000020, "Member 'FHairExternalForces::AirVelocity' has a wrong offset!");
 
+// ScriptStruct HairStrandsCore.GroomHairGroupPreview
+// 0x0048 (0x0048 - 0x0000)
+struct FGroomHairGroupPreview final
+{
+public:
+	class FName                                   GroupName;                                         // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GroupID;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         CurveCount;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	int32                                         GuideCount;                                        // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint32                                        Attributes;                                        // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint32                                        AttributeFlags;                                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint32                                        Flags;                                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FHairGroupsInterpolation               InterpolationSettings;                             // 0x0020(0x0028)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FGroomHairGroupPreview) == 0x000004, "Wrong alignment on FGroomHairGroupPreview");
+static_assert(sizeof(FGroomHairGroupPreview) == 0x000048, "Wrong size on FGroomHairGroupPreview");
+static_assert(offsetof(FGroomHairGroupPreview, GroupName) == 0x000000, "Member 'FGroomHairGroupPreview::GroupName' has a wrong offset!");
+static_assert(offsetof(FGroomHairGroupPreview, GroupID) == 0x000008, "Member 'FGroomHairGroupPreview::GroupID' has a wrong offset!");
+static_assert(offsetof(FGroomHairGroupPreview, CurveCount) == 0x00000C, "Member 'FGroomHairGroupPreview::CurveCount' has a wrong offset!");
+static_assert(offsetof(FGroomHairGroupPreview, GuideCount) == 0x000010, "Member 'FGroomHairGroupPreview::GuideCount' has a wrong offset!");
+static_assert(offsetof(FGroomHairGroupPreview, Attributes) == 0x000014, "Member 'FGroomHairGroupPreview::Attributes' has a wrong offset!");
+static_assert(offsetof(FGroomHairGroupPreview, AttributeFlags) == 0x000018, "Member 'FGroomHairGroupPreview::AttributeFlags' has a wrong offset!");
+static_assert(offsetof(FGroomHairGroupPreview, Flags) == 0x00001C, "Member 'FGroomHairGroupPreview::Flags' has a wrong offset!");
+static_assert(offsetof(FGroomHairGroupPreview, InterpolationSettings) == 0x000020, "Member 'FGroomHairGroupPreview::InterpolationSettings' has a wrong offset!");
+
 // ScriptStruct HairStrandsCore.HairBendConstraint
 // 0x0098 (0x0098 - 0x0000)
 struct FHairBendConstraint final
@@ -796,10 +821,10 @@ struct FHairBendConstraint final
 public:
 	bool                                          SolveBend;                                         // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ProjectBend;                                       // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A7F[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD0[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         BendDamping;                                       // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         BendStiffness;                                     // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A80[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD1[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRuntimeFloatCurve                     BendScale;                                         // 0x0010(0x0088)(Edit, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FHairBendConstraint) == 0x000008, "Wrong alignment on FHairBendConstraint");
@@ -817,10 +842,10 @@ struct FHairStretchConstraint final
 public:
 	bool                                          SolveStretch;                                      // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ProjectStretch;                                    // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A81[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD2[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         StretchDamping;                                    // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StretchStiffness;                                  // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A82[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD3[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRuntimeFloatCurve                     StretchScale;                                      // 0x0010(0x0088)(Edit, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FHairStretchConstraint) == 0x000008, "Wrong alignment on FHairStretchConstraint");
@@ -838,7 +863,7 @@ struct FHairCollisionConstraint final
 public:
 	bool                                          SolveCollision;                                    // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ProjectCollision;                                  // 0x0001(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A83[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD4[0x2];                                     // 0x0002(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         StaticFriction;                                    // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         KineticFriction;                                   // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StrandsViscosity;                                  // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -878,7 +903,7 @@ struct FHairStrandsParameters final
 {
 public:
 	EGroomStrandsSize                             StrandsSize;                                       // 0x0000(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A84[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD5[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         StrandsDensity;                                    // 0x0004(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StrandsSmoothing;                                  // 0x0008(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         StrandsThickness;                                  // 0x000C(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -891,6 +916,40 @@ static_assert(offsetof(FHairStrandsParameters, StrandsDensity) == 0x000004, "Mem
 static_assert(offsetof(FHairStrandsParameters, StrandsSmoothing) == 0x000008, "Member 'FHairStrandsParameters::StrandsSmoothing' has a wrong offset!");
 static_assert(offsetof(FHairStrandsParameters, StrandsThickness) == 0x00000C, "Member 'FHairStrandsParameters::StrandsThickness' has a wrong offset!");
 static_assert(offsetof(FHairStrandsParameters, ThicknessScale) == 0x000010, "Member 'FHairStrandsParameters::ThicknessScale' has a wrong offset!");
+
+// ScriptStruct HairStrandsCore.MovieSceneGroomCacheParams
+// 0x0020 (0x0020 - 0x0000)
+struct FMovieSceneGroomCacheParams
+{
+public:
+	class UGroomCache*                            GroomCache;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFrameNumber                           FirstLoopStartFrameOffset;                         // 0x0008(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFrameNumber                           StartFrameOffset;                                  // 0x000C(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFrameNumber                           EndFrameOffset;                                    // 0x0010(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	float                                         PlayRate;                                          // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	uint8                                         bReverse : 1;                                      // 0x0018(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
+	uint8                                         Pad_1AD6[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+};
+static_assert(alignof(FMovieSceneGroomCacheParams) == 0x000008, "Wrong alignment on FMovieSceneGroomCacheParams");
+static_assert(sizeof(FMovieSceneGroomCacheParams) == 0x000020, "Wrong size on FMovieSceneGroomCacheParams");
+static_assert(offsetof(FMovieSceneGroomCacheParams, GroomCache) == 0x000000, "Member 'FMovieSceneGroomCacheParams::GroomCache' has a wrong offset!");
+static_assert(offsetof(FMovieSceneGroomCacheParams, FirstLoopStartFrameOffset) == 0x000008, "Member 'FMovieSceneGroomCacheParams::FirstLoopStartFrameOffset' has a wrong offset!");
+static_assert(offsetof(FMovieSceneGroomCacheParams, StartFrameOffset) == 0x00000C, "Member 'FMovieSceneGroomCacheParams::StartFrameOffset' has a wrong offset!");
+static_assert(offsetof(FMovieSceneGroomCacheParams, EndFrameOffset) == 0x000010, "Member 'FMovieSceneGroomCacheParams::EndFrameOffset' has a wrong offset!");
+static_assert(offsetof(FMovieSceneGroomCacheParams, PlayRate) == 0x000014, "Member 'FMovieSceneGroomCacheParams::PlayRate' has a wrong offset!");
+
+// ScriptStruct HairStrandsCore.MovieSceneGroomCacheSectionTemplateParameters
+// 0x0008 (0x0028 - 0x0020)
+struct FMovieSceneGroomCacheSectionTemplateParameters final : public FMovieSceneGroomCacheParams
+{
+public:
+	struct FFrameNumber                           SectionStartTime;                                  // 0x0020(0x0004)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+	struct FFrameNumber                           SectionEndTime;                                    // 0x0024(0x0004)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FMovieSceneGroomCacheSectionTemplateParameters) == 0x000008, "Wrong alignment on FMovieSceneGroomCacheSectionTemplateParameters");
+static_assert(sizeof(FMovieSceneGroomCacheSectionTemplateParameters) == 0x000028, "Wrong size on FMovieSceneGroomCacheSectionTemplateParameters");
+static_assert(offsetof(FMovieSceneGroomCacheSectionTemplateParameters, SectionStartTime) == 0x000020, "Member 'FMovieSceneGroomCacheSectionTemplateParameters::SectionStartTime' has a wrong offset!");
+static_assert(offsetof(FMovieSceneGroomCacheSectionTemplateParameters, SectionEndTime) == 0x000024, "Member 'FMovieSceneGroomCacheSectionTemplateParameters::SectionEndTime' has a wrong offset!");
 
 // ScriptStruct HairStrandsCore.HairGroupsPhysics
 // 0x02E8 (0x02E8 - 0x0000)
@@ -927,7 +986,7 @@ struct FHairSimulationForces final
 public:
 	struct FVector                                GravityVector;                                     // 0x0000(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AirDrag;                                           // 0x0018(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A85[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD7[0x4];                                     // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                AirVelocity;                                       // 0x0020(0x0018)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FHairSimulationForces) == 0x000008, "Wrong alignment on FHairSimulationForces");
@@ -969,13 +1028,13 @@ public:
 	bool                                          bResetSimulation;                                  // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bDebugSimulation;                                  // 0x0001(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bLocalSimulation;                                  // 0x0002(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A86[0x1];                                     // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD8[0x1];                                     // 0x0003(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         LinearVelocityScale;                               // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         AngularVelocityScale;                              // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A87[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AD9[0x4];                                     // 0x000C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 LocalBone;                                         // 0x0010(0x0010)(Edit, BlueprintVisible, ZeroConstructor, Interp, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         TeleportDistance;                                  // 0x0020(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A88[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADA[0x4];                                     // 0x0024(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHairSimulationSetup) == 0x000008, "Wrong alignment on FHairSimulationSetup");
 static_assert(sizeof(FHairSimulationSetup) == 0x000028, "Wrong size on FHairSimulationSetup");
@@ -993,10 +1052,10 @@ struct FHairSimulationSettings final
 {
 public:
 	bool                                          bOverrideSettings;                                 // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, Interp, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A89[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADB[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHairSimulationSetup                   SimulationSetup;                                   // 0x0008(0x0028)(Edit, BlueprintVisible, Interp, NativeAccessSpecifierPublic)
 	struct FHairSimulationSolver                  SolverSettings;                                    // 0x0030(0x0001)(Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A8A[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADC[0x7];                                     // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FHairSimulationForces                  ExternalForces;                                    // 0x0038(0x0038)(Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic)
 	struct FHairSimulationConstraints             MaterialConstraints;                               // 0x0070(0x0020)(Edit, BlueprintVisible, Interp, NoDestructor, NativeAccessSpecifierPublic)
 };
@@ -1015,7 +1074,7 @@ struct FHairGeometrySettings final
 public:
 	float                                         HairWidth;                                         // 0x0000(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          HairWidth_Override;                                // 0x0004(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A8B[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADD[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HairRootScale;                                     // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         HairTipScale;                                      // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 };
@@ -1026,6 +1085,17 @@ static_assert(offsetof(FHairGeometrySettings, HairWidth_Override) == 0x000004, "
 static_assert(offsetof(FHairGeometrySettings, HairRootScale) == 0x000008, "Member 'FHairGeometrySettings::HairRootScale' has a wrong offset!");
 static_assert(offsetof(FHairGeometrySettings, HairTipScale) == 0x00000C, "Member 'FHairGeometrySettings::HairTipScale' has a wrong offset!");
 
+// ScriptStruct HairStrandsCore.MovieSceneGroomCacheSectionTemplate
+// 0x0028 (0x0048 - 0x0020)
+struct FMovieSceneGroomCacheSectionTemplate final : public FMovieSceneEvalTemplate
+{
+public:
+	struct FMovieSceneGroomCacheSectionTemplateParameters Params;                                            // 0x0020(0x0028)(NoDestructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FMovieSceneGroomCacheSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneGroomCacheSectionTemplate");
+static_assert(sizeof(FMovieSceneGroomCacheSectionTemplate) == 0x000048, "Wrong size on FMovieSceneGroomCacheSectionTemplate");
+static_assert(offsetof(FMovieSceneGroomCacheSectionTemplate, Params) == 0x000020, "Member 'FMovieSceneGroomCacheSectionTemplate::Params' has a wrong offset!");
+
 // ScriptStruct HairStrandsCore.HairShadowSettings
 // 0x000C (0x000C - 0x0000)
 struct FHairShadowSettings final
@@ -1035,7 +1105,7 @@ public:
 	float                                         HairRaytracingRadiusScale;                         // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bUseHairRaytracingGeometry;                        // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bVoxelize;                                         // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A8C[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADE[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHairShadowSettings) == 0x000004, "Wrong alignment on FHairShadowSettings");
 static_assert(sizeof(FHairShadowSettings) == 0x00000C, "Wrong size on FHairShadowSettings");
@@ -1067,7 +1137,7 @@ public:
 	struct FHairGeometrySettings                  GeometrySettings;                                  // 0x0010(0x0010)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FHairShadowSettings                    ShadowSettings;                                    // 0x0020(0x000C)(Edit, NoDestructor, NativeAccessSpecifierPublic)
 	struct FHairAdvancedRenderingSettings         AdvancedSettings;                                  // 0x002C(0x0002)(Edit, NoDestructor, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A8D[0x2];                                     // 0x002E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1ADF[0x2];                                     // 0x002E(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FHairGroupsRendering) == 0x000008, "Wrong alignment on FHairGroupsRendering");
 static_assert(sizeof(FHairGroupsRendering) == 0x000030, "Wrong size on FHairGroupsRendering");
@@ -1107,7 +1177,7 @@ public:
 	int32                                         StartFrame;                                        // 0x0014(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         EndFrame;                                          // 0x0018(0x0004)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGroomCacheAttributes                         Attributes;                                        // 0x001C(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A8E[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE0[0x3];                                     // 0x001D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FGroomAnimationInfo) == 0x000004, "Wrong alignment on FGroomAnimationInfo");
 static_assert(sizeof(FGroomAnimationInfo) == 0x000020, "Wrong size on FGroomAnimationInfo");
@@ -1127,7 +1197,7 @@ struct FGroomCacheInfo final
 public:
 	int32                                         Version;                                           // 0x0000(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGroomCacheType                               Type;                                              // 0x0004(0x0001)(Edit, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A8F[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE1[0x3];                                     // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FGroomAnimationInfo                    AnimationInfo;                                     // 0x0008(0x0020)(Edit, EditConst, NoDestructor, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(FGroomCacheInfo) == 0x000004, "Wrong alignment on FGroomCacheInfo");
@@ -1143,37 +1213,12 @@ struct FFollicleMaskOptions final
 public:
 	class UGroomAsset*                            Groom;                                             // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EFollicleMaskChannel                          Channel;                                           // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A90[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE2[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(FFollicleMaskOptions) == 0x000008, "Wrong alignment on FFollicleMaskOptions");
 static_assert(sizeof(FFollicleMaskOptions) == 0x000010, "Wrong size on FFollicleMaskOptions");
 static_assert(offsetof(FFollicleMaskOptions, Groom) == 0x000000, "Member 'FFollicleMaskOptions::Groom' has a wrong offset!");
 static_assert(offsetof(FFollicleMaskOptions, Channel) == 0x000008, "Member 'FFollicleMaskOptions::Channel' has a wrong offset!");
-
-// ScriptStruct HairStrandsCore.GroomHairGroupPreview
-// 0x0048 (0x0048 - 0x0000)
-struct FGroomHairGroupPreview final
-{
-public:
-	class FName                                   GroupName;                                         // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GroupID;                                           // 0x0008(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         CurveCount;                                        // 0x000C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	int32                                         GuideCount;                                        // 0x0010(0x0004)(Edit, BlueprintVisible, ZeroConstructor, EditConst, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32                                        Attributes;                                        // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32                                        AttributeFlags;                                    // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint32                                        Flags;                                             // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FHairGroupsInterpolation               InterpolationSettings;                             // 0x0020(0x0028)(Edit, BlueprintVisible, NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FGroomHairGroupPreview) == 0x000004, "Wrong alignment on FGroomHairGroupPreview");
-static_assert(sizeof(FGroomHairGroupPreview) == 0x000048, "Wrong size on FGroomHairGroupPreview");
-static_assert(offsetof(FGroomHairGroupPreview, GroupName) == 0x000000, "Member 'FGroomHairGroupPreview::GroupName' has a wrong offset!");
-static_assert(offsetof(FGroomHairGroupPreview, GroupID) == 0x000008, "Member 'FGroomHairGroupPreview::GroupID' has a wrong offset!");
-static_assert(offsetof(FGroomHairGroupPreview, CurveCount) == 0x00000C, "Member 'FGroomHairGroupPreview::CurveCount' has a wrong offset!");
-static_assert(offsetof(FGroomHairGroupPreview, GuideCount) == 0x000010, "Member 'FGroomHairGroupPreview::GuideCount' has a wrong offset!");
-static_assert(offsetof(FGroomHairGroupPreview, Attributes) == 0x000014, "Member 'FGroomHairGroupPreview::Attributes' has a wrong offset!");
-static_assert(offsetof(FGroomHairGroupPreview, AttributeFlags) == 0x000018, "Member 'FGroomHairGroupPreview::AttributeFlags' has a wrong offset!");
-static_assert(offsetof(FGroomHairGroupPreview, Flags) == 0x00001C, "Member 'FGroomHairGroupPreview::Flags' has a wrong offset!");
-static_assert(offsetof(FGroomHairGroupPreview, InterpolationSettings) == 0x000020, "Member 'FGroomHairGroupPreview::InterpolationSettings' has a wrong offset!");
 
 // ScriptStruct HairStrandsCore.GroomBuildSettings
 // 0x000C (0x000C - 0x0000)
@@ -1181,7 +1226,7 @@ struct FGroomBuildSettings final
 {
 public:
 	bool                                          bOverrideGuides;                                   // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A91[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AE3[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         HairToGuideDensity;                                // 0x0004(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGroomInterpolationQuality                    InterpolationQuality;                              // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	EGroomInterpolationWeight                     InterpolationDistance;                             // 0x0009(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -1196,51 +1241,6 @@ static_assert(offsetof(FGroomBuildSettings, InterpolationQuality) == 0x000008, "
 static_assert(offsetof(FGroomBuildSettings, InterpolationDistance) == 0x000009, "Member 'FGroomBuildSettings::InterpolationDistance' has a wrong offset!");
 static_assert(offsetof(FGroomBuildSettings, bRandomizeGuide) == 0x00000A, "Member 'FGroomBuildSettings::bRandomizeGuide' has a wrong offset!");
 static_assert(offsetof(FGroomBuildSettings, bUseUniqueGuide) == 0x00000B, "Member 'FGroomBuildSettings::bUseUniqueGuide' has a wrong offset!");
-
-// ScriptStruct HairStrandsCore.MovieSceneGroomCacheParams
-// 0x0020 (0x0020 - 0x0000)
-struct FMovieSceneGroomCacheParams
-{
-public:
-	class UGroomCache*                            GroomCache;                                        // 0x0000(0x0008)(Edit, ZeroConstructor, NoDestructor, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFrameNumber                           FirstLoopStartFrameOffset;                         // 0x0008(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFrameNumber                           StartFrameOffset;                                  // 0x000C(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFrameNumber                           EndFrameOffset;                                    // 0x0010(0x0004)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	float                                         PlayRate;                                          // 0x0014(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         bReverse : 1;                                      // 0x0018(0x0001)(BitIndex: 0x00, PropSize: 0x0001 (Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic))
-	uint8                                         Pad_1A92[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
-};
-static_assert(alignof(FMovieSceneGroomCacheParams) == 0x000008, "Wrong alignment on FMovieSceneGroomCacheParams");
-static_assert(sizeof(FMovieSceneGroomCacheParams) == 0x000020, "Wrong size on FMovieSceneGroomCacheParams");
-static_assert(offsetof(FMovieSceneGroomCacheParams, GroomCache) == 0x000000, "Member 'FMovieSceneGroomCacheParams::GroomCache' has a wrong offset!");
-static_assert(offsetof(FMovieSceneGroomCacheParams, FirstLoopStartFrameOffset) == 0x000008, "Member 'FMovieSceneGroomCacheParams::FirstLoopStartFrameOffset' has a wrong offset!");
-static_assert(offsetof(FMovieSceneGroomCacheParams, StartFrameOffset) == 0x00000C, "Member 'FMovieSceneGroomCacheParams::StartFrameOffset' has a wrong offset!");
-static_assert(offsetof(FMovieSceneGroomCacheParams, EndFrameOffset) == 0x000010, "Member 'FMovieSceneGroomCacheParams::EndFrameOffset' has a wrong offset!");
-static_assert(offsetof(FMovieSceneGroomCacheParams, PlayRate) == 0x000014, "Member 'FMovieSceneGroomCacheParams::PlayRate' has a wrong offset!");
-
-// ScriptStruct HairStrandsCore.MovieSceneGroomCacheSectionTemplateParameters
-// 0x0008 (0x0028 - 0x0020)
-struct FMovieSceneGroomCacheSectionTemplateParameters final : public FMovieSceneGroomCacheParams
-{
-public:
-	struct FFrameNumber                           SectionStartTime;                                  // 0x0020(0x0004)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	struct FFrameNumber                           SectionEndTime;                                    // 0x0024(0x0004)(NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMovieSceneGroomCacheSectionTemplateParameters) == 0x000008, "Wrong alignment on FMovieSceneGroomCacheSectionTemplateParameters");
-static_assert(sizeof(FMovieSceneGroomCacheSectionTemplateParameters) == 0x000028, "Wrong size on FMovieSceneGroomCacheSectionTemplateParameters");
-static_assert(offsetof(FMovieSceneGroomCacheSectionTemplateParameters, SectionStartTime) == 0x000020, "Member 'FMovieSceneGroomCacheSectionTemplateParameters::SectionStartTime' has a wrong offset!");
-static_assert(offsetof(FMovieSceneGroomCacheSectionTemplateParameters, SectionEndTime) == 0x000024, "Member 'FMovieSceneGroomCacheSectionTemplateParameters::SectionEndTime' has a wrong offset!");
-
-// ScriptStruct HairStrandsCore.MovieSceneGroomCacheSectionTemplate
-// 0x0028 (0x0048 - 0x0020)
-struct FMovieSceneGroomCacheSectionTemplate final : public FMovieSceneEvalTemplate
-{
-public:
-	struct FMovieSceneGroomCacheSectionTemplateParameters Params;                                            // 0x0020(0x0028)(NoDestructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FMovieSceneGroomCacheSectionTemplate) == 0x000008, "Wrong alignment on FMovieSceneGroomCacheSectionTemplate");
-static_assert(sizeof(FMovieSceneGroomCacheSectionTemplate) == 0x000048, "Wrong size on FMovieSceneGroomCacheSectionTemplate");
-static_assert(offsetof(FMovieSceneGroomCacheSectionTemplate, Params) == 0x000020, "Member 'FMovieSceneGroomCacheSectionTemplate::Params' has a wrong offset!");
 
 }
 

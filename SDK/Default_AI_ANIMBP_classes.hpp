@@ -10,23 +10,23 @@
 
 #include "Basic.hpp"
 
-#include "MovementDirection_structs.hpp"
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ALS_MovementState_structs.hpp"
-#include "LeanAmount_structs.hpp"
 #include "Default_AI_ANIMBP_structs.hpp"
-#include "AnimGraphRuntime_structs.hpp"
-#include "GroundedEntryState_structs.hpp"
-#include "ALS_Stance_structs.hpp"
-#include "ALS_MovementAction_structs.hpp"
+#include "ALS_MovementState_structs.hpp"
 #include "VelocityBlend_structs.hpp"
+#include "AnimGraphRuntime_structs.hpp"
+#include "ALS_Stance_structs.hpp"
 #include "ALS_OverlayState_structs.hpp"
-#include "ALS_RotationMode_structs.hpp"
+#include "GroundedEntryState_structs.hpp"
+#include "MovementDirection_structs.hpp"
 #include "HipsDirection_structs.hpp"
-#include "ALS_Gait_structs.hpp"
+#include "LeanAmount_structs.hpp"
 #include "ALS_ViewMode_structs.hpp"
+#include "ALS_MovementAction_structs.hpp"
+#include "ALS_RotationMode_structs.hpp"
+#include "ALS_Gait_structs.hpp"
 #include "TurnInPlace_Asset_structs.hpp"
 
 
@@ -38,10 +38,10 @@ namespace SDK
 class UDefault_AI_ANIMBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_1623[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33A1[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct Default_AI_ANIMBP::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0358(0x0124)(HasGetValueTypeHash)
-	uint8                                         Pad_1624[0x4];                                     // 0x047C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33A2[0x4];                                     // 0x047C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0480(0x0008)()
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x0488(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root_8;                              // 0x0490(0x0020)()
@@ -81,7 +81,7 @@ public:
 	struct FAnimNode_ConvertLocalToComponentSpace AnimGraphNode_LocalToComponentSpace_4;             // 0x0DB8(0x0020)()
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_12;                       // 0x0DD8(0x0128)()
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_11;                       // 0x0F00(0x0128)()
-	uint8                                         Pad_1625[0x8];                                     // 0x1028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33A3[0x8];                                     // 0x1028(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_3;                         // 0x1030(0x0280)()
 	struct FAnimNode_TwoBoneIK                    AnimGraphNode_TwoBoneIK_2;                         // 0x12B0(0x0280)()
 	struct FAnimNode_ModifyBone                   AnimGraphNode_ModifyBone_10;                       // 0x1530(0x0128)()
@@ -1038,19 +1038,19 @@ public:
 	struct FVector                                MovementInput;                                     // 0x180B8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsMoving;                                          // 0x180D0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasMovementInput;                                  // 0x180D1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1626[0x6];                                     // 0x180D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33A4[0x6];                                     // 0x180D2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Speed;                                             // 0x180D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        MovementInputAmount;                               // 0x180E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EGroundedEntryState                           GroundedEntryState;                                // 0x180E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EMovementDirection                            MovementDirection;                                 // 0x180E9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EHipsDirection                                TrackedHipsDirection;                              // 0x180EA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1627[0x5];                                     // 0x180EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33A5[0x5];                                     // 0x180EB(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                RelativeAccelerationAmount;                        // 0x180F0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ShouldMove;                                        // 0x18108(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Rotate_L;                                          // 0x18109(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Rotate_R;                                          // 0x1810A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Pivot;                                             // 0x1810B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1628[0x4];                                     // 0x1810C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33A6[0x4];                                     // 0x1810C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        RotateRate;                                        // 0x18110(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        RotationScale;                                     // 0x18118(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        DiagonalScaleAmount;                               // 0x18120(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1072,14 +1072,14 @@ public:
 	double                                        AimYawRate;                                        // 0x181D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        ZoomAmount;                                        // 0x181E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Jumped;                                            // 0x181E8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1629[0x7];                                     // 0x181E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33A7[0x7];                                     // 0x181E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        JumpPlayRate;                                      // 0x181F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        FallSpeed;                                         // 0x181F8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        LandPrediction;                                    // 0x18200(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                            LandPredictionCurve;                               // 0x18208(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	class UCurveFloat*                            LeanInAirCurve;                                    // 0x18210(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	int32                                         OverlayOverrideState;                              // 0x18218(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_162A[0x4];                                     // 0x1821C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_33A8[0x4];                                     // 0x1821C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Enable_AimOffset;                                  // 0x18220(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        FootLock_L_Alpha;                                  // 0x18228(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        FootLock_R_Alpha;                                  // 0x18230(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -1117,8 +1117,8 @@ public:
 	double                                        Arm_R_Add;                                         // 0x18388(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Arm_R_LS;                                          // 0x18390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Arm_R_MS;                                          // 0x18398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Hand_l;                                            // 0x183A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	double                                        Hand_r;                                            // 0x183A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Hand_L;                                            // 0x183A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	double                                        Hand_R;                                            // 0x183A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Legs;                                              // 0x183B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Legs_Add;                                          // 0x183B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Pelvis;                                            // 0x183C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -2468,8 +2468,8 @@ static_assert(offsetof(UDefault_AI_ANIMBP_C, Arm_R) == 0x018380, "Member 'UDefau
 static_assert(offsetof(UDefault_AI_ANIMBP_C, Arm_R_Add) == 0x018388, "Member 'UDefault_AI_ANIMBP_C::Arm_R_Add' has a wrong offset!");
 static_assert(offsetof(UDefault_AI_ANIMBP_C, Arm_R_LS) == 0x018390, "Member 'UDefault_AI_ANIMBP_C::Arm_R_LS' has a wrong offset!");
 static_assert(offsetof(UDefault_AI_ANIMBP_C, Arm_R_MS) == 0x018398, "Member 'UDefault_AI_ANIMBP_C::Arm_R_MS' has a wrong offset!");
-static_assert(offsetof(UDefault_AI_ANIMBP_C, Hand_l) == 0x0183A0, "Member 'UDefault_AI_ANIMBP_C::Hand_l' has a wrong offset!");
-static_assert(offsetof(UDefault_AI_ANIMBP_C, Hand_r) == 0x0183A8, "Member 'UDefault_AI_ANIMBP_C::Hand_r' has a wrong offset!");
+static_assert(offsetof(UDefault_AI_ANIMBP_C, Hand_L) == 0x0183A0, "Member 'UDefault_AI_ANIMBP_C::Hand_L' has a wrong offset!");
+static_assert(offsetof(UDefault_AI_ANIMBP_C, Hand_R) == 0x0183A8, "Member 'UDefault_AI_ANIMBP_C::Hand_R' has a wrong offset!");
 static_assert(offsetof(UDefault_AI_ANIMBP_C, Legs) == 0x0183B0, "Member 'UDefault_AI_ANIMBP_C::Legs' has a wrong offset!");
 static_assert(offsetof(UDefault_AI_ANIMBP_C, Legs_Add) == 0x0183B8, "Member 'UDefault_AI_ANIMBP_C::Legs_Add' has a wrong offset!");
 static_assert(offsetof(UDefault_AI_ANIMBP_C, Pelvis) == 0x0183C0, "Member 'UDefault_AI_ANIMBP_C::Pelvis' has a wrong offset!");

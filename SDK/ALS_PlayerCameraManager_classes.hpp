@@ -34,7 +34,7 @@ public:
 	struct FVector                                TargetCameraLocation;                              // 0x2498(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FRotator                               TargetCameraRotation;                              // 0x24B0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	bool                                          Time_Slow_Mode_Active_;                            // 0x24C8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_38CD[0x7];                                     // 0x24C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_38AF[0x7];                                     // 0x24C9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Time_Slow_Self_Custom_Value;                       // 0x24D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

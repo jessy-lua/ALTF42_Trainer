@@ -10,13 +10,13 @@
 
 #include "Basic.hpp"
 
-#include "ALTF42_ItemUse_SaveStruct_structs.hpp"
 #include "ALTF42_Settings_Struct_structs.hpp"
-#include "Engine_classes.hpp"
 #include "ALTF42_CostumeAndItem_SaveStruct_structs.hpp"
 #include "ALTF42_Game_SaveStruct_structs.hpp"
+#include "ALTF42_ItemUse_SaveStruct_structs.hpp"
 #include "ItemBox_Struct_structs.hpp"
 #include "ALTF42_MenuSetting_Struct_structs.hpp"
+#include "Engine_classes.hpp"
 
 
 namespace SDK
@@ -31,7 +31,7 @@ public:
 	struct FALTF42_Game_SaveStruct                GameSaveStruct;                                    // 0x00B8(0x0060)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
 	struct FALTF42_ItemUse_SaveStruct             ItemUseCountStruct;                                // 0x0118(0x002C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FItemBox_Struct                        GetItemBox_Struct;                                 // 0x0144(0x002D)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3FFD[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3EC3[0x7];                                     // 0x0171(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FALTF42_Settings_Struct                ALTF42_MenuSetting_Struct;                         // 0x0178(0x0088)(Edit, BlueprintVisible, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FALTF42_MenuSetting_Struct             ALTF42_NewMenuSetting_Struct;                      // 0x0200(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

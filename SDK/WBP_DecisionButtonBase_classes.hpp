@@ -35,9 +35,9 @@ public:
 	void OnButtonClicked();
 	void OnButtonHovered();
 	void OnPlayHighlightSound();
+	void OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound);
 	void OnPressedBack(const struct FKeyEvent& KeyEvent);
 	void OnPressedSelect(const struct FKeyEvent& KeyEvent);
-	void OnSetHighlightEffect(EWidgetStyleState Param_HighlightState, bool bPlaySound);
 	void PreConstruct(bool IsDesignTime);
 
 public:

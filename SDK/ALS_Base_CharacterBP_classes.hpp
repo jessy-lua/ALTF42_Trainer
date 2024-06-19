@@ -10,22 +10,22 @@
 
 #include "Basic.hpp"
 
-#include "ALS_Gait_structs.hpp"
+#include "CoreUObject_structs.hpp"
+#include "ALS_RotationMode_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "Mantle_TraceSettings_structs.hpp"
-#include "MovementSettings_structs.hpp"
-#include "ALS_MovementAction_structs.hpp"
 #include "ALS_MovementState_structs.hpp"
-#include "ALS_RotationMode_structs.hpp"
+#include "ALS_ComponentAndTransform_structs.hpp"
+#include "ALS_MovementAction_structs.hpp"
+#include "ALS_Gait_structs.hpp"
+#include "MovementSettings_structs.hpp"
 #include "ALS_Stance_structs.hpp"
 #include "ALS_ViewMode_structs.hpp"
-#include "CoreUObject_structs.hpp"
 #include "MovementSettings_State_structs.hpp"
 #include "Mantle_Params_structs.hpp"
-#include "AI_StepTalk_WhoOrWhere_structs.hpp"
-#include "ALS_ComponentAndTransform_structs.hpp"
+#include "Mantle_TraceSettings_structs.hpp"
 #include "ALS_OverlayState_structs.hpp"
+#include "AI_StepTalk_WhoOrWhere_structs.hpp"
 #include "MantleType_structs.hpp"
 
 
@@ -38,17 +38,17 @@ namespace SDK
 class alignas(0x10) AALS_Base_CharacterBP_C : public ACharacter
 {
 public:
-	uint8                                         Pad_396E[0x8];                                     // 0x0678(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DE7[0x8];                                     // 0x0678(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0680(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UTickOptToolkitTargetComponent*         TickOptToolkitTarget;                              // 0x0688(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	class UTickOptToolkitAnimUpdateRateOptComponent* TickOptToolkitAnimUpdateRateOpt;                   // 0x0690(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NonTransactional, NoDestructor, HasGetValueTypeHash)
 	float                                         Sprint_TL_Alpha_C26AD4634439BB3ADDEDB2B64DC846EE;  // 0x0698(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            Sprint_TL__Direction_C26AD4634439BB3ADDEDB2B64DC846EE; // 0x069C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_396F[0x3];                                     // 0x069D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DE8[0x3];                                     // 0x069D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     Sprint_TL;                                         // 0x06A0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	float                                         MantleTimeline_BlendIn_91D7A42A4A23268AEE2E28853DEE703D; // 0x06A8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ETimelineDirection                            MantleTimeline__Direction_91D7A42A4A23268AEE2E28853DEE703D; // 0x06AC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3970[0x3];                                     // 0x06AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DE9[0x3];                                     // 0x06AD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTimelineComponent*                     MantleTimeline;                                    // 0x06B0(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EALS_MovementState                            MovementState;                                     // 0x06B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EALS_MovementState                            PrevMovementState;                                 // 0x06B9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -59,14 +59,14 @@ public:
 	EALS_Gait                                     Gait;                                              // 0x06BE(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EALS_Stance                                   Stance;                                            // 0x06BF(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EALS_ViewMode                                 ViewMode;                                          // 0x06C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3971[0x7];                                     // 0x06C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DEA[0x7];                                     // 0x06C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                PreviousVelocity;                                  // 0x06C8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Acceleration;                                      // 0x06E0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsMoving;                                          // 0x06F8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IK_Possible;                                       // 0x06F9(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          Sprint_JUMP_;                                      // 0x06FA(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          HasMovementInput;                                  // 0x06FB(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3972[0x4];                                     // 0x06FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DEB[0x4];                                     // 0x06FC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FRotator                               LastVelocityRotation;                              // 0x0700(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	struct FRotator                               LastMovementInputRotation;                         // 0x0718(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 	double                                        Speed;                                             // 0x0730(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -87,25 +87,25 @@ public:
 	struct FMantle_TraceSettings                  AutomaticTraceSettings;                            // 0x0A44(0x0014)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FMantle_TraceSettings                  FallingTraceSettings;                              // 0x0A58(0x0014)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EALS_Stance                                   DesiredStance;                                     // 0x0A6C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3973[0x3];                                     // 0x0A6D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DEC[0x3];                                     // 0x0A6D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        DownRate;                                          // 0x0A70(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        LookLeftRightRate;                                 // 0x0A78(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        AimYawRate;                                        // 0x0A80(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EALS_OverlayState                             OverlayState;                                      // 0x0A88(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3974[0x3];                                     // 0x0A89(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DED[0x3];                                     // 0x0A89(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         TimesPressedStance;                                // 0x0A8C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          BreakFall;                                         // 0x0A90(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SprintHeld;                                        // 0x0A91(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3975[0x6];                                     // 0x0A92(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DEE[0x6];                                     // 0x0A92(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UAnimInstance*                          MainAnimInstance;                                  // 0x0A98(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          RagdollOnGround;                                   // 0x0AA0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RagdollFaceUp;                                     // 0x0AA1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3976[0x6];                                     // 0x0AA2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DEF[0x6];                                     // 0x0AA2(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                LastRagdollVelocity;                               // 0x0AA8(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        ThirdPersonFOV;                                    // 0x0AC0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        FirstPersonFOV;                                    // 0x0AC8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          RightShoulder;                                     // 0x0AD0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3977[0x7];                                     // 0x0AD1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DF0[0x7];                                     // 0x0AD1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class AALTF42_InGame_PC_Loco_C*               ALTF42_PC;                                         // 0x0AD8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                Fall_Location;                                     // 0x0AE0(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Invert_X_Value;                                    // 0x0AF8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -126,7 +126,7 @@ public:
 	bool                                          DontJumpAndSprint_ON_;                             // 0x0B2A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          AgingForm_;                                        // 0x0B2B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          ChickForm_;                                        // 0x0B2C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3978[0x3];                                     // 0x0B2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DF1[0x3];                                     // 0x0B2D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Normal_Camera_Length;                              // 0x0B30(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        Normal_Camera_Height;                              // 0x0B38(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          SuperMode_Active_;                                 // 0x0B40(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

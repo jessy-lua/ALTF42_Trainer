@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "WBP_GlobalInteractableUserWidget_classes.hpp"
+#include "Engine_structs.hpp"
+#include "UMG_structs.hpp"
 #include "EMenuInputWhitelistPreset_structs.hpp"
 #include "EWidgetStyleState_structs.hpp"
 #include "EInputDeviceType_structs.hpp"
-#include "UMG_structs.hpp"
 #include "ETransitionAnimation_structs.hpp"
 
 
@@ -35,11 +35,11 @@ public:
 	class UWBP_InteractableUserWidget_C*          ActiveUserWidget;                                  // 0x0390(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_InteractableUserWidget_C*          DefaultSelectedUserWidget;                         // 0x0398(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsBenchmarkRunning;                               // 0x03A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EE1[0x7];                                     // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10B0[0x7];                                     // 0x03A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 DefaultMenuLayer;                                  // 0x03A8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, ExposeOnSpawn, HasGetValueTypeHash)
 	class UObject*                                ReceivedPayload;                                   // 0x03B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	bool                                          bAutoHighlightWidgetOnEnter;                       // 0x03C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3EE2[0x7];                                     // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_10B1[0x7];                                     // 0x03C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnFocusChangedInMenu;                              // 0x03C8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 
 public:

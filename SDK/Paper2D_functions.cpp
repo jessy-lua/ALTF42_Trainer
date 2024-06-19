@@ -1018,6 +1018,143 @@ bool UPaperGroupedSpriteComponent::GetInstanceTransform(int32 InstanceIndex, str
 }
 
 
+// Function Paper2D.TileMapBlueprintLibrary.BreakTile
+// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
+// Parameters:
+// struct FPaperTileInfo                   Tile                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// int32                                   TileIndex                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPaperTileSet*                    TileSet                                                (Parm, OutParm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bFlipH                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bFlipV                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bFlipD                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+void UTileMapBlueprintLibrary::BreakTile(const struct FPaperTileInfo& Tile, int32* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "BreakTile");
+
+	Params::TileMapBlueprintLibrary_BreakTile Parms{};
+
+	Parms.Tile = std::move(Tile);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	if (TileIndex != nullptr)
+		*TileIndex = Parms.TileIndex;
+
+	if (TileSet != nullptr)
+		*TileSet = Parms.TileSet;
+
+	if (bFlipH != nullptr)
+		*bFlipH = Parms.bFlipH;
+
+	if (bFlipV != nullptr)
+		*bFlipV = Parms.bFlipV;
+
+	if (bFlipD != nullptr)
+		*bFlipD = Parms.bFlipD;
+}
+
+
+// Function Paper2D.TileMapBlueprintLibrary.GetTileTransform
+// (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
+// Parameters:
+// struct FPaperTileInfo                   Tile                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+struct FTransform UTileMapBlueprintLibrary::GetTileTransform(const struct FPaperTileInfo& Tile)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "GetTileTransform");
+
+	Params::TileMapBlueprintLibrary_GetTileTransform Parms{};
+
+	Parms.Tile = std::move(Tile);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Paper2D.TileMapBlueprintLibrary.GetTileUserData
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// struct FPaperTileInfo                   Tile                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
+// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+
+class FName UTileMapBlueprintLibrary::GetTileUserData(const struct FPaperTileInfo& Tile)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "GetTileUserData");
+
+	Params::TileMapBlueprintLibrary_GetTileUserData Parms{};
+
+	Parms.Tile = std::move(Tile);
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
+// Function Paper2D.TileMapBlueprintLibrary.MakeTile
+// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
+// Parameters:
+// int32                                   TileIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// class UPaperTileSet*                    TileSet                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bFlipH                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bFlipV                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// bool                                    bFlipD                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
+// struct FPaperTileInfo                   ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
+
+struct FPaperTileInfo UTileMapBlueprintLibrary::MakeTile(int32 TileIndex, class UPaperTileSet* TileSet, bool bFlipH, bool bFlipV, bool bFlipD)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "MakeTile");
+
+	Params::TileMapBlueprintLibrary_MakeTile Parms{};
+
+	Parms.TileIndex = TileIndex;
+	Parms.TileSet = TileSet;
+	Parms.bFlipH = bFlipH;
+	Parms.bFlipV = bFlipV;
+	Parms.bFlipD = bFlipD;
+
+	auto Flgs = Func->FunctionFlags;
+	Func->FunctionFlags |= 0x400;
+
+	GetDefaultObj()->ProcessEvent(Func, &Parms);
+
+	Func->FunctionFlags = Flgs;
+
+	return Parms.ReturnValue;
+}
+
+
 // Function Paper2D.PaperSpriteBlueprintLibrary.MakeBrushFromSprite
 // (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
 // Parameters:
@@ -1697,143 +1834,6 @@ void UPaperTerrainComponent::SetTerrainColor(const struct FLinearColor& NewColor
 	UObject::ProcessEvent(Func, &Parms);
 
 	Func->FunctionFlags = Flgs;
-}
-
-
-// Function Paper2D.TileMapBlueprintLibrary.BreakTile
-// (Final, Native, Static, Public, HasOutParams, BlueprintCallable, BlueprintPure)
-// Parameters:
-// struct FPaperTileInfo                   Tile                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// int32                                   TileIndex                                              (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UPaperTileSet*                    TileSet                                                (Parm, OutParm, ZeroConstructor, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bFlipH                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bFlipV                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bFlipD                                                 (Parm, OutParm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-void UTileMapBlueprintLibrary::BreakTile(const struct FPaperTileInfo& Tile, int32* TileIndex, class UPaperTileSet** TileSet, bool* bFlipH, bool* bFlipV, bool* bFlipD)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "BreakTile");
-
-	Params::TileMapBlueprintLibrary_BreakTile Parms{};
-
-	Parms.Tile = std::move(Tile);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	if (TileIndex != nullptr)
-		*TileIndex = Parms.TileIndex;
-
-	if (TileSet != nullptr)
-		*TileSet = Parms.TileSet;
-
-	if (bFlipH != nullptr)
-		*bFlipH = Parms.bFlipH;
-
-	if (bFlipV != nullptr)
-		*bFlipV = Parms.bFlipV;
-
-	if (bFlipD != nullptr)
-		*bFlipD = Parms.bFlipD;
-}
-
-
-// Function Paper2D.TileMapBlueprintLibrary.GetTileTransform
-// (Final, Native, Static, Public, HasDefaults, BlueprintCallable, BlueprintPure)
-// Parameters:
-// struct FPaperTileInfo                   Tile                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// struct FTransform                       ReturnValue                                            (Parm, OutParm, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-struct FTransform UTileMapBlueprintLibrary::GetTileTransform(const struct FPaperTileInfo& Tile)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "GetTileTransform");
-
-	Params::TileMapBlueprintLibrary_GetTileTransform Parms{};
-
-	Parms.Tile = std::move(Tile);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Paper2D.TileMapBlueprintLibrary.GetTileUserData
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// struct FPaperTileInfo                   Tile                                                   (Parm, NoDestructor, NativeAccessSpecifierPublic)
-// class FName                             ReturnValue                                            (Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-
-class FName UTileMapBlueprintLibrary::GetTileUserData(const struct FPaperTileInfo& Tile)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "GetTileUserData");
-
-	Params::TileMapBlueprintLibrary_GetTileUserData Parms{};
-
-	Parms.Tile = std::move(Tile);
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
-}
-
-
-// Function Paper2D.TileMapBlueprintLibrary.MakeTile
-// (Final, Native, Static, Public, BlueprintCallable, BlueprintPure)
-// Parameters:
-// int32                                   TileIndex                                              (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// class UPaperTileSet*                    TileSet                                                (Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bFlipH                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bFlipV                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// bool                                    bFlipD                                                 (Parm, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-// struct FPaperTileInfo                   ReturnValue                                            (Parm, OutParm, ReturnParm, NoDestructor, NativeAccessSpecifierPublic)
-
-struct FPaperTileInfo UTileMapBlueprintLibrary::MakeTile(int32 TileIndex, class UPaperTileSet* TileSet, bool bFlipH, bool bFlipV, bool bFlipD)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = StaticClass()->GetFunction("TileMapBlueprintLibrary", "MakeTile");
-
-	Params::TileMapBlueprintLibrary_MakeTile Parms{};
-
-	Parms.TileIndex = TileIndex;
-	Parms.TileSet = TileSet;
-	Parms.bFlipH = bFlipH;
-	Parms.bFlipV = bFlipV;
-	Parms.bFlipD = bFlipD;
-
-	auto Flgs = Func->FunctionFlags;
-	Func->FunctionFlags |= 0x400;
-
-	GetDefaultObj()->ProcessEvent(Func, &Parms);
-
-	Func->FunctionFlags = Flgs;
-
-	return Parms.ReturnValue;
 }
 
 }

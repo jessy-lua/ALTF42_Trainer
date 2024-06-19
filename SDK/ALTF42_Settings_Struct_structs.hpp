@@ -35,7 +35,7 @@ public:
 	int32                                         Graphics_AntiAliasingMethod_28_3157F54C4EDA97BDD6344AB124B138D9; // 0x0038(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Graphics_AntiAliasingOcclusion_30_C00E726C45E72BB2AE1F9DAD11344656; // 0x003C(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Display_Resolution_40_B91E6E5F44D6381F4BCA809D67476CCC; // 0x0040(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2E1C[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2E88[0x4];                                     // 0x0044(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Display_FPS_60_373F367B49ED471FE8C1978D49D3951D;   // 0x0048(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Display_Vsync_42_8D26626143AB6DF3B560968EE6977225; // 0x0050(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	int32                                         Display_WindowMode_44_557B9EBE49CD8C0EDDF95FADB70C7E60; // 0x0054(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

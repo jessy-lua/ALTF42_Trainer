@@ -22,7 +22,7 @@ struct BP_CustomSettingsApplyClass_C_ExecuteUbergraph_BP_CustomSettingsApplyClas
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F16[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DEB[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UPDA_SettingsData_C*                    K2Node_CustomEvent_SettingsData;                   // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	struct FFValueTypes                           K2Node_CustomEvent_Value;                          // 0x0010(0x0028)(ZeroConstructor, HasGetValueTypeHash)
 	class UBP_SettingsManager_C*                  K2Node_CustomEvent_SettingsManager;                // 0x0038(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)

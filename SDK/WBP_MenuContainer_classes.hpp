@@ -10,12 +10,12 @@
 
 #include "Basic.hpp"
 
-#include "ETransitionAnimation_structs.hpp"
-#include "EnhancedInput_structs.hpp"
+#include "WBP_GlobalInteractableUserWidget_classes.hpp"
 #include "Engine_structs.hpp"
 #include "FTransitionAnimationMapping_structs.hpp"
 #include "EInputDeviceType_structs.hpp"
-#include "WBP_GlobalInteractableUserWidget_classes.hpp"
+#include "EnhancedInput_structs.hpp"
+#include "ETransitionAnimation_structs.hpp"
 
 
 namespace SDK
@@ -23,13 +23,13 @@ namespace SDK
 
 // WidgetBlueprintGeneratedClass WBP_MenuContainer.WBP_MenuContainer_C
 // 0x0248 (0x05A8 - 0x0360)
-class UWBP_MenuContainer_C final : public UWBP_GlobalInteractableUserWidget_C
+class UWBP_MenuContainer_C : public UWBP_GlobalInteractableUserWidget_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame_WBP_MenuContainer_C;                // 0x0360(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	TArray<TSoftClassPtr<class UClass>>           MenuNavigationStack;                               // 0x0368(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 	bool                                          bIsMainMenuLevel;                                  // 0x0378(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_3D58[0x7];                                     // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C40[0x7];                                     // 0x0379(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ABP_MenuSystemActor_C*                  MenuSystemActor;                                   // 0x0380(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TSoftObjectPtr<class UUserWidget>             MenuBackground;                                    // 0x0388(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
 	TArray<struct FFTransitionAnimationMapping>   TransitionAnimationMappings;                       // 0x03B0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
@@ -37,19 +37,19 @@ public:
 	class ACameraActor*                           ActiveMenuCamera;                                  // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	TArray<class ACameraActor*>                   MenuCameras;                                       // 0x03D8(0x0010)(Edit, BlueprintVisible, DisableEditOnTemplate, ExposeOnSpawn)
 	int32                                         LastInteractingLocalPlayerIndex;                   // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D59[0x4];                                     // 0x03EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C41[0x4];                                     // 0x03EC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FString                                 ControllerPlatformName;                            // 0x03F0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
 	class UWBP_SoundManagerUI_C*                  SoundManager;                                      // 0x0400(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	EInputDeviceType                              ContainerInputDeviceType;                          // 0x0408(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
-	uint8                                         Pad_3D5A[0x7];                                     // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C42[0x7];                                     // 0x0409(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UWBP_InteractableMenu_C> MenuFooterBar;                                     // 0x0410(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
 	bool                                          bIsActionCooledDown;                               // 0x0438(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsBackCooledDown;                                 // 0x0439(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsNavigationCooledDown;                           // 0x043A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D5B[0x5];                                     // 0x043B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C43[0x5];                                     // 0x043B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UWBP_InteractableMenu_C> LoadingScreenWidget;                               // 0x0440(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance, InstancedReference, HasGetValueTypeHash)
 	bool                                          bAllowTransitionBack;                              // 0x0468(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D5C[0x7];                                     // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C44[0x7];                                     // 0x0469(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UCanvasPanel*                           CanvasPanelRef;                                    // 0x0470(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UBorder*                                MainLayerRef;                                      // 0x0478(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UBorder*                                SubTabsLayerRef;                                   // 0x0480(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -65,7 +65,7 @@ public:
 	class UObject*                                Payload;                                           // 0x0530(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	TMap<class FName, struct FEnhancedActionKeyMapping> MenuInputMap;                                      // 0x0538(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
 	bool                                          bAllowPressBack;                                   // 0x0588(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D5D[0x7];                                     // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C45[0x7];                                     // 0x0589(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnSubmenuRemoved;                                  // 0x0590(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          Move_;                                             // 0x05A0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

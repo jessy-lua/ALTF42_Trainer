@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "ChickMode_AnimBP_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
+#include "ChickMode_AnimBP_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
 
 
@@ -24,7 +24,7 @@ namespace SDK
 class UChickMode_AnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_370E[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3723[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct ChickMode_AnimBP::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0358(0x0008)(HasGetValueTypeHash)
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0360(0x0008)()
@@ -44,7 +44,7 @@ public:
 	struct FAnimNode_StateResult                  AnimGraphNode_StateResult;                         // 0x05D8(0x0020)()
 	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x05F8(0x00C8)()
 	bool                                          IsInAir_;                                          // 0x06C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_370F[0x7];                                     // 0x06C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3724[0x7];                                     // 0x06C1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Speed;                                             // 0x06C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

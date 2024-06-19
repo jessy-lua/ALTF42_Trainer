@@ -23,7 +23,7 @@ struct FFInputActionDataElement final
 public:
 	class FName                                   ShortInputName_18_8B0796264B009B5856275CB0B3A45CDA; // 0x0000(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CombineBrushWithKeyBackground_12_68DF261448D0AACA1944EC88EFC9C284; // 0x0008(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17CF[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DE7[0x7];                                     // 0x0009(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FSlateBrush                            Brush_9_B30DAABA401047292BC562A8240B33DC;          // 0x0010(0x00D0)(Edit, BlueprintVisible)
 };
 static_assert(alignof(FFInputActionDataElement) == 0x000010, "Wrong alignment on FFInputActionDataElement");

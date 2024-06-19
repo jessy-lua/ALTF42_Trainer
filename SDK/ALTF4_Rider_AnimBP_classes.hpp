@@ -13,8 +13,8 @@
 #include "CoreUObject_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
-#include "ALTF4_Rider_AnimBP_structs.hpp"
 #include "AnimGraphRuntime_structs.hpp"
+#include "ALTF4_Rider_AnimBP_structs.hpp"
 
 
 namespace SDK
@@ -25,10 +25,10 @@ namespace SDK
 class UALTF4_Rider_AnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_3894[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DC9[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct ALTF4_Rider_AnimBP::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0358(0x000C)(HasGetValueTypeHash)
-	uint8                                         Pad_3895[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DCA[0x4];                                     // 0x0364(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0368(0x0008)()
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x0370(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0378(0x0020)()
@@ -62,7 +62,7 @@ public:
 	bool                                          IsManual;                                          // 0x1401(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPedaling;                                        // 0x1402(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IsPreload;                                         // 0x1403(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3896[0x4];                                     // 0x1404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2DCB[0x4];                                     // 0x1404(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                L_Arm_IK;                                          // 0x1408(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                R_Arm_IK;                                          // 0x1420(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector                                L_Leg_IK;                                          // 0x1438(0x0018)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "CharChick_AnimBP_structs.hpp"
 #include "Engine_structs.hpp"
 #include "Engine_classes.hpp"
 #include "AnimGraphRuntime_structs.hpp"
-#include "CharChick_AnimBP_structs.hpp"
 
 
 namespace SDK
@@ -24,10 +24,10 @@ namespace SDK
 class UCharChick_AnimBP_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_182F[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3898[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct CharChick_AnimBP::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0358(0x0002)(HasGetValueTypeHash)
-	uint8                                         Pad_1830[0x6];                                     // 0x035A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3899[0x6];                                     // 0x035A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0360(0x0008)()
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_Base;                       // 0x0368(0x0008)()
 	struct FAnimNode_Root                         AnimGraphNode_Root;                                // 0x0370(0x0020)()

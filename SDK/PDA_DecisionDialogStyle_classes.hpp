@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PDA_WidgetStyle_classes.hpp"
 #include "EColorPalette_structs.hpp"
 #include "EFontPalette_structs.hpp"
+#include "PDA_WidgetStyle_classes.hpp"
 
 
 namespace SDK
@@ -28,7 +28,7 @@ public:
 	EColorPalette                                 BodyTextColor;                                     // 0x003A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EColorPalette                                 BarBackgroundColor;                                // 0x003B(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EColorPalette                                 BarFillColor;                                      // 0x003C(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D4B[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3BF5[0x3];                                     // 0x003D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CornerRadius;                                      // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFontPalette                                  TitleFontStyle;                                    // 0x0048(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EFontPalette                                  BodyFontStyle;                                     // 0x0049(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

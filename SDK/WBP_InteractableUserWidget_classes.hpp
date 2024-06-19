@@ -10,10 +10,10 @@
 
 #include "Basic.hpp"
 
+#include "WBP_GlobalInteractableUserWidget_classes.hpp"
 #include "Engine_structs.hpp"
 #include "ENavigationDirection_structs.hpp"
 #include "EWidgetStyleState_structs.hpp"
-#include "WBP_GlobalInteractableUserWidget_classes.hpp"
 
 
 namespace SDK
@@ -28,22 +28,22 @@ public:
 	FMulticastInlineDelegateProperty_             OnWidgetClicked;                                   // 0x0368(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UPDA_SettingsData_C*                    SettingsData;                                      // 0x0378(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	EWidgetStyleState                             WidgetState;                                       // 0x0380(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC7[0x7];                                     // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CAF[0x7];                                     // 0x0381(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   OptionName;                                        // 0x0388(0x0018)(Edit, BlueprintVisible)
 	class FText                                   OptionDescription;                                 // 0x03A0(0x0018)(Edit, BlueprintVisible)
 	ENavigationDirection                          NavigationDirection;                               // 0x03B8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC8[0x7];                                     // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CB0[0x7];                                     // 0x03B9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_InteractableUserWidget_C*          UpInteractableWidget;                              // 0x03C0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_InteractableUserWidget_C*          DownInteractableWidget;                            // 0x03C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_InteractableUserWidget_C*          LeftInteractableWidget;                            // 0x03D0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_InteractableUserWidget_C*          RightInteractableWidget;                           // 0x03D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	FMulticastInlineDelegateProperty_             OnWidgetFocusReceived;                             // 0x03E0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	bool                                          bPlaySelectSound;                                  // 0x03F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DC9[0x7];                                     // 0x03F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CB1[0x7];                                     // 0x03F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	TSoftObjectPtr<class UTexture2D>              OptionImage;                                       // 0x03F8(0x0028)(Edit, BlueprintVisible, HasGetValueTypeHash)
 	bool                                          bIsSettingsDirty;                                  // 0x0420(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bSetActiveOnHighlight;                             // 0x0421(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DCA[0x6];                                     // 0x0422(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CB2[0x6];                                     // 0x0422(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_InteractableUserWidget_C*          LeftBreakoutWidget;                                // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_InteractableUserWidget_C*          RightBreakoutWidget;                               // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UWBP_InteractableUserWidget_C*          UpBreakoutWidget;                                  // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
@@ -51,7 +51,7 @@ public:
 	EWidgetStyleState                             FallbackState;                                     // 0x0448(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EWidgetStyleState                             HighlightState;                                    // 0x0449(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EWidgetStyleState                             PreviousHighlightState;                            // 0x044A(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3DCB[0x5];                                     // 0x044B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3CB3[0x5];                                     // 0x044B(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_InteractableMenu_C*                ParentMenuWidget;                                  // 0x0450(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	TArray<class FName>                           Tags;                                              // 0x0458(0x0010)(Edit, BlueprintVisible)
 	FMulticastInlineDelegateProperty_             OnWidgetInitialized;                               // 0x0468(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)

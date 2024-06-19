@@ -49,7 +49,7 @@ struct EpicLeaderboardObject_GetLeaderboardEntries final
 public:
 	class FString                                 PlayerName;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          AroundPlayer;                                      // 0x0010(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2197[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20E2[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(EpicLeaderboardObject_GetLeaderboardEntries) == 0x000008, "Wrong alignment on EpicLeaderboardObject_GetLeaderboardEntries");
 static_assert(sizeof(EpicLeaderboardObject_GetLeaderboardEntries) == 0x000018, "Wrong size on EpicLeaderboardObject_GetLeaderboardEntries");
@@ -63,7 +63,7 @@ struct EpicLeaderboardObject_SubmitEntry final
 public:
 	class FString                                 PlayerName;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PlayerScore;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2198[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20E3[0x4];                                     // 0x0014(0x0004)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(EpicLeaderboardObject_SubmitEntry) == 0x000008, "Wrong alignment on EpicLeaderboardObject_SubmitEntry");
 static_assert(sizeof(EpicLeaderboardObject_SubmitEntry) == 0x000018, "Wrong size on EpicLeaderboardObject_SubmitEntry");
@@ -77,7 +77,7 @@ struct EpicLeaderboardObject_SubmitEntryWithMetadata final
 public:
 	class FString                                 PlayerName;                                        // 0x0000(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         PlayerScore;                                       // 0x0010(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2199[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20E4[0x4];                                     // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	TMap<class FString, class FString>            MetaData;                                          // 0x0018(0x0050)(ConstParm, Parm, OutParm, ReferenceParm, NativeAccessSpecifierPublic)
 };
 static_assert(alignof(EpicLeaderboardObject_SubmitEntryWithMetadata) == 0x000008, "Wrong alignment on EpicLeaderboardObject_SubmitEntryWithMetadata");

@@ -34,15 +34,15 @@ struct DecisionDialogWidgetBP_C_ExecuteUbergraph_DecisionDialogWidgetBP final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3401[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3326[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInteractableMenuWidgetBP_C*            K2Node_Event_NavigateFromMenu_1;                   // 0x0008(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bIsGamepadBeingUsed;                  // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3402[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3327[0x3];                                     // 0x0011(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         K2Node_Event_PlayerIndex;                          // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	class UInteractableMenuWidgetBP_C*            K2Node_Event_NavigateToMenu;                       // 0x0018(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UInteractableMenuWidgetBP_C*            K2Node_Event_NavigateFromMenu;                     // 0x0020(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3403[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3328[0x7];                                     // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   K2Node_CustomEvent_NewParam;                       // 0x0030(0x0018)()
 	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0048(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
@@ -65,7 +65,7 @@ struct DecisionDialogWidgetBP_C_OnNavigationEnter final
 public:
 	class UInteractableMenuWidgetBP_C*            NavigateFromMenu;                                  // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          Param_bIsGamepadBeingUsed;                         // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3404[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3329[0x3];                                     // 0x0009(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	int32                                         Param_PlayerIndex;                                 // 0x000C(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(DecisionDialogWidgetBP_C_OnNavigationEnter) == 0x000008, "Wrong alignment on DecisionDialogWidgetBP_C_OnNavigationEnter");
@@ -86,17 +86,6 @@ static_assert(alignof(DecisionDialogWidgetBP_C_OnNavigationExit) == 0x000008, "W
 static_assert(sizeof(DecisionDialogWidgetBP_C_OnNavigationExit) == 0x000010, "Wrong size on DecisionDialogWidgetBP_C_OnNavigationExit");
 static_assert(offsetof(DecisionDialogWidgetBP_C_OnNavigationExit, NavigateToMenu) == 0x000000, "Member 'DecisionDialogWidgetBP_C_OnNavigationExit::NavigateToMenu' has a wrong offset!");
 static_assert(offsetof(DecisionDialogWidgetBP_C_OnNavigationExit, NavigateFromMenu) == 0x000008, "Member 'DecisionDialogWidgetBP_C_OnNavigationExit::NavigateFromMenu' has a wrong offset!");
-
-// Function DecisionDialogWidgetBP.DecisionDialogWidgetBP_C.PreConstruct
-// 0x0001 (0x0001 - 0x0000)
-struct DecisionDialogWidgetBP_C_PreConstruct final
-{
-public:
-	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(DecisionDialogWidgetBP_C_PreConstruct) == 0x000001, "Wrong alignment on DecisionDialogWidgetBP_C_PreConstruct");
-static_assert(sizeof(DecisionDialogWidgetBP_C_PreConstruct) == 0x000001, "Wrong size on DecisionDialogWidgetBP_C_PreConstruct");
-static_assert(offsetof(DecisionDialogWidgetBP_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'DecisionDialogWidgetBP_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 // Function DecisionDialogWidgetBP.DecisionDialogWidgetBP_C.SetGlobalSettings
 // 0x02E0 (0x02E0 - 0x0000)
@@ -154,6 +143,17 @@ static_assert(offsetof(DecisionDialogWidgetBP_C_SetGlobalSettings, CallFunc_GetG
 static_assert(offsetof(DecisionDialogWidgetBP_C_SetGlobalSettings, CallFunc_GetGlobalFonts_LargeTitleFont) == 0x000228, "Member 'DecisionDialogWidgetBP_C_SetGlobalSettings::CallFunc_GetGlobalFonts_LargeTitleFont' has a wrong offset!");
 static_assert(offsetof(DecisionDialogWidgetBP_C_SetGlobalSettings, CallFunc_GetGlobalFonts_ValueFont) == 0x000280, "Member 'DecisionDialogWidgetBP_C_SetGlobalSettings::CallFunc_GetGlobalFonts_ValueFont' has a wrong offset!");
 static_assert(offsetof(DecisionDialogWidgetBP_C_SetGlobalSettings, CallFunc_GetGlobalFonts_OnlyUppercase) == 0x0002D8, "Member 'DecisionDialogWidgetBP_C_SetGlobalSettings::CallFunc_GetGlobalFonts_OnlyUppercase' has a wrong offset!");
+
+// Function DecisionDialogWidgetBP.DecisionDialogWidgetBP_C.PreConstruct
+// 0x0001 (0x0001 - 0x0000)
+struct DecisionDialogWidgetBP_C_PreConstruct final
+{
+public:
+	bool                                          IsDesignTime;                                      // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(DecisionDialogWidgetBP_C_PreConstruct) == 0x000001, "Wrong alignment on DecisionDialogWidgetBP_C_PreConstruct");
+static_assert(sizeof(DecisionDialogWidgetBP_C_PreConstruct) == 0x000001, "Wrong size on DecisionDialogWidgetBP_C_PreConstruct");
+static_assert(offsetof(DecisionDialogWidgetBP_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'DecisionDialogWidgetBP_C_PreConstruct::IsDesignTime' has a wrong offset!");
 
 }
 

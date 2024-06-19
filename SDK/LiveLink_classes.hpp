@@ -28,7 +28,7 @@ class ULiveLinkAnimationRoleToTransform final : public ULiveLinkFrameTranslator
 {
 public:
 	class FName                                   BoneName;                                          // 0x0028(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_2056[0x10];                                    // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20A7[0x10];                                    // 0x0030(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -50,7 +50,7 @@ class ULiveLinkBasicFrameInterpolationProcessor : public ULiveLinkFrameInterpola
 {
 public:
 	bool                                          bInterpolatePropertyValues;                        // 0x0028(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2057[0x17];                                    // 0x0029(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20A8[0x17];                                    // 0x0029(0x0017)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -71,7 +71,7 @@ static_assert(offsetof(ULiveLinkBasicFrameInterpolationProcessor, bInterpolatePr
 class ULiveLinkAnimationFrameInterpolationProcessor final : public ULiveLinkBasicFrameInterpolationProcessor
 {
 public:
-	uint8                                         Pad_2058[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20A9[0x10];                                    // 0x0040(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -91,9 +91,9 @@ static_assert(sizeof(ULiveLinkAnimationFrameInterpolationProcessor) == 0x000050,
 class ULiveLinkAnimationVirtualSubject final : public ULiveLinkVirtualSubject
 {
 public:
-	uint8                                         Pad_2059[0x1];                                     // 0x0160(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20AA[0x1];                                     // 0x0160(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	bool                                          bAppendSubjectNameToBones;                         // 0x0161(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_205A[0x6];                                     // 0x0162(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20AB[0x6];                                     // 0x0162(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -190,7 +190,7 @@ class ULiveLinkComponent final : public UActorComponent
 {
 public:
 	FMulticastInlineDelegateProperty_             OnLiveLinkUpdated;                                 // 0x00A0(0x0010)(ZeroConstructor, InstancedReference, BlueprintAssignable, NativeAccessSpecifierPublic)
-	uint8                                         Pad_206F[0x10];                                    // 0x00B0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20C0[0x10];                                    // 0x00B0(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void GetAvailableSubjectNames(TArray<class FName>* SubjectNames);
@@ -221,7 +221,7 @@ public:
 	class FName                                   ActorTransformBone;                                // 0x00A8(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bModifyActorTransform;                             // 0x00B0(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          bSetRelativeLocation;                              // 0x00B1(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2073[0x6];                                     // 0x00B2(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20C4[0x6];                                     // 0x00B2(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -245,7 +245,7 @@ static_assert(offsetof(ULiveLinkDrivenComponent, bSetRelativeLocation) == 0x0000
 class ULiveLinkMessageBusFinder final : public UObject
 {
 public:
-	uint8                                         Pad_2074[0x58];                                    // 0x0028(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20C5[0x58];                                    // 0x0028(0x0058)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static void ConnectToProvider(struct FProviderPollResult& Provider, struct FLiveLinkSourceHandle* SourceHandle);
@@ -307,7 +307,7 @@ class ULiveLinkPreset final : public UObject
 public:
 	TArray<struct FLiveLinkSourcePreset>          Sources;                                           // 0x0028(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate)
 	TArray<struct FLiveLinkSubjectPreset>         Subjects;                                          // 0x0038(0x0010)(Edit, ZeroConstructor, EditConst, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2076[0x8];                                     // 0x0048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20C7[0x8];                                     // 0x0048(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void ApplyToClientLatent(class UObject* WorldContextObject, const struct FLatentActionInfo& LatentInfo);
@@ -362,7 +362,7 @@ public:
 	TSoftObjectPtr<class ULiveLinkPreset>         DefaultLiveLinkPreset;                             // 0x0040(0x0028)(Edit, Config, UObjectWrapper, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	float                                         ClockOffsetCorrectionStep;                         // 0x0068(0x0004)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	ELiveLinkSourceMode                           DefaultMessageBusSourceMode;                       // 0x006C(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2077[0x3];                                     // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20C8[0x3];                                     // 0x006D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        MessageBusPingRequestFrequency;                    // 0x0070(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	double                                        MessageBusHeartbeatFrequency;                      // 0x0078(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	double                                        MessageBusHeartbeatTimeout;                        // 0x0080(0x0008)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPublic)
@@ -372,7 +372,7 @@ public:
 	struct FLinearColor                           InvalidColor;                                      // 0x00A8(0x0010)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         TextSizeSource;                                    // 0x00B8(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	uint8                                         TextSizeSubject;                                   // 0x00B9(0x0001)(Edit, ZeroConstructor, Config, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_2078[0x6];                                     // 0x00BA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20C9[0x6];                                     // 0x00BA(0x0006)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -409,10 +409,10 @@ public:
 	struct FLiveLinkSubjectKey                    SubjectKey;                                        // 0x0030(0x0018)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	ELiveLinkTimecodeProviderEvaluationType       Evaluation;                                        // 0x0048(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	bool                                          bOverrideFrameRate;                                // 0x004C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_2079[0x3];                                     // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20CA[0x3];                                     // 0x004D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FFrameRate                             OverrideFrameRate;                                 // 0x0050(0x0008)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
 	int32                                         BufferSize;                                        // 0x0058(0x0004)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, AdvancedDisplay, HasGetValueTypeHash, NativeAccessSpecifierPrivate)
-	uint8                                         Pad_207A[0x64];                                    // 0x005C(0x0064)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20CB[0x64];                                    // 0x005C(0x0064)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -438,7 +438,7 @@ class ULiveLinkTimeSynchronizationSource final : public UTimeSynchronizationSour
 {
 public:
 	struct FLiveLinkSubjectName                   SubjectName;                                       // 0x0030(0x0008)(Edit, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_207B[0x48];                                    // 0x0038(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20CC[0x48];                                    // 0x0038(0x0048)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -464,10 +464,10 @@ public:
 	ELiveLinkAxis                                 UpAxis;                                            // 0x002A(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bUseOffsetPosition;                                // 0x002B(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	bool                                          bUseOffsetOrientation;                             // 0x002C(0x0001)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
-	uint8                                         Pad_207C[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20CD[0x3];                                     // 0x002D(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector                                OffsetPosition;                                    // 0x0030(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, HasGetValueTypeHash, NativeAccessSpecifierProtected)
 	struct FRotator                               OffsetOrientation;                                 // 0x0048(0x0018)(Edit, ZeroConstructor, IsPlainOldData, NoDestructor, Protected, NativeAccessSpecifierProtected)
-	uint8                                         Pad_207D[0x10];                                    // 0x0060(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20CE[0x10];                                    // 0x0060(0x0010)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()
@@ -511,7 +511,7 @@ static_assert(sizeof(ULiveLinkAnimationAxisSwitchPreProcessor) == 0x000070, "Wro
 class ULiveLinkBlueprintVirtualSubject final : public ULiveLinkVirtualSubject
 {
 public:
-	uint8                                         Pad_207E[0x28];                                    // 0x0160(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_20CF[0x28];                                    // 0x0160(0x0028)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	void OnInitialize();

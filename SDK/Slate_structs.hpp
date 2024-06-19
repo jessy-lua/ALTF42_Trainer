@@ -250,17 +250,6 @@ static_assert(sizeof(FCharRange) == 0x000004, "Wrong size on FCharRange");
 static_assert(offsetof(FCharRange, First) == 0x000000, "Member 'FCharRange::First' has a wrong offset!");
 static_assert(offsetof(FCharRange, Last) == 0x000002, "Member 'FCharRange::Last' has a wrong offset!");
 
-// ScriptStruct Slate.CharRangeList
-// 0x0010 (0x0010 - 0x0000)
-struct FCharRangeList final
-{
-public:
-	TArray<struct FCharRange>                     Ranges;                                            // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
-};
-static_assert(alignof(FCharRangeList) == 0x000008, "Wrong alignment on FCharRangeList");
-static_assert(sizeof(FCharRangeList) == 0x000010, "Wrong size on FCharRangeList");
-static_assert(offsetof(FCharRangeList, Ranges) == 0x000000, "Member 'FCharRangeList::Ranges' has a wrong offset!");
-
 // ScriptStruct Slate.VirtualKeyboardOptions
 // 0x0001 (0x0001 - 0x0000)
 struct FVirtualKeyboardOptions final
@@ -300,6 +289,17 @@ static_assert(alignof(FAnchors) == 0x000008, "Wrong alignment on FAnchors");
 static_assert(sizeof(FAnchors) == 0x000020, "Wrong size on FAnchors");
 static_assert(offsetof(FAnchors, Minimum) == 0x000000, "Member 'FAnchors::Minimum' has a wrong offset!");
 static_assert(offsetof(FAnchors, Maximum) == 0x000010, "Member 'FAnchors::Maximum' has a wrong offset!");
+
+// ScriptStruct Slate.CharRangeList
+// 0x0010 (0x0010 - 0x0000)
+struct FCharRangeList final
+{
+public:
+	TArray<struct FCharRange>                     Ranges;                                            // 0x0000(0x0010)(Edit, ZeroConstructor, NativeAccessSpecifierPublic)
+};
+static_assert(alignof(FCharRangeList) == 0x000008, "Wrong alignment on FCharRangeList");
+static_assert(sizeof(FCharRangeList) == 0x000010, "Wrong size on FCharRangeList");
+static_assert(offsetof(FCharRangeList, Ranges) == 0x000000, "Member 'FCharRangeList::Ranges' has a wrong offset!");
 
 // ScriptStruct Slate.CustomizedToolMenuEntry
 // 0x0004 (0x0004 - 0x0000)

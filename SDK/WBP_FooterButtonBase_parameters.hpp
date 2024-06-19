@@ -11,10 +11,10 @@
 #include "Basic.hpp"
 
 #include "EnhancedInput_structs.hpp"
-#include "InputCore_structs.hpp"
 #include "EInputDeviceType_structs.hpp"
 #include "EWidgetStyleState_structs.hpp"
 #include "SlateCore_structs.hpp"
+#include "InputCore_structs.hpp"
 
 
 namespace SDK::Params
@@ -33,7 +33,7 @@ public:
 	struct FKeyEvent                              K2Node_Event_KeyEvent_1;                           // 0x0008(0x0040)()
 	struct FKeyEvent                              K2Node_Event_KeyEvent;                             // 0x0048(0x0040)()
 	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E81[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_26E3[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKey                                   K2Node_Select_Default;                             // 0x0090(0x0018)(HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x00A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x00A9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
@@ -74,7 +74,7 @@ public:
 	class UWBP_MenuContainer_C*                   CallFunc_GetOwningContainer_OwningContainer_1;     // 0x0030(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	struct FEnhancedActionKeyMapping              CallFunc_Map_Find_Value;                           // 0x0038(0x0050)(ContainsInstancedReference, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue;                     // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E82[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_26E4[0x7];                                     // 0x0089(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FEnhancedActionKeyMapping              CallFunc_Map_Find_Value_1;                         // 0x0090(0x0050)(ContainsInstancedReference, HasGetValueTypeHash)
 	bool                                          CallFunc_Map_Find_ReturnValue_1;                   // 0x00E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
@@ -103,6 +103,30 @@ static_assert(sizeof(WBP_FooterButtonBase_C_UpdateButtonIcon) == 0x000002, "Wron
 static_assert(offsetof(WBP_FooterButtonBase_C_UpdateButtonIcon, InputDeviceType) == 0x000000, "Member 'WBP_FooterButtonBase_C_UpdateButtonIcon::InputDeviceType' has a wrong offset!");
 static_assert(offsetof(WBP_FooterButtonBase_C_UpdateButtonIcon, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'WBP_FooterButtonBase_C_UpdateButtonIcon::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
+// Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.OnSetHighlightEffect
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_FooterButtonBase_C_OnSetHighlightEffect final
+{
+public:
+	EWidgetStyleState                             Param_HighlightState;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bPlaySound;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FooterButtonBase_C_OnSetHighlightEffect) == 0x000001, "Wrong alignment on WBP_FooterButtonBase_C_OnSetHighlightEffect");
+static_assert(sizeof(WBP_FooterButtonBase_C_OnSetHighlightEffect) == 0x000002, "Wrong size on WBP_FooterButtonBase_C_OnSetHighlightEffect");
+static_assert(offsetof(WBP_FooterButtonBase_C_OnSetHighlightEffect, Param_HighlightState) == 0x000000, "Member 'WBP_FooterButtonBase_C_OnSetHighlightEffect::Param_HighlightState' has a wrong offset!");
+static_assert(offsetof(WBP_FooterButtonBase_C_OnSetHighlightEffect, bPlaySound) == 0x000001, "Member 'WBP_FooterButtonBase_C_OnSetHighlightEffect::bPlaySound' has a wrong offset!");
+
+// Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.RefreshWidget
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_FooterButtonBase_C_RefreshWidget final
+{
+public:
+	class UWBP_MenuContainer_C*                   CallFunc_GetOwningContainer_OwningContainer;       // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_FooterButtonBase_C_RefreshWidget) == 0x000008, "Wrong alignment on WBP_FooterButtonBase_C_RefreshWidget");
+static_assert(sizeof(WBP_FooterButtonBase_C_RefreshWidget) == 0x000008, "Wrong size on WBP_FooterButtonBase_C_RefreshWidget");
+static_assert(offsetof(WBP_FooterButtonBase_C_RefreshWidget, CallFunc_GetOwningContainer_OwningContainer) == 0x000000, "Member 'WBP_FooterButtonBase_C_RefreshWidget::CallFunc_GetOwningContainer_OwningContainer' has a wrong offset!");
+
 // Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.OnPressedBack
 // 0x0040 (0x0040 - 0x0000)
 struct WBP_FooterButtonBase_C_OnPressedBack final
@@ -125,19 +149,6 @@ static_assert(alignof(WBP_FooterButtonBase_C_OnPressedSelect) == 0x000008, "Wron
 static_assert(sizeof(WBP_FooterButtonBase_C_OnPressedSelect) == 0x000040, "Wrong size on WBP_FooterButtonBase_C_OnPressedSelect");
 static_assert(offsetof(WBP_FooterButtonBase_C_OnPressedSelect, KeyEvent) == 0x000000, "Member 'WBP_FooterButtonBase_C_OnPressedSelect::KeyEvent' has a wrong offset!");
 
-// Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.OnSetHighlightEffect
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_FooterButtonBase_C_OnSetHighlightEffect final
-{
-public:
-	EWidgetStyleState                             Param_HighlightState;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bPlaySound;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FooterButtonBase_C_OnSetHighlightEffect) == 0x000001, "Wrong alignment on WBP_FooterButtonBase_C_OnSetHighlightEffect");
-static_assert(sizeof(WBP_FooterButtonBase_C_OnSetHighlightEffect) == 0x000002, "Wrong size on WBP_FooterButtonBase_C_OnSetHighlightEffect");
-static_assert(offsetof(WBP_FooterButtonBase_C_OnSetHighlightEffect, Param_HighlightState) == 0x000000, "Member 'WBP_FooterButtonBase_C_OnSetHighlightEffect::Param_HighlightState' has a wrong offset!");
-static_assert(offsetof(WBP_FooterButtonBase_C_OnSetHighlightEffect, bPlaySound) == 0x000001, "Member 'WBP_FooterButtonBase_C_OnSetHighlightEffect::bPlaySound' has a wrong offset!");
-
 // Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
 struct WBP_FooterButtonBase_C_PreConstruct final
@@ -148,17 +159,6 @@ public:
 static_assert(alignof(WBP_FooterButtonBase_C_PreConstruct) == 0x000001, "Wrong alignment on WBP_FooterButtonBase_C_PreConstruct");
 static_assert(sizeof(WBP_FooterButtonBase_C_PreConstruct) == 0x000001, "Wrong size on WBP_FooterButtonBase_C_PreConstruct");
 static_assert(offsetof(WBP_FooterButtonBase_C_PreConstruct, IsDesignTime) == 0x000000, "Member 'WBP_FooterButtonBase_C_PreConstruct::IsDesignTime' has a wrong offset!");
-
-// Function WBP_FooterButtonBase.WBP_FooterButtonBase_C.RefreshWidget
-// 0x0008 (0x0008 - 0x0000)
-struct WBP_FooterButtonBase_C_RefreshWidget final
-{
-public:
-	class UWBP_MenuContainer_C*                   CallFunc_GetOwningContainer_OwningContainer;       // 0x0000(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_FooterButtonBase_C_RefreshWidget) == 0x000008, "Wrong alignment on WBP_FooterButtonBase_C_RefreshWidget");
-static_assert(sizeof(WBP_FooterButtonBase_C_RefreshWidget) == 0x000008, "Wrong size on WBP_FooterButtonBase_C_RefreshWidget");
-static_assert(offsetof(WBP_FooterButtonBase_C_RefreshWidget, CallFunc_GetOwningContainer_OwningContainer) == 0x000000, "Member 'WBP_FooterButtonBase_C_RefreshWidget::CallFunc_GetOwningContainer_OwningContainer' has a wrong offset!");
 
 }
 

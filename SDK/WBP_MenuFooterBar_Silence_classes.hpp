@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "FFooterBarButtonData_structs.hpp"
 #include "Engine_structs.hpp"
+#include "FFooterBarButtonData_structs.hpp"
 #include "WBP_InteractableMenu_classes.hpp"
 #include "ETransitionAnimation_structs.hpp"
 #include "EInputDeviceType_structs.hpp"

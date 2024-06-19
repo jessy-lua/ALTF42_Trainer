@@ -40,7 +40,7 @@ class UDNAAsset final : public UAssetUserData
 {
 public:
 	class FString                                 DnaFileName;                                       // 0x0028(0x0010)(Edit, ZeroConstructor, EditConst, AssetRegistrySearchable, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1FA8[0x98];                                    // 0x0038(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1FF8[0x98];                                    // 0x0038(0x0098)(Fixing Struct Size After Last Property [ Dumper-7 ])
 
 public:
 	static class UClass* StaticClass()

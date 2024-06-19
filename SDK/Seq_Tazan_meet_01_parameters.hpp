@@ -20,7 +20,7 @@ struct Seq_Tazan_meet_01_DirectorBP_C_ExecuteUbergraph_seq_Tazan_meet_01_Directo
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_2EFF[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2F6B[0x4];                                     // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class ATarzan_DialogueOvelap_BP_C*            K2Node_CustomEvent_Tarzan_DialogueOvelap_BP;       // 0x0008(0x0008)(ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(Seq_Tazan_meet_01_DirectorBP_C_ExecuteUbergraph_seq_Tazan_meet_01_DirectorBP) == 0x000008, "Wrong alignment on Seq_Tazan_meet_01_DirectorBP_C_ExecuteUbergraph_seq_Tazan_meet_01_DirectorBP");

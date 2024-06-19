@@ -10,9 +10,9 @@
 
 #include "Basic.hpp"
 
-#include "PDA_WidgetStyle_classes.hpp"
 #include "EColorPalette_structs.hpp"
 #include "CoreUObject_structs.hpp"
+#include "PDA_WidgetStyle_classes.hpp"
 
 
 namespace SDK
@@ -24,7 +24,7 @@ class UPDA_ScrollBarStyle_C final : public UPDA_WidgetStyle_C
 {
 public:
 	EColorPalette                                 BarNormalColor;                                    // 0x0038(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3F11[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3DE6[0x7];                                     // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CornerRadius;                                      // 0x0040(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	struct FVector2D                              BarThickness;                                      // 0x0048(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	EColorPalette                                 BarHighlightColor;                                 // 0x0058(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)

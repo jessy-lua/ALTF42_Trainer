@@ -24,7 +24,7 @@ namespace SDK
 class UAnimBP_Player_C final : public UAnimInstance
 {
 public:
-	uint8                                         Pad_31C6[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C35[0x8];                                     // 0x0348(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0350(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	struct AnimBP_Player::FAnimBlueprintGeneratedMutableData __AnimBlueprintMutables;                           // 0x0358(0x0008)(HasGetValueTypeHash)
 	struct FAnimSubsystemInstance                 AnimBlueprintExtension_PropertyAccess;             // 0x0360(0x0008)()
@@ -45,7 +45,7 @@ public:
 	struct FAnimNode_StateMachine                 AnimGraphNode_StateMachine;                        // 0x05F8(0x00C8)()
 	struct FAnimNode_Slot                         AnimGraphNode_Slot;                                // 0x06C0(0x0048)()
 	bool                                          IsInAir_;                                          // 0x0708(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_31C7[0x7];                                     // 0x0709(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2C36[0x7];                                     // 0x0709(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        Speed;                                             // 0x0710(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:

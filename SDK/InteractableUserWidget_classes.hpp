@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "GlobalInteractableUserWidget_classes.hpp"
 #include "Engine_structs.hpp"
+#include "GlobalInteractableUserWidget_classes.hpp"
 
 
 namespace SDK
@@ -28,20 +28,20 @@ public:
 	class FText                                   OptionName;                                        // 0x06D0(0x0018)(Edit, BlueprintVisible)
 	class FText                                   OptionDescription;                                 // 0x06E8(0x0018)(Edit, BlueprintVisible)
 	int32                                         SelfIndex;                                         // 0x0700(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3349[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_326D[0x4];                                     // 0x0704(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class UInteractableUserWidget_C*              PreviousInteractableWidget;                        // 0x0708(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UInteractableUserWidget_C*              NextInteractableWidget;                            // 0x0710(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UInteractableUserWidget_C*              FirstInteractableWidget;                           // 0x0718(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UInteractableUserWidget_C*              LastInteractableWidget;                            // 0x0720(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	bool                                          bAllowFocusLost;                                   // 0x0728(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bVerticalNavigation;                               // 0x0729(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_334A[0x6];                                     // 0x072A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_326E[0x6];                                     // 0x072A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnFocussed;                                        // 0x0730(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	class UInteractableMenuWidgetBP_C*            ParentMenuWidget;                                  // 0x0740(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, NoDestructor, HasGetValueTypeHash)
 	class UTexture2D*                             OptionImage;                                       // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	bool                                          bIsWidgetEnabled;                                  // 0x0750(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          bPlaySelectSound;                                  // 0x0751(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_334B[0x6];                                     // 0x0752(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_326F[0x6];                                     // 0x0752(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	FMulticastInlineDelegateProperty_             OnHolded;                                          // 0x0758(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 	FMulticastInlineDelegateProperty_             OnUnHolded;                                        // 0x0768(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, BlueprintAssignable, BlueprintCallable)
 

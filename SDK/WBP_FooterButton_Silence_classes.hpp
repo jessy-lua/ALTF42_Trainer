@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "WBP_FooterButtonBase_classes.hpp"
 #include "Engine_structs.hpp"
+#include "WBP_FooterButtonBase_classes.hpp"
 
 
 namespace SDK

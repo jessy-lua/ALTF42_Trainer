@@ -22,7 +22,7 @@ struct FFTransitionAnimationMapping final
 {
 public:
 	ETransitionAnimation                          TransitionAnimation_7_30D2FF27467A7B0216633FB34E6FD334; // 0x0000(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3D57[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3C01[0x7];                                     // 0x0001(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWidgetAnimation*                       WidgetAnimationIn_10_CD88BF894B080C73C8E755A53961ECA7; // 0x0008(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 	class UWidgetAnimation*                       WidgetAnimationOut_11_F7F91648443D77436DD2A3B7723DFD56; // 0x0010(0x0008)(Edit, BlueprintVisible, ZeroConstructor, NoDestructor, HasGetValueTypeHash)
 };

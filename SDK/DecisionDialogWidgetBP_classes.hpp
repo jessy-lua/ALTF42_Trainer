@@ -10,8 +10,8 @@
 
 #include "Basic.hpp"
 
-#include "Engine_structs.hpp"
 #include "InteractableMenuWidgetBP_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -48,8 +48,8 @@ public:
 	void OnGlobalSettingsApply();
 	void OnNavigationEnter(class UInteractableMenuWidgetBP_C* NavigateFromMenu, bool Param_bIsGamepadBeingUsed, int32 Param_PlayerIndex);
 	void OnNavigationExit(class UInteractableMenuWidgetBP_C* NavigateToMenu, class UInteractableMenuWidgetBP_C* NavigateFromMenu);
-	void PreConstruct(bool IsDesignTime);
 	void SetGlobalSettings();
+	void PreConstruct(bool IsDesignTime);
 
 public:
 	static class UClass* StaticClass()

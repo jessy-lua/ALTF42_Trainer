@@ -23,7 +23,7 @@ struct WBP_DecisionButtonBase_C_ApplyWidgetStyleActive final
 {
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E7B[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D63[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DecisionButtonBase_C_ApplyWidgetStyleActive) == 0x000004, "Wrong alignment on WBP_DecisionButtonBase_C_ApplyWidgetStyleActive");
@@ -37,7 +37,7 @@ struct WBP_DecisionButtonBase_C_ApplyWidgetStyleDisabled final
 {
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E7C[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D64[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DecisionButtonBase_C_ApplyWidgetStyleDisabled) == 0x000004, "Wrong alignment on WBP_DecisionButtonBase_C_ApplyWidgetStyleDisabled");
@@ -51,7 +51,7 @@ struct WBP_DecisionButtonBase_C_ApplyWidgetStyleHighlighted final
 {
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E7D[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D65[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DecisionButtonBase_C_ApplyWidgetStyleHighlighted) == 0x000004, "Wrong alignment on WBP_DecisionButtonBase_C_ApplyWidgetStyleHighlighted");
@@ -65,7 +65,7 @@ struct WBP_DecisionButtonBase_C_ApplyWidgetStyleNormal final
 {
 public:
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E7E[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D66[0x3];                                     // 0x0001(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
 	float                                         CallFunc_SetHeightOverride_InHeightOverride_ImplicitCast; // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DecisionButtonBase_C_ApplyWidgetStyleNormal) == 0x000004, "Wrong alignment on WBP_DecisionButtonBase_C_ApplyWidgetStyleNormal");
@@ -82,12 +82,12 @@ public:
 	EWidgetStyleState                             K2Node_Event_HighlightState;                       // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_Event_bPlaySound;                           // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0006(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E7F[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D67[0x1];                                     // 0x0007(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FKeyEvent                              K2Node_Event_KeyEvent_1;                           // 0x0008(0x0040)()
 	struct FKeyEvent                              K2Node_Event_KeyEvent;                             // 0x0048(0x0040)()
 	bool                                          K2Node_Event_IsDesignTime;                         // 0x0088(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0089(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3E80[0x6];                                     // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_3D68[0x6];                                     // 0x008A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UWBP_MenuContainer_C*                   CallFunc_GetOwningContainer_OwningContainer;       // 0x0090(0x0008)(ZeroConstructor, InstancedReference, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_DecisionButtonBase_C_ExecuteUbergraph_WBP_DecisionButtonBase) == 0x000008, "Wrong alignment on WBP_DecisionButtonBase_C_ExecuteUbergraph_WBP_DecisionButtonBase");
@@ -101,6 +101,19 @@ static_assert(offsetof(WBP_DecisionButtonBase_C_ExecuteUbergraph_WBP_DecisionBut
 static_assert(offsetof(WBP_DecisionButtonBase_C_ExecuteUbergraph_WBP_DecisionButtonBase, K2Node_Event_IsDesignTime) == 0x000088, "Member 'WBP_DecisionButtonBase_C_ExecuteUbergraph_WBP_DecisionButtonBase::K2Node_Event_IsDesignTime' has a wrong offset!");
 static_assert(offsetof(WBP_DecisionButtonBase_C_ExecuteUbergraph_WBP_DecisionButtonBase, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000089, "Member 'WBP_DecisionButtonBase_C_ExecuteUbergraph_WBP_DecisionButtonBase::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
 static_assert(offsetof(WBP_DecisionButtonBase_C_ExecuteUbergraph_WBP_DecisionButtonBase, CallFunc_GetOwningContainer_OwningContainer) == 0x000090, "Member 'WBP_DecisionButtonBase_C_ExecuteUbergraph_WBP_DecisionButtonBase::CallFunc_GetOwningContainer_OwningContainer' has a wrong offset!");
+
+// Function WBP_DecisionButtonBase.WBP_DecisionButtonBase_C.OnSetHighlightEffect
+// 0x0002 (0x0002 - 0x0000)
+struct WBP_DecisionButtonBase_C_OnSetHighlightEffect final
+{
+public:
+	EWidgetStyleState                             Param_HighlightState;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bPlaySound;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_DecisionButtonBase_C_OnSetHighlightEffect) == 0x000001, "Wrong alignment on WBP_DecisionButtonBase_C_OnSetHighlightEffect");
+static_assert(sizeof(WBP_DecisionButtonBase_C_OnSetHighlightEffect) == 0x000002, "Wrong size on WBP_DecisionButtonBase_C_OnSetHighlightEffect");
+static_assert(offsetof(WBP_DecisionButtonBase_C_OnSetHighlightEffect, Param_HighlightState) == 0x000000, "Member 'WBP_DecisionButtonBase_C_OnSetHighlightEffect::Param_HighlightState' has a wrong offset!");
+static_assert(offsetof(WBP_DecisionButtonBase_C_OnSetHighlightEffect, bPlaySound) == 0x000001, "Member 'WBP_DecisionButtonBase_C_OnSetHighlightEffect::bPlaySound' has a wrong offset!");
 
 // Function WBP_DecisionButtonBase.WBP_DecisionButtonBase_C.OnPressedBack
 // 0x0040 (0x0040 - 0x0000)
@@ -123,19 +136,6 @@ public:
 static_assert(alignof(WBP_DecisionButtonBase_C_OnPressedSelect) == 0x000008, "Wrong alignment on WBP_DecisionButtonBase_C_OnPressedSelect");
 static_assert(sizeof(WBP_DecisionButtonBase_C_OnPressedSelect) == 0x000040, "Wrong size on WBP_DecisionButtonBase_C_OnPressedSelect");
 static_assert(offsetof(WBP_DecisionButtonBase_C_OnPressedSelect, KeyEvent) == 0x000000, "Member 'WBP_DecisionButtonBase_C_OnPressedSelect::KeyEvent' has a wrong offset!");
-
-// Function WBP_DecisionButtonBase.WBP_DecisionButtonBase_C.OnSetHighlightEffect
-// 0x0002 (0x0002 - 0x0000)
-struct WBP_DecisionButtonBase_C_OnSetHighlightEffect final
-{
-public:
-	EWidgetStyleState                             Param_HighlightState;                              // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bPlaySound;                                        // 0x0001(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_DecisionButtonBase_C_OnSetHighlightEffect) == 0x000001, "Wrong alignment on WBP_DecisionButtonBase_C_OnSetHighlightEffect");
-static_assert(sizeof(WBP_DecisionButtonBase_C_OnSetHighlightEffect) == 0x000002, "Wrong size on WBP_DecisionButtonBase_C_OnSetHighlightEffect");
-static_assert(offsetof(WBP_DecisionButtonBase_C_OnSetHighlightEffect, Param_HighlightState) == 0x000000, "Member 'WBP_DecisionButtonBase_C_OnSetHighlightEffect::Param_HighlightState' has a wrong offset!");
-static_assert(offsetof(WBP_DecisionButtonBase_C_OnSetHighlightEffect, bPlaySound) == 0x000001, "Member 'WBP_DecisionButtonBase_C_OnSetHighlightEffect::bPlaySound' has a wrong offset!");
 
 // Function WBP_DecisionButtonBase.WBP_DecisionButtonBase_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)

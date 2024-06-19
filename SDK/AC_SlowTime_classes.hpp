@@ -24,14 +24,14 @@ class UAC_SlowTime_C final : public UActorComponent
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x00A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	bool                                          IsSlowTimeActive_;                                 // 0x00A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BA3[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2AE2[0x7];                                     // 0x00A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FPostProcessSettings                   PPSettings;                                        // 0x00B0(0x06E0)(Edit, BlueprintVisible, DisableEditOnInstance)
 	double                                        SlowMotionValue;                                   // 0x0790(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          IncludePlayer_;                                    // 0x0798(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BA4[0x7];                                     // 0x0799(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2AE3[0x7];                                     // 0x0799(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class ACharacter*                             Character;                                         // 0x07A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
 	bool                                          Lerp_;                                             // 0x07A8(0x0001)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_3BA5[0x7];                                     // 0x07A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2AE4[0x7];                                     // 0x07A9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	double                                        CurrentValue;                                      // 0x07B0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	double                                        LerpSpeed;                                         // 0x07B8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 

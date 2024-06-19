@@ -24,7 +24,7 @@ struct OptimusNode_SetGraphPosition final
 public:
 	struct FVector2D                              InPosition;                                        // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A39[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A8A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNode_SetGraphPosition) == 0x000008, "Wrong alignment on OptimusNode_SetGraphPosition");
 static_assert(sizeof(OptimusNode_SetGraphPosition) == 0x000018, "Wrong size on OptimusNode_SetGraphPosition");
@@ -115,7 +115,7 @@ struct OptimusDeformerInstance_EnqueueTriggerGraph final
 public:
 	class FName                                   InTriggerGraphName;                                // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A4E[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1A9F[0x3];                                     // 0x0009(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusDeformerInstance_EnqueueTriggerGraph) == 0x000004, "Wrong alignment on OptimusDeformerInstance_EnqueueTriggerGraph");
 static_assert(sizeof(OptimusDeformerInstance_EnqueueTriggerGraph) == 0x00000C, "Wrong size on OptimusDeformerInstance_EnqueueTriggerGraph");
@@ -130,7 +130,7 @@ public:
 	class FName                                   InVariableName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          InValue;                                           // 0x0008(0x0001)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0009(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A4F[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AA0[0x2];                                     // 0x000A(0x0002)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusDeformerInstance_SetBoolVariable) == 0x000004, "Wrong alignment on OptimusDeformerInstance_SetBoolVariable");
 static_assert(sizeof(OptimusDeformerInstance_SetBoolVariable) == 0x00000C, "Wrong size on OptimusDeformerInstance_SetBoolVariable");
@@ -146,7 +146,7 @@ public:
 	class FName                                   InVariableName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	double                                        InValue;                                           // 0x0008(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A50[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AA1[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusDeformerInstance_SetFloatVariable) == 0x000008, "Wrong alignment on OptimusDeformerInstance_SetFloatVariable");
 static_assert(sizeof(OptimusDeformerInstance_SetFloatVariable) == 0x000018, "Wrong size on OptimusDeformerInstance_SetFloatVariable");
@@ -162,7 +162,7 @@ public:
 	class FName                                   InVariableName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InValue;                                           // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A51[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AA2[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusDeformerInstance_SetIntVariable) == 0x000004, "Wrong alignment on OptimusDeformerInstance_SetIntVariable");
 static_assert(sizeof(OptimusDeformerInstance_SetIntVariable) == 0x000010, "Wrong size on OptimusDeformerInstance_SetIntVariable");
@@ -176,10 +176,10 @@ struct OptimusDeformerInstance_SetTransformVariable final
 {
 public:
 	class FName                                   InVariableName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A52[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AA3[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FTransform                             InValue;                                           // 0x0010(0x0060)(ConstParm, Parm, OutParm, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0070(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A53[0xF];                                     // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AA4[0xF];                                     // 0x0071(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusDeformerInstance_SetTransformVariable) == 0x000010, "Wrong alignment on OptimusDeformerInstance_SetTransformVariable");
 static_assert(sizeof(OptimusDeformerInstance_SetTransformVariable) == 0x000080, "Wrong size on OptimusDeformerInstance_SetTransformVariable");
@@ -193,10 +193,10 @@ struct OptimusDeformerInstance_SetVector4Variable final
 {
 public:
 	class FName                                   InVariableName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A54[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AA5[0x8];                                     // 0x0008(0x0008)(Fixing Size After Last Property [ Dumper-7 ])
 	struct FVector4                               InValue;                                           // 0x0010(0x0020)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0030(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A55[0xF];                                     // 0x0031(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AA6[0xF];                                     // 0x0031(0x000F)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusDeformerInstance_SetVector4Variable) == 0x000010, "Wrong alignment on OptimusDeformerInstance_SetVector4Variable");
 static_assert(sizeof(OptimusDeformerInstance_SetVector4Variable) == 0x000040, "Wrong size on OptimusDeformerInstance_SetVector4Variable");
@@ -212,7 +212,7 @@ public:
 	class FName                                   InVariableName;                                    // 0x0000(0x0008)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	struct FVector                                InValue;                                           // 0x0008(0x0018)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A56[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AA7[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusDeformerInstance_SetVectorVariable) == 0x000008, "Wrong alignment on OptimusDeformerInstance_SetVectorVariable");
 static_assert(sizeof(OptimusDeformerInstance_SetVectorVariable) == 0x000028, "Wrong size on OptimusDeformerInstance_SetVectorVariable");
@@ -269,7 +269,7 @@ public:
 	class UOptimusNodePin*                        InNodeOutputPin;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UOptimusNodePin*                        InNodeInputPin;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A5A[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AAB[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_AddLink) == 0x000008, "Wrong alignment on OptimusNodeGraph_AddLink");
 static_assert(sizeof(OptimusNodeGraph_AddLink) == 0x000018, "Wrong size on OptimusNodeGraph_AddLink");
@@ -442,7 +442,7 @@ public:
 	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	struct FVector2D                              InPosition;                                        // 0x0010(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0020(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A5B[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AAC[0x7];                                     // 0x0021(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_DuplicateNodes) == 0x000008, "Wrong alignment on OptimusNodeGraph_DuplicateNodes");
 static_assert(sizeof(OptimusNodeGraph_DuplicateNodes) == 0x000028, "Wrong size on OptimusNodeGraph_DuplicateNodes");
@@ -471,7 +471,7 @@ public:
 	class UOptimusNodeGraph*                      InGraph;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	int32                                         InInsertBefore;                                    // 0x0008(0x0004)(Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x000C(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A5C[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AAD[0x3];                                     // 0x000D(0x0003)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_MoveGraph) == 0x000008, "Wrong alignment on OptimusNodeGraph_MoveGraph");
 static_assert(sizeof(OptimusNodeGraph_MoveGraph) == 0x000010, "Wrong size on OptimusNodeGraph_MoveGraph");
@@ -486,7 +486,7 @@ struct OptimusNodeGraph_RemoveAllLinks final
 public:
 	class UOptimusNodePin*                        InNodePin;                                         // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A5D[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AAE[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_RemoveAllLinks) == 0x000008, "Wrong alignment on OptimusNodeGraph_RemoveAllLinks");
 static_assert(sizeof(OptimusNodeGraph_RemoveAllLinks) == 0x000010, "Wrong size on OptimusNodeGraph_RemoveAllLinks");
@@ -501,7 +501,7 @@ public:
 	class UOptimusNodePin*                        InNodeOutputPin;                                   // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class UOptimusNodePin*                        InNodeInputPin;                                    // 0x0008(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A5E[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AAF[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_RemoveLink) == 0x000008, "Wrong alignment on OptimusNodeGraph_RemoveLink");
 static_assert(sizeof(OptimusNodeGraph_RemoveLink) == 0x000018, "Wrong size on OptimusNodeGraph_RemoveLink");
@@ -516,7 +516,7 @@ struct OptimusNodeGraph_RemoveNode final
 public:
 	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A5F[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AB0[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_RemoveNode) == 0x000008, "Wrong alignment on OptimusNodeGraph_RemoveNode");
 static_assert(sizeof(OptimusNodeGraph_RemoveNode) == 0x000010, "Wrong size on OptimusNodeGraph_RemoveNode");
@@ -530,7 +530,7 @@ struct OptimusNodeGraph_RemoveNodes final
 public:
 	TArray<class UOptimusNode*>                   InNodes;                                           // 0x0000(0x0010)(ConstParm, Parm, OutParm, ZeroConstructor, ReferenceParm, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0010(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A60[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AB1[0x7];                                     // 0x0011(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_RemoveNodes) == 0x000008, "Wrong alignment on OptimusNodeGraph_RemoveNodes");
 static_assert(sizeof(OptimusNodeGraph_RemoveNodes) == 0x000018, "Wrong size on OptimusNodeGraph_RemoveNodes");
@@ -545,7 +545,7 @@ public:
 	class UOptimusNodeGraph*                      InGraph;                                           // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	class FString                                 InNewName;                                         // 0x0008(0x0010)(Parm, ZeroConstructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0018(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A61[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AB2[0x7];                                     // 0x0019(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_RenameGraph) == 0x000008, "Wrong alignment on OptimusNodeGraph_RenameGraph");
 static_assert(sizeof(OptimusNodeGraph_RenameGraph) == 0x000020, "Wrong size on OptimusNodeGraph_RenameGraph");
@@ -593,7 +593,7 @@ struct OptimusNodeGraph_IsCustomKernel final
 public:
 	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A62[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AB3[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_IsCustomKernel) == 0x000008, "Wrong alignment on OptimusNodeGraph_IsCustomKernel");
 static_assert(sizeof(OptimusNodeGraph_IsCustomKernel) == 0x000010, "Wrong size on OptimusNodeGraph_IsCustomKernel");
@@ -629,7 +629,7 @@ struct OptimusNodeGraph_IsFunctionReference final
 public:
 	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A63[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AB4[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_IsFunctionReference) == 0x000008, "Wrong alignment on OptimusNodeGraph_IsFunctionReference");
 static_assert(sizeof(OptimusNodeGraph_IsFunctionReference) == 0x000010, "Wrong size on OptimusNodeGraph_IsFunctionReference");
@@ -643,7 +643,7 @@ struct OptimusNodeGraph_IsKernelFunction final
 public:
 	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A64[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AB5[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_IsKernelFunction) == 0x000008, "Wrong alignment on OptimusNodeGraph_IsKernelFunction");
 static_assert(sizeof(OptimusNodeGraph_IsKernelFunction) == 0x000010, "Wrong size on OptimusNodeGraph_IsKernelFunction");
@@ -657,7 +657,7 @@ struct OptimusNodeGraph_IsSubGraphReference final
 public:
 	class UOptimusNode*                           InNode;                                            // 0x0000(0x0008)(Parm, ZeroConstructor, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
 	bool                                          ReturnValue;                                       // 0x0008(0x0001)(Parm, OutParm, ZeroConstructor, ReturnParm, IsPlainOldData, NoDestructor, HasGetValueTypeHash, NativeAccessSpecifierPublic)
-	uint8                                         Pad_1A65[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_1AB6[0x7];                                     // 0x0009(0x0007)(Fixing Struct Size After Last Property [ Dumper-7 ])
 };
 static_assert(alignof(OptimusNodeGraph_IsSubGraphReference) == 0x000008, "Wrong alignment on OptimusNodeGraph_IsSubGraphReference");
 static_assert(sizeof(OptimusNodeGraph_IsSubGraphReference) == 0x000010, "Wrong size on OptimusNodeGraph_IsSubGraphReference");
